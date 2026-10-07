@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Dựng app PWA "Xử lý tại nhà" từ noi-dung.md.
+"""Dựng app PWA "Sunny time" (xử lý tình huống tại nhà) từ noi-dung.md.
 
 Sửa nội dung ở noi-dung.md rồi chạy:  python3 build.py
 Kết quả nằm trong docs/ (đưa lên GitHub Pages hoặc host tĩnh bất kỳ).
@@ -9,8 +9,8 @@ import hashlib, json, pathlib, re
 HERE = pathlib.Path(__file__).parent
 OUT = HERE / "docs"
 
-TITLE = "Xử lý tại nhà"
-SHORT = "Xử lý tại nhà"
+TITLE = "Sunny time"
+SHORT = "Sunny time"
 THEME = "#1F3A5F"
 BG = "#F7F4EE"
 
@@ -230,8 +230,13 @@ def build():
             .replace("__TITLE__", TITLE)
             .replace("__THEME__", THEME))
 
-    version = hashlib.sha1(page.encode("utf-8")).hexdigest()[:10]
     OUT.mkdir(exist_ok=True)
+    make_icons()
+    # phiên bản tính cả icon, để đổi icon thì máy đã cài cũng nhận bản mới
+    h = hashlib.sha1(page.encode("utf-8"))
+    for f in sorted((OUT / "icons").glob("*.png")):
+        h.update(f.read_bytes())
+    version = h.hexdigest()[:10]
     (OUT / "index.html").write_text(page.replace("__VERSION__", version), encoding="utf-8")
 
     sw = (HERE / "src" / "sw.js").read_text(encoding="utf-8").replace("__VERSION__", version)
@@ -252,7 +257,6 @@ def build():
     (OUT / "manifest.webmanifest").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    make_icons()
     n_steps = sum(len(s["items"]) for it in situations for s in it["sections"]
                   if s["kind"] == "steps")
     print("Đã dựng docs/  |  %d tình huống, %d kỹ năng, %d bước, %d từ ngữ, phiên bản %s"
@@ -260,44 +264,108 @@ def build():
 
 
 # ---------------------------------------------------------------- icon
-def make_icons():
+def sunflower(size, frame=True, rounded=True, pad=0.0):
+    """Hoa hướng dương kiểu huy hiệu trung cổ: nền xanh lapis, viền vàng,
+    cánh hoa viền nét đậm, nhụy nâu đan ô trám như tranh khắc gỗ."""
+    import math
     from PIL import Image, ImageDraw
+    k = 4
+    S = size * k
+    LAPIS, GOLD, GOLD_D, RED = "#1C2E6E", "#D4A72C", "#9C7416", "#A8322A"
+    PETAL, PETAL_IN, INK, DISC = "#F4C430", "#DE9A1E", "#2A1606", "#5B3214"
+
+    img = Image.new("RGBA", (S, S), (0, 0, 0, 0))
+    g = ImageDraw.Draw(img)
+    if rounded:
+        g.rounded_rectangle([0, 0, S - 1, S - 1], radius=int(S * 0.22), fill=LAPIS)
+    else:
+        g.rectangle([0, 0, S, S], fill=LAPIS)
+
+    # chấm sao nhỏ trên nền, như nền trang sách cổ
+    if frame:
+        step = S / 9.0
+        lo, hi = S * 0.14, S * 0.86
+        for i in range(10):
+            for j in range(10):
+                x, y = (i + 0.5) * step, (j + 0.5) * step
+                if (i + j) % 2 or not (lo < x < hi and lo < y < hi):
+                    continue
+                r = S * 0.006
+                g.ellipse([x - r, y - r, x + r, y + r], fill=GOLD_D)
+
+    if frame:
+        ins = S * 0.055
+        g.rounded_rectangle([ins, ins, S - ins, S - ins], radius=int(S * 0.17),
+                            outline=GOLD, width=max(2, int(S * 0.02)))
+        ins2 = S * 0.088
+        g.rounded_rectangle([ins2, ins2, S - ins2, S - ins2], radius=int(S * 0.14),
+                            outline=RED, width=max(1, int(S * 0.007)))
+
+    cx = cy = S / 2
+    R = S * (0.5 - pad) * (0.78 if frame else 0.86)
+    rd = R * 0.40
+    lw = max(2, int(S * 0.009))
+
+    def petal(angle, r0, r1, w, fill):
+        pts_l, pts_r = [], []
+        n = 18
+        for i in range(n + 1):
+            tt = i / float(n)
+            rr = r0 + (r1 - r0) * tt
+            hw = w * (math.sin(math.pi * min(tt * 1.1, 1.0)) ** 0.75) * (1 - tt * 0.15)
+            pts_l.append((rr, -hw))
+            pts_r.append((rr, hw))
+        shape = pts_l + [(r1 + (r1 - r0) * 0.04, 0)] + pts_r[::-1]
+        ca, sa = math.cos(angle), math.sin(angle)
+        poly = [(cx + x * ca - y * sa, cy + x * sa + y * ca) for x, y in shape]
+        g.polygon(poly, fill=fill, outline=INK, width=lw)
+        v0, v1 = r0 + (r1 - r0) * 0.12, r0 + (r1 - r0) * 0.72
+        g.line([(cx + v0 * ca, cy + v0 * sa), (cx + v1 * ca, cy + v1 * sa)],
+               fill=INK, width=max(1, lw // 2))
+
+    N = 14
+    for i in range(N):
+        a = 2 * math.pi * i / N - math.pi / 2
+        petal(a, rd * 0.8, R, R * 0.15, PETAL)
+    for i in range(N):
+        a = 2 * math.pi * (i + 0.5) / N - math.pi / 2
+        petal(a, rd * 0.8, R * 0.80, R * 0.13, PETAL_IN)
+
+    # nhụy: đĩa nâu, đan ô trám vàng, chấm vàng ở giữa mỗi ô
+    g.ellipse([cx - rd, cy - rd, cx + rd, cy + rd], fill=DISC, outline=INK, width=lw)
+    lat = Image.new("RGBA", (S, S), (0, 0, 0, 0))
+    lg = ImageDraw.Draw(lat)
+    sp = rd / 2.6
+    lwl = max(1, int(S * 0.005))
+    m = int(rd * 2 / sp) + 4
+    for i in range(-m, m + 1):
+        o = i * sp
+        lg.line([(cx + o - rd * 2, cy - rd * 2), (cx + o + rd * 2, cy + rd * 2)], fill=GOLD_D, width=lwl)
+        lg.line([(cx + o + rd * 2, cy - rd * 2), (cx + o - rd * 2, cy + rd * 2)], fill=GOLD_D, width=lwl)
+    for i in range(-m, m + 1):
+        for j in range(-m, m + 1):
+            x = cx + (i + j) * sp / 2.0
+            y = cy + (j - i) * sp / 2.0 + sp / 2.0
+            r = sp * 0.13
+            lg.ellipse([x - r, y - r, x + r, y + r], fill=GOLD)
+    mask = Image.new("L", (S, S), 0)
+    ImageDraw.Draw(mask).ellipse([cx - rd * 0.86, cy - rd * 0.86, cx + rd * 0.86, cy + rd * 0.86], fill=255)
+    img.paste(lat, (0, 0), Image.composite(lat, Image.new("RGBA", (S, S)), mask).split()[3])
+    g = ImageDraw.Draw(img)
+    g.ellipse([cx - rd * 0.86, cy - rd * 0.86, cx + rd * 0.86, cy + rd * 0.86], outline=INK, width=max(1, lw // 2))
+
+    return img.resize((size, size), Image.LANCZOS)
+
+
+def make_icons():
     d = OUT / "icons"
     d.mkdir(exist_ok=True)
-
-    def draw(size, pad_ratio, rounded):
-        scale = 4
-        S = size * scale
-        img = Image.new("RGBA", (S, S), (0, 0, 0, 0))
-        g = ImageDraw.Draw(img)
-        if rounded:
-            g.rounded_rectangle([0, 0, S - 1, S - 1], radius=int(S * 0.22), fill=THEME)
-        else:
-            g.rectangle([0, 0, S, S], fill=THEME)
-        # chữ thập bo tròn màu kem, giữa có trái tim nhỏ màu san hô
-        inner = S * (1 - 2 * pad_ratio)
-        cx = cy = S / 2
-        arm = inner * 0.30
-        length = inner * 0.86
-        r = arm * 0.32
-        cream = BG
-        g.rounded_rectangle([cx - arm / 2, cy - length / 2, cx + arm / 2, cy + length / 2],
-                            radius=r, fill=cream)
-        g.rounded_rectangle([cx - length / 2, cy - arm / 2, cx + length / 2, cy + arm / 2],
-                            radius=r, fill=cream)
-        h = arm * 0.62
-        coral = "#E0674F"
-        g.ellipse([cx - h * 0.5, cy - h * 0.42, cx, cy + h * 0.08], fill=coral)
-        g.ellipse([cx, cy - h * 0.42, cx + h * 0.5, cy + h * 0.08], fill=coral)
-        g.polygon([(cx - h * 0.47, cy - h * 0.08), (cx + h * 0.47, cy - h * 0.08),
-                   (cx, cy + h * 0.46)], fill=coral)
-        return img.resize((size, size), Image.LANCZOS)
-
-    draw(192, 0.16, True).save(d / "icon-192.png")
-    draw(512, 0.16, True).save(d / "icon-512.png")
-    draw(512, 0.24, False).save(d / "icon-maskable-512.png")
-    draw(180, 0.16, False).save(d / "apple-touch-icon.png")
-    draw(64, 0.10, True).save(d / "favicon.png")
+    sunflower(192).save(d / "icon-192.png")
+    sunflower(512).save(d / "icon-512.png")
+    sunflower(512, frame=False, rounded=False, pad=0.12).save(d / "icon-maskable-512.png")
+    sunflower(180, rounded=False).save(d / "apple-touch-icon.png")
+    sunflower(64, frame=False).save(d / "favicon.png")
+    sunflower(96, frame=False).save(d / "mark.png")
 
 
 if __name__ == "__main__":

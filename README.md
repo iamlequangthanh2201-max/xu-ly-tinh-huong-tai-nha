@@ -1,6 +1,6 @@
-# Xử lý tại nhà
+# Sunny time
 
-Web app (PWA) tra cứu các bước xử lý tại nhà khi bé hoặc mẹ gặp vấn đề sau sinh: trớ sữa, sốt, vàng da, tắc tia sữa, và các dấu hiệu phải đi cấp cứu.
+Xử lý tình huống tại nhà. Web app (PWA) tra cứu các bước xử lý tại nhà khi bé hoặc mẹ gặp vấn đề sau sinh: trớ sữa, sốt, vàng da, tắc tia sữa, và các dấu hiệu phải đi cấp cứu.
 
 Mở app: https://iamlequangthanh2201-max.github.io/xu-ly-tinh-huong-tai-nha/
 
@@ -9,7 +9,7 @@ Cùng bộ với [Giấc ngủ cho con](https://iamlequangthanh2201-max.github.i
 ## Có gì trong app
 
 - 34 tình huống (25 của bé, 9 của mẹ), chia 8 nhóm, mỗi tình huống có mức độ xanh, vàng, đỏ
-- Mỗi tình huống: **Đây là gì?** (giải thích ngắn hiện tượng), **Làm ngay** (các bước đánh số, chạm để đánh dấu đã làm), **Phòng ngừa**, **Không nên**, **Đi khám khi**
+- Mỗi tình huống: **Đây là gì?** (giải thích ngắn hiện tượng, mặc định gập lại), **Làm ngay** (các bước đánh số, chạm để đánh dấu đã làm), **Phòng ngừa**, **Không nên**, **Đi khám khi**
 - 7 kỹ năng cơ bản (ợ hơi, hút mũi, đo nhiệt độ, đếm nhịp thở, kiểm tra mất nước, sơ cứu hóc dị vật, quấn bé), mở nhanh dạng bảng trượt ngay trong từng bước
 - 50 từ chuyên môn (thóp, li bì, rút lõm ngực...) được gạch chân, chạm vào để xem nghĩa, có trang Giải thích từ ngữ riêng
 - Tìm kiếm có dấu hoặc không dấu ("tro sua", "tắc sữa")
@@ -22,7 +22,7 @@ Cùng bộ với [Giấc ngủ cho con](https://iamlequangthanh2201-max.github.i
 | File | Vai trò |
 |---|---|
 | `noi-dung.md` | Toàn bộ nội dung. Sửa ở đây |
-| `build.py` | Đọc `noi-dung.md`, xếp nhóm, gắn từ khoá tìm kiếm, dựng app vào `docs/` |
+| `build.py` | Đọc `noi-dung.md`, xếp nhóm, gắn từ khoá tìm kiếm, vẽ icon hoa hướng dương, dựng app vào `docs/` |
 | `src/` | Khung trang, giao diện, mã app, service worker |
 | `docs/` | Bản đã dựng, GitHub Pages phục vụ thư mục này |
 

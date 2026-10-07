@@ -418,7 +418,8 @@
       '<div class="sit-head"><h1 id="pageH1">' + esc(s.title) + "</h1>" +
       '<div class="sev">' + pills + "</div>" +
       '<p class="sev-note">' + esc(sevNote(s.severity)) + "</p></div>" +
-      (about ? '<section class="about"><div class="about-label">Đây là gì?</div><p>' + fmt(about.text) + "</p></section>" : "") +
+      (about ? '<details class="about"><summary><span class="about-label">Đây là gì?</span>' +
+        '<span class="about-hint">Chạm để đọc giải thích</span>' + ICON.tw + "</summary><p>" + fmt(about.text) + "</p></details>" : "") +
       alert + renderItemBody(s) +
       '<p class="disclaimer">Nhóm: ' + cats.map(function (c) {
         return '<a href="#/nhom/' + c.id + '">' + esc(c.title) + "</a>"; }).join(", ") +
@@ -734,7 +735,7 @@
       : deferredPrompt
         ? "Mở nhanh từ màn hình chính, dùng được cả khi mất mạng."
         : "Trong Chrome, mở menu <strong>⋮</strong> rồi chọn <strong>Thêm vào màn hình chính</strong>.";
-    return '<div class="install" id="installSlot"><span class="install-icon" aria-hidden="true"></span><div>' +
+    return '<div class="install" id="installSlot"><img class="install-icon" src="icons/icon-192.png" alt="" width="44" height="44"><div>' +
       "<strong>Cài lên màn hình điện thoại</strong><p>" + text + " Sau khi cài, app chạy được cả khi không có mạng.</p>" +
       '<div class="btns">' + how + '<button class="btn ghost" data-install-hide>Ẩn gợi ý này</button></div></div></div>';
   }
@@ -811,7 +812,7 @@
       a.classList.toggle("on", a.getAttribute("data-tab") === tab);
       if (a.getAttribute("data-tab") === tab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     });
-    document.title = ($("#topTitle").textContent ? $("#topTitle").textContent + " · " : "") + "Xử lý tại nhà";
+    document.title = ($("#topTitle").textContent ? $("#topTitle").textContent + " · " : "") + "Sunny time";
 
     view.classList.remove("page-enter"); void view.offsetWidth; view.classList.add("page-enter");
     showAlarmBar();
