@@ -1,0 +1,1290 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Xử lý tại nhà</title>
+<meta name="description" content="Các bước xử lý tại nhà khi bé hoặc mẹ gặp vấn đề sau sinh: trớ sữa, sốt, vàng da, tắc tia sữa và các dấu hiệu phải đi cấp cứu.">
+<meta name="theme-color" content="#1F3A5F">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Xử lý tại nhà">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/favicon.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+  try {
+    var t = localStorage.getItem("xltn-theme");
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+</script>
+<style>
+/* ============================================================
+   Xử lý tại nhà. Nền kem ấm, màu thương hiệu xanh mực.
+   Ba màu mức độ (xanh lá, hổ phách, đỏ) chỉ dùng cho mức độ,
+   không dùng để trang trí, để lúc hoảng vẫn đọc ra ngay.
+   ============================================================ */
+:root{
+  --ground:#F7F4EE; --surface:#FFFFFF; --surface-2:#EFEAE1; --surface-3:#E6DFD3;
+  --ink:#1D2530; --ink-2:#3F4A57; --ink-3:#6B7480; --ink-mute:#9AA1A9;
+  --line:#E3DCD0; --line-2:#EFE9DF;
+  --brand:#1F3A5F; --brand-2:#36587F; --brand-wash:#E7EDF4; --on-brand:#FFFFFF;
+  --coral:#E0674F;
+  --green:#2E7D57; --green-wash:#E5F2EA; --green-ink:#21603F;
+  --yellow:#B26B12; --yellow-wash:#FBEFD9; --yellow-ink:#8A520A;
+  --red:#C2362B; --red-wash:#FBE6E3; --red-ink:#9E2A21; --on-red:#FFFFFF;
+  --shadow:0 1px 2px rgba(29,37,48,.05), 0 10px 28px -16px rgba(29,37,48,.28);
+  --r-card:20px; --r-m:14px; --r-s:10px; --r-pill:999px;
+  --font:"Be Vietnam Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --top-h:56px; --tab-h:64px;
+  --safe-b:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#11161D; --surface:#19202A; --surface-2:#212A36; --surface-3:#2A3442;
+    --ink:#EDEAE4; --ink-2:#C9CDD3; --ink-3:#98A0AB; --ink-mute:#6C7581;
+    --line:#2B3542; --line-2:#222B37;
+    --brand:#8FB3DA; --brand-2:#A9C6E6; --brand-wash:#1E2C3D; --on-brand:#0F1722;
+    --coral:#F08A74;
+    --green:#5BBE8A; --green-wash:#16291F; --green-ink:#86D3A8;
+    --yellow:#E5A54B; --yellow-wash:#2D2414; --yellow-ink:#F0C27F;
+    --red:#F0705F; --red-wash:#341B19; --red-ink:#F7A296; --on-red:#1A0B09;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 28px -16px rgba(0,0,0,.6);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#11161D; --surface:#19202A; --surface-2:#212A36; --surface-3:#2A3442;
+  --ink:#EDEAE4; --ink-2:#C9CDD3; --ink-3:#98A0AB; --ink-mute:#6C7581;
+  --line:#2B3542; --line-2:#222B37;
+  --brand:#8FB3DA; --brand-2:#A9C6E6; --brand-wash:#1E2C3D; --on-brand:#0F1722;
+  --coral:#F08A74;
+  --green:#5BBE8A; --green-wash:#16291F; --green-ink:#86D3A8;
+  --yellow:#E5A54B; --yellow-wash:#2D2414; --yellow-ink:#F0C27F;
+  --red:#F0705F; --red-wash:#341B19; --red-ink:#F7A296; --on-red:#1A0B09;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 28px -16px rgba(0,0,0,.6);
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overflow-x:hidden}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--font);
+  font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;
+  -webkit-tap-highlight-color:transparent}
+button{font:inherit;color:inherit}
+a{color:inherit}
+strong{font-weight:700}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--brand-2);outline-offset:2px;border-radius:6px}
+
+/* ---------- thanh trên ---------- */
+.top{position:sticky;top:0;z-index:30;height:calc(var(--top-h) + env(safe-area-inset-top,0px));
+  padding:env(safe-area-inset-top,0px) 8px 0;display:flex;align-items:center;gap:4px;
+  background:color-mix(in srgb,var(--ground) 92%,transparent);
+  backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);
+  border-bottom:1px solid transparent;transition:border-color .2s}
+.top.scrolled{border-bottom-color:var(--line)}
+.top-back,.theme-btn{width:44px;height:44px;border:0;background:none;border-radius:12px;
+  display:grid;place-items:center;cursor:pointer;color:var(--ink-2);flex:none}
+.top-back:active,.theme-btn:active{background:var(--surface-2)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;padding:0 8px;min-width:0}
+.brand-mark{width:28px;height:28px;border-radius:8px;background:var(--brand);position:relative;flex:none}
+.brand-mark::before,.brand-mark::after{content:"";position:absolute;background:var(--ground);border-radius:2px}
+.brand-mark::before{left:11px;top:5px;width:6px;height:18px}
+.brand-mark::after{left:5px;top:11px;width:18px;height:6px}
+.brand-name{font-weight:800;font-size:17px;letter-spacing:-.01em}
+.top-title{flex:1;min-width:0;font-weight:700;font-size:16px;white-space:nowrap;overflow:hidden;
+  text-overflow:ellipsis;opacity:0;transition:opacity .15s}
+.top.show-title .top-title{opacity:1}
+.top.inner .brand{display:none}
+.top:not(.inner) .top-title{display:none}
+.top:not(.inner) .brand{flex:1}
+.theme-btn .i-sun{display:none}
+:root[data-theme="dark"] .theme-btn .i-sun{display:block}
+:root[data-theme="dark"] .theme-btn .i-moon{display:none}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .theme-btn .i-sun{display:block}
+  :root:not([data-theme="light"]) .theme-btn .i-moon{display:none}
+}
+
+/* ---------- khung nội dung ---------- */
+main{display:block;outline:none;max-width:640px;margin:0 auto;
+  padding:8px 16px calc(var(--tab-h) + var(--safe-b) + 32px)}
+.page-enter{animation:enter .22s ease-out}
+@keyframes enter{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.page-enter{animation:none}}
+
+h1{font-size:28px;line-height:1.2;letter-spacing:-.02em;margin:8px 0 6px;font-weight:800}
+h2{font-size:20px;line-height:1.3;margin:0;font-weight:800;letter-spacing:-.01em}
+.lede{color:var(--ink-3);margin:0 0 18px;font-size:16px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin:28px 0 10px}
+
+/* ---------- tìm kiếm ---------- */
+.search{position:relative;margin:4px 0 22px}
+.search input{width:100%;height:56px;border-radius:16px;border:2px solid var(--line);
+  background:var(--surface);color:var(--ink);font:inherit;font-size:18px;padding:0 48px 0 50px;
+  box-shadow:var(--shadow);-webkit-appearance:none;appearance:none}
+.search input::placeholder{color:var(--ink-mute)}
+.search input:focus{outline:none;border-color:var(--brand-2)}
+.search .s-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--ink-3);pointer-events:none}
+.search .s-clear{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:44px;height:44px;
+  border:0;background:none;border-radius:12px;color:var(--ink-3);cursor:pointer;display:grid;place-items:center}
+.search-empty{padding:28px 8px;text-align:center;color:var(--ink-3)}
+.search-empty strong{color:var(--ink)}
+
+/* ---------- lưới nhóm ---------- */
+.cats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cat{display:flex;flex-direction:column;gap:10px;padding:16px;min-height:112px;border-radius:var(--r-card);
+  background:var(--surface);text-decoration:none;box-shadow:var(--shadow);border:1px solid var(--line-2);
+  transition:transform .12s}
+.cat:active{transform:scale(.98)}
+.cat-icon{font-size:28px;line-height:1}
+.cat-title{font-weight:700;font-size:16px;line-height:1.3}
+.cat-count{font-size:13px;color:var(--ink-3);margin-top:auto}
+.cat.me{background:var(--brand-wash);border-color:transparent}
+
+/* ---------- danh sách tình huống ---------- */
+.list{display:flex;flex-direction:column;background:var(--surface);border-radius:var(--r-card);
+  box-shadow:var(--shadow);border:1px solid var(--line-2);overflow:hidden}
+.row{display:flex;align-items:center;gap:14px;padding:15px 16px;min-height:64px;text-decoration:none;
+  border-top:1px solid var(--line-2);background:none;border-left:0;border-right:0;border-bottom:0;
+  width:100%;text-align:left;cursor:pointer}
+.row:first-child{border-top:0}
+.row:active{background:var(--surface-2)}
+.row-main{flex:1;min-width:0}
+.row-title{font-weight:600;font-size:17px;line-height:1.3}
+.row-sub{font-size:14px;color:var(--ink-3);margin-top:2px;overflow:hidden;text-overflow:ellipsis;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.row-sub mark{background:var(--yellow-wash);color:inherit;border-radius:3px;padding:0 1px}
+.chev{color:var(--ink-mute);flex:none}
+.dots{display:flex;gap:4px;flex:none;width:32px}
+.dot{width:10px;height:10px;border-radius:50%}
+.dot.green{background:var(--green)} .dot.yellow{background:var(--yellow)} .dot.red{background:var(--red)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px;color:var(--ink-3);margin:12px 4px 0}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.k-badge{flex:none;width:36px;height:36px;border-radius:10px;background:var(--brand-wash);color:var(--brand);
+  font-weight:800;font-size:14px;display:grid;place-items:center}
+
+/* ---------- kỹ năng dạng chip ngang ---------- */
+.chips{display:flex;gap:8px;overflow-x:auto;margin:0 -16px;padding:2px 16px 6px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 16px;border-radius:var(--r-pill);
+  background:var(--surface);border:1px solid var(--line);text-decoration:none;font-weight:600;font-size:15px;
+  white-space:nowrap;cursor:pointer}
+.chip:active{background:var(--surface-2)}
+
+/* ---------- thẻ cài app ---------- */
+.install{margin-top:28px;padding:16px;border-radius:var(--r-card);border:1.5px dashed var(--line);
+  display:flex;gap:14px;align-items:flex-start}
+.install-icon{flex:none;width:44px;height:44px;border-radius:12px;background:var(--brand);position:relative}
+.install-icon::before,.install-icon::after{content:"";position:absolute;background:var(--ground);border-radius:2px}
+.install-icon::before{left:18px;top:9px;width:8px;height:26px}
+.install-icon::after{left:9px;top:18px;width:26px;height:8px}
+.install p{margin:2px 0 0;font-size:15px;color:var(--ink-2)}
+.install .btns{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+
+/* ---------- nút ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;
+  border-radius:12px;border:1px solid var(--line);background:var(--surface);font-weight:700;font-size:15px;
+  text-decoration:none;cursor:pointer}
+.btn:active{transform:scale(.98)}
+.btn.primary{background:var(--brand);color:var(--on-brand);border-color:transparent}
+.btn.ghost{background:none;border-color:transparent;color:var(--ink-3)}
+.btn.danger{background:var(--red);color:var(--on-red);border-color:transparent}
+.btn.big{min-height:60px;font-size:19px;border-radius:16px;width:100%}
+
+/* ---------- trang tình huống ---------- */
+.sit-head{margin:4px 0 18px}
+.sev{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.pill{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 12px;border-radius:var(--r-pill);
+  font-size:14px;font-weight:700}
+.pill::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.pill.green{background:var(--green-wash);color:var(--green-ink)}
+.pill.yellow{background:var(--yellow-wash);color:var(--yellow-ink)}
+.pill.red{background:var(--red-wash);color:var(--red-ink)}
+.sev-note{font-size:14px;color:var(--ink-3);margin:8px 0 0}
+
+.alert{display:flex;gap:12px;align-items:center;padding:14px 16px;border-radius:var(--r-m);
+  background:var(--red-wash);color:var(--red-ink);margin:0 0 18px;text-decoration:none;font-weight:600;font-size:15px}
+.alert svg{flex:none}
+
+.block{background:var(--surface);border-radius:var(--r-card);box-shadow:var(--shadow);
+  border:1px solid var(--line-2);margin:0 0 14px;overflow:hidden}
+.block-head{display:flex;align-items:center;gap:10px;padding:16px 16px 6px}
+.block-head h2{flex:1;font-size:18px}
+.progress{font-size:14px;font-weight:700;color:var(--ink-3);white-space:nowrap}
+.progress.done{color:var(--green)}
+.reset{border:0;background:none;color:var(--brand-2);font-weight:700;font-size:14px;cursor:pointer;
+  min-height:36px;padding:0 6px;border-radius:8px}
+.since{font-size:13px;color:var(--ink-3);padding:0 16px 4px}
+
+/* bước có thể đánh dấu */
+.steps{list-style:none;margin:0;padding:4px 0 8px}
+.step{display:flex;gap:14px;padding:12px 16px;cursor:pointer;align-items:flex-start;
+  -webkit-user-select:none;user-select:none;transition:background .12s}
+.step:active{background:var(--surface-2)}
+.step-n{flex:none;width:34px;height:34px;border-radius:50%;border:2px solid var(--line);
+  display:grid;place-items:center;font-weight:800;font-size:15px;color:var(--ink-2);margin-top:-3px;
+  transition:background .15s,border-color .15s,color .15s}
+.step-n svg{display:none}
+.step-body{flex:1;min-width:0}
+.step-text{line-height:1.5}
+.step.done .step-n{background:var(--green);border-color:var(--green);color:#fff}
+.step.done .step-n span{display:none}
+.step.done .step-n svg{display:block}
+.step.done .step-text{color:var(--ink-3)}
+.sub{margin:8px 0 0;padding:0 0 0 2px;list-style:none;font-size:16px;color:var(--ink-2)}
+.sub li{position:relative;padding-left:18px;margin:5px 0}
+.sub li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--ink-mute)}
+.sub.ol{counter-reset:s}
+.sub.ol li{padding-left:26px}
+.sub.ol li::before{counter-increment:s;content:counter(s) ".";background:none;width:auto;height:auto;
+  top:0;left:0;font-weight:700;color:var(--ink-3);font-size:15px}
+.step.done .sub{color:var(--ink-3)}
+
+/* các phần gập lại */
+details.block>summary{list-style:none;display:flex;align-items:center;gap:10px;padding:16px;cursor:pointer;min-height:56px}
+details.block>summary::-webkit-details-marker{display:none}
+details.block>summary h2{flex:1;font-size:18px}
+details.block>summary .tw{color:var(--ink-mute);transition:transform .2s}
+details.block[open]>summary .tw{transform:rotate(90deg)}
+.k-ico{flex:none;width:28px;height:28px;border-radius:8px;display:grid;place-items:center}
+.k-ico svg{width:16px;height:16px}
+.k-prevent .k-ico{background:var(--brand-wash);color:var(--brand)}
+.k-avoid .k-ico{background:var(--yellow-wash);color:var(--yellow-ink)}
+.k-doctor .k-ico{background:var(--red-wash);color:var(--red-ink)}
+.k-info .k-ico{background:var(--surface-2);color:var(--ink-2)}
+.k-doctor{border-color:color-mix(in srgb,var(--red) 35%,transparent)}
+.k-doctor>summary h2{color:var(--red-ink)}
+.blist{list-style:none;margin:0;padding:0 16px 14px}
+.blist li{position:relative;padding:8px 0 8px 22px;border-top:1px solid var(--line-2)}
+.blist li:first-child{border-top:0}
+.blist li::before{content:"";position:absolute;left:4px;top:1.05em;width:7px;height:7px;border-radius:50%;background:var(--ink-mute)}
+.k-doctor .blist li::before{background:var(--red)}
+.k-avoid .blist li::before{background:var(--yellow)}
+.k-prevent .blist li::before{background:var(--brand-2)}
+.ptext{margin:0;padding:0 16px 16px;color:var(--ink-2)}
+.block .call{margin:0 16px 16px;width:calc(100% - 32px)}
+.note{display:flex;gap:10px;padding:14px 16px;border-radius:var(--r-m);background:var(--brand-wash);
+  color:var(--ink-2);font-size:15px;margin:0 0 14px}
+
+/* chip trỏ sang kỹ năng / tình huống khác */
+.ref{display:inline-flex;align-items:center;gap:4px;border:0;background:var(--brand-wash);color:var(--brand);
+  font-weight:700;font-size:.9em;padding:2px 10px;border-radius:var(--r-pill);cursor:pointer;
+  line-height:1.6;vertical-align:baseline;text-decoration:none;white-space:nowrap}
+.ref::after{content:"›";font-weight:800}
+
+.disclaimer{font-size:13px;color:var(--ink-3);margin:20px 4px 0;line-height:1.5}
+
+/* ---------- trang cấp cứu ---------- */
+.sos-hero{background:var(--red);color:var(--on-red);border-radius:var(--r-card);padding:20px;margin:4px 0 14px}
+.sos-hero h1{margin:0 0 4px;font-size:26px}
+.sos-hero p{margin:0 0 16px;opacity:.92;font-size:15px}
+.sos-call{display:flex;align-items:center;justify-content:center;gap:12px;min-height:64px;border-radius:16px;
+  background:var(--on-red);color:var(--red);font-weight:800;font-size:22px;text-decoration:none}
+.sos-call:active{transform:scale(.98)}
+.sos-quick{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:22px}
+.sos-quick a{display:flex;flex-direction:column;gap:6px;padding:14px;border-radius:var(--r-m);background:var(--surface);
+  border:1px solid var(--line-2);box-shadow:var(--shadow);text-decoration:none;font-weight:700;font-size:15px;line-height:1.3}
+.sos-quick small{font-weight:500;color:var(--ink-3);font-size:13px}
+
+/* ---------- công cụ ---------- */
+.tool{background:var(--surface);border-radius:var(--r-card);box-shadow:var(--shadow);border:1px solid var(--line-2);
+  padding:18px 16px;margin:0 0 14px}
+.tool h2{margin-bottom:4px}
+.tool p{margin:0 0 14px;color:var(--ink-3);font-size:15px}
+.seg{display:flex;background:var(--surface-2);border-radius:12px;padding:4px;gap:4px;margin:0 0 14px}
+.seg button{flex:1;min-height:40px;border:0;border-radius:9px;background:none;font-weight:700;font-size:14px;
+  color:var(--ink-3);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.tap{width:100%;min-height:220px;border-radius:20px;border:0;background:var(--brand);color:var(--on-brand);
+  cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  touch-action:manipulation;-webkit-user-select:none;user-select:none;transition:transform .06s}
+.tap:active{transform:scale(.985)}
+.tap .big{font-size:72px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.tap .small{font-size:15px;font-weight:600;opacity:.85}
+.tap.idle{background:var(--surface-2);color:var(--ink)}
+.timer-bar{height:8px;border-radius:4px;background:var(--surface-2);overflow:hidden;margin:12px 0 4px}
+.timer-bar i{display:block;height:100%;background:var(--brand-2);width:0;transition:width .25s linear}
+.timer-meta{display:flex;justify-content:space-between;font-size:14px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.verdict{border-radius:var(--r-m);padding:14px 16px;margin-top:14px;font-size:15px}
+.verdict strong{display:block;font-size:18px;margin-bottom:2px}
+.verdict.ok{background:var(--green-wash);color:var(--green-ink)}
+.verdict.bad{background:var(--red-wash);color:var(--red-ink)}
+.countdown{font-size:56px;font-weight:800;text-align:center;font-variant-numeric:tabular-nums;margin:6px 0 10px;letter-spacing:-.02em}
+.row-btns{display:flex;gap:8px}
+.row-btns .btn{flex:1}
+.ring{animation:ring 1s ease-in-out infinite}
+@keyframes ring{50%{background:var(--red);color:var(--on-red)}}
+
+/* ---------- thanh dưới ---------- */
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;
+  height:calc(var(--tab-h) + var(--safe-b));padding:0 6px var(--safe-b);
+  background:color-mix(in srgb,var(--surface) 94%,transparent);
+  backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);
+  border-top:1px solid var(--line)}
+.tabs a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+  text-decoration:none;color:var(--ink-3);font-size:12px;font-weight:600;border-radius:12px;margin:6px 2px}
+.tabs svg{width:24px;height:24px}
+.tabs a.on{color:var(--brand)}
+.tabs a.tab-sos{color:var(--red)}
+.tabs a.tab-sos.on{background:var(--red-wash)}
+@media (min-width:700px){
+  .tabs{left:50%;right:auto;transform:translateX(-50%);width:520px;bottom:12px;border-radius:20px;
+    border:1px solid var(--line);height:var(--tab-h);padding:0 6px;box-shadow:var(--shadow)}
+}
+
+/* ---------- bảng trượt ---------- */
+.sheet-wrap{position:fixed;inset:0;z-index:50}
+.sheet-scrim{position:absolute;inset:0;background:rgba(10,14,20,.45);animation:fade .2s}
+.sheet{position:absolute;left:0;right:0;bottom:0;max-height:88vh;max-height:88dvh;display:flex;flex-direction:column;
+  background:var(--ground);border-radius:22px 22px 0 0;padding-bottom:var(--safe-b);
+  animation:up .25s cubic-bezier(.2,.8,.2,1);max-width:640px;margin:0 auto}
+.sheet-grip{width:40px;height:5px;border-radius:3px;background:var(--line);margin:8px auto 0}
+.sheet-head{display:flex;align-items:center;gap:8px;padding:10px 12px 8px 20px}
+.sheet-head h2{flex:1;font-size:19px}
+.sheet-x{width:44px;height:44px;border:0;background:var(--surface-2);border-radius:50%;display:grid;place-items:center;cursor:pointer}
+.sheet-body{overflow-y:auto;padding:4px 16px 20px;overscroll-behavior:contain}
+.sheet-body .block{margin-bottom:12px}
+@keyframes up{from{transform:translateY(100%)}to{transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.sheet,.sheet-scrim{animation:none}}
+
+/* ---------- thông báo nhỏ ---------- */
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--tab-h) + var(--safe-b) + 16px);z-index:60;
+  background:var(--ink);color:var(--ground);padding:12px 18px;border-radius:12px;font-size:15px;font-weight:600;
+  box-shadow:var(--shadow);max-width:calc(100% - 32px)}
+.alarm-bar{position:sticky;top:calc(var(--top-h) + env(safe-area-inset-top,0px));z-index:20;margin:0 -16px 10px;
+  padding:12px 16px;background:var(--red);color:var(--on-red);display:flex;align-items:center;gap:10px;font-weight:700}
+.alarm-bar span{flex:1}
+.alarm-bar .btn{background:var(--on-red);color:var(--red);border:0;min-height:38px}
+
+</style>
+</head>
+<body>
+<header class="top">
+  <button class="top-back" id="back" aria-label="Quay lại" hidden>
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <a class="brand" href="#/" id="brand">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-name">Xử lý tại nhà</span>
+  </a>
+  <span class="top-title" id="topTitle"></span>
+  <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng tối">
+    <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="currentColor"/></svg>
+    <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+  </button>
+</header>
+
+<main id="view" tabindex="-1"></main>
+
+<nav class="tabs" aria-label="Điều hướng chính">
+  <a href="#/" data-tab="home">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    <span>Tra cứu</span>
+  </a>
+  <a href="#/ky-nang" data-tab="skills">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10a2 2 0 0 1 2 2v14l-7-3.5L5 20V6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+    <span>Kỹ năng</span>
+  </a>
+  <a href="#/cong-cu" data-tab="tools">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12 9v4.2l2.6 1.6M9.5 2.8h5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    <span>Công cụ</span>
+  </a>
+  <a href="#/cap-cuu" data-tab="sos" class="tab-sos">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l9 16H3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 10v4.2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="17" r="1.3" fill="currentColor"/></svg>
+    <span>Cấp cứu</span>
+  </a>
+</nav>
+
+<div class="sheet-wrap" id="sheet" hidden>
+  <div class="sheet-scrim" data-close-sheet></div>
+  <section class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <div class="sheet-grip" aria-hidden="true"></div>
+    <div class="sheet-head">
+      <h2 id="sheetTitle"></h2>
+      <button class="sheet-x" data-close-sheet aria-label="Đóng">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="sheet-body" id="sheetBody"></div>
+  </section>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script id="data" type="application/json">{"skills":[{"id":"K1","title":"Cho bé ợ hơi","severity":[],"sections":[{"label":null,"text":"","items":[{"text":"Lót một khăn trên vai bố mẹ.","children":[]},{"text":"Chọn một trong 3 tư thế:","children":["**Tựa vai:** bế bé thẳng đứng, cằm bé tựa lên vai bạn.","**Ngồi trên đùi:** cho bé ngồi, một tay đỡ ngực và cằm bé (không bóp cổ), người bé hơi nghiêng về trước.","**Nằm sấp trên đùi:** đặt bé nằm sấp ngang đùi, đầu cao hơn ngực một chút."]},{"text":"Dùng lòng bàn tay khum lại, vỗ nhẹ hoặc xoa vòng tròn ở giữa lưng bé.","children":[]},{"text":"Làm trong 1-3 phút. Nếu chưa ợ, đổi tư thế và thử lại thêm 1-2 phút.","children":[]},{"text":"Thời điểm: bú mẹ thì cho ợ khi đổi bên; bú bình thì cho ợ sau mỗi 30-60 ml; và luôn cho ợ khi kết thúc cữ.","children":[]},{"text":"Không ợ được cũng không sao, bế đứng thêm 10-15 phút.","children":[]}],"kind":"steps"}],"keywords":"ợ hơi, vỗ ợ","audience":"be","short":"Cách cho ợ hơi"},{"id":"K2","title":"Nhỏ nước muối và hút mũi","severity":[],"sections":[{"label":null,"text":"","items":[{"text":"Rửa tay sạch.","children":[]},{"text":"Cho bé nằm ngửa, nghiêng đầu sang một bên.","children":[]},{"text":"Nhỏ 1-2 giọt nước muối sinh lý 0,9% vào lỗ mũi phía trên.","children":[]},{"text":"Đợi khoảng 30 giây cho gỉ mũi mềm ra.","children":[]},{"text":"Bóp xẹp quả bóp hút mũi trước, đưa đầu hút vào lỗ mũi nông (không đưa sâu), rồi thả tay từ từ.","children":[]},{"text":"Lau sạch đầu hút, làm tương tự với bên còn lại.","children":[]},{"text":"Chỉ hút tối đa 3-4 lần/ngày, nên làm trước cữ bú và trước khi ngủ.","children":[]},{"text":"Rửa sạch dụng cụ bằng nước xà phòng sau mỗi lần dùng.","children":[]}],"kind":"steps"}],"keywords":"nước muối, hút mũi","audience":"be","short":"Cách hút mũi"},{"id":"K3","title":"Đo nhiệt độ","severity":[],"sections":[{"label":null,"text":"","items":[{"text":"Dùng nhiệt kế điện tử (không dùng nhiệt kế thủy ngân).","children":[]},{"text":"Đo ở nách: lau khô nách, đặt đầu nhiệt kế vào giữa nách, khép tay bé áp sát người, giữ cho đến khi máy kêu.","children":[]},{"text":"Đo hậu môn (chính xác nhất với bé dưới 3 tháng): bôi một chút vaselin vào đầu nhiệt kế, cho bé nằm ngửa co chân, đưa vào hậu môn khoảng 1-2 cm, giữ đến khi máy kêu.","children":[]},{"text":"Không đo ngay sau khi tắm, bú hoặc khi bé vừa được ủ ấm, đợi 15-20 phút.","children":[]},{"text":"Ghi lại: giờ đo, vị trí đo, kết quả.","children":[]},{"text":"Mức tham khảo: bình thường 36,5-37,5°C. Từ 38°C trở lên là sốt.","children":[]}],"kind":"steps"}],"keywords":"đo nhiệt độ, nhiệt kế, cặp nhiệt","audience":"be","short":"Cách đo nhiệt độ"},{"id":"K4","title":"Đếm nhịp thở","severity":[],"sections":[{"label":null,"text":"","items":[{"text":"Đếm khi bé đang nằm yên hoặc đang ngủ.","children":[]},{"text":"Kéo áo lên để nhìn rõ bụng và ngực.","children":[]},{"text":"Đếm số lần bụng phồng lên trong đúng 60 giây (không đếm 15 giây rồi nhân 4 vì trẻ sơ sinh thở không đều).","children":[]},{"text":"Bình thường ở trẻ dưới 2 tháng: 30-60 lần/phút. Trên 60 lần/phút là thở nhanh.","children":[]},{"text":"Quan sát thêm: lõm ngực dưới xương sườn khi hít vào, cánh mũi phập phồng, môi tím. Có những dấu hiệu này là 🔴.","children":[]}],"kind":"steps"}],"keywords":"nhịp thở, thở nhanh, đếm thở","audience":"be","short":"Cách đếm nhịp thở"},{"id":"K5","title":"Kiểm tra dấu hiệu mất nước","severity":[],"sections":[{"label":null,"text":"","items":[{"text":"Đếm số tã ướt trong 24 giờ. Từ ngày thứ 5 trở đi, bé cần có ít nhất 6 tã ướt mỗi ngày.","children":[]},{"text":"Nhìn môi và lưỡi: khô, nứt là dấu hiệu mất nước.","children":[]},{"text":"Sờ nhẹ thóp trước (chỗ mềm trên đỉnh đầu): thóp lõm xuống là dấu hiệu mất nước.","children":[]},{"text":"Khi bé khóc có nước mắt không (bé trên 1 tháng).","children":[]},{"text":"Bé có li bì, mệt hơn bình thường không.","children":[]},{"text":"Có từ 2 dấu hiệu trở lên: đi khám ngay.","children":[]}],"kind":"steps"}],"keywords":"mất nước, tã ướt, thóp lõm","audience":"be","short":"Kiểm tra mất nước"},{"id":"K6","title":"Sơ cứu hóc dị vật (bé dưới 1 tuổi)","severity":[],"sections":[{"label":null,"text":"","items":[{"text":"Bé còn ho được, khóc được: để bé tự ho, không vỗ, không móc họng, chỉ theo dõi sát.","children":[]},{"text":"Bé không ho, không khóc, không thở được, mặt tím: hô người khác gọi 115 ngay.","children":[]},{"text":"Đặt bé nằm sấp dọc theo cẳng tay bạn, đầu thấp hơn thân, bàn tay đỡ hàm bé (không bóp cổ). Tựa cẳng tay lên đùi cho chắc.","children":[]},{"text":"Dùng gốc bàn tay vỗ mạnh, dứt khoát 5 lần vào giữa hai xương bả vai.","children":[]},{"text":"Lật ngửa bé trên cẳng tay còn lại, đầu vẫn thấp hơn thân.","children":[]},{"text":"Đặt 2 ngón tay ở giữa ngực, ngay dưới đường nối hai núm vú. Ấn mạnh 5 lần, sâu khoảng 4 cm.","children":[]},{"text":"Nhìn vào miệng bé: chỉ lấy dị vật ra nếu thấy rõ. Không móc mù bằng ngón tay.","children":[]},{"text":"Lặp lại 5 lần vỗ lưng và 5 lần ấn ngực cho đến khi dị vật ra hoặc bé thở lại được.","children":[]},{"text":"Nếu bé bất tỉnh: đặt bé nằm ngửa trên mặt phẳng cứng, bắt đầu hồi sinh tim phổi (30 lần ép ngực, 2 lần thổi), tiếp tục cho đến khi nhân viên cấp cứu tới.","children":[]},{"text":"Sau khi sơ cứu thành công, vẫn đưa bé đi khám.","children":[]}],"kind":"steps"}],"notes":["Khuyến nghị bố mẹ và người trông bé tham gia một lớp sơ cứu thực hành, vì đọc khác rất xa với làm thật."],"keywords":"hóc, dị vật, sơ cứu, nghẹt thở, vỗ lưng ấn ngực","audience":"be","short":"Sơ cứu hóc dị vật"},{"id":"K7","title":"Quấn bé (chỉ dùng cho bé chưa biết lẫy)","severity":[],"sections":[{"label":null,"text":"","items":[{"text":"Trải khăn hình vuông thành hình thoi, gấp góc trên xuống khoảng 15 cm.","children":[]},{"text":"Đặt bé nằm ngửa, vai ngang mép gấp.","children":[]},{"text":"Giữ tay phải bé thẳng dọc thân, kéo góc khăn bên phải qua người, nhét dưới lưng bên trái.","children":[]},{"text":"Gấp góc dưới lên, để chân bé có chỗ co và dạng ra (hông phải cử động được, tránh loạn sản khớp háng).","children":[]},{"text":"Giữ tay trái bé thẳng, kéo góc khăn bên trái qua người, nhét dưới lưng.","children":[]},{"text":"Kiểm tra: luồn vừa 2-3 ngón tay giữa khăn và ngực bé.","children":[]},{"text":"Ngừng quấn khi bé bắt đầu có dấu hiệu lẫy (thường khoảng 2-4 tháng).","children":[]}],"kind":"steps"}],"keywords":"quấn, quấn chũn, quấn khăn","audience":"be","short":"Cách quấn bé"}],"situations":[{"id":"A1","title":"Trớ sữa","severity":["green"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Giữ bình tĩnh. Nghiêng người hoặc đầu bé sang một bên, hoặc bế đứng hơi chúi về trước để sữa chảy ra ngoài, không chảy ngược vào mũi họng.","children":[]},{"text":"Lau sạch miệng và mũi bé bằng khăn mềm.","children":[]},{"text":"Nếu sữa trào lên mũi: làm theo K2 (nhỏ nước muối, hút mũi).","children":[]},{"text":"Quan sát 5-10 phút: bé thở đều, da hồng, không ho sặc là ổn.","children":[]},{"text":"Thay áo, khăn bị ướt.","children":[]},{"text":"Không cần cho bú bù ngay. Nếu bé đòi bú thì cho bú ít.","children":[]}],"kind":"steps"},{"label":"Phòng ngừa","text":"","items":[{"text":"Cho bú lượng vừa đủ, chia nhỏ cữ thay vì cho bú thật no một lần.","children":[]},{"text":"Bú bình: giữ bình nghiêng sao cho sữa luôn đầy núm, dùng núm có tốc độ chảy phù hợp tuổi.","children":[]},{"text":"Cho ợ hơi giữa và cuối cữ (xem K1).","children":[]},{"text":"Bế đứng 15-30 phút sau bú.","children":[]},{"text":"Tránh đè lên bụng, quấn tã chặt bụng, chơi đùa mạnh, tung bé lên ngay sau bú.","children":[]},{"text":"Khi ngủ vẫn đặt bé nằm ngửa trên mặt phẳng.","children":[]}],"kind":"prevent"},{"label":"Không nên","text":"","items":[{"text":"Dốc ngược bé.","children":[]},{"text":"Kê gối cao hoặc cho bé nằm nghiêng, nằm sấp khi ngủ để \"chống trớ\" (tăng nguy cơ đột tử).","children":[]},{"text":"Tự ý pha sữa đặc hơn hoặc đổi sữa liên tục.","children":[]}],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Trớ ra dịch xanh hoặc có máu","children":[]},{"text":"Nôn vọt thành tia","children":[]},{"text":"Bé không tăng cân","children":[]},{"text":"Quấy khóc ưỡn người dữ dội khi bú","children":[]},{"text":"Có dấu hiệu mất nước (K5)","children":[]}],"kind":"doctor"}],"keywords":"ọc sữa, ói, nôn, trào sữa, trớ","audience":"be"},{"id":"A2","title":"Nôn vọt / nôn ra dịch xanh","severity":["red"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Cho bé nằm nghiêng để tránh hít chất nôn.","children":[]},{"text":"Lau sạch miệng và mũi.","children":[]},{"text":"Ghi lại: giờ nôn, số lần, màu dịch nôn. Nếu được, chụp ảnh dịch nôn.","children":[]},{"text":"Tạm ngưng cho bú, đưa bé đi khám ngay.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"tự cho uống thuốc chống nôn.","items":[],"kind":"avoid"}],"keywords":"nôn, ói, ói vọt, nôn mật, dịch xanh, hẹp môn vị","audience":"be"},{"id":"A3","title":"Sặc sữa","severity":["yellow","red"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Ngừng cho bú ngay, rút ti hoặc bình ra.","children":[]},{"text":"Đặt bé nằm sấp trên cẳng tay, đầu thấp hơn ngực, tay đỡ hàm bé.","children":[]},{"text":"Vỗ lưng giữa hai xương bả vai bằng gốc bàn tay, vừa phải, khoảng 5 lần.","children":[]},{"text":"Lau sạch sữa ở miệng. Nếu sữa trào lên mũi, hút mũi (K2).","children":[]},{"text":"Bé ho được, khóc to, da hồng: để bé tự ho và theo dõi thêm.","children":[]},{"text":"Bé tím tái, không khóc, không thở: gọi 115 và làm theo K6.","children":[]}],"kind":"steps"},{"label":"Phòng ngừa","text":"","items":[{"text":"Cho bú ở tư thế đầu bé cao hơn bụng.","children":[]},{"text":"Mẹ nhiều sữa, tia sữa mạnh: vắt bớt một ít trước khi cho bú, hoặc cho bú ở tư thế mẹ ngả lưng ra sau.","children":[]},{"text":"Không cho bú khi bé đang khóc dữ hoặc đã ngủ say.","children":[]},{"text":"Bú bình: chọn núm có lỗ nhỏ, cho bú theo nhịp và cho bé nghỉ giữa chừng.","children":[]}],"kind":"prevent"},{"label":"Không nên","text":"gác bình cho bé tự bú, bỏ bé một mình khi đang bú.","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Sau khi sặc bé thở nhanh","children":[]},{"text":"Khò khè kéo dài","children":[]},{"text":"Sốt","children":[]},{"text":"Đã từng tím tái, dù sau đó bé hồng hào trở lại","children":[]}],"kind":"doctor"}],"keywords":"sặc, sặc sữa, ho khi bú, tím tái, nghẹn","audience":"be"},{"id":"A4","title":"Nấc cụt","severity":["green"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Nếu đang bú: tạm dừng, cho bé ợ hơi (K1).","children":[]},{"text":"Bế bé thẳng đứng, xoa lưng nhẹ.","children":[]},{"text":"Có thể cho bé bú lại vài ngụm hoặc ngậm ti giả.","children":[]},{"text":"Nếu bé không khó chịu, cứ để tự hết (thường trong 5-10 phút).","children":[]}],"kind":"steps"},{"label":"Không nên","text":"làm bé giật mình, kéo lưỡi, dán giấy lên trán, cho bé dưới 6 tháng uống nước.","items":[],"kind":"avoid"}],"keywords":"nấc, nấc cụt","audience":"be"},{"id":"A5","title":"Đầy hơi","severity":["green"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Cho bé ợ hơi (K1).","children":[]},{"text":"Đặt bé nằm ngửa, cầm hai cổ chân, đạp xe nhẹ nhàng 10-15 vòng.","children":[]},{"text":"Gập hai đầu gối bé áp nhẹ lên bụng, giữ 5-10 giây rồi duỗi ra. Lặp lại 5 lần.","children":[]},{"text":"Massage bụng (khi rốn đã lành hẳn): xoa ấm tay, dùng một ít dầu massage cho bé, xoa vòng tròn quanh rốn theo chiều kim đồng hồ khoảng 3-5 phút.","children":[]},{"text":"Khi bé thức và có người trông, cho bé nằm sấp chơi vài phút.","children":[]}],"kind":"steps"},{"label":"Phòng ngừa","text":"","items":[{"text":"Kiểm tra khớp ngậm khi bú mẹ (miệng mở rộng, ngậm cả quầng vú, không nghe tiếng \"chụt chụt\").","children":[]},{"text":"Bú bình: giữ sữa luôn đầy núm, pha sữa xong để lắng bọt rồi mới cho bú.","children":[]},{"text":"Cho ợ hơi đều đặn.","children":[]}],"kind":"prevent"},{"label":"Đi khám khi","text":"","items":[{"text":"Bụng chướng căng","children":[]},{"text":"Gõ vào nghe \"bùng bục\"","children":[]},{"text":"Đầy hơi kèm nôn, hoặc không đi ngoài","children":[]},{"text":"Bé khóc thét","children":[]}],"kind":"doctor"}],"keywords":"đầy hơi, xì hơi, chướng bụng, đau bụng, ợ","audience":"be"},{"id":"A6","title":"Khóc nhiều, khóc dạ đề","severity":["green"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Kiểm tra lần lượt các nhu cầu cơ bản:","children":["Đói? (bé mút tay, quay đầu tìm vú)","Tã ướt, bẩn?","Nóng hoặc lạnh? (sờ gáy bé: nóng ẩm là nóng, mát lạnh là lạnh)","Cần ợ hơi?","Quần áo chật, mác áo cọ vào da?","**Có sợi tóc quấn chặt ngón tay, ngón chân hoặc dương vật không?** (rất dễ bị bỏ sót)"]},{"text":"Đo nhiệt độ (K3) nếu bé khóc khác thường.","children":[]},{"text":"Nếu mọi thứ ổn, áp dụng lần lượt cách \"5S\":","children":["**Quấn:** quấn bé (K7).","**Bế nghiêng:** bế bé nằm nghiêng hoặc nằm sấp dọc cẳng tay (chỉ khi bế; đặt xuống ngủ phải nằm ngửa).","**Tiếng \"suỵt\":** phát tiếng \"suỵt\" đều đều gần tai bé, hoặc bật tiếng ồn trắng (tiếng máy sấy, tiếng mưa) ở âm lượng vừa.","**Đung đưa:** đung đưa nhẹ nhàng, nhịp nhỏ và đều.","**Cho mút:** cho bú hoặc ngậm ti giả."]},{"text":"Giảm kích thích: phòng tối, yên tĩnh, ít người bế chuyền tay.","children":[]},{"text":"Thử đổi không gian: đẩy xe đi dạo, bế ra ban công.","children":[]},{"text":"**Nếu bố mẹ quá căng thẳng:** đặt bé nằm ngửa trong cũi an toàn, ra khỏi phòng 5-10 phút để hít thở, hoặc nhờ người khác bế thay. Để bé khóc một lúc còn an toàn hơn nhiều so với bế bé trong lúc mất bình tĩnh.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"**TUYỆT ĐỐI KHÔNG LẮC BÉ.** Không cho bé uống nước, thảo dược, thuốc an thần tự mua.","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Bé khóc thét khác hẳn mọi khi","children":[]},{"text":"Khóc kèm sốt, nôn, bỏ bú hoặc li bì","children":[]},{"text":"Bố mẹ cảm thấy không thể chịu đựng thêm","children":[]}],"kind":"doctor"}],"keywords":"khóc, khóc đêm, quấy, dạ đề, colic, không nín","audience":"be"},{"id":"A7","title":"Táo bón","severity":["green","yellow"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Xác định có đúng là táo bón không: phân cứng, thành viên nhỏ, bé rặn đau và khóc. (Bé rặn đỏ mặt nhưng phân ra vẫn mềm là bình thường, do bé chưa phối hợp được cơ bụng và cơ hậu môn.)","children":[]},{"text":"Bé bú mẹ: cho bú nhiều cữ hơn.","children":[]},{"text":"Bé bú sữa công thức: kiểm tra lại cách pha, phải đúng tỉ lệ nước và bột ghi trên hộp, không pha đặc.","children":[]},{"text":"Đạp xe chân và massage bụng (xem A5).","children":[]},{"text":"Tắm nước ấm cho bé thư giãn.","children":[]},{"text":"Bé trên 6 tháng đã ăn dặm: thêm rau xanh, trái cây nghiền (lê, đu đủ, mận), cho uống thêm nước.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"tự ý dùng que thông, thuốc thụt hậu môn, mẹo dân gian (lá mồng tơi nhét hậu môn, nước mía). Không cho bé dưới 1 tuổi ăn mật ong.","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Phân có máu","children":[]},{"text":"Bụng chướng","children":[]},{"text":"Táo bón kèm nôn","children":[]},{"text":"Bé trên 5-7 ngày không đi ngoài kèm khó chịu","children":[]},{"text":"Bé dưới 1 tháng bị táo bón","children":[]}],"kind":"doctor"}],"keywords":"táo bón, không đi ị, phân cứng, rặn","audience":"be"},{"id":"A8","title":"Tiêu chảy","severity":["yellow","red"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Tiếp tục cho bú mẹ, tăng số cữ bú.","children":[]},{"text":"Bé bú sữa công thức: vẫn pha đúng tỉ lệ, không pha loãng.","children":[]},{"text":"Kiểm tra dấu hiệu mất nước (K5) mỗi vài giờ. Đánh dấu số tã ướt.","children":[]},{"text":"Dung dịch bù nước (ORS): với bé dưới 6 tháng, hỏi bác sĩ trước khi dùng. Khi dùng phải pha đúng lượng nước ghi trên gói, không pha thiếu nước.","children":[]},{"text":"Rửa mông bằng nước ấm sau mỗi lần đi, thấm khô, bôi kem chống hăm có kẽm.","children":[]},{"text":"Rửa tay kỹ, tiệt trùng bình sữa, núm vú.","children":[]},{"text":"Chụp ảnh tã để đưa bác sĩ xem.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"dùng thuốc cầm tiêu chảy, cho uống nước đường, nước ngọt, nước cơm pha muối tự chế.","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Bé dưới 3 tháng bị tiêu chảy","children":[]},{"text":"Phân có máu hoặc nhầy nhiều","children":[]},{"text":"Nôn liên tục","children":[]},{"text":"Sốt","children":[]},{"text":"Có từ 2 dấu hiệu mất nước trở lên","children":[]}],"kind":"doctor"}],"keywords":"tiêu chảy, đi ngoài nhiều, phân lỏng, ị nhiều, mất nước","audience":"be"},{"id":"A9","title":"Vàng da","severity":["green","red"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Kiểm tra dưới ánh sáng tự nhiên ban ngày (gần cửa sổ, không dưới đèn vàng).","children":[]},{"text":"Ấn nhẹ ngón tay lên da bé ở lần lượt: trán, ngực, bụng, đùi, cẳng chân, lòng bàn chân. Buông tay ra và xem chỗ vừa ấn có màu vàng không.","children":[]},{"text":"Ghi lại vàng da đã lan tới vùng nào. Vàng càng lan xuống dưới thì càng nặng.","children":[]},{"text":"Cho bú nhiều, 8-12 cữ/ngày, để bé đi ngoài nhiều và thải bớt chất gây vàng da.","children":[]},{"text":"Theo dõi phân và nước tiểu: phân vàng, nước tiểu trong là tốt.","children":[]},{"text":"Đi tái khám đúng lịch hẹn sau khi ra viện.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"phơi nắng trực tiếp để chữa vàng da (dễ bỏng, mất nhiệt và không đủ hiệu quả), cho uống nước đường, tự ý ngưng bú mẹ.","items":[],"kind":"avoid"},{"label":"Đi khám ngay khi","text":"","items":[{"text":"Vàng da xuất hiện trong 24 giờ đầu sau sinh","children":[]},{"text":"Vàng lan xuống bụng, đùi, lòng bàn tay, bàn chân","children":[]},{"text":"Kéo dài quá 2 tuần","children":[]},{"text":"Bé ngủ li bì","children":[]},{"text":"Bú kém","children":[]},{"text":"**Phân bạc màu (trắng, xám, vàng nhạt như màu đất sét)**","children":[]}],"kind":"doctor"}],"keywords":"vàng da, da vàng, mắt vàng, phân trắng","audience":"be"},{"id":"A10","title":"Hăm tã","severity":["green"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Thay tã ngay khi ướt hoặc bẩn, ít nhất 2-3 giờ một lần.","children":[]},{"text":"Rửa mông bằng nước ấm và khăn mềm. Hạn chế khăn ướt có cồn, có hương liệu.","children":[]},{"text":"Thấm khô (không chà xát), để mông bé thoáng khí 10-15 phút.","children":[]},{"text":"Bôi một lớp kem có kẽm oxit thật dày, như phết bơ.","children":[]},{"text":"Lần thay tã sau không cần lau sạch hết lớp kem cũ, chỉ lau phần bẩn rồi bôi thêm.","children":[]},{"text":"Mặc tã rộng hơn một chút, không dán quá chặt.","children":[]},{"text":"Bé gái: luôn lau từ trước ra sau.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"dùng phấn rôm, xà phòng tắm người lớn, tự bôi kem có corticoid.","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Không đỡ sau 2-3 ngày","children":[]},{"text":"Có mụn mủ","children":[]},{"text":"Lở loét","children":[]},{"text":"Có mảng đỏ kèm các nốt đỏ nhỏ xung quanh (dấu hiệu nhiễm nấm)","children":[]},{"text":"Bé sốt","children":[]}],"kind":"doctor"}],"keywords":"hăm, hăm tã, đỏ mông, nấm","audience":"be"},{"id":"A11","title":"Mụn sữa, ban đỏ sơ sinh","severity":["green"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Rửa mặt bé bằng nước ấm 1-2 lần/ngày, thấm khô bằng khăn mềm.","children":[]},{"text":"Lau sạch sữa trớ, nước dãi trên mặt ngay khi có.","children":[]},{"text":"Cắt móng tay cho bé hoặc đeo bao tay để bé không cào.","children":[]},{"text":"Để tự hết (thường vài tuần).","children":[]}],"kind":"steps"},{"label":"Không nên","text":"nặn mụn, bôi kem dưỡng, dầu, sữa mẹ lên mụn.","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Mụn mủ lan rộng","children":[]},{"text":"Bé sốt","children":[]},{"text":"Bé bỏ bú","children":[]}],"kind":"doctor"}],"keywords":"mụn, mụn sữa, ban đỏ, nổi mẩn","audience":"be"},{"id":"A12","title":"Chàm sữa","severity":["yellow"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Tắm bằng nước ấm (không nóng), trong 5-10 phút.","children":[]},{"text":"Dùng sữa tắm dịu nhẹ, không mùi, hoặc chỉ dùng nước.","children":[]},{"text":"Thấm khô nhẹ, sau đó **bôi kem dưỡng ẩm trong vòng 3 phút** khi da còn hơi ẩm.","children":[]},{"text":"Dưỡng ẩm 2-3 lần/ngày, kể cả những ngày da đã đỡ.","children":[]},{"text":"Mặc quần áo cotton mềm. Giặt đồ bé bằng nước giặt không mùi, xả kỹ.","children":[]},{"text":"Cắt ngắn móng tay bé.","children":[]},{"text":"Giữ phòng mát, tránh để bé ra nhiều mồ hôi.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"tắm lá, tự bôi thuốc có corticoid, kiêng ăn quá mức khi chưa có chỉ định.","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Da chảy dịch","children":[]},{"text":"Đóng vảy vàng","children":[]},{"text":"Có mủ","children":[]},{"text":"Bé ngứa đến mất ngủ","children":[]},{"text":"Không đỡ sau 1 tuần chăm sóc","children":[]}],"kind":"doctor"}],"keywords":"chàm, chàm sữa, viêm da, ngứa, khô da","audience":"be"},{"id":"A13","title":"Cứt trâu","severity":["green"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Thoa một lớp dầu (dầu dừa, dầu olive hoặc dầu em bé) lên vùng có vảy, để 15-20 phút.","children":[]},{"text":"Dùng lược răng mềm hoặc bàn chải mềm chải nhẹ cho vảy bong ra.","children":[]},{"text":"Gội sạch lại bằng dầu gội em bé để không còn dầu bám.","children":[]},{"text":"Lặp lại vài ngày một lần cho đến khi hết.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"cạy, gỡ bằng móng tay.","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Lan ra mặt, sau tai","children":[]},{"text":"Chảy dịch","children":[]},{"text":"Đỏ nhiều","children":[]}],"kind":"doctor"}],"keywords":"cứt trâu, vảy đầu, gàu","audience":"be"},{"id":"A14","title":"Rôm sảy","severity":["green"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Đưa bé đến chỗ thoáng mát.","children":[]},{"text":"Cởi bớt quần áo, chỉ mặc một lớp cotton mỏng.","children":[]},{"text":"Lau người hoặc tắm cho bé bằng nước ấm.","children":[]},{"text":"Để da khô thoáng tự nhiên.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"bôi phấn rôm, kem đặc, ủ bé nhiều lớp.","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Nốt rôm có mủ","children":[]},{"text":"Bé sốt","children":[]}],"kind":"doctor"}],"keywords":"rôm, rôm sảy, nóng","audience":"be"},{"id":"A15","title":"Chăm sóc rốn","severity":["green"],"sections":[{"label":"Hằng ngày","text":"","items":[{"text":"Rửa tay sạch trước khi chạm vào rốn.","children":[]},{"text":"Giữ rốn khô và sạch, để hở, không băng kín.","children":[]},{"text":"Gập mép trên của tã xuống dưới rốn để rốn không bị nước tiểu làm ướt.","children":[]},{"text":"Nếu rốn bị dính phân hoặc nước tiểu: rửa bằng nước sạch hoặc nước muối sinh lý, thấm khô.","children":[]},{"text":"Tắm lau người cho đến khi rốn rụng, hoặc nếu tắm chậu thì lau khô rốn ngay sau tắm.","children":[]},{"text":"Để cuống rốn tự rụng (thường 1-3 tuần).","children":[]}],"kind":"steps"},{"label":"Khi rốn rụng chảy vài giọt máu","text":"ấn nhẹ bằng gạc sạch vài phút, máu sẽ tự ngừng.","items":[],"kind":"info"},{"label":"Không nên","text":"giật cuống rốn, đắp nghệ, lá, thuốc lào, bôi thuốc đỏ, cồn khi không có chỉ định của bác sĩ.","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Da quanh rốn đỏ lan rộng","children":[]},{"text":"Sưng, có mủ, mùi hôi","children":[]},{"text":"Chảy máu không cầm","children":[]},{"text":"Rốn ướt chảy dịch kéo dài sau khi đã rụng","children":[]},{"text":"Bé sốt","children":[]}],"kind":"doctor"}],"keywords":"rốn, cuống rốn, rụng rốn, rốn chảy máu, rốn có mủ","audience":"be"},{"id":"A16","title":"Nghẹt mũi","severity":["green"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Nhỏ nước muối và hút mũi theo K2.","children":[]},{"text":"Làm trước cữ bú và trước khi ngủ để bé dễ thở khi bú.","children":[]},{"text":"Dùng máy tạo ẩm trong phòng nếu không khí khô (máy lạnh).","children":[]},{"text":"Cho bú nhiều hơn để bé đủ nước.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"dùng dầu gió, tinh dầu, thuốc nhỏ mũi co mạch, hút mũi bằng miệng, hút quá nhiều lần trong ngày.","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Thở nhanh","children":[]},{"text":"Rút lõm ngực (K4)","children":[]},{"text":"Sốt","children":[]},{"text":"Bú kém","children":[]},{"text":"Nghẹt mũi kéo dài trên 10 ngày","children":[]}],"kind":"doctor"}],"keywords":"nghẹt mũi, sổ mũi, khò khè, hút mũi, ngạt mũi, ho, hắt hơi","audience":"be"},{"id":"A17","title":"Sốt","severity":["yellow","red"],"sections":[{"label":"Bé dưới 3 tháng, từ 38°C trở lên","text":"","items":[{"text":"Đo lại theo K3 để chắc chắn.","children":[]},{"text":"Cởi bớt quần áo, mặc một lớp thoáng.","children":[]},{"text":"**Đưa bé đi cấp cứu ngay**, mang theo sổ khám, giấy ra viện.","children":[]},{"text":"Không tự cho uống thuốc hạ sốt trước khi bác sĩ khám.","children":[]}],"kind":"steps"},{"label":"Bé 3-12 tháng","text":"","items":[{"text":"Đo nhiệt độ (K3), ghi lại.","children":[]},{"text":"Mặc thoáng, giữ phòng mát (26-28°C).","children":[]},{"text":"Cho bú nhiều hơn.","children":[]},{"text":"Khi sốt từ 38,5°C trở lên và bé khó chịu: dùng paracetamol đúng liều theo cân nặng như bác sĩ hoặc dược sĩ hướng dẫn (thường 10-15 mg/kg/lần, cách nhau ít nhất 4-6 giờ). Dùng đúng dụng cụ đo liều kèm theo chai thuốc.","children":[]},{"text":"Lau người bằng khăn nhúng nước ấm, tập trung ở trán, nách, bẹn.","children":[]},{"text":"Đo lại sau 30-60 phút, rồi theo dõi mỗi 1-2 giờ.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"ủ ấm, đắp chăn cho \"ra mồ hôi\", chườm đá, lau cồn, dùng aspirin, dùng ibuprofen cho bé dưới 6 tháng.","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Bé 3-6 tháng sốt bất kỳ","children":[]},{"text":"Sốt từ 39°C trở lên","children":[]},{"text":"Sốt trên 24 giờ","children":[]},{"text":"Bé li bì","children":[]},{"text":"Bỏ bú","children":[]},{"text":"Co giật","children":[]},{"text":"Nổi ban","children":[]},{"text":"Thở nhanh","children":[]}],"kind":"doctor"}],"keywords":"sốt, nóng, nhiệt độ, hạ sốt, paracetamol","audience":"be"},{"id":"A18","title":"Hạ thân nhiệt (dưới 36,5°C)","severity":["yellow","red"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Đo lại nhiệt độ (K3).","children":[]},{"text":"Cho bé da kề da với mẹ hoặc bố: bé chỉ mặc tã, nằm áp ngực người lớn, đắp chăn lên cả hai.","children":[]},{"text":"Đội mũ, đi tất cho bé.","children":[]},{"text":"Tắt quạt, tăng nhiệt độ phòng.","children":[]},{"text":"Cho bé bú.","children":[]},{"text":"Đo lại sau 30 phút. Nếu không tăng lên trên 36,5°C, hoặc bé li bì, bú kém: đi khám ngay (ở trẻ sơ sinh, hạ thân nhiệt có thể là dấu hiệu nhiễm trùng).","children":[]}],"kind":"steps"}],"keywords":"lạnh, hạ thân nhiệt, người lạnh, nhiệt độ thấp","audience":"be"},{"id":"A19","title":"Ngủ ngày thức đêm","severity":["green"],"sections":[{"label":"Làm hằng ngày","text":"","items":[{"text":"Ban ngày: kéo rèm cho nhà sáng, sinh hoạt bình thường, không cần giữ yên lặng tuyệt đối.","children":[]},{"text":"Ban ngày: không để bé ngủ quá 3 giờ liền mà không bú.","children":[]},{"text":"Ban đêm: phòng tối, chỉ dùng đèn ngủ nhỏ khi cho bú, thay tã.","children":[]},{"text":"Ban đêm: cho bú, thay tã nhanh gọn, nhẹ nhàng, ít nói chuyện và chơi đùa.","children":[]},{"text":"Tạo thói quen trước giờ ngủ đêm: tắm, massage, cho bú, ru, theo cùng một thứ tự mỗi ngày.","children":[]},{"text":"Kiên nhẫn: thường cải thiện dần sau 6-8 tuần.","children":[]}],"kind":"steps"}],"keywords":"ngủ ngày, thức đêm, lệch giờ, không ngủ đêm","audience":"be"},{"id":"A20","title":"Giật mình khi ngủ","severity":["green"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Quấn bé (K7).","children":[]},{"text":"Khi đặt bé xuống: hạ lưng bé xuống trước, đầu xuống sau cùng, thật chậm.","children":[]},{"text":"Sau khi đặt xuống, giữ nhẹ tay lên ngực bé vài giây rồi mới rút tay ra.","children":[]},{"text":"Dùng tiếng ồn trắng đều đều để át tiếng động bất chợt.","children":[]}],"kind":"steps"},{"label":"An toàn khi ngủ (luôn áp dụng)","text":"","items":[{"text":"Đặt bé nằm ngửa.","children":[]},{"text":"Nệm phẳng, chắc, có ga bọc vừa khít.","children":[]},{"text":"Trong cũi không có gối, chăn dày, thú bông, quây cũi.","children":[]},{"text":"Bé ngủ chung phòng nhưng không ngủ chung giường với người lớn.","children":[]},{"text":"Không để phòng quá nóng, không cho bé mặc quá nhiều lớp.","children":[]}],"kind":"prevent"}],"keywords":"giật mình, vặn mình, ngủ không yên, quấn, ngủ an toàn","audience":"be"},{"id":"A21","title":"Tắc tuyến lệ, có ghèn","severity":["green"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Rửa tay sạch.","children":[]},{"text":"Thấm bông gòn vào nước ấm đã đun sôi để nguội hoặc nước muối sinh lý.","children":[]},{"text":"Lau từ góc trong mắt (cạnh sống mũi) ra góc ngoài. Mỗi mắt dùng một miếng bông riêng.","children":[]},{"text":"Massage: đặt đầu ngón trỏ ở góc trong mắt, sát sống mũi, ấn nhẹ rồi vuốt xuống dọc theo sống mũi. Làm 5-10 lần, 2-3 lần/ngày.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"nhỏ sữa mẹ vào mắt, tự nhỏ thuốc kháng sinh.","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Mắt đỏ","children":[]},{"text":"Mi mắt sưng","children":[]},{"text":"Nhiều mủ vàng xanh","children":[]},{"text":"Không đỡ sau 6-12 tháng","children":[]}],"kind":"doctor"}],"keywords":"ghèn, gỉ mắt, chảy nước mắt, tắc lệ","audience":"be"},{"id":"A22","title":"Tưa lưỡi (nấm miệng)","severity":["yellow"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Phân biệt với cặn sữa: lấy gạc ẩm quấn ngón tay, lau nhẹ. Cặn sữa lau đi được. Mảng trắng bám chắc, lau ra có chỗ đỏ là nấm.","children":[]},{"text":"Nếu nghi nấm: đi khám để được kê thuốc.","children":[]},{"text":"Tiệt trùng ti giả, núm bình, dụng cụ hút sữa mỗi ngày.","children":[]},{"text":"Mẹ kiểm tra đầu ti: nếu đỏ, ngứa, đau rát, cần được điều trị cùng lúc với bé để không lây qua lại.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"cạo, rơ lưỡi mạnh, rơ lưỡi bằng mật ong.","items":[],"kind":"avoid"}],"keywords":"tưa, tưa lưỡi, nấm miệng, lưỡi trắng","audience":"be"},{"id":"A23","title":"Sưng vú sinh lý ở bé","severity":["green"],"sections":[{"label":"Làm","text":"","items":[{"text":"Giữ sạch, để tự hết sau vài tuần.","children":[]},{"text":"Theo dõi vùng vú bé mỗi ngày.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"nặn, bóp, chườm nóng (dễ gây nhiễm trùng).","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Vùng vú đỏ, nóng","children":[]},{"text":"Bé đau khi chạm vào","children":[]},{"text":"Bé sốt","children":[]}],"kind":"doctor"}],"keywords":"sưng vú, vú bé, tiết sữa","audience":"be"},{"id":"A24","title":"Bé bị ngã","severity":["yellow","red"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Nếu bé nằm im, không cử động: không vội bế lên, gọi 115.","children":[]},{"text":"Nếu bé khóc ngay và cử động tay chân bình thường: bế bé lên dỗ.","children":[]},{"text":"Kiểm tra đầu: có u, sưng, bầm, vết thương, thóp có phồng lên không.","children":[]},{"text":"Chườm lạnh chỗ sưng bằng khăn bọc đá trong 10 phút.","children":[]},{"text":"Theo dõi kỹ trong 24-48 giờ: bú, ngủ, mức tỉnh táo, nôn, cử động tay chân.","children":[]},{"text":"Nếu bé ngủ: vẫn cho ngủ, nhưng kiểm tra bé định kỳ trong vài giờ đầu (bé có phản ứng khi chạm vào, thở đều).","children":[]}],"kind":"steps"},{"label":"Đi cấp cứu khi","text":"","items":[{"text":"Bé dưới 3 tháng bị ngã đập đầu (nên khám dù trông có vẻ ổn)","children":[]},{"text":"Ngất dù chỉ vài giây","children":[]},{"text":"Nôn từ 2 lần trở lên","children":[]},{"text":"Li bì, khó đánh thức","children":[]},{"text":"Quấy khóc không dứt","children":[]},{"text":"Thóp phồng","children":[]},{"text":"Co giật","children":[]},{"text":"Chảy máu hoặc dịch trong ở tai hoặc mũi","children":[]}],"kind":"doctor"}],"keywords":"ngã, té, rơi, đập đầu, u đầu","audience":"be"},{"id":"A25","title":"Bỏng nước nóng","severity":["yellow","red"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Đưa bé ra khỏi nguồn nóng.","children":[]},{"text":"Cởi quần áo ở vùng bỏng (nếu vải dính vào da thì để nguyên, không giật ra).","children":[]},{"text":"Xả nước mát (không phải nước lạnh hay nước đá) lên vùng bỏng trong 20 phút.","children":[]},{"text":"Che vết bỏng bằng màng bọc thực phẩm hoặc gạc sạch, không quấn chặt.","children":[]},{"text":"Giữ ấm các vùng còn lại để bé không bị lạnh.","children":[]},{"text":"Đưa bé đi khám. Với trẻ sơ sinh, mọi vết bỏng đều nên được bác sĩ xem.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"bôi kem đánh răng, nước mắm, mỡ trăn, dầu ăn, chườm đá, chọc vỡ bọng nước.","items":[],"kind":"avoid"},{"label":"Phòng ngừa","text":"thử nước tắm bằng khuỷu tay (ấm vừa, khoảng 37°C), cho nước lạnh vào chậu trước rồi mới thêm nước nóng, không bế bé khi đang cầm đồ nóng.","items":[],"kind":"prevent"}],"keywords":"bỏng, phỏng, nước nóng","audience":"be"},{"id":"B1","title":"Sản dịch","severity":["green"],"sections":[{"label":"Chăm sóc hằng ngày","text":"","items":[{"text":"Thay băng vệ sinh 3-4 giờ một lần, hoặc sớm hơn khi đầy.","children":[]},{"text":"Rửa vùng kín bằng nước sạch sau mỗi lần đi vệ sinh, lau từ trước ra sau.","children":[]},{"text":"Theo dõi màu sản dịch: đỏ tươi (vài ngày đầu), chuyển hồng nâu, rồi vàng trắng (kéo dài 4-6 tuần).","children":[]},{"text":"Vận động nhẹ nhàng để sản dịch ra đều.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"thụt rửa âm đạo, dùng tampon, ngâm mình trong bồn tắm khi chưa được bác sĩ cho phép.","items":[],"kind":"avoid"},{"label":"Đi cấp cứu khi","text":"","items":[{"text":"Thấm đẫm 1 băng vệ sinh trong vòng 1 giờ","children":[]},{"text":"Có cục máu đông to cỡ quả trứng gà","children":[]},{"text":"Sản dịch có mùi hôi","children":[]},{"text":"Sốt","children":[]},{"text":"Chóng mặt","children":[]},{"text":"Tim đập nhanh","children":[]}],"kind":"doctor"}],"keywords":"sản dịch, ra máu, băng huyết","audience":"me"},{"id":"B2","title":"Cương sữa","severity":["green"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Cho bé bú thường xuyên, 8-12 lần/ngày, kể cả ban đêm.","children":[]},{"text":"Nếu quầng vú căng cứng khiến bé không ngậm được: dùng các đầu ngón tay ấn nhẹ quanh quầng vú trong 1 phút cho mềm, hoặc vắt ra một ít sữa.","children":[]},{"text":"Cho bé bú.","children":[]},{"text":"Sau khi bú: chườm mát (khăn mát hoặc túi chườm bọc khăn) 10-15 phút để giảm sưng.","children":[]},{"text":"Massage rất nhẹ, kiểu vuốt da từ vú về phía nách.","children":[]},{"text":"Mặc áo ngực vừa vặn, không quá chật.","children":[]},{"text":"Đau nhiều: có thể dùng paracetamol hoặc ibuprofen (an toàn khi cho con bú).","children":[]}],"kind":"steps"},{"label":"Không nên","text":"vắt kiệt sữa quá mức (cơ thể sẽ tạo thêm sữa, càng cương hơn), day bóp mạnh.","items":[],"kind":"avoid"}],"keywords":"cương sữa, căng sữa, vú căng","audience":"me"},{"id":"B3","title":"Tắc tia sữa","severity":["yellow"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Tiếp tục cho bú bình thường, kể cả bên bị tắc. Không ngừng cho bú.","children":[]},{"text":"Massage thật nhẹ như vuốt da, từ vùng vú bị tắc về phía nách. Không day mạnh vào cục cứng.","children":[]},{"text":"Chườm mát sau khi bú để giảm sưng và đau.","children":[]},{"text":"Đổi nhiều tư thế bú khác nhau.","children":[]},{"text":"Mặc áo rộng, tránh nằm sấp đè lên ngực, không đeo đai túi xách ngang ngực.","children":[]},{"text":"Dùng thuốc giảm đau nếu cần (paracetamol hoặc ibuprofen).","children":[]},{"text":"Nghỉ ngơi, uống đủ nước.","children":[]}],"kind":"steps"},{"label":"Không nên","text":"nhờ người day, lăn trứng, bóp mạnh vào cục tắc (làm tổn thương mô vú, dễ thành viêm).","items":[],"kind":"avoid"},{"label":"Đi khám khi","text":"","items":[{"text":"Sốt từ 38,5°C trở lên","children":[]},{"text":"Vùng đỏ lan rộng","children":[]},{"text":"Có cảm giác như bị cúm","children":[]},{"text":"Không đỡ sau 24-48 giờ","children":[]},{"text":"Có khối sưng mềm lùng nhùng (nghi áp xe)","children":[]}],"kind":"doctor"}],"keywords":"tắc sữa, tắc tia sữa, cục cứng, viêm vú","audience":"me"},{"id":"B4","title":"Nứt, đau đầu ti","severity":["yellow"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Kiểm tra khớp ngậm của bé:","children":["Miệng bé mở rộng.","Ngậm cả phần lớn quầng vú, không chỉ đầu ti.","Môi dưới loe ra ngoài, cằm chạm vào vú.","Không nghe tiếng \"chụt chụt\" khi bú."]},{"text":"Bắt đầu cữ bú bằng bên ít đau hơn.","children":[]},{"text":"Khi muốn cho bé rời vú: đưa ngón tay út vào khóe miệng bé để mở khóa, không kéo đầu ti ra.","children":[]},{"text":"Sau khi bú: bôi vài giọt sữa mẹ hoặc kem lanolin lên đầu ti, để khô tự nhiên.","children":[]},{"text":"Đổi tư thế bú thường xuyên.","children":[]},{"text":"Nếu đau kéo dài: kiểm tra thắng lưỡi của bé.","children":[]}],"kind":"steps"},{"label":"Đi khám khi","text":"","items":[{"text":"Chảy máu kéo dài","children":[]},{"text":"Có mủ","children":[]},{"text":"Đau rát như kim châm (nghi nấm)","children":[]},{"text":"Không đỡ sau vài ngày","children":[]}],"kind":"doctor"}],"keywords":"nứt đầu ti, đau đầu ti, đau ti, khớp ngậm","audience":"me"},{"id":"B5","title":"Ít sữa","severity":["yellow"],"sections":[{"label":"Làm ngay","text":"","items":[{"text":"Cho bú hoặc vắt sữa 8-12 lần trong 24 giờ, kể cả ban đêm.","children":[]},{"text":"Da kề da với bé nhiều nhất có thể.","children":[]},{"text":"Mỗi cữ cho bú cả hai bên.","children":[]},{"text":"Sau khi bú, vắt thêm 10-15 phút bằng máy hoặc bằng tay.","children":[]},{"text":"Ăn đủ bữa, uống nước mỗi khi khát.","children":[]},{"text":"Ngủ khi con ngủ, nhờ người nhà làm việc nhà.","children":[]},{"text":"Theo dõi bé có đủ sữa không: từ ngày thứ 5, ít nhất 6 tã ướt/ngày, phân vàng, bé tăng cân đều.","children":[]}],"kind":"steps"},{"label":"Đi khám khi","text":"","items":[{"text":"Bé không tăng cân hoặc tăng cân chậm","children":[]},{"text":"Ít tã ướt","children":[]},{"text":"Bé ngủ li bì không đòi bú","children":[]}],"kind":"doctor"}],"keywords":"ít sữa, mất sữa, không đủ sữa, gọi sữa","audience":"me"},{"id":"B6","title":"Vết khâu tầng sinh môn","severity":["green"],"sections":[{"label":"Chăm sóc hằng ngày","text":"","items":[{"text":"Sau mỗi lần đi vệ sinh, dội nước ấm sạch lên vùng khâu, lau từ trước ra sau, thấm khô.","children":[]},{"text":"24-48 giờ đầu: chườm lạnh (túi đá bọc khăn) 10-20 phút mỗi lần, vài lần/ngày.","children":[]},{"text":"Từ ngày thứ 2-3: ngâm vùng kín trong chậu nước ấm sạch 10-15 phút, 2-3 lần/ngày.","children":[]},{"text":"Ngồi trên gối mềm, tránh ngồi lâu một chỗ.","children":[]},{"text":"Thay băng vệ sinh thường xuyên.","children":[]},{"text":"Dùng thuốc giảm đau theo đơn bác sĩ.","children":[]},{"text":"Uống nhiều nước, ăn nhiều chất xơ để không bị táo bón.","children":[]}],"kind":"steps"},{"label":"Đi khám khi","text":"","items":[{"text":"Sưng đỏ tăng dần","children":[]},{"text":"Chảy mủ","children":[]},{"text":"Có mùi hôi","children":[]},{"text":"Vết khâu bị toác","children":[]},{"text":"Đau tăng thay vì giảm","children":[]},{"text":"Sốt","children":[]}],"kind":"doctor"}],"keywords":"vết khâu, tầng sinh môn, cắt tầng sinh môn","audience":"me"},{"id":"B7","title":"Vết mổ lấy thai","severity":["green"],"sections":[{"label":"Chăm sóc hằng ngày","text":"","items":[{"text":"Giữ vết mổ khô sạch. Thay băng theo hướng dẫn của bác sĩ.","children":[]},{"text":"Tắm vòi sen khi bác sĩ cho phép, sau đó thấm khô vết mổ nhẹ nhàng.","children":[]},{"text":"Khi ho, hắt hơi, cười hoặc đứng dậy: ôm một chiếc gối áp vào bụng.","children":[]},{"text":"Đứng dậy theo cách: nghiêng người sang một bên, chống tay đẩy người lên.","children":[]},{"text":"Đi lại nhẹ nhàng sớm để phòng huyết khối.","children":[]},{"text":"Không bê vật nặng hơn em bé trong 6 tuần đầu.","children":[]},{"text":"Mặc quần áo rộng, cạp quần không cọ vào vết mổ.","children":[]}],"kind":"steps"},{"label":"Đi khám khi","text":"","items":[{"text":"Vết mổ đỏ, sưng, nóng","children":[]},{"text":"Chảy dịch hoặc mủ","children":[]},{"text":"Toác vết mổ","children":[]},{"text":"Đau tăng dần","children":[]},{"text":"Sốt","children":[]}],"kind":"doctor"}],"keywords":"vết mổ, mổ đẻ, sinh mổ","audience":"me"},{"id":"B8","title":"Buồn bã sau sinh, trầm cảm sau sinh","severity":["green","red"],"sections":[{"label":"Mẹ có thể làm","text":"","items":[{"text":"Ngủ khi con ngủ. Nhờ người trông bé để có ít nhất một giấc ngủ dài 4-5 giờ mỗi ngày.","children":[]},{"text":"Nói ra cảm xúc của mình với chồng, người thân hoặc bạn bè.","children":[]},{"text":"Ăn đủ bữa, ra ngoài đi dạo, hít thở không khí ngoài trời mỗi ngày.","children":[]},{"text":"Giảm bớt việc nhà, chấp nhận \"không hoàn hảo\".","children":[]},{"text":"Gặp gỡ những người mẹ khác.","children":[]}],"kind":"steps"},{"label":"Người nhà nên làm","text":"","items":[{"text":"Chủ động nhận việc: thay tã, ru bé, làm việc nhà, nấu ăn.","children":[]},{"text":"Lắng nghe, không phán xét, không so sánh \"ngày xưa ai cũng vậy\".","children":[]},{"text":"Để ý các dấu hiệu: buồn kéo dài trên 2 tuần, mất hứng thú, khóc nhiều, mất ngủ dù bé đã ngủ, thấy mình là người mẹ tồi, khó gắn bó với con.","children":[]}],"kind":"steps"},{"label":"Đi khám khi","text":"","items":[{"text":"Các dấu hiệu trên kéo dài quá 2 tuần hoặc ngày càng nặng","children":[]}],"kind":"doctor"},{"label":"🔴 Cấp cứu ngay khi","text":"mẹ có ý nghĩ làm hại bản thân hoặc con: không để mẹ ở một mình, đặt bé ở nơi an toàn, gọi người thân và đưa mẹ đến cơ sở y tế ngay.","items":[],"kind":"doctor"}],"keywords":"trầm cảm, buồn, baby blues, khóc, stress","audience":"me"},{"id":"B9","title":"Táo bón, trĩ sau sinh","severity":["green","yellow"],"sections":[{"label":"Làm","text":"","items":[{"text":"Uống 2-2,5 lít nước/ngày.","children":[]},{"text":"Ăn nhiều rau xanh, trái cây, ngũ cốc nguyên hạt.","children":[]},{"text":"Đi lại nhẹ nhàng mỗi ngày.","children":[]},{"text":"Đi vệ sinh ngay khi buồn, không nhịn, không rặn mạnh.","children":[]},{"text":"Kê một chiếc ghế nhỏ dưới chân khi ngồi bồn cầu.","children":[]},{"text":"Với trĩ: ngâm hậu môn trong nước ấm 10-15 phút, vài lần/ngày.","children":[]}],"kind":"steps"},{"label":"Đi khám khi","text":"","items":[{"text":"Đau nhiều","children":[]},{"text":"Chảy máu nhiều","children":[]},{"text":"Trên 4 ngày không đi ngoài được","children":[]}],"kind":"doctor"}],"keywords":"táo bón, trĩ","audience":"me"}],"emergency":[{"title":"Bé","sections":[{"label":null,"text":"","items":[{"text":"Sốt từ 38°C trở lên ở bé dưới 3 tháng","children":[]},{"text":"Thở nhanh trên 60 lần/phút, rút lõm ngực, cánh mũi phập phồng, môi tím","children":[]},{"text":"Ngưng thở trên 20 giây","children":[]},{"text":"Li bì, khó đánh thức, người mềm nhũn","children":[]},{"text":"Co giật","children":[]},{"text":"Bỏ bú, bú rất kém","children":[]},{"text":"Nôn vọt, nôn ra dịch xanh hoặc có máu","children":[]},{"text":"Phân bạc màu (trắng, xám), phân có máu","children":[]},{"text":"Vàng da trong 24 giờ đầu, hoặc vàng lan xuống lòng bàn tay, bàn chân","children":[]},{"text":"Có từ 2 dấu hiệu mất nước trở lên","children":[]},{"text":"Thóp phồng","children":[]},{"text":"Ngã đập đầu kèm nôn, li bì, ngất","children":[]},{"text":"Hóc dị vật","children":[]}],"kind":"info"}]},{"title":"Mẹ","sections":[{"label":null,"text":"","items":[{"text":"Thấm đẫm 1 băng vệ sinh trong 1 giờ, ra cục máu lớn","children":[]},{"text":"Đau đầu dữ dội, mờ mắt, phù nhanh (nghi tiền sản giật, có thể xảy ra đến 6 tuần sau sinh)","children":[]},{"text":"Đau ngực, khó thở đột ngột","children":[]},{"text":"Bắp chân sưng, đau một bên","children":[]},{"text":"Sốt cao kèm sản dịch hôi","children":[]},{"text":"Có ý nghĩ làm hại bản thân hoặc con","children":[]}],"kind":"info"}]}],"categories":[{"id":"an-uong","icon":"🍼","title":"Ăn uống, tiêu hóa","items":["A1","A2","A3","A4","A5","A6","A7","A8"]},{"id":"da","icon":"🧴","title":"Da, rốn, cơ thể","items":["A9","A10","A11","A12","A13","A14","A15","A23"]},{"id":"ho-hap","icon":"🫁","title":"Hô hấp","items":["A16","A3"]},{"id":"sot","icon":"🌡️","title":"Sốt, thân nhiệt","items":["A17","A18"]},{"id":"ngu","icon":"😴","title":"Ngủ, khóc","items":["A6","A19","A20"]},{"id":"mat-mieng","icon":"👁️","title":"Mắt, miệng","items":["A21","A22"]},{"id":"tai-nan","icon":"⚠️","title":"Tai nạn","items":["A24","A25","A3"]},{"id":"me","icon":"👩","title":"Mẹ sau sinh","items":["B1","B2","B3","B4","B5","B6","B7","B8","B9"]}]}</script>
+<script>
+window.APP_VERSION = "4fb9f0be4a";
+(function () {
+  "use strict";
+
+  /* ============================================================
+     Dữ liệu
+     ============================================================ */
+  var DATA = JSON.parse(document.getElementById("data").textContent);
+  var SIT = {}, SKILL = {}, CAT = {};
+  DATA.situations.forEach(function (s) { SIT[s.id] = s; });
+  DATA.skills.forEach(function (k) { SKILL[k.id] = k; });
+  DATA.categories.forEach(function (c) { CAT[c.id] = c; });
+
+  var SEV_LABEL = { green: "Thường gặp", yellow: "Cần lưu ý", red: "Nguy hiểm" };
+  var CHECK_TTL = 12 * 3600 * 1000;   // checklist tự xoá sau 12 giờ
+
+  /* ============================================================
+     Lưu trữ an toàn (trình duyệt riêng tư có thể chặn)
+     ============================================================ */
+  var store = {
+    get: function (k, d) {
+      try { var v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); }
+      catch (e) { return d; }
+    },
+    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+    del: function (k) { try { localStorage.removeItem(k); } catch (e) {} }
+  };
+
+  /* ============================================================
+     Tiện ích
+     ============================================================ */
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function plain(s) { return String(s).replace(/\*\*/g, ""); }
+
+  function refChip(id) {
+    if (SKILL[id]) return '<button class="ref" data-skill="' + id + '">' + esc(SKILL[id].short) + "</button>";
+    if (SIT[id]) return '<a class="ref" href="#/t/' + id + '">' + esc(SIT[id].title) + "</a>";
+    return id;
+  }
+  // **đậm**, "(xem K1)", "(K5)", "theo K2" thành chip bấm được
+  function fmt(s) {
+    var h = esc(s);
+    h = h.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+    h = h.replace(/\s?\((?:xem )?([AKB]\d{1,2})\)/g, function (_, id) { return " " + refChip(id); });
+    h = h.replace(/\b(theo|xem) ([AKB]\d{1,2})\b/g, function (_, w, id) { return w + " " + refChip(id); });
+    return h;
+  }
+
+  // Bỏ dấu tiếng Việt, giữ nguyên độ dài từng ký tự để còn tô sáng được
+  function normChar(c) {
+    if (c === "đ" || c === "Đ") return "d";
+    var n = c.normalize("NFD").replace(/[̀-ͯ]/g, "");
+    return (n.length === 1 ? n : c).toLowerCase();
+  }
+  function norm(s) {
+    var out = "";
+    for (var i = 0; i < s.length; i++) out += normChar(s[i]);
+    return out;
+  }
+
+  var ICON = {
+    chev: '<svg class="chev" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    tw: '<svg class="tw" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    check: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    phone: '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M6.6 3.5l2.6-.3 1.6 4.3-2 1.5a12 12 0 0 0 6.2 6.2l1.5-2 4.3 1.6-.3 2.6a2.5 2.5 0 0 1-2.6 2.1C10.4 21 3 13.6 4.5 6.1a2.5 2.5 0 0 1 2.1-2.6z" fill="currentColor"/></svg>',
+    alert: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3.5l9 16H3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 10v4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="17" r="1.3" fill="currentColor"/></svg>',
+    search: '<svg class="s-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>',
+    x: '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>',
+    prevent: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.5-3.2 8-7.5 9.5-4.3-1.5-7.5-5-7.5-9.5V6z" fill="currentColor"/></svg>',
+    avoid: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M6 6l12 12" stroke="currentColor" stroke-width="2.6"/></svg>',
+    doctor: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 3h5v6.5H21v5h-6.5V21h-5v-6.5H3v-5h6.5z" fill="currentColor"/></svg>',
+    info: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 11v6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="12" cy="7.5" r="1.5" fill="currentColor"/></svg>'
+  };
+
+  function dots(sev) {
+    return '<span class="dots" aria-hidden="true">' +
+      sev.map(function (c) { return '<span class="dot ' + c + '"></span>'; }).join("") + "</span>";
+  }
+  function sevNote(sev) {
+    var g = sev.indexOf("green") > -1, y = sev.indexOf("yellow") > -1, r = sev.indexOf("red") > -1;
+    if (r && !g && !y) return "Cần đi khám ngay.";
+    if (r && g) return "Thường không nguy hiểm, nhưng có trường hợp phải đi cấp cứu.";
+    if (r) return "Có thể nguy hiểm. Đọc kỹ các dấu hiệu phải đi khám.";
+    if (y && g) return "Thường xử lý được tại nhà, đôi khi cần hỏi bác sĩ.";
+    if (y) return "Nên hỏi bác sĩ nếu không đỡ sau 24-48 giờ.";
+    return "Thường gặp, chăm sóc được tại nhà.";
+  }
+  function sevA11y(sev) { return sev.map(function (c) { return SEV_LABEL[c]; }).join(" đến "); }
+
+  /* ============================================================
+     Checklist: đánh dấu từng bước đã làm
+     ============================================================ */
+  function checkKey(id) { return "xltn-check-" + id; }
+  function loadCheck(id) {
+    var c = store.get(checkKey(id), null);
+    if (!c || Date.now() - c.ts > CHECK_TTL) return { ts: 0, done: {} };
+    return c;
+  }
+  function saveCheck(id, c) {
+    if (Object.keys(c.done).length) store.set(checkKey(id), c);
+    else store.del(checkKey(id));
+  }
+  function timeStr(ts) {
+    var d = new Date(ts);
+    return d.getHours() + ":" + String(d.getMinutes()).padStart(2, "0");
+  }
+
+  function renderSteps(ownerId, sec, si, check) {
+    var total = sec.items.length;
+    var n = 0;
+    var lis = sec.items.map(function (it, i) {
+      var key = si + "-" + i;
+      var done = !!check.done[key];
+      if (done) n++;
+      var sub = "";
+      if (it.children.length) {
+        var ol = /^\d/.test(it.children[0]) ? "" : "";
+        sub = '<ul class="sub' + ol + '">' + it.children.map(function (c) {
+          return "<li>" + fmt(c) + "</li>";
+        }).join("") + "</ul>";
+      }
+      return '<li class="step' + (done ? " done" : "") + '" data-owner="' + ownerId + '" data-key="' + key +
+        '" role="checkbox" aria-checked="' + done + '" tabindex="0">' +
+        '<span class="step-n"><span>' + (i + 1) + "</span>" + ICON.check + "</span>" +
+        '<div class="step-body"><div class="step-text">' + fmt(it.text) + "</div>" + sub + "</div></li>";
+    }).join("");
+    var label = sec.label || "Các bước";
+    return '<section class="block k-steps" data-sec="' + si + '">' +
+      '<div class="block-head"><h2>' + esc(label) + "</h2>" +
+      '<span class="progress' + (n === total ? " done" : "") + '" data-progress="' + si + '">' + n + "/" + total + "</span></div>" +
+      '<ol class="steps">' + lis + "</ol></section>";
+  }
+
+  function renderOther(sec, opts) {
+    var kind = sec.kind;
+    var open = kind !== "prevent" || opts.openAll;
+    var label = sec.label || "Ghi chú";
+    var body = "";
+    if (sec.text) body += '<p class="ptext">' + fmt(sec.text) + "</p>";
+    if (sec.items.length) {
+      body += '<ul class="blist">' + sec.items.map(function (it) {
+        var sub = it.children.length ? '<ul class="sub">' + it.children.map(function (c) {
+          return "<li>" + fmt(c) + "</li>"; }).join("") + "</ul>" : "";
+        return "<li>" + fmt(it.text) + sub + "</li>";
+      }).join("") + "</ul>";
+    }
+    if (kind === "doctor" && opts.call) {
+      body += '<a class="btn danger big call" href="tel:115">' + ICON.phone + "Gọi cấp cứu 115</a>";
+    }
+    return '<details class="block k-' + kind + '"' + (open ? " open" : "") +
+      (kind === "doctor" ? ' id="kham"' : "") + "><summary>" +
+      '<span class="k-ico">' + (ICON[kind] || ICON.info) + "</span><h2>" + esc(label) + "</h2>" + ICON.tw +
+      "</summary>" + body + "</details>";
+  }
+
+  function renderItemBody(item, opts) {
+    opts = opts || {};
+    var check = loadCheck(item.id);
+    var hasRed = (item.severity || []).indexOf("red") > -1;
+    var html = "";
+    var stepSecs = 0;
+    item.sections.forEach(function (sec, si) {
+      if (sec.kind === "steps") {
+        stepSecs++;
+        html += renderSteps(item.id, sec, si, check);
+      } else {
+        html += renderOther(sec, { call: hasRed || /cấp cứu/i.test(sec.label || ""), openAll: opts.openAll });
+      }
+    });
+    (item.notes || []).forEach(function (n) {
+      html += '<div class="note">' + ICON.info.replace("<svg ", '<svg width="20" height="20" style="flex:none;margin-top:2px" ') +
+        "<div>" + fmt(n) + "</div></div>";
+    });
+    var bar = "";
+    if (stepSecs) {
+      bar = '<div class="since" data-since="' + item.id + '">' + sinceText(check) + "</div>";
+    }
+    return bar + html;
+  }
+  function sinceText(check) {
+    if (!check.ts || !Object.keys(check.done).length) return "Chạm vào từng bước để đánh dấu đã làm.";
+    return 'Đánh dấu từ lúc ' + timeStr(check.ts) + ' · <button class="reset" data-reset>Làm lại từ đầu</button>';
+  }
+
+  function toggleStep(el) {
+    var owner = el.getAttribute("data-owner"), key = el.getAttribute("data-key");
+    var c = loadCheck(owner);
+    var on = !c.done[key];
+    if (on) { c.done[key] = 1; if (!c.ts) c.ts = Date.now(); }
+    else delete c.done[key];
+    if (!Object.keys(c.done).length) c.ts = 0;
+    saveCheck(owner, c);
+    el.classList.toggle("done", on);
+    el.setAttribute("aria-checked", on);
+    if (on && navigator.vibrate) { try { navigator.vibrate(12); } catch (e) {} }
+    refreshProgress(el.closest(".block"), owner);
+  }
+  function refreshProgress(block, owner) {
+    if (!block) return;
+    var all = block.querySelectorAll(".step").length;
+    var n = block.querySelectorAll(".step.done").length;
+    var p = block.querySelector(".progress");
+    if (p) { p.textContent = n + "/" + all; p.classList.toggle("done", n === all); }
+    var root = block.parentNode;
+    var since = root.querySelector('[data-since="' + owner + '"]');
+    if (since) since.innerHTML = sinceText(loadCheck(owner));
+  }
+
+  /* ============================================================
+     Tìm kiếm
+     ============================================================ */
+  var INDEX = [];
+  function bodyText(item) {
+    var parts = [];
+    item.sections.forEach(function (s) {
+      if (s.label) parts.push(s.label);
+      if (s.text) parts.push(s.text);
+      s.items.forEach(function (it) { parts.push(it.text); parts = parts.concat(it.children); });
+    });
+    return plain(parts.join(" · ")).replace(/\(xem [AKB]\d+\)|\([AKB]\d+\)/g, "");
+  }
+  function buildIndex() {
+    DATA.situations.concat(DATA.skills).forEach(function (it) {
+      var body = bodyText(it);
+      INDEX.push({ item: it, t: norm(it.title), k: norm(it.keywords || ""), b: norm(body), body: body });
+    });
+  }
+  // vị trí đầu tiên mà t khớp ở đầu một từ ("ho" khớp "ho khan", không khớp "hơi")
+  // từ ngắn 1-2 chữ phải khớp trọn từ, nếu không "ho" sẽ khớp cả "hơi"
+  function wordAt(text, t) {
+    var whole = t.length <= 2;
+    var i = text.indexOf(t);
+    while (i > -1) {
+      var startOk = i === 0 || !/[a-z0-9]/.test(text[i - 1]);
+      var endOk = !whole || !/[a-z0-9]/.test(text[i + t.length] || "");
+      if (startOk && endOk) return i;
+      i = text.indexOf(t, i + 1);
+    }
+    return -1;
+  }
+  function search(q) {
+    var nq = norm(q.trim()).replace(/\s+/g, " ");
+    if (!nq) return [];
+    var toks = nq.split(" ").filter(Boolean);
+    var res = [];
+    INDEX.forEach(function (d) {
+      var score = 0, ok = true;
+      toks.forEach(function (t) {
+        var s = 0;
+        if (wordAt(d.t, t) > -1) s += 12;
+        if (wordAt(d.k, t) > -1) s += 7;
+        if (wordAt(d.b, t) > -1) s += 1;
+        if (!s) ok = false;
+        score += s;
+      });
+      if (!ok) return;
+      if (toks.length > 1) {
+        if (wordAt(d.t, nq) > -1) score += 20;
+        if (wordAt(d.k, nq) > -1) score += 12;
+        if (wordAt(d.b, nq) > -1) score += 3;
+      }
+      if (d.item.id[0] === "K") score -= 2;
+      res.push({ d: d, score: score, toks: toks, nq: nq });
+    });
+    res.sort(function (a, b) { return b.score - a.score; });
+    return res.slice(0, 30);
+  }
+  function snippet(r) {
+    var d = r.d;
+    var needle = wordAt(d.b, r.nq) > -1 ? r.nq : null;
+    if (!needle) {
+      for (var i = 0; i < r.toks.length; i++) if (wordAt(d.b, r.toks[i]) > -1) { needle = r.toks[i]; break; }
+    }
+    var at = needle ? wordAt(d.b, needle) : -1;
+    if (at < 0) return d.item.severity && d.item.severity.length ? esc(sevNote(d.item.severity)) : "Kỹ năng cơ bản";
+    var start = Math.max(0, at - 36);
+    var end = Math.min(d.body.length, at + needle.length + 70);
+    // cắt ở ranh giới từ cho gọn
+    if (start > 0) { var sp = d.body.indexOf(" ", start); if (sp > -1 && sp < at) start = sp + 1; }
+    return (start > 0 ? "…" : "") + esc(d.body.slice(start, at)) + "<mark>" + esc(d.body.slice(at, at + needle.length)) +
+      "</mark>" + esc(d.body.slice(at + needle.length, end)) + (end < d.body.length ? "…" : "");
+  }
+
+  /* ============================================================
+     Các trang
+     ============================================================ */
+  var view = $("#view");
+  var top = $(".top");
+  var lastQuery = "";
+
+  function rowFor(it, sub) {
+    var isSkill = it.id[0] === "K";
+    var href = isSkill ? "#/ky-nang/" + it.id : "#/t/" + it.id;
+    var lead = isSkill ? '<span class="k-badge">' + it.id + "</span>" : dots(it.severity);
+    return '<a class="row" href="' + href + '"' + (isSkill ? "" : ' aria-label="' + esc(it.title + ", " + sevA11y(it.severity)) + '"') + ">" +
+      lead + '<span class="row-main"><span class="row-title">' + esc(it.title) + "</span>" +
+      (sub ? '<span class="row-sub">' + sub + "</span>" : "") + "</span>" + ICON.chev + "</a>";
+  }
+
+  function pageHome() {
+    var cats = DATA.categories.map(function (c) {
+      return '<a class="cat' + (c.id === "me" ? " me" : "") + '" href="#/nhom/' + c.id + '">' +
+        '<span class="cat-icon" aria-hidden="true">' + c.icon + "</span>" +
+        '<span class="cat-title">' + esc(c.title) + "</span>" +
+        '<span class="cat-count">' + c.items.length + " tình huống</span></a>";
+    }).join("");
+    var chips = DATA.skills.map(function (k) {
+      return '<a class="chip" href="#/ky-nang/' + k.id + '">' + esc(k.short) + "</a>";
+    }).join("");
+    view.innerHTML =
+      "<h1>Bé hoặc mẹ đang gặp chuyện gì?</h1>" +
+      '<div class="search">' + ICON.search +
+      '<input id="q" type="search" inputmode="search" autocomplete="off" enterkeyhint="search" ' +
+      'placeholder="Gõ: trớ sữa, sốt, tắc sữa…" aria-label="Tìm tình huống" value="' + esc(lastQuery) + '">' +
+      '<button class="s-clear" id="qClear" aria-label="Xoá tìm kiếm"' + (lastQuery ? "" : " hidden") + ">" + ICON.x + "</button></div>" +
+      '<div id="results"></div>' +
+      '<div id="browse">' +
+      '<div class="cats">' + cats + "</div>" +
+      '<div class="legend"><span><i class="dot green"></i>Thường gặp</span><span><i class="dot yellow"></i>Cần lưu ý</span><span><i class="dot red"></i>Có thể nguy hiểm</span></div>' +
+      '<div class="eyebrow">Kỹ năng cơ bản</div><div class="chips">' + chips + "</div>" +
+      installCard() +
+      '<p class="disclaimer">Thông tin tham khảo theo khuyến nghị phổ biến của WHO, AAP và Bộ Y tế. Không thay thế bác sĩ. Khi thấy dấu hiệu nguy hiểm hoặc khi bố mẹ thấy bất an, hãy đưa bé đi khám.</p>' +
+      "</div>";
+    var q = $("#q");
+    q.addEventListener("input", function () { lastQuery = q.value; showResults(); });
+    $("#qClear").addEventListener("click", function () { lastQuery = ""; q.value = ""; showResults(); q.focus(); });
+    showResults();
+  }
+  function showResults() {
+    var box = $("#results"), browse = $("#browse"), clear = $("#qClear");
+    if (!box) return;
+    clear.hidden = !lastQuery;
+    if (!lastQuery.trim()) { box.innerHTML = ""; browse.hidden = false; return; }
+    browse.hidden = true;
+    var res = search(lastQuery);
+    if (!res.length) {
+      box.innerHTML = '<div class="search-empty">Chưa tìm thấy <strong>“' + esc(lastQuery) + '”</strong>.<br>Thử từ khác, ví dụ “nôn”, “ho”, “đau ti”.</div>' +
+        '<a class="btn big" href="#/" data-clear>Xem tất cả các nhóm</a>';
+      return;
+    }
+    box.innerHTML = '<div class="list">' + res.map(function (r) { return rowFor(r.d.item, snippet(r)); }).join("") + "</div>";
+  }
+
+  function pageCategory(id) {
+    var c = CAT[id];
+    if (!c) return notFound();
+    setTitle(c.title);
+    view.innerHTML = "<h1>" + c.icon + " " + esc(c.title) + "</h1>" +
+      '<p class="lede">' + (id === "me" ? "Các vấn đề mẹ hay gặp trong 6 tuần đầu sau sinh." : "Chọn tình huống đang gặp.") + "</p>" +
+      '<div class="list">' + c.items.map(function (sid) {
+        var s = SIT[sid];
+        return rowFor(s, esc(sevNote(s.severity)));
+      }).join("") + "</div>" +
+      '<div class="legend"><span><i class="dot green"></i>Thường gặp</span><span><i class="dot yellow"></i>Cần lưu ý</span><span><i class="dot red"></i>Có thể nguy hiểm</span></div>';
+  }
+
+  function pageSituation(id) {
+    var s = SIT[id];
+    if (!s) return notFound();
+    setTitle(s.title);
+    var hasRed = s.severity.indexOf("red") > -1;
+    var redOnly = hasRed && s.severity.length === 1;
+    var pills = s.severity.map(function (c) { return '<span class="pill ' + c + '">' + SEV_LABEL[c] + "</span>"; }).join("");
+    var alert = "";
+    if (redOnly) {
+      alert = '<a class="alert" href="tel:115">' + ICON.phone + "<span>Tình huống này cần đi khám ngay. Bấm để gọi 115.</span></a>";
+    } else if (hasRed && s.sections.some(function (x) { return x.kind === "doctor"; })) {
+      alert = '<a class="alert" href="#kham" data-jump="kham">' + ICON.alert + "<span>Có trường hợp phải đi cấp cứu. Xem các dấu hiệu.</span></a>";
+    }
+    var cats = DATA.categories.filter(function (c) { return c.items.indexOf(id) > -1; });
+    view.innerHTML =
+      '<div class="sit-head"><h1 id="pageH1">' + esc(s.title) + "</h1>" +
+      '<div class="sev">' + pills + "</div>" +
+      '<p class="sev-note">' + esc(sevNote(s.severity)) + "</p></div>" +
+      alert + renderItemBody(s) +
+      '<p class="disclaimer">Nhóm: ' + cats.map(function (c) {
+        return '<a href="#/nhom/' + c.id + '">' + esc(c.title) + "</a>"; }).join(", ") +
+      ". Thông tin tham khảo, không thay thế bác sĩ.</p>";
+  }
+
+  function pageSkills() {
+    setTitle("Kỹ năng cơ bản");
+    view.innerHTML = '<h1>Kỹ năng cơ bản</h1><p class="lede">Những thao tác dùng lại ở nhiều tình huống. Nên đọc trước một lần khi bé còn khoẻ.</p>' +
+      '<div class="list">' + DATA.skills.map(function (k) {
+        var n = k.sections.reduce(function (a, s) { return a + s.items.length; }, 0);
+        return rowFor(k, n + " bước");
+      }).join("") + "</div>";
+  }
+
+  function pageSkill(id) {
+    var k = SKILL[id];
+    if (!k) return notFound();
+    setTitle(k.title);
+    var used = DATA.situations.filter(function (s) {
+      return JSON.stringify(s.sections).indexOf(id) > -1;
+    });
+    view.innerHTML = '<div class="sit-head"><h1 id="pageH1">' + esc(k.title) + "</h1></div>" + renderItemBody(k) +
+      (used.length ? '<div class="eyebrow">Dùng trong các tình huống</div><div class="list">' +
+        used.map(function (s) { return rowFor(s, ""); }).join("") + "</div>" : "");
+  }
+
+  function pageEmergency() {
+    setTitle("Cấp cứu");
+    var groups = DATA.emergency.map(function (g) {
+      var items = [];
+      g.sections.forEach(function (s) { items = items.concat(s.items); });
+      return '<section class="block k-doctor"><div class="block-head"><span class="k-ico">' + ICON.doctor +
+        "</span><h2>" + (g.title === "Bé" ? "Bé" : "Mẹ") + "</h2></div>" +
+        '<ul class="blist">' + items.map(function (it) { return "<li>" + fmt(it.text) + "</li>"; }).join("") + "</ul></section>";
+    }).join("");
+    view.innerHTML =
+      '<div class="sos-hero"><h1>Cấp cứu</h1><p>Thấy bất kỳ dấu hiệu nào bên dưới: gọi 115 hoặc đến bệnh viện gần nhất ngay.</p>' +
+      '<a class="sos-call" href="tel:115">' + ICON.phone + "Gọi 115</a></div>" +
+      '<div class="sos-quick">' +
+      '<a href="#/ky-nang/K6">Sơ cứu hóc dị vật<small>Bé dưới 1 tuổi</small></a>' +
+      '<a href="#/cong-cu">Đếm nhịp thở<small>Đồng hồ 60 giây</small></a>' +
+      '<a href="#/t/A17">Sốt<small>Bé dưới 3 tháng là cấp cứu</small></a>' +
+      '<a href="#/t/A24">Bé bị ngã<small>Dấu hiệu cần đi viện</small></a>' +
+      "</div>" +
+      '<div class="eyebrow">Đi cấp cứu ngay khi</div>' + groups +
+      '<div class="note">' + ICON.info.replace("<svg ", '<svg width="20" height="20" style="flex:none;margin-top:2px" ') +
+      "<div>Khi gọi 115, nói <strong>địa chỉ</strong> trước, sau đó nói tuổi của bé, bé đang bị gì, bé còn thở và còn tỉnh không. Mang theo sổ khám và giấy ra viện.</div></div>";
+  }
+
+  function notFound() {
+    setTitle("");
+    view.innerHTML = '<h1>Không tìm thấy trang</h1><p class="lede">Đường dẫn này không còn tồn tại.</p><a class="btn primary" href="#/">Về trang chủ</a>';
+  }
+
+  /* ============================================================
+     Công cụ: đếm nhịp thở, hẹn giờ đo lại nhiệt độ
+     ============================================================ */
+  var breath = { age: store.get("xltn-breath-age", "u2"), state: "idle", count: 0, start: 0, raf: 0, timer: 0 };
+  var LIMIT = { u2: 60, o2: 50 };
+
+  function pageTools() {
+    setTitle("Công cụ");
+    view.innerHTML =
+      '<h1>Công cụ</h1><p class="lede">Dùng khi đang theo dõi bé.</p>' +
+      '<section class="tool" id="breathTool"><h2>Đếm nhịp thở</h2>' +
+      "<p>Đếm khi bé nằm yên hoặc đang ngủ. Mỗi lần bụng bé phồng lên, chạm vào ô bên dưới một lần.</p>" +
+      '<div class="seg" role="group" aria-label="Tuổi của bé">' +
+      '<button data-age="u2">Dưới 2 tháng</button><button data-age="o2">2-12 tháng</button></div>' +
+      '<button class="tap idle" id="tap"></button>' +
+      '<div class="timer-bar"><i id="bar"></i></div><div class="timer-meta"><span id="tLeft"></span><span id="tHint"></span></div>' +
+      '<div id="verdict"></div></section>' +
+      '<section class="tool" id="tempTool"><h2>Hẹn giờ đo lại nhiệt độ</h2>' +
+      "<p>Sau khi hạ sốt hoặc ủ ấm, đo lại theo giờ hẹn. Chuông chỉ kêu khi app đang mở, nên để điện thoại gần bên.</p>" +
+      '<div id="tempBox"></div><p style="margin:12px 0 0">' + refChip("K3") + "</p></section>";
+    view.querySelectorAll("[data-age]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        if (breath.state === "run") return;
+        breath.age = b.getAttribute("data-age");
+        store.set("xltn-breath-age", breath.age);
+        drawBreath();
+      });
+    });
+    $("#tap").addEventListener("pointerdown", onTap);
+    $("#tap").addEventListener("keydown", function (e) { if (e.key === " " || e.key === "Enter") { e.preventDefault(); onTap(e); } });
+    drawBreath();
+    drawTemp();
+  }
+
+  function onTap(e) {
+    if (e && e.type === "pointerdown") e.preventDefault();
+    if (breath.state === "idle" || breath.state === "done") {
+      breath.state = "run"; breath.count = 0; breath.start = Date.now();
+      wakeLock(true);
+      tickBreath();
+    } else if (breath.state === "run") {
+      breath.count++;
+      if (navigator.vibrate) { try { navigator.vibrate(8); } catch (x) {} }
+    }
+    drawBreath();
+  }
+  function tickBreath() {
+    cancelAnimationFrame(breath.raf);
+    var loop = function () {
+      if (breath.state !== "run") return;
+      var el = Date.now() - breath.start;
+      if (el >= 60000) {
+        breath.state = "done"; wakeLock(false); beep(1); drawBreath(); return;
+      }
+      var bar = $("#bar"), left = $("#tLeft");
+      if (!bar) { breath.state = "idle"; wakeLock(false); return; }
+      bar.style.width = (el / 600) + "%";
+      left.textContent = "Còn " + Math.ceil((60000 - el) / 1000) + " giây";
+      breath.raf = requestAnimationFrame(loop);
+    };
+    loop();
+  }
+  function drawBreath() {
+    var tap = $("#tap");
+    if (!tap) return;
+    view.querySelectorAll("[data-age]").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.getAttribute("data-age") === breath.age);
+    });
+    var lim = LIMIT[breath.age];
+    $("#tHint").textContent = "Bình thường dưới " + lim + " lần/phút";
+    var v = $("#verdict");
+    if (breath.state === "run") {
+      tap.className = "tap";
+      tap.innerHTML = '<span class="big">' + breath.count + '</span><span class="small">Chạm mỗi lần bé hít vào</span>';
+      v.innerHTML = "";
+    } else if (breath.state === "done") {
+      tap.className = "tap idle";
+      tap.innerHTML = '<span class="big">' + breath.count + '</span><span class="small">lần/phút · Chạm để đếm lại</span>';
+      $("#bar").style.width = "100%";
+      $("#tLeft").textContent = "Đã đủ 60 giây";
+      var n = breath.count;
+      if (n >= lim) {
+        v.innerHTML = '<div class="verdict bad"><strong>Thở nhanh: ' + n + " lần/phút</strong>" +
+          "Đếm lại một lần nữa khi bé nằm thật yên. Nếu vẫn từ " + lim + " lần trở lên, hoặc bé rút lõm ngực, phập phồng cánh mũi, tím môi: đi khám ngay.</div>" +
+          '<a class="btn danger big" style="margin-top:10px" href="tel:115">' + ICON.phone + "Gọi 115</a>";
+      } else if (n < 20) {
+        v.innerHTML = '<div class="verdict bad"><strong>Chỉ đếm được ' + n + " lần</strong>" +
+          "Có thể đã đếm sót, hãy đếm lại. Nếu bé có lúc ngừng thở trên 20 giây, tím tái hoặc khó đánh thức: gọi 115 ngay.</div>";
+      } else {
+        v.innerHTML = '<div class="verdict ok"><strong>' + n + " lần/phút: trong giới hạn bình thường</strong>" +
+          "Vẫn theo dõi thêm các dấu hiệu rút lõm ngực, phập phồng cánh mũi, tím môi.</div>";
+      }
+    } else {
+      tap.className = "tap idle";
+      tap.innerHTML = '<span class="big" style="font-size:40px">Bắt đầu</span><span class="small">Chạm để bắt đầu đếm 60 giây</span>';
+      $("#bar").style.width = "0";
+      $("#tLeft").textContent = "60 giây";
+      v.innerHTML = "";
+    }
+  }
+
+  // ---- hẹn giờ nhiệt độ ----
+  var tempTick = 0;
+  function tempEnd() { return store.get("xltn-temp-end", 0); }
+  function drawTemp() {
+    var box = $("#tempBox");
+    if (!box) return;
+    var end = tempEnd();
+    if (!end) {
+      box.innerHTML = '<div class="row-btns"><button class="btn primary" data-temp="30">Sau 30 phút</button>' +
+        '<button class="btn primary" data-temp="60">Sau 60 phút</button></div>';
+    } else {
+      var left = end - Date.now();
+      box.innerHTML = '<div class="countdown' + (left <= 0 ? " ring" : "") + '" id="tempLeft">' + fmtLeft(left) + "</div>" +
+        '<div class="row-btns"><button class="btn" data-temp="stop">' + (left <= 0 ? "Tắt chuông" : "Huỷ hẹn giờ") + "</button></div>" +
+        '<p style="margin:10px 0 0;font-size:14px">Hẹn lúc ' + timeStr(end) + ".</p>";
+    }
+    box.querySelectorAll("[data-temp]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var v = b.getAttribute("data-temp");
+        if (v === "stop") { store.del("xltn-temp-end"); stopAlarm(); }
+        else { unlockAudio(); store.set("xltn-temp-end", Date.now() + (+v) * 60000); toast("Đã hẹn giờ " + v + " phút"); }
+        drawTemp(); checkTemp();
+      });
+    });
+  }
+  function fmtLeft(ms) {
+    if (ms <= 0) return "Đến giờ!";
+    var s = Math.ceil(ms / 1000), m = Math.floor(s / 60);
+    return String(m).padStart(2, "0") + ":" + String(s % 60).padStart(2, "0");
+  }
+  var alarming = false, alarmLoop = 0;
+  function checkTemp() {
+    clearInterval(tempTick);
+    var end = tempEnd();
+    if (!end) { stopAlarm(); return; }
+    var step = function () {
+      var left = tempEnd() - Date.now();
+      var el = $("#tempLeft");
+      if (el) el.textContent = fmtLeft(left);
+      if (left <= 0 && !alarming) startAlarm();
+    };
+    step();
+    tempTick = setInterval(step, 1000);
+  }
+  function startAlarm() {
+    alarming = true;
+    drawTemp();
+    showAlarmBar();
+    var ring = function () {
+      beep(3);
+      if (navigator.vibrate) { try { navigator.vibrate([300, 150, 300]); } catch (e) {} }
+    };
+    ring();
+    alarmLoop = setInterval(ring, 4000);
+  }
+  function stopAlarm() {
+    alarming = false;
+    clearInterval(alarmLoop);
+    var bar = $(".alarm-bar");
+    if (bar) bar.remove();
+  }
+  function showAlarmBar() {
+    if (!alarming || $(".alarm-bar")) return;
+    var bar = document.createElement("div");
+    bar.className = "alarm-bar";
+    bar.innerHTML = "<span>🌡️ Đến giờ đo lại nhiệt độ cho bé</span>" +
+      '<button class="btn" data-alarm-off>Đã biết</button>';
+    view.insertBefore(bar, view.firstChild);
+  }
+
+  // ---- âm thanh ----
+  var actx = null;
+  function unlockAudio() {
+    try {
+      if (!actx) actx = new (window.AudioContext || window.webkitAudioContext)();
+      if (actx.state === "suspended") actx.resume();
+    } catch (e) {}
+  }
+  function beep(times) {
+    if (!actx) return;
+    try {
+      for (var i = 0; i < times; i++) {
+        var t = actx.currentTime + i * 0.35;
+        var o = actx.createOscillator(), g = actx.createGain();
+        o.type = "sine"; o.frequency.value = 880;
+        g.gain.setValueAtTime(0.0001, t);
+        g.gain.exponentialRampToValueAtTime(0.35, t + 0.02);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + 0.25);
+        o.connect(g); g.connect(actx.destination);
+        o.start(t); o.stop(t + 0.27);
+      }
+    } catch (e) {}
+  }
+
+  // ---- giữ màn hình sáng khi đang đếm ----
+  var lock = null;
+  function wakeLock(on) {
+    try {
+      if (on && "wakeLock" in navigator && !lock) {
+        navigator.wakeLock.request("screen").then(function (l) { lock = l; }).catch(function () {});
+      } else if (!on && lock) { lock.release(); lock = null; }
+    } catch (e) {}
+  }
+
+  /* ============================================================
+     Cài app lên màn hình chính
+     ============================================================ */
+  var deferredPrompt = null;
+  var isStandalone = window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+  var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) ||
+    (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  window.addEventListener("beforeinstallprompt", function (e) {
+    e.preventDefault(); deferredPrompt = e;
+    var slot = $("#installSlot");
+    if (slot) slot.outerHTML = installCard();
+  });
+  function installCard() {
+    if (isStandalone || store.get("xltn-install-hide", false)) return "";
+    var how;
+    if (deferredPrompt) how = '<button class="btn primary" data-install>Cài app</button>';
+    else if (isIOS) how = "";
+    else how = "";
+    var text = isIOS
+      ? "Trong Safari, bấm nút <strong>Chia sẻ</strong> (ô vuông có mũi tên), rồi chọn <strong>Thêm vào MH chính</strong>."
+      : deferredPrompt
+        ? "Mở nhanh từ màn hình chính, dùng được cả khi mất mạng."
+        : "Trong Chrome, mở menu <strong>⋮</strong> rồi chọn <strong>Thêm vào màn hình chính</strong>.";
+    return '<div class="install" id="installSlot"><span class="install-icon" aria-hidden="true"></span><div>' +
+      "<strong>Cài lên màn hình điện thoại</strong><p>" + text + " Sau khi cài, app chạy được cả khi không có mạng.</p>" +
+      '<div class="btns">' + how + '<button class="btn ghost" data-install-hide>Ẩn gợi ý này</button></div></div></div>';
+  }
+
+  /* ============================================================
+     Bảng trượt xem nhanh kỹ năng
+     ============================================================ */
+  var sheet = $("#sheet"), lastFocus = null;
+  function openSheet(id) {
+    var k = SKILL[id];
+    if (!k) return;
+    lastFocus = document.activeElement;
+    $("#sheetTitle").textContent = k.title;
+    $("#sheetBody").innerHTML = renderItemBody(k) +
+      '<a class="btn" style="width:100%" href="#/ky-nang/' + id + '" data-close-sheet>Mở trang riêng</a>';
+    sheet.hidden = false;
+    document.body.style.overflow = "hidden";
+    $(".sheet-x").focus();
+  }
+  function closeSheet() {
+    if (sheet.hidden) return;
+    sheet.hidden = true;
+    document.body.style.overflow = "";
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  /* ============================================================
+     Điều hướng
+     ============================================================ */
+  var scrollMem = {};
+  var curHash = null;
+  var depth = 0;
+
+  function setTitle(t) { $("#topTitle").textContent = t || ""; }
+
+  function route() {
+    var h = location.hash || "#/";
+    if (curHash !== null) scrollMem[curHash] = window.scrollY;
+    var parts = h.replace(/^#\/?/, "").split("/");
+    var tab = "home";
+    closeSheet();
+    setTitle("");
+    if (h === "#kham") return;
+    if (!parts[0]) { pageHome(); }
+    else if (parts[0] === "nhom") { pageCategory(parts[1]); }
+    else if (parts[0] === "t") { pageSituation(parts[1]); }
+    else if (parts[0] === "ky-nang") { tab = "skills"; parts[1] ? pageSkill(parts[1]) : pageSkills(); }
+    else if (parts[0] === "cong-cu") { tab = "tools"; pageTools(); }
+    else if (parts[0] === "cap-cuu") { tab = "sos"; pageEmergency(); }
+    else notFound();
+
+    var inner = !!parts[0] && ["ky-nang", "cong-cu", "cap-cuu"].indexOf(parts[0]) === -1 || (parts[0] === "ky-nang" && parts[1]);
+    top.classList.toggle("inner", !!inner);
+    $("#back").hidden = !inner;
+    top.classList.remove("show-title");
+    document.querySelectorAll(".tabs a").forEach(function (a) {
+      a.classList.toggle("on", a.getAttribute("data-tab") === tab);
+      if (a.getAttribute("data-tab") === tab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+    });
+    document.title = ($("#topTitle").textContent ? $("#topTitle").textContent + " · " : "") + "Xử lý tại nhà";
+
+    view.classList.remove("page-enter"); void view.offsetWidth; view.classList.add("page-enter");
+    showAlarmBar();
+    var y = scrollMem[h] || 0;
+    window.scrollTo(0, y);
+    curHash = h;
+    onScroll();
+  }
+
+  function onScroll() {
+    var y = window.scrollY;
+    top.classList.toggle("scrolled", y > 4);
+    var h1 = $("#pageH1") || view.querySelector("h1");
+    if (h1 && top.classList.contains("inner")) {
+      top.classList.toggle("show-title", h1.getBoundingClientRect().bottom < 60);
+    }
+  }
+
+  /* ============================================================
+     Sự kiện chung
+     ============================================================ */
+  document.addEventListener("click", function (e) {
+    var t = e.target;
+    var step = t.closest(".step");
+    if (step && !t.closest(".ref")) { toggleStep(step); return; }
+    var ref = t.closest("[data-skill]");
+    if (ref) { e.preventDefault(); openSheet(ref.getAttribute("data-skill")); return; }
+    if (t.closest("[data-close-sheet]")) {
+      var a = t.closest("a[data-close-sheet]");
+      closeSheet();
+      if (!a) e.preventDefault();
+      return;
+    }
+    if (t.closest("[data-reset]")) {
+      var root = t.closest("[data-since]");
+      var id = root.getAttribute("data-since");
+      store.del(checkKey(id));
+      var container = root.parentNode;
+      container.querySelectorAll('.step[data-owner="' + id + '"]').forEach(function (s) {
+        s.classList.remove("done"); s.setAttribute("aria-checked", "false");
+      });
+      container.querySelectorAll(".k-steps").forEach(function (b) { refreshProgress(b, id); });
+      toast("Đã xoá các dấu đã làm");
+      return;
+    }
+    var jump = t.closest("[data-jump]");
+    if (jump) {
+      e.preventDefault();
+      var el = document.getElementById(jump.getAttribute("data-jump"));
+      if (el) { el.open = true; el.scrollIntoView({ behavior: "smooth", block: "start" }); }
+      return;
+    }
+    if (t.closest("[data-clear]")) { lastQuery = ""; }
+    if (t.closest("[data-install-hide]")) { store.set("xltn-install-hide", true); var c = $("#installSlot"); if (c) c.remove(); return; }
+    if (t.closest("[data-install]") && deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.finally(function () { deferredPrompt = null; var c = $("#installSlot"); if (c) c.remove(); });
+      return;
+    }
+    if (t.closest("[data-alarm-off]")) { store.del("xltn-temp-end"); stopAlarm(); clearInterval(tempTick); drawTemp(); return; }
+    if (t.closest("a[href^='#/']")) depth++;
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeSheet();
+    if ((e.key === " " || e.key === "Enter") && e.target.classList && e.target.classList.contains("step")) {
+      e.preventDefault(); toggleStep(e.target);
+    }
+  });
+  $("#back").addEventListener("click", function () {
+    if (depth > 0) { depth--; history.back(); }
+    else location.hash = "#/";
+  });
+  window.addEventListener("hashchange", route);
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  // đổi sáng tối
+  $("#themeBtn").addEventListener("click", function () {
+    var root = document.documentElement;
+    var cur = root.getAttribute("data-theme") ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    var next = cur === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("xltn-theme", next); } catch (e) {}
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", next === "dark" ? "#11161D" : "#F7F4EE");
+  });
+
+  var toastT = 0;
+  function toast(msg) {
+    var el = $("#toast");
+    el.textContent = msg; el.hidden = false;
+    clearTimeout(toastT);
+    toastT = setTimeout(function () { el.hidden = true; }, 1800);
+  }
+
+  // vuốt xuống để đóng bảng trượt
+  (function () {
+    var y0 = null, panel = $(".sheet");
+    panel.addEventListener("touchstart", function (e) {
+      if ($("#sheetBody").scrollTop > 0) { y0 = null; return; }
+      y0 = e.touches[0].clientY;
+    }, { passive: true });
+    panel.addEventListener("touchmove", function (e) {
+      if (y0 == null) return;
+      var dy = e.touches[0].clientY - y0;
+      if (dy > 0) panel.style.transform = "translateY(" + dy + "px)";
+    }, { passive: true });
+    panel.addEventListener("touchend", function (e) {
+      if (y0 == null) return;
+      var dy = e.changedTouches[0].clientY - y0;
+      panel.style.transform = "";
+      y0 = null;
+      if (dy > 90) closeSheet();
+    });
+  })();
+
+  /* ============================================================
+     Khởi động
+     ============================================================ */
+  buildIndex();
+  route();
+  checkTemp();
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) checkTemp(); });
+
+  if ("serviceWorker" in navigator && location.protocol !== "file:") {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("sw.js").then(function (reg) {
+        reg.addEventListener("updatefound", function () {
+          var w = reg.installing;
+          if (!w) return;
+          w.addEventListener("statechange", function () {
+            if (w.state === "installed" && navigator.serviceWorker.controller) {
+              toast("Đã có nội dung mới, mở lại app để cập nhật");
+            }
+          });
+        });
+      }).catch(function () {});
+    });
+  }
+})();
+
+</script>
+</body>
+</html>
