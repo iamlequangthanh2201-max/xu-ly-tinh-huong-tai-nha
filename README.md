@@ -2,7 +2,7 @@
 
 Web app (PWA) tra cứu các bước xử lý tại nhà khi bé hoặc mẹ gặp vấn đề sau sinh: trớ sữa, sốt, vàng da, tắc tia sữa, và các dấu hiệu phải đi cấp cứu.
 
-Mở app: https://iamlequangthanh2201-max.github.io/xu-ly-tai-nha/
+Mở app: https://iamlequangthanh2201-max.github.io/xu-ly-tinh-huong-tai-nha/
 
 Cùng bộ với [Giấc ngủ cho con](https://iamlequangthanh2201-max.github.io/giac-ngu-cho-con/) và [Dinh dưỡng cho con](https://iamlequangthanh2201-max.github.io/dinh-duong-cho-con/).
 
