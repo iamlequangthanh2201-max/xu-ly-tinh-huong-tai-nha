@@ -85,6 +85,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### A1. Trớ sữa 🟢
 
+**Đây là gì:** Sữa trào ngược từ dạ dày lên miệng rồi chảy ra nhẹ nhàng (không phun mạnh), thường ngay sau bú hoặc khi bé ợ hơi. Xảy ra vì van giữa thực quản và dạ dày của bé chưa đóng chặt, dạ dày lại còn rất nhỏ. Rất phổ biến: khoảng một nửa số bé dưới 3 tháng trớ mỗi ngày, đa số hết khi bé khoảng 1 tuổi.
+
 **Làm ngay:**
 1. Giữ bình tĩnh. Nghiêng người hoặc đầu bé sang một bên, hoặc bế đứng hơi chúi về trước để sữa chảy ra ngoài, không chảy ngược vào mũi họng.
 2. Lau sạch miệng và mũi bé bằng khăn mềm.
@@ -117,6 +119,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### A2. Nôn vọt / nôn ra dịch xanh 🔴
 
+**Đây là gì:** Khác với trớ, nôn vọt là sữa bị phun ra mạnh thành tia, có thể bắn xa. Nếu xảy ra sau hầu hết các cữ bú ở bé 2-8 tuần tuổi, có thể do hẹp môn vị. Nôn ra dịch xanh (màu xanh lá như mật) có thể là dấu hiệu tắc ruột. Cả hai đều cần bác sĩ khám ngay.
+
 **Làm ngay:**
 1. Cho bé nằm nghiêng để tránh hít chất nôn.
 2. Lau sạch miệng và mũi.
@@ -128,6 +132,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### A3. Sặc sữa 🟡/🔴
+
+**Đây là gì:** Sữa đi nhầm vào đường thở thay vì xuống dạ dày, làm bé ho, đỏ mặt, có khi ngừng thở vài giây. Hay gặp khi sữa chảy quá nhanh (mẹ nhiều sữa, núm bình lỗ to) hoặc bé vừa bú vừa khóc. Phần lớn bé tự ho ra được. Nguy hiểm khi bé không ho, không khóc được và bị tím tái.
 
 **Làm ngay:**
 1. Ngừng cho bú ngay, rút ti hoặc bình ra.
@@ -155,6 +161,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### A4. Nấc cụt 🟢
 
+**Đây là gì:** Cơ hoành co giật bất chợt, tạo ra tiếng "hức" đều đều. Ở trẻ nhỏ thường do bú nhanh, nuốt nhiều hơi hoặc dạ dày căng. Nấc không làm bé đau và tự hết.
+
 **Làm ngay:**
 1. Nếu đang bú: tạm dừng, cho bé ợ hơi (K1).
 2. Bế bé thẳng đứng, xoa lưng nhẹ.
@@ -166,6 +174,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### A5. Đầy hơi 🟢
+
+**Đây là gì:** Bé nuốt không khí khi bú hoặc khi khóc, hơi đọng lại trong dạ dày và ruột làm bụng căng, bé vặn mình, xì hơi nhiều, quấy khó chịu. Ruột trẻ sơ sinh còn non nên hay bị như vậy trong vài tháng đầu.
 
 **Làm ngay:**
 1. Cho bé ợ hơi (K1).
@@ -188,6 +198,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### A6. Khóc nhiều, khóc dạ đề 🟢
+
+**Đây là gì:** Khóc dạ đề là khi một em bé khỏe mạnh khóc rất lâu, rất khó dỗ, thường vào chiều tối, dù đã được ăn no và thay tã. Mốc hay dùng: khóc trên 3 giờ/ngày, trên 3 ngày/tuần. Thường bắt đầu từ tuần 2-3, nặng nhất khoảng tuần 6, tự hết khi bé 3-4 tháng. Nguyên nhân chưa rõ, không phải do bố mẹ chăm sai.
 
 **Làm ngay:**
 1. Kiểm tra lần lượt các nhu cầu cơ bản:
@@ -219,6 +231,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### A7. Táo bón 🟢/🟡
 
+**Đây là gì:** Phân của bé cứng, khô, vón thành viên, bé phải rặn rất đau. Số ngày không đi ngoài không phải yếu tố chính: bé bú mẹ có thể vài ngày mới đi một lần mà phân vẫn mềm, như vậy không phải táo bón. Bé uống sữa công thức hay bị hơn bé bú mẹ.
+
 **Làm ngay:**
 1. Xác định có đúng là táo bón không: phân cứng, thành viên nhỏ, bé rặn đau và khóc. (Bé rặn đỏ mặt nhưng phân ra vẫn mềm là bình thường, do bé chưa phối hợp được cơ bụng và cơ hậu môn.)
 2. Bé bú mẹ: cho bú nhiều cữ hơn.
@@ -239,6 +253,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### A8. Tiêu chảy 🟡/🔴
+
+**Đây là gì:** Bé đi ngoài nhiều lần hơn hẳn mọi ngày, phân lỏng toàn nước. Phân bé bú mẹ vốn lỏng, vàng, lợn cợn và đi nhiều lần, nên cần so với "mọi khi" của chính bé. Nguy hiểm lớn nhất là mất nước, vì cơ thể bé nhỏ nên mất nước rất nhanh.
 
 **Làm ngay:**
 1. Tiếp tục cho bú mẹ, tăng số cữ bú.
@@ -262,6 +278,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### A9. Vàng da 🟢/🔴
 
+**Đây là gì:** Da và lòng trắng mắt bé ngả màu vàng, do trong máu có nhiều bilirubin mà gan của bé chưa đủ sức đào thải. Vàng da sinh lý rất thường gặp, xuất hiện ngày 2-3 và tự hết sau 1-2 tuần. Vàng da quá sớm, quá đậm hoặc kéo dài có thể gây hại cho não nên cần đi khám.
+
 **Làm ngay:**
 1. Kiểm tra dưới ánh sáng tự nhiên ban ngày (gần cửa sổ, không dưới đèn vàng).
 2. Ấn nhẹ ngón tay lên da bé ở lần lượt: trán, ngực, bụng, đùi, cẳng chân, lòng bàn chân. Buông tay ra và xem chỗ vừa ấn có màu vàng không.
@@ -283,6 +301,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### A10. Hăm tã 🟢
+
+**Đây là gì:** Vùng da trong tã (mông, bẹn, bộ phận sinh dục) bị đỏ, rát, có khi nổi mụn nhỏ hoặc trợt da. Do da tiếp xúc lâu với nước tiểu, phân, hơi ẩm và cọ xát với tã. Thường khỏi sau vài ngày nếu giữ khô thoáng.
 
 **Làm ngay:**
 1. Thay tã ngay khi ướt hoặc bẩn, ít nhất 2-3 giờ một lần.
@@ -306,6 +326,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### A11. Mụn sữa, ban đỏ sơ sinh 🟢
 
+**Đây là gì:** Mụn sữa là những nốt nhỏ màu trắng hoặc đỏ trên má, mũi, trán, hay xuất hiện ở tuần 2-4, do hormone từ mẹ truyền sang. Ban đỏ sơ sinh là những mảng đỏ có chấm vàng trắng ở giữa, nổi rồi lặn ở nhiều chỗ trong tuần đầu. Cả hai đều vô hại, tự hết, không phải do sữa hay do dị ứng.
+
 **Làm ngay:**
 1. Rửa mặt bé bằng nước ấm 1-2 lần/ngày, thấm khô bằng khăn mềm.
 2. Lau sạch sữa trớ, nước dãi trên mặt ngay khi có.
@@ -322,6 +344,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### A12. Chàm sữa 🟡
+
+**Đây là gì:** Tên dân gian của viêm da cơ địa: da khô, đỏ, ráp, rất ngứa, hay gặp ở má, trán, các nếp gấp tay chân. Do lớp bảo vệ của da bé yếu nên da dễ mất nước và dễ bị kích ứng. Hay gặp ở bé có bố mẹ bị dị ứng, hen, viêm mũi dị ứng. Bệnh hay tái đi tái lại, nhiều bé đỡ dần khi lớn.
 
 **Làm ngay:**
 1. Tắm bằng nước ấm (không nóng), trong 5-10 phút.
@@ -345,6 +369,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### A13. Cứt trâu 🟢
 
+**Đây là gì:** Những mảng vảy vàng, nhờn hoặc khô bám trên da đầu, đôi khi ở lông mày, sau tai. Do tuyến dầu trên da đầu bé hoạt động mạnh trong những tháng đầu. Không ngứa, không lây, không phải do bé bẩn, thường tự hết sau vài tháng.
+
 **Làm ngay:**
 1. Thoa một lớp dầu (dầu dừa, dầu olive hoặc dầu em bé) lên vùng có vảy, để 15-20 phút.
 2. Dùng lược răng mềm hoặc bàn chải mềm chải nhẹ cho vảy bong ra.
@@ -362,6 +388,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### A14. Rôm sảy 🟢
 
+**Đây là gì:** Những nốt li ti màu đỏ hoặc trong như giọt nước, hay ở cổ, lưng, ngực, nách, xuất hiện khi bé bị nóng và ra nhiều mồ hôi. Do tuyến mồ hôi của bé còn non nên dễ bị tắc. Hết nhanh khi được làm mát.
+
 **Làm ngay:**
 1. Đưa bé đến chỗ thoáng mát.
 2. Cởi bớt quần áo, chỉ mặc một lớp cotton mỏng.
@@ -377,6 +405,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### A15. Chăm sóc rốn 🟢
+
+**Đây là gì:** Sau khi cắt dây rốn, trên rốn bé còn một đoạn cuống nhỏ. Cuống khô dần, chuyển từ vàng xanh sang nâu đen rồi tự rụng sau 1-3 tuần. Lúc sắp rụng và vừa rụng có thể rỉ chút dịch hoặc vài giọt máu, là bình thường. Việc chính là giữ rốn khô sạch để không bị nhiễm trùng.
 
 **Hằng ngày:**
 1. Rửa tay sạch trước khi chạm vào rốn.
@@ -401,6 +431,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### A16. Nghẹt mũi 🟢
 
+**Đây là gì:** Lỗ mũi trẻ sơ sinh rất nhỏ, chỉ một ít gỉ mũi, sữa trớ lên hoặc không khí khô cũng đủ làm bé thở khò khè, phì phò. Bé dưới 3 tháng chủ yếu thở bằng mũi nên nghẹt mũi làm bé khó bú và hay quấy. Đa số không phải bệnh, chỉ cần làm sạch mũi.
+
 **Làm ngay:**
 1. Nhỏ nước muối và hút mũi theo K2.
 2. Làm trước cữ bú và trước khi ngủ để bé dễ thở khi bú.
@@ -419,6 +451,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### A17. Sốt 🟡/🔴
+
+**Đây là gì:** Sốt là khi thân nhiệt từ 38°C trở lên. Sốt là cách cơ thể chống lại nhiễm trùng, bản thân nó không phải bệnh. Nhưng ở bé dưới 3 tháng, sức đề kháng còn yếu, nhiễm trùng có thể nặng lên rất nhanh mà không có dấu hiệu nào khác, nên sốt ở tuổi này luôn phải đi khám ngay.
 
 **Bé dưới 3 tháng, từ 38°C trở lên:**
 1. Đo lại theo K3 để chắc chắn.
@@ -450,6 +484,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### A18. Hạ thân nhiệt (dưới 36,5°C) 🟡/🔴
 
+**Đây là gì:** Thân nhiệt dưới 36,5°C. Trẻ sơ sinh mất nhiệt rất nhanh vì người nhỏ, ít mỡ, đầu lại to so với người. Bé bị lạnh có thể tay chân lạnh, da hơi tím, bú kém, lừ đừ. Ở trẻ sơ sinh, người lạnh đôi khi là dấu hiệu nhiễm trùng chứ không chỉ do thời tiết.
+
 **Làm ngay:**
 1. Đo lại nhiệt độ (K3).
 2. Cho bé da kề da với mẹ hoặc bố: bé chỉ mặc tã, nằm áp ngực người lớn, đắp chăn lên cả hai.
@@ -462,6 +498,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### A19. Ngủ ngày thức đêm 🟢
 
+**Đây là gì:** Trong bụng mẹ bé chưa phân biệt ngày đêm, nên sau sinh nhiều bé ngủ say ban ngày và tỉnh táo ban đêm. Đồng hồ sinh học của bé hình thành dần trong 2-3 tháng đầu, nhờ ánh sáng ban ngày và sự yên tối ban đêm. Đây không phải bệnh.
+
 **Làm hằng ngày:**
 1. Ban ngày: kéo rèm cho nhà sáng, sinh hoạt bình thường, không cần giữ yên lặng tuyệt đối.
 2. Ban ngày: không để bé ngủ quá 3 giờ liền mà không bú.
@@ -473,6 +511,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### A20. Giật mình khi ngủ 🟢
+
+**Đây là gì:** Đang ngủ, bé bỗng giật nảy người, dang hai tay ra rồi co lại, có khi tỉnh dậy khóc. Đây là phản xạ Moro, có ở mọi trẻ sơ sinh khỏe mạnh, thường hết khi bé 3-6 tháng. Bé cũng hay vặn mình, rặn è è, cử động lung tung khi ngủ nông, đều là bình thường.
 
 **Làm ngay:**
 1. Quấn bé (K7).
@@ -490,6 +530,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### A21. Tắc tuyến lệ, có ghèn 🟢
+
+**Đây là gì:** Nước mắt bình thường chảy qua một ống nhỏ ở góc trong mắt xuống mũi. Ở nhiều bé ống này chưa thông hẳn, nên nước mắt đọng lại, mắt lúc nào cũng ướt, có ghèn vàng nhạt, nhất là khi ngủ dậy. Lòng trắng mắt không đỏ. Đa số tự thông trước 1 tuổi.
 
 **Làm ngay:**
 1. Rửa tay sạch.
@@ -509,6 +551,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### A22. Tưa lưỡi (nấm miệng) 🟡
 
+**Đây là gì:** Nhiễm nấm trong miệng, tạo các mảng trắng như váng sữa trên lưỡi, má trong, lợi, bám chắc, lau không sạch. Bé có thể đau, bú kém, quấy khi bú. Nấm có thể lây qua lại giữa miệng bé và đầu ti của mẹ.
+
 **Làm ngay:**
 1. Phân biệt với cặn sữa: lấy gạc ẩm quấn ngón tay, lau nhẹ. Cặn sữa lau đi được. Mảng trắng bám chắc, lau ra có chỗ đỏ là nấm.
 2. Nếu nghi nấm: đi khám để được kê thuốc.
@@ -520,6 +564,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### A23. Sưng vú sinh lý ở bé 🟢
+
+**Đây là gì:** Trong những ngày đầu, cả bé trai và bé gái có thể bị sưng một hoặc hai bên vú, sờ thấy cục nhỏ, có khi rỉ ít dịch như sữa. Do hormone của mẹ truyền sang bé lúc còn trong bụng. Tự hết sau vài tuần đến vài tháng.
 
 **Làm:**
 1. Giữ sạch, để tự hết sau vài tuần.
@@ -535,6 +581,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### A24. Bé bị ngã 🟡/🔴
+
+**Đây là gì:** Bé rơi từ giường, sofa, bàn thay tã hoặc tuột khỏi tay người bế. Bé có thể lăn ngay cả khi bố mẹ nghĩ bé "chưa biết lăn". Đầu bé to và nặng so với người nên khi ngã hay đập đầu trước. Phần lớn chỉ bị u, bầm nhẹ, nhưng cần theo dõi kỹ các dấu hiệu chấn thương đầu.
 
 **Làm ngay:**
 1. Nếu bé nằm im, không cử động: không vội bế lên, gọi 115.
@@ -558,6 +606,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### A25. Bỏng nước nóng 🟡/🔴
 
+**Đây là gì:** Da bé mỏng hơn da người lớn rất nhiều, nước nóng có thể gây bỏng sâu chỉ trong vài giây. Hay gặp khi pha nước tắm, hoặc khi người lớn vừa bế bé vừa cầm cốc nước nóng. Vết bỏng có thể chỉ đỏ rát, phồng bọng nước, hoặc trắng bệch (bỏng sâu).
+
 **Làm ngay:**
 1. Đưa bé ra khỏi nguồn nóng.
 2. Cởi quần áo ở vùng bỏng (nếu vải dính vào da thì để nguyên, không giật ra).
@@ -575,6 +625,8 @@ Mỗi tình huống gồm 4 phần:
 ## PHẦN B: MẸ
 
 ### B1. Sản dịch 🟢
+
+**Đây là gì:** Sản dịch là máu và dịch chảy ra từ âm đạo sau sinh (kể cả sinh mổ), do lớp niêm mạc tử cung bong ra và chỗ nhau thai bám đang lành lại. Ban đầu đỏ tươi như hành kinh nhiều, rồi nhạt dần sang hồng, nâu, vàng trắng, kéo dài khoảng 4-6 tuần.
 
 **Chăm sóc hằng ngày:**
 1. Thay băng vệ sinh 3-4 giờ một lần, hoặc sớm hơn khi đầy.
@@ -596,6 +648,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### B2. Cương sữa 🟢
 
+**Đây là gì:** Khoảng ngày 3-5 sau sinh, sữa về nhiều, máu và dịch dồn đến vú làm hai bầu vú căng cứng, nóng, nặng và đau. Quầng vú căng làm bé khó ngậm. Thường giảm sau 1-2 ngày, khi cơ thể điều chỉnh lượng sữa theo nhu cầu của bé.
+
 **Làm ngay:**
 1. Cho bé bú thường xuyên, 8-12 lần/ngày, kể cả ban đêm.
 2. Nếu quầng vú căng cứng khiến bé không ngậm được: dùng các đầu ngón tay ấn nhẹ quanh quầng vú trong 1 phút cho mềm, hoặc vắt ra một ít sữa.
@@ -610,6 +664,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### B3. Tắc tia sữa 🟡
+
+**Đây là gì:** Một vùng trong vú bị sưng viêm, làm các ống dẫn sữa bị chèn hẹp, sữa ứ lại. Mẹ sờ thấy cục cứng hoặc mảng chắc, đau khi chạm, có khi da đỏ. Hay xảy ra khi bỏ cữ, bé bú không hết, áo chật đè vào vú. Nếu không xử lý có thể thành viêm vú hoặc áp xe.
 
 **Làm ngay:**
 1. Tiếp tục cho bú bình thường, kể cả bên bị tắc. Không ngừng cho bú.
@@ -633,6 +689,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### B4. Nứt, đau đầu ti 🟡
 
+**Đây là gì:** Đầu ti bị rát, đỏ, nứt nẻ, có khi chảy máu, đau nhất lúc bé mới ngậm. Nguyên nhân chính là khớp ngậm chưa đúng: bé chỉ ngậm đầu ti mà không ngậm sâu vào quầng vú, nên lợi bé nghiến lên đầu ti. Đau nhẹ vài giây đầu trong tuần đầu là phổ biến, nhưng đau suốt cữ bú là không bình thường.
+
 **Làm ngay:**
 1. Kiểm tra khớp ngậm của bé:
    - Miệng bé mở rộng.
@@ -655,6 +713,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### B5. Ít sữa 🟡
 
+**Đây là gì:** Lượng sữa mẹ không đủ cho bé, thể hiện qua bé ít tã ướt và tăng cân chậm. Nhiều mẹ lo ít sữa vì vú mềm, bé đòi bú liên tục hoặc vắt ra được ít, nhưng những dấu hiệu này thường không có nghĩa là thiếu sữa. Cách đo đúng nhất là xem tã ướt và cân nặng của bé. Sữa tạo ra theo nguyên tắc: bú càng nhiều, sữa càng nhiều.
+
 **Làm ngay:**
 1. Cho bú hoặc vắt sữa 8-12 lần trong 24 giờ, kể cả ban đêm.
 2. Da kề da với bé nhiều nhất có thể.
@@ -672,6 +732,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### B6. Vết khâu tầng sinh môn 🟢
+
+**Đây là gì:** Khi sinh thường, tầng sinh môn có thể bị rách, hoặc được bác sĩ cắt một đường nhỏ cho bé ra dễ, rồi khâu lại. Vết khâu thường đau, căng tức trong 1-2 tuần đầu. Chỉ khâu thường tự tiêu, không cần cắt chỉ.
 
 **Chăm sóc hằng ngày:**
 1. Sau mỗi lần đi vệ sinh, dội nước ấm sạch lên vùng khâu, lau từ trước ra sau, thấm khô.
@@ -694,6 +756,8 @@ Mỗi tình huống gồm 4 phần:
 
 ### B7. Vết mổ lấy thai 🟢
 
+**Đây là gì:** Vết mổ thường là một đường ngang ở bụng dưới, dài khoảng 10-15 cm. Bên ngoài da lành trong khoảng 1-2 tuần, nhưng các lớp bên trong cần khoảng 6 tuần hoặc lâu hơn. Đau, tê quanh vết mổ, ngứa khi lên da non là bình thường.
+
 **Chăm sóc hằng ngày:**
 1. Giữ vết mổ khô sạch. Thay băng theo hướng dẫn của bác sĩ.
 2. Tắm vòi sen khi bác sĩ cho phép, sau đó thấm khô vết mổ nhẹ nhàng.
@@ -713,6 +777,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### B8. Buồn bã sau sinh, trầm cảm sau sinh 🟢/🔴
+
+**Đây là gì:** Buồn bã sau sinh (baby blues) là cảm giác dễ khóc, buồn vô cớ, cáu gắt, lo âu trong khoảng 2 tuần đầu, gặp ở phần lớn các mẹ, do hormone thay đổi đột ngột và thiếu ngủ. Trầm cảm sau sinh nặng hơn và kéo dài hơn: buồn chán, mất hứng thú, thấy mình tội lỗi hoặc vô dụng suốt nhiều tuần, ảnh hưởng đến việc chăm con. Đây là bệnh, chữa được, không phải do mẹ yếu đuối.
 
 **Mẹ có thể làm:**
 1. Ngủ khi con ngủ. Nhờ người trông bé để có ít nhất một giấc ngủ dài 4-5 giờ mỗi ngày.
@@ -734,6 +800,8 @@ Mỗi tình huống gồm 4 phần:
 ---
 
 ### B9. Táo bón, trĩ sau sinh 🟢/🟡
+
+**Đây là gì:** Sau sinh ruột hoạt động chậm lại, mẹ sợ đau vết khâu nên ngại đi ngoài, cộng thêm thuốc giảm đau và uống ít nước, nên dễ táo bón. Trĩ là các tĩnh mạch ở hậu môn bị sưng phồng do rặn khi sinh hoặc khi táo bón, gây đau, ngứa, có thể chảy ít máu đỏ tươi khi đi ngoài.
 
 **Làm:**
 1. Uống 2-2,5 lít nước/ngày.
@@ -774,3 +842,58 @@ Mỗi tình huống gồm 4 phần:
 - Bắp chân sưng, đau một bên
 - Sốt cao kèm sản dịch hôi
 - Có ý nghĩ làm hại bản thân hoặc con
+
+---
+
+## PHẦN D: GIẢI THÍCH TỪ NGỮ
+
+- **Thóp:** Chỗ mềm trên đỉnh đầu bé, nơi các xương sọ chưa liền lại, thường liền hẳn khi bé 12-18 tháng. Bình thường thóp phẳng. Thóp lõm xuống có thể do mất nước, thóp phồng căng có thể do áp lực trong đầu tăng, cả hai đều cần đi khám.
+- **Li bì:** Bé ngủ nhiều bất thường, lay gọi khó tỉnh, tỉnh rồi lại lơ mơ ngủ tiếp, không đòi bú, người mềm yếu. Khác với ngủ ngon: bé ngủ ngon vẫn tự thức dậy đòi bú.
+- **Tím tái / tím môi / tím:** Môi, lưỡi, mặt hoặc toàn thân chuyển màu xanh tím do máu thiếu oxy. Bàn tay, bàn chân hơi tím khi lạnh trong những ngày đầu có thể bình thường, nhưng tím ở môi, lưỡi, mặt luôn là dấu hiệu nguy hiểm.
+- **Rút lõm ngực / lõm ngực:** Khi bé hít vào, phần da ngay dưới bờ sườn hoặc giữa các xương sườn bị hút lõm sâu vào trong. Cho thấy bé đang phải gắng sức rất nhiều để thở.
+- **Cánh mũi phập phồng / phập phồng cánh mũi:** Hai bên cánh mũi phồng ra xẹp vào theo từng nhịp thở, là dấu hiệu bé đang khó thở.
+- **Thở nhanh:** Nhịp thở vượt mức bình thường theo tuổi: từ 60 lần/phút trở lên với bé dưới 2 tháng, từ 50 lần/phút trở lên với bé 2-12 tháng. Phải đếm đủ 60 giây khi bé nằm yên.
+- **Khò khè:** Tiếng thở rè rè, rít như có đờm hoặc như huýt sáo nhỏ khi bé thở.
+- **Ngưng thở / ngừng thở:** Bé không thở trong một khoảng. Trẻ sơ sinh có thể ngừng vài giây rồi thở lại (thở chu kỳ), là bình thường. Ngừng trên 20 giây, hoặc ngừng kèm tím tái, mềm nhũn là cấp cứu.
+- **Co giật:** Bé giật tay chân nhịp nhàng không dừng được, hoặc người cứng đờ, mắt trợn hay nhìn chằm chằm một hướng, môi chép liên tục, gọi không đáp. Khác với run sinh lý: run sinh lý dừng ngay khi giữ nhẹ tay chân bé.
+- **Mất nước:** Cơ thể thiếu nước do mất nhiều (nôn, tiêu chảy, sốt) mà không được bù đủ. Dấu hiệu: ít tã ướt, môi khô, thóp lõm, khóc không có nước mắt, li bì.
+- **Nhiễm trùng:** Vi khuẩn hoặc virus xâm nhập và gây bệnh. Ở trẻ sơ sinh, nhiễm trùng có thể lan nhanh vào máu, nên các dấu hiệu như sốt, hạ thân nhiệt, bỏ bú, li bì đều cần đi khám sớm.
+- **Hẹp môn vị:** Môn vị là cửa ra của dạ dày xuống ruột. Ở một số bé (thường 2-8 tuần tuổi), cơ ở đây dày lên chặn sữa đi xuống, khiến bé nôn vọt sau bú. Chữa bằng một ca mổ nhỏ, hiệu quả cao.
+- **Dịch xanh:** Chất nôn màu xanh lá cây, màu của mật. Có thể là dấu hiệu tắc ruột, cần đi khám ngay.
+- **Tắc ruột:** Ruột bị chặn, thức ăn và hơi không đi xuống được, gây nôn ra dịch xanh, bụng chướng, đau. Là cấp cứu ngoại khoa.
+- **Phân bạc màu:** Phân trắng, xám hoặc vàng rất nhạt như màu đất sét. Có thể là dấu hiệu teo đường mật, cần đi khám ngay.
+- **Teo đường mật:** Đường dẫn mật từ gan xuống ruột bị tắc hoặc không phát triển. Cần phát hiện và mổ sớm, tốt nhất trước khi bé 2 tháng tuổi.
+- **Bilirubin:** Chất màu vàng sinh ra khi hồng cầu cũ bị phân huỷ. Gan lọc chất này và thải ra ngoài qua phân. Bilirubin tăng cao gây vàng da.
+- **Cơ hoành:** Lớp cơ mỏng ngăn giữa ngực và bụng, giúp ta hít thở.
+- **Phản xạ Moro:** Phản xạ giật mình bẩm sinh: khi bị giật mình hoặc có cảm giác bị rơi, bé dang hai tay ra rồi co lại, có khi khóc. Thường hết khi bé 3-6 tháng.
+- **Lẫy:** Bé tự lật từ nằm ngửa sang nằm sấp. Thường bắt đầu khoảng 3-5 tháng, có bé sớm hơn.
+- **Đột tử:** Ở đây là hội chứng đột tử ở trẻ sơ sinh: bé đang khỏe mạnh tử vong đột ngột khi ngủ mà không rõ nguyên nhân, hay gặp nhất ở bé dưới 6 tháng. Cho bé ngủ nằm ngửa trên nệm phẳng, không gối, không chăn dày giúp giảm nguy cơ rõ rệt.
+- **Dị vật:** Vật lạ lọt vào đường thở, như hạt, đồ chơi nhỏ, miếng thức ăn, cục sữa.
+- **Hồi sinh tim phổi:** Còn gọi là CPR: ép tim và thổi ngạt để duy trì máu và oxy lên não khi tim hoặc hơi thở ngừng. Nên học trực tiếp tại một lớp sơ cứu.
+- **Da kề da:** Đặt bé chỉ mặc tã nằm sấp áp trực tiếp lên ngực trần của bố hoặc mẹ, đắp chăn lên cả hai. Giúp giữ ấm cho bé, ổn định nhịp tim, nhịp thở và giúp sữa về.
+- **Tiếng ồn trắng:** Âm thanh rì rì đều đều như tiếng quạt, máy sấy, tiếng mưa. Giống tiếng bé nghe trong bụng mẹ nên giúp bé dễ dịu lại.
+- **Dạ đề:** Cách gọi dân gian cho tình trạng bé khóc rất nhiều, khó dỗ, thường vào chiều tối, ở bé khỏe mạnh 2 tuần đến 4 tháng tuổi.
+- **Nước muối sinh lý:** Nước muối 0,9%, độ mặn giống dịch cơ thể, bán sẵn ở hiệu thuốc. Dùng nhỏ mũi, rửa mắt, rửa rốn. Không tự pha ở nhà.
+- **ORS:** Oresol, gói bột muối và đường để pha với nước theo tỉ lệ chính xác, dùng bù nước khi tiêu chảy, nôn. Pha sai tỉ lệ có thể gây hại.
+- **Kẽm oxit:** Thành phần chính trong nhiều kem chống hăm, tạo lớp màng bảo vệ da khỏi nước tiểu và phân.
+- **Corticoid:** Nhóm thuốc chống viêm mạnh, có trong nhiều loại kem bôi da. Bôi sai cách trên da bé (bôi lâu, bôi rộng) có thể làm mỏng da và gây tác dụng phụ. Chỉ dùng khi bác sĩ kê.
+- **Paracetamol:** Thuốc hạ sốt, giảm đau phổ biến nhất cho trẻ em, còn gọi là acetaminophen. Liều tính theo cân nặng của bé, phải đo đúng bằng dụng cụ kèm theo chai thuốc.
+- **Ibuprofen:** Thuốc hạ sốt, giảm đau, chống viêm. Không dùng cho bé dưới 6 tháng. Mẹ đang cho con bú dùng được.
+- **Aspirin:** Thuốc giảm đau, hạ sốt. Không bao giờ dùng cho trẻ em vì có thể gây hội chứng Reye, làm tổn thương gan và não.
+- **Lanolin:** Chất béo tinh chế từ lông cừu, dạng kem bôi đầu ti, giúp giữ ẩm cho vết nứt mau lành. Không cần lau đi trước khi cho bú.
+- **Thuốc co mạch:** Thuốc nhỏ mũi làm co mạch máu trong mũi để thông mũi nhanh. Không dùng cho trẻ nhỏ vì có thể gây ngộ độc, làm bé thở chậm, li bì.
+- **Vaselin:** Sáp trơn, không mùi, bán ở hiệu thuốc. Ở đây dùng bôi vào đầu nhiệt kế cho dễ đưa vào hậu môn.
+- **Loạn sản khớp háng:** Khớp háng phát triển không bình thường, chỏm xương đùi lỏng hoặc trật ra khỏi ổ khớp. Quấn chặt và ép thẳng hai chân bé làm tăng nguy cơ.
+- **Bọng nước:** Bóng nước phồng trên da sau khi bị bỏng. Lớp da phía trên che chở vết thương bên dưới, nên không chọc vỡ.
+- **Khớp ngậm:** Cách miệng bé bám vào vú khi bú. Ngậm đúng là miệng mở rộng, ngậm cả phần lớn quầng vú, môi dưới loe ra ngoài, cằm chạm vú.
+- **Quầng vú:** Vùng da sẫm màu bao quanh đầu ti.
+- **Thắng lưỡi:** Dải da mỏng nối mặt dưới lưỡi với sàn miệng. Nếu quá ngắn hoặc quá dày, bé khó đưa lưỡi ra để bú, làm mẹ đau đầu ti.
+- **Nấm:** Ở đây là nấm Candida, một loại nấm men vốn sống trên da và trong miệng, phát triển quá mức khi gặp chỗ ẩm và ấm, gây tưa lưỡi, hăm nấm, đau rát đầu ti.
+- **Tầng sinh môn:** Vùng da và cơ nằm giữa cửa âm đạo và hậu môn.
+- **Sản dịch:** Máu và dịch chảy ra từ tử cung qua âm đạo sau sinh, kéo dài khoảng 4-6 tuần.
+- **Băng huyết:** Chảy máu rất nhiều sau sinh, có thể nguy hiểm đến tính mạng. Hay gặp nhất trong 24 giờ đầu nhưng có thể xảy ra đến vài tuần sau.
+- **Tiền sản giật:** Bệnh tăng huyết áp liên quan đến thai kỳ, có thể xuất hiện cả sau sinh (đến 6 tuần). Dấu hiệu: đau đầu dữ dội, mờ mắt, phù nhanh. Có thể gây co giật, đột quỵ.
+- **Huyết khối:** Cục máu đông trong lòng mạch máu, sau sinh hay gặp ở chân. Nếu cục máu trôi lên phổi có thể gây khó thở, đau ngực đột ngột, rất nguy hiểm.
+- **Viêm vú:** Vú bị viêm, có thể do nhiễm khuẩn, gây đỏ, nóng, đau, kèm sốt, ớn lạnh, mệt như bị cúm.
+- **Áp xe:** Ổ mủ dưới da hoặc trong mô, sờ thấy khối sưng mềm, lùng nhùng, đau. Thường phải được bác sĩ chích hoặc hút mủ.
+- **Trĩ:** Các tĩnh mạch ở hậu môn bị sưng phồng, gây đau, ngứa, có thể chảy máu đỏ tươi khi đi ngoài.

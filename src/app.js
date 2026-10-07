@@ -10,6 +10,23 @@
   DATA.skills.forEach(function (k) { SKILL[k.id] = k; });
   DATA.categories.forEach(function (c) { CAT[c.id] = c; });
 
+  // Từ điển: mỗi từ (kể cả tên gọi khác) trỏ về một mục giải thích
+  var GLOSS = DATA.glossary || [];
+  var TERM_IDX = {};
+  var aliases = [];
+  GLOSS.forEach(function (g, i) {
+    g.aliases.forEach(function (a) { TERM_IDX[a.toLowerCase()] = i; aliases.push(a); });
+  });
+  aliases.sort(function (a, b) { return b.length - a.length; });
+  var TERM_RE = null;
+  try {
+    TERM_RE = new RegExp("(?<![\\p{L}\\d])(" + aliases.map(function (a) {
+      return a.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    }).join("|") + ")(?![\\p{L}\\d])", "giu");
+  } catch (e) { TERM_RE = null; }   // trình duyệt quá cũ: bỏ qua gạch chân
+  var termSeen = {};      // mỗi trang chỉ gạch chân lần xuất hiện đầu tiên của một từ
+  var termSkip = -1;      // không gạch chân từ trùng với chính trang đang xem
+
   var SEV_LABEL = { green: "Thường gặp", yellow: "Cần lưu ý", red: "Nguy hiểm" };
   var CHECK_TTL = 12 * 3600 * 1000;   // checklist tự xoá sau 12 giờ
 
@@ -44,6 +61,14 @@
   // **đậm**, "(xem K1)", "(K5)", "theo K2" thành chip bấm được
   function fmt(s) {
     var h = esc(s);
+    if (TERM_RE) {
+      h = h.replace(TERM_RE, function (m) {
+        var i = TERM_IDX[m.toLowerCase()];
+        if (i == null || i === termSkip || termSeen[i]) return m;
+        termSeen[i] = 1;
+        return '<button class="term" data-term="' + i + '">' + m + "</button>";
+      });
+    }
     h = h.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
     h = h.replace(/\s?\((?:xem )?([AKB]\d{1,2})\)/g, function (_, id) { return " " + refChip(id); });
     h = h.replace(/\b(theo|xem) ([AKB]\d{1,2})\b/g, function (_, w, id) { return w + " " + refChip(id); });
@@ -164,6 +189,7 @@
     var html = "";
     var stepSecs = 0;
     item.sections.forEach(function (sec, si) {
+      if (sec.kind === "about") return;   // phần "Đây là gì" hiện riêng ở đầu trang
       if (sec.kind === "steps") {
         stepSecs++;
         html += renderSteps(item.id, sec, si, check);
@@ -182,7 +208,9 @@
     return bar + html;
   }
   function sinceText(check) {
-    if (!check.ts || !Object.keys(check.done).length) return "Chạm vào từng bước để đánh dấu đã làm.";
+    if (!check.ts || !Object.keys(check.done).length) {
+      return "Chạm vào từng bước để đánh dấu đã làm. Chạm vào <span class=\"term-demo\">chữ gạch chân</span> để xem nghĩa.";
+    }
     return 'Đánh dấu từ lúc ' + timeStr(check.ts) + ' · <button class="reset" data-reset>Làm lại từ đầu</button>';
   }
 
@@ -228,6 +256,10 @@
       var body = bodyText(it);
       INDEX.push({ item: it, t: norm(it.title), k: norm(it.keywords || ""), b: norm(body), body: body });
     });
+    GLOSS.forEach(function (g, i) {
+      var item = { id: "G" + i, title: g.term, gloss: i };
+      INDEX.push({ item: item, t: norm(g.term), k: norm(g.aliases.join(", ")), b: norm(g.text), body: g.text });
+    });
   }
   // vị trí đầu tiên mà t khớp ở đầu một từ ("ho" khớp "ho khan", không khớp "hơi")
   // từ ngắn 1-2 chữ phải khớp trọn từ, nếu không "ho" sẽ khớp cả "hơi"
@@ -264,6 +296,7 @@
         if (wordAt(d.b, nq) > -1) score += 3;
       }
       if (d.item.id[0] === "K") score -= 2;
+      if (d.item.id[0] === "G") score -= 1;
       res.push({ d: d, score: score, toks: toks, nq: nq });
     });
     res.sort(function (a, b) { return b.score - a.score; });
@@ -293,6 +326,11 @@
   var lastQuery = "";
 
   function rowFor(it, sub) {
+    if (it.gloss != null) {
+      return '<button class="row" data-term="' + it.gloss + '"><span class="k-badge">Aa</span>' +
+        '<span class="row-main"><span class="row-title">' + esc(it.title) + "</span>" +
+        (sub ? '<span class="row-sub">' + sub + "</span>" : "") + "</span>" + ICON.chev + "</button>";
+    }
     var isSkill = it.id[0] === "K";
     var href = isSkill ? "#/ky-nang/" + it.id : "#/t/" + it.id;
     var lead = isSkill ? '<span class="k-badge">' + it.id + "</span>" : dots(it.severity);
@@ -322,6 +360,7 @@
       '<div class="cats">' + cats + "</div>" +
       '<div class="legend"><span><i class="dot green"></i>Thường gặp</span><span><i class="dot yellow"></i>Cần lưu ý</span><span><i class="dot red"></i>Có thể nguy hiểm</span></div>' +
       '<div class="eyebrow">Kỹ năng cơ bản</div><div class="chips">' + chips + "</div>" +
+      glossLink() +
       installCard() +
       '<p class="disclaimer">Thông tin tham khảo theo khuyến nghị phổ biến của WHO, AAP và Bộ Y tế. Không thay thế bác sĩ. Khi thấy dấu hiệu nguy hiểm hoặc khi bố mẹ thấy bất an, hãy đưa bé đi khám.</p>' +
       "</div>";
@@ -372,10 +411,14 @@
       alert = '<a class="alert" href="#kham" data-jump="kham">' + ICON.alert + "<span>Có trường hợp phải đi cấp cứu. Xem các dấu hiệu.</span></a>";
     }
     var cats = DATA.categories.filter(function (c) { return c.items.indexOf(id) > -1; });
+    termSkip = TERM_IDX[s.title.toLowerCase()];
+    if (termSkip == null) termSkip = -1;
+    var about = s.sections.filter(function (x) { return x.kind === "about"; })[0];
     view.innerHTML =
       '<div class="sit-head"><h1 id="pageH1">' + esc(s.title) + "</h1>" +
       '<div class="sev">' + pills + "</div>" +
       '<p class="sev-note">' + esc(sevNote(s.severity)) + "</p></div>" +
+      (about ? '<section class="about"><div class="about-label">Đây là gì?</div><p>' + fmt(about.text) + "</p></section>" : "") +
       alert + renderItemBody(s) +
       '<p class="disclaimer">Nhóm: ' + cats.map(function (c) {
         return '<a href="#/nhom/' + c.id + '">' + esc(c.title) + "</a>"; }).join(", ") +
@@ -388,7 +431,39 @@
       '<div class="list">' + DATA.skills.map(function (k) {
         var n = k.sections.reduce(function (a, s) { return a + s.items.length; }, 0);
         return rowFor(k, n + " bước");
+      }).join("") + "</div>" + glossLink();
+  }
+
+  function glossLink() {
+    return '<a class="gloss-link" href="#/tu-ngu"><span class="k-badge">Aa</span><span class="row-main">' +
+      '<span class="row-title">Giải thích từ ngữ</span><span class="row-sub">' + GLOSS.length +
+      " từ hay gặp như thóp, li bì, rút lõm ngực</span></span>" + ICON.chev + "</a>";
+  }
+
+  function pageGlossary() {
+    setTitle("Giải thích từ ngữ");
+    var order = GLOSS.map(function (g, i) { return i; }).sort(function (a, b) {
+      return GLOSS[a].term.localeCompare(GLOSS[b].term, "vi");
+    });
+    view.innerHTML = '<h1 id="pageH1">Giải thích từ ngữ</h1>' +
+      '<p class="lede">Nghĩa của các từ chuyên môn trong app. Trong các trang, chữ có gạch chân chấm cũng chạm vào được để xem nghĩa.</p>' +
+      '<div class="search">' + ICON.search + '<input id="gq" type="search" autocomplete="off" placeholder="Tìm từ…" aria-label="Tìm từ"></div>' +
+      '<div class="gloss">' + order.map(function (i) {
+        var g = GLOSS[i];
+        termSkip = i;
+        var other = g.aliases.slice(1).filter(function (a) { return a.toLowerCase() !== g.term.toLowerCase(); });
+        return '<section class="gl" data-g="' + esc(norm(g.aliases.join(" ") + " " + g.text)) + '"><h2>' + esc(g.term) + "</h2>" +
+          (other.length ? '<div class="gl-alias">Còn gọi: ' + esc(other.join(", ")) + "</div>" : "") +
+          "<p>" + fmt(g.text) + "</p></section>";
       }).join("") + "</div>";
+    termSkip = -1;
+    var gq = $("#gq");
+    gq.addEventListener("input", function () {
+      var q = norm(gq.value.trim());
+      view.querySelectorAll(".gl").forEach(function (s) {
+        s.hidden = !!q && s.getAttribute("data-g").indexOf(q) === -1;
+      });
+    });
   }
 
   function pageSkill(id) {
@@ -671,11 +746,26 @@
   function openSheet(id) {
     var k = SKILL[id];
     if (!k) return;
-    lastFocus = document.activeElement;
+    if (sheet.hidden) lastFocus = document.activeElement;
+    termSeen = {}; termSkip = -1;
     $("#sheetTitle").textContent = k.title;
     $("#sheetBody").innerHTML = renderItemBody(k) +
       '<a class="btn" style="width:100%" href="#/ky-nang/' + id + '" data-close-sheet>Mở trang riêng</a>';
     sheet.hidden = false;
+    document.body.style.overflow = "hidden";
+    $(".sheet-x").focus();
+  }
+  function openTerm(i) {
+    var g = GLOSS[i];
+    if (!g) return;
+    if (sheet.hidden) lastFocus = document.activeElement;
+    termSeen = {}; termSkip = i;
+    $("#sheetTitle").textContent = g.term;
+    $("#sheetBody").innerHTML = '<div class="term-card"><p>' + fmt(g.text) + "</p></div>" +
+      '<a class="btn" style="width:100%" href="#/tu-ngu" data-close-sheet>Xem tất cả từ ngữ</a>';
+    termSkip = -1;
+    sheet.hidden = false;
+    $("#sheetBody").scrollTop = 0;
     document.body.style.overflow = "hidden";
     $(".sheet-x").focus();
   }
@@ -700,13 +790,15 @@
     if (curHash !== null) scrollMem[curHash] = window.scrollY;
     var parts = h.replace(/^#\/?/, "").split("/");
     var tab = "home";
+    if (h === "#kham") return;
     closeSheet();
     setTitle("");
-    if (h === "#kham") return;
+    termSeen = {}; termSkip = -1;
     if (!parts[0]) { pageHome(); }
     else if (parts[0] === "nhom") { pageCategory(parts[1]); }
     else if (parts[0] === "t") { pageSituation(parts[1]); }
     else if (parts[0] === "ky-nang") { tab = "skills"; parts[1] ? pageSkill(parts[1]) : pageSkills(); }
+    else if (parts[0] === "tu-ngu") { tab = "skills"; pageGlossary(); }
     else if (parts[0] === "cong-cu") { tab = "tools"; pageTools(); }
     else if (parts[0] === "cap-cuu") { tab = "sos"; pageEmergency(); }
     else notFound();
@@ -744,6 +836,8 @@
   document.addEventListener("click", function (e) {
     var t = e.target;
     var step = t.closest(".step");
+    var term = t.closest("[data-term]");
+    if (term) { e.preventDefault(); openTerm(+term.getAttribute("data-term")); return; }
     if (step && !t.closest(".ref")) { toggleStep(step); return; }
     var ref = t.closest("[data-skill]");
     if (ref) { e.preventDefault(); openSheet(ref.getAttribute("data-skill")); return; }

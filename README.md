@@ -9,8 +9,9 @@ Cùng bộ với [Giấc ngủ cho con](https://iamlequangthanh2201-max.github.i
 ## Có gì trong app
 
 - 34 tình huống (25 của bé, 9 của mẹ), chia 8 nhóm, mỗi tình huống có mức độ xanh, vàng, đỏ
-- Mỗi tình huống: **Làm ngay** (các bước đánh số, chạm để đánh dấu đã làm), **Phòng ngừa**, **Không nên**, **Đi khám khi**
+- Mỗi tình huống: **Đây là gì?** (giải thích ngắn hiện tượng), **Làm ngay** (các bước đánh số, chạm để đánh dấu đã làm), **Phòng ngừa**, **Không nên**, **Đi khám khi**
 - 7 kỹ năng cơ bản (ợ hơi, hút mũi, đo nhiệt độ, đếm nhịp thở, kiểm tra mất nước, sơ cứu hóc dị vật, quấn bé), mở nhanh dạng bảng trượt ngay trong từng bước
+- 50 từ chuyên môn (thóp, li bì, rút lõm ngực...) được gạch chân, chạm vào để xem nghĩa, có trang Giải thích từ ngữ riêng
 - Tìm kiếm có dấu hoặc không dấu ("tro sua", "tắc sữa")
 - Trang Cấp cứu: nút gọi 115, danh sách dấu hiệu nguy hiểm của bé và mẹ
 - Công cụ: đồng hồ đếm nhịp thở 60 giây, hẹn giờ đo lại nhiệt độ
@@ -34,8 +35,10 @@ git add -A && git commit -m "Cập nhật nội dung" && git push
 
 Quy ước trong `noi-dung.md`:
 - `### A1. Tên tình huống 🟢` (🟢 🟡 🔴, có thể ghép `🟢/🔴`)
+- `**Đây là gì:** ...` ngay dưới tiêu đề, một đoạn giải thích ngắn
 - `**Làm ngay:**` rồi danh sách `1. 2. 3.` thành checklist
 - `**Phòng ngừa:**`, `**Không nên:**`, `**Đi khám khi:**` thành các phần riêng
+- Phần D cuối file: `- **Từ / tên gọi khác:** giải thích`. Từ nào có ở đây sẽ tự được gạch chân trong app
 - Ghi `(K2)` hoặc `(xem A5)` để tạo nút mở nhanh kỹ năng, tình huống khác
 
 Tình huống mới cần được thêm vào một nhóm trong `CATEGORIES` ở `build.py`, nếu không build sẽ báo lỗi.

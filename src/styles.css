@@ -338,3 +338,28 @@ details.block[open]>summary .tw{transform:rotate(90deg)}
   padding:12px 16px;background:var(--red);color:var(--on-red);display:flex;align-items:center;gap:10px;font-weight:700}
 .alarm-bar span{flex:1}
 .alarm-bar .btn{background:var(--on-red);color:var(--red);border:0;min-height:38px}
+
+/* ---------- "Đây là gì?" ---------- */
+.about{background:var(--surface);border-radius:var(--r-card);border:1px solid var(--line-2);box-shadow:var(--shadow);
+  padding:14px 16px 16px;margin:0 0 14px;border-left:4px solid var(--brand-2)}
+.about-label{font-size:13px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--brand-2);margin-bottom:4px}
+.about p{margin:0;color:var(--ink-2);font-size:16px;line-height:1.6}
+
+/* ---------- từ có giải thích ---------- */
+.term{display:inline;border:0;background:none;padding:0;margin:0;font:inherit;color:inherit;cursor:pointer;
+  text-decoration:underline dotted;text-decoration-color:var(--brand-2);text-decoration-thickness:2px;
+  text-underline-offset:3px;border-radius:3px}
+.term:active{background:var(--brand-wash)}
+.term-demo{text-decoration:underline dotted;text-decoration-color:var(--brand-2);text-decoration-thickness:2px;text-underline-offset:3px}
+.term-card{background:var(--surface);border-radius:var(--r-card);border:1px solid var(--line-2);padding:16px;margin-bottom:12px}
+.term-card p{margin:0;font-size:17px;line-height:1.6}
+
+/* ---------- trang từ ngữ ---------- */
+.gloss-link{display:flex;align-items:center;gap:14px;margin-top:14px;padding:15px 16px;border-radius:var(--r-card);
+  background:var(--surface);border:1px solid var(--line-2);box-shadow:var(--shadow);text-decoration:none}
+.gloss-link:active{background:var(--surface-2)}
+.gloss{display:flex;flex-direction:column;gap:10px}
+.gl{background:var(--surface);border-radius:var(--r-m);border:1px solid var(--line-2);padding:14px 16px}
+.gl h2{font-size:17px}
+.gl-alias{font-size:13px;color:var(--ink-3);margin-top:2px}
+.gl p{margin:6px 0 0;color:var(--ink-2);font-size:16px}

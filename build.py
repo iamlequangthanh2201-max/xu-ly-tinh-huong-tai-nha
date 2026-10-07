@@ -91,7 +91,7 @@ SKILL_SHORT = {
 }
 
 # ---------------------------------------------------------------- đọc md
-RE_PART = re.compile(r"^## PHẦN ([0ABC])")
+RE_PART = re.compile(r"^## PHẦN ([0ABCD])")
 RE_ITEM = re.compile(r"^### ([ABK]\d+)\. (.+)$")
 RE_GROUP = re.compile(r"^### (.+)$")
 RE_LABEL = re.compile(r"^\*\*(.+?):\*\*\s*(.*)$")
@@ -104,6 +104,8 @@ def section_kind(label, ordered):
     if label is None:
         return "steps" if ordered else "info"
     l = label.lower()
+    if l.startswith("đây là gì"):
+        return "about"
     if l.startswith("không nên"):
         return "avoid"
     if l.startswith(("đi khám", "đi cấp cứu", "🔴", "cấp cứu")):
@@ -114,7 +116,7 @@ def section_kind(label, ordered):
 
 
 def parse(md):
-    skills, situations, emergency, intro = [], [], [], []
+    skills, situations, emergency, glossary = [], [], [], []
     part = None
     cur = None      # mục hiện tại (kỹ năng / tình huống / nhóm cấp cứu)
     sec = None      # phần đang đọc trong mục
@@ -134,6 +136,12 @@ def parse(md):
         if part is None:
             continue
         if not line.strip() or line.strip() == "---":
+            continue
+        if part == "D":
+            m = re.match(r"^- \*\*(.+?):\*\*\s*(.+)$", line)
+            if m:
+                names = [n.strip() for n in m.group(1).split("/")]
+                glossary.append(dict(term=names[0], aliases=names, text=m.group(2).strip()))
             continue
 
         m = RE_ITEM.match(line)
@@ -186,12 +194,12 @@ def parse(md):
     for item in skills + situations + emergency:
         for s in item["sections"]:
             s["kind"] = section_kind(s["label"], s.pop("ordered"))
-    return skills, situations, emergency
+    return skills, situations, emergency, glossary
 
 
 def build():
     md = (HERE / "noi-dung.md").read_text(encoding="utf-8")
-    skills, situations, emergency = parse(md)
+    skills, situations, emergency, glossary = parse(md)
 
     ids = {s["id"] for s in situations}
     for c in CATEGORIES:
@@ -207,8 +215,8 @@ def build():
     for k in skills:
         k["short"] = SKILL_SHORT.get(k["id"], k["title"])
 
-    data = dict(skills=skills, situations=situations,
-                emergency=emergency, categories=CATEGORIES)
+    data = dict(skills=skills, situations=situations, emergency=emergency,
+                glossary=glossary, categories=CATEGORIES)
     data_json = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
 
     css = (HERE / "src" / "styles.css").read_text(encoding="utf-8")
@@ -247,8 +255,8 @@ def build():
     make_icons()
     n_steps = sum(len(s["items"]) for it in situations for s in it["sections"]
                   if s["kind"] == "steps")
-    print("Đã dựng docs/  |  %d tình huống, %d kỹ năng, %d bước, phiên bản %s"
-          % (len(situations), len(skills), n_steps, version))
+    print("Đã dựng docs/  |  %d tình huống, %d kỹ năng, %d bước, %d từ ngữ, phiên bản %s"
+          % (len(situations), len(skills), n_steps, len(glossary), version))
 
 
 # ---------------------------------------------------------------- icon
