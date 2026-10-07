@@ -23,7 +23,8 @@ self.addEventListener("fetch", function (e) {
 
   // Trang chính: lấy bản mới khi có mạng, mất mạng thì dùng bản đã lưu
   if (req.mode === "navigate") {
-    e.respondWith(fetch(req).then(function (res) {
+    // no-cache: luôn hỏi lại máy chủ, tránh bị giữ bản cũ 10 phút theo cache của GitHub Pages
+    e.respondWith(fetch(req, { cache: "no-cache" }).then(function (res) {
       var copy = res.clone();
       caches.open(VERSION).then(function (c) { c.put("index.html", copy); });
       return res;
