@@ -655,6 +655,73 @@ Mỗi tình huống gồm 4 phần:
 
 ---
 
+### A27. Mọc răng 🟢
+
+**Đây là gì:** Răng sữa nhú dần lên qua lợi, thường bắt đầu khoảng 6 tháng tuổi (có bé 3-4 tháng, có bé sau 12 tháng mới mọc). Hai răng cửa dưới thường mọc trước, đủ 20 răng sữa lúc khoảng 2,5-3 tuổi. Vài ngày trước khi răng nhú, lợi sưng đỏ, bé chảy nhiều nước dãi, hay gặm cắn mọi thứ, quấy, có thể bú kém và ngủ không yên. Mọc răng có thể làm bé hơi ấm người (dưới 38°C), nhưng không gây sốt cao, tiêu chảy hay ho. Nếu có những dấu hiệu đó là do bệnh khác.
+
+**Làm ngay:**
+1. Rửa tay sạch. Quấn gạc sạch ẩm quanh ngón tay, xoa nhẹ lên chỗ lợi sưng khoảng 1-2 phút.
+2. Cho bé gặm vòng ngậm nướu loại đặc, để mát trong ngăn mát tủ lạnh (không để ngăn đá).
+3. Bé đã ăn dặm: cho ăn đồ mềm, mát như sữa chua, trái cây nghiền, cháo để nguội bớt.
+4. Lau nước dãi thường xuyên bằng khăn mềm. Bôi kem dưỡng ở cằm và cổ để da không bị hăm đỏ. Cho bé đeo yếm và thay khi ướt.
+5. Ôm ấp, dỗ dành bé nhiều hơn, vẫn giữ giờ ngủ như mọi ngày.
+6. Bé quấy nhiều, ngủ không được: đo nhiệt độ trước (K3), rồi có thể dùng paracetamol đúng liều theo cân nặng. Hỏi bác sĩ hoặc dược sĩ về liều. Ibuprofen chỉ dùng cho bé trên 6 tháng.
+
+**Phòng ngừa sâu răng:**
+1. Từ khi chiếc răng đầu tiên nhú lên, chải răng cho bé 2 lần/ngày bằng bàn chải lông mềm cho trẻ em.
+2. Dùng kem đánh răng có fluor, lượng chỉ bằng một hạt gạo.
+3. Không cho bé ngủ trong lúc ngậm bình sữa, không chấm đường, mật ong vào núm vú.
+4. Cho bé đi khám răng lần đầu khi mọc chiếc răng đầu tiên, hoặc trước 1 tuổi.
+
+**Không nên:** dùng gel bôi lợi có chứa thuốc tê (benzocain, lidocain), viên hoặc thuốc "mọc răng" tự mua, đeo vòng hổ phách hay vòng dây quanh cổ, tay bé (dễ siết cổ, hóc hạt), cho gặm đồ đông đá cứng, đồ gặm có chất lỏng bên trong, rạch hoặc chà mạnh lợi, rơ lợi bằng mật ong.
+
+**Đi khám khi:**
+- Sốt từ 38°C trở lên (bé dưới 3 tháng sốt là cấp cứu)
+- Tiêu chảy, nôn, ho, chảy mũi nhiều, vì đây không phải do mọc răng
+- Bé bỏ bú, ít tã ướt
+- Lợi sưng to, có mủ hoặc chảy máu nhiều
+- Bé 18 tháng mà chưa mọc chiếc răng nào
+
+---
+
+### A28. Co giật 🔴
+
+**Đây là gì:** Co giật xảy ra khi não đột ngột phát ra tín hiệu điện bất thường, làm bé mất ý thức, giật tay chân nhịp nhàng hoặc co cứng người, mắt trợn hay nhìn lệch một bên, có khi sùi bọt mép, tím môi. Ở bé 6 tháng đến 5 tuổi, nguyên nhân hay gặp nhất là sốt cao co giật: cơn xảy ra khi bé đang sốt, thường ngắn dưới 5 phút, và hầu hết không để lại di chứng. Co giật ở bé dưới 6 tháng, hoặc co giật không sốt, có thể do nhiễm trùng não, hạ đường huyết, chấn thương đầu hoặc động kinh, cần khám ngay. Ở trẻ sơ sinh, cơn có thể rất kín đáo: chép môi liên tục, mắt nhìn lệch, đạp chân như đạp xe, ngừng thở.
+
+**Làm ngay:**
+1. Giữ bình tĩnh. Nhìn đồng hồ để tính cơn kéo dài bao lâu.
+2. Đặt bé nằm nghiêng trên mặt phẳng an toàn (sàn nhà, giường rộng). Dời đồ cứng, đồ sắc ra xa.
+3. Nới lỏng quần áo quanh cổ. Nếu trong miệng bé có thức ăn hoặc núm vú và lấy ra dễ thì lấy ra, không cạy miệng.
+4. Ở bên cạnh bé, không ghì giữ tay chân, để cơn tự qua.
+5. Nếu có người khác bên cạnh, nhờ quay video cơn giật để bác sĩ xem.
+6. Gọi 115 ngay nếu cơn kéo dài từ 5 phút trở lên, cơn này nối tiếp cơn khác mà bé không tỉnh, hoặc bé khó thở, tím tái.
+7. Khi cơn dừng: giữ bé nằm nghiêng, kiểm tra bé thở đều. Bé thường lơ mơ hoặc ngủ thiếp đi một lúc, đó là bình thường sau cơn.
+8. Nếu bé sốt: cởi bớt quần áo. Chỉ cho uống thuốc hạ sốt khi bé đã tỉnh hẳn và nuốt được (xem A17).
+9. Đưa bé đi khám ngay sau cơn co giật đầu tiên, kể cả khi bé đã tỉnh và trông bình thường.
+
+**Phòng ngừa:**
+1. Tiêm chủng đầy đủ, đúng lịch để phòng các bệnh gây sốt cao và viêm màng não.
+2. Bé từng sốt cao co giật: theo dõi nhiệt độ khi bé ốm (K3) để phát hiện sốt sớm. Thuốc hạ sốt giúp bé dễ chịu hơn nhưng không ngăn chắc chắn được cơn co giật, khoảng 1/3 số bé sẽ bị lại trong lần sốt sau.
+3. Hỏi bác sĩ kế hoạch xử lý khi bé sốt hoặc co giật lại, và có cần thuốc cắt cơn để sẵn ở nhà không.
+4. Bé bị động kinh: cho uống thuốc đúng giờ, đúng liều, không tự ý ngưng. Cho bé ngủ đủ giấc.
+5. Phòng ngã đập đầu: không để bé một mình trên giường, sofa, bàn thay tã (xem A24).
+6. Ghi lại mỗi cơn: ngày giờ, bé có sốt không, cơn dài bao lâu, giật thế nào. Mang theo khi đi khám.
+7. Người trông bé nên học lớp sơ cứu, biết cách đặt bé nằm nghiêng và hồi sinh tim phổi.
+
+**Không nên:** nhét bất cứ thứ gì vào miệng bé (đũa, thìa, ngón tay, khăn) để "chống cắn lưỡi", ghì chặt tay chân bé, lắc hoặc tát bé, bấm huyệt, cạo gió, chích máu đầu ngón tay, đổ nước hay thuốc vào miệng khi bé chưa tỉnh, ngâm bé vào nước lạnh, lau cồn.
+
+**Đi cấp cứu khi:**
+- Đây là lần co giật đầu tiên của bé
+- Bé dưới 6 tháng tuổi
+- Cơn kéo dài từ 5 phút trở lên
+- Co giật nhiều cơn liên tiếp, hoặc bé không tỉnh lại giữa các cơn
+- Bé khó thở, tím tái sau cơn
+- Sau cơn bé li bì, khó đánh thức, hoặc yếu một bên tay chân
+- Co giật kèm cổ cứng, thóp phồng, nôn nhiều hoặc nổi ban
+- Co giật không kèm sốt, hoặc sau khi bị ngã đập đầu
+
+---
+
 ## PHẦN B: MẸ
 
 ### B1. Sản dịch 🟢
@@ -889,7 +956,7 @@ Mỗi tình huống gồm 4 phần:
 - **Thở nhanh:** Nhịp thở vượt mức bình thường theo tuổi: từ 60 lần/phút trở lên với bé dưới 2 tháng, từ 50 lần/phút trở lên với bé 2-12 tháng. Phải đếm đủ 60 giây khi bé nằm yên.
 - **Khò khè:** Tiếng thở rè rè, rít như có đờm hoặc như huýt sáo nhỏ khi bé thở.
 - **Ngưng thở / ngừng thở:** Bé không thở trong một khoảng. Trẻ sơ sinh có thể ngừng vài giây rồi thở lại (thở chu kỳ), là bình thường. Ngừng trên 20 giây, hoặc ngừng kèm tím tái, mềm nhũn là cấp cứu.
-- **Co giật:** Bé giật tay chân nhịp nhàng không dừng được, hoặc người cứng đờ, mắt trợn hay nhìn chằm chằm một hướng, môi chép liên tục, gọi không đáp. Khác với run sinh lý: run sinh lý dừng ngay khi giữ nhẹ tay chân bé.
+- **Co giật:** Bé giật tay chân nhịp nhàng không dừng được, hoặc người cứng đờ, mắt trợn hay nhìn chằm chằm một hướng, môi chép liên tục, gọi không đáp. Khác với run sinh lý: run sinh lý dừng ngay khi giữ nhẹ tay chân bé. Cách xử lý (xem A28).
 - **Mất nước:** Cơ thể thiếu nước do mất nhiều (nôn, tiêu chảy, sốt) mà không được bù đủ. Dấu hiệu: ít tã ướt, môi khô, thóp lõm, khóc không có nước mắt, li bì.
 - **Nhiễm trùng:** Vi khuẩn hoặc virus xâm nhập và gây bệnh. Ở trẻ sơ sinh, nhiễm trùng có thể lan nhanh vào máu, nên các dấu hiệu như sốt, hạ thân nhiệt, bỏ bú, li bì đều cần đi khám sớm.
 - **Hẹp môn vị:** Môn vị là cửa ra của dạ dày xuống ruột. Ở một số bé (thường 2-8 tuần tuổi), cơ ở đây dày lên chặn sữa đi xuống, khiến bé nôn vọt sau bú. Chữa bằng một ca mổ nhỏ, hiệu quả cao.
@@ -931,4 +998,8 @@ Mỗi tình huống gồm 4 phần:
 - **Viêm vú:** Vú bị viêm, có thể do nhiễm khuẩn, gây đỏ, nóng, đau, kèm sốt, ớn lạnh, mệt như bị cúm.
 - **Áp xe:** Ổ mủ dưới da hoặc trong mô, sờ thấy khối sưng mềm, lùng nhùng, đau. Thường phải được bác sĩ chích hoặc hút mủ.
 - **Thiếu máu thiếu sắt:** Cơ thể thiếu sắt nên không tạo đủ hồng cầu, làm bé xanh xao, mệt, chậm lớn. Ở bé hay khóc lặng, thiếu sắt làm cơn xảy ra nhiều hơn. Phát hiện bằng xét nghiệm máu, bổ sung sắt theo đơn bác sĩ.
+- **Sốt cao co giật:** Cơn co giật xảy ra khi bé 6 tháng đến 5 tuổi đang sốt, không do bệnh ở não. Thường ngắn dưới 5 phút, hầu hết không để lại di chứng, và hết hẳn khi bé lớn.
+- **Động kinh:** Bệnh của não làm bé co giật tái đi tái lại mà không do sốt. Được chẩn đoán bằng khám và đo điện não, điều trị bằng thuốc uống đều đặn.
+- **Fluor:** Chất giúp men răng chắc, chống sâu răng. Bé dưới 3 tuổi chỉ dùng kem đánh răng có fluor lượng bằng một hạt gạo.
+- **Benzocain / lidocain:** Thuốc tê có trong một số gel bôi lợi mọc răng. Không dùng cho trẻ nhỏ vì có thể gây tác dụng phụ nguy hiểm, làm máu giảm khả năng chở oxy.
 - **Trĩ:** Các tĩnh mạch ở hậu môn bị sưng phồng, gây đau, ngứa, có thể chảy máu đỏ tươi khi đi ngoài.

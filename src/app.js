@@ -496,6 +496,8 @@
       '<a href="#/cong-cu">Đếm nhịp thở<small>Đồng hồ 60 giây</small></a>' +
       '<a href="#/t/A17">Sốt<small>Bé dưới 3 tháng là cấp cứu</small></a>' +
       '<a href="#/t/A24">Bé bị ngã<small>Dấu hiệu cần đi viện</small></a>' +
+      '<a href="#/t/A28">Co giật<small>Đặt nằm nghiêng, tính giờ</small></a>' +
+      '<a href="#/t/A26">Khóc lặng<small>Bé nín thở khi khóc</small></a>' +
       "</div>" +
       '<div class="eyebrow">Đi cấp cứu ngay khi</div>' + groups +
       '<div class="note">' + ICON.info.replace("<svg ", '<svg width="20" height="20" style="flex:none;margin-top:2px" ') +
