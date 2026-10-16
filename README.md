@@ -8,10 +8,10 @@ Cùng bộ với [Giấc ngủ cho con](https://iamlequangthanh2201-max.github.i
 
 ## Có gì trong app
 
-- 34 tình huống (25 của bé, 9 của mẹ), chia 8 nhóm, mỗi tình huống có mức độ xanh, vàng, đỏ
+- 35 tình huống (26 của bé, 9 của mẹ), chia 8 nhóm, mỗi tình huống có mức độ xanh, vàng, đỏ
 - Mỗi tình huống: **Đây là gì?** (giải thích ngắn hiện tượng, mặc định gập lại), **Làm ngay** (các bước đánh số, chạm để đánh dấu đã làm), **Phòng ngừa**, **Không nên**, **Đi khám khi**
 - 7 kỹ năng cơ bản (ợ hơi, hút mũi, đo nhiệt độ, đếm nhịp thở, kiểm tra mất nước, sơ cứu hóc dị vật, quấn bé), mở nhanh dạng bảng trượt ngay trong từng bước
-- 50 từ chuyên môn (thóp, li bì, rút lõm ngực...) được gạch chân, chạm vào để xem nghĩa, có trang Giải thích từ ngữ riêng
+- 51 từ chuyên môn (thóp, li bì, rút lõm ngực...) được gạch chân, chạm vào để xem nghĩa, có trang Giải thích từ ngữ riêng
 - Tìm kiếm có dấu hoặc không dấu ("tro sua", "tắc sữa")
 - Trang Cấp cứu: nút gọi 115, danh sách dấu hiệu nguy hiểm của bé và mẹ
 - Công cụ: đồng hồ đếm nhịp thở 60 giây, hẹn giờ đo lại nhiệt độ

@@ -622,6 +622,39 @@ Mỗi tình huống gồm 4 phần:
 
 ---
 
+### A26. Khóc lặng (nín thở khi khóc) 🟢/🔴
+
+**Đây là gì:** Bé khóc thét dữ dội (vì tức giận, sợ, đau, bị ngã) rồi đột nhiên lặng đi, há miệng nhưng không ra tiếng, ngừng thở vài giây. Môi và mặt bé có thể tím tái hoặc trắng bệch, người mềm hoặc cứng lại, có khi ngất đi vài giây, giật nhẹ vài cái, rồi tự thở lại. Đây là phản xạ, bé không cố tình. Hay gặp ở bé 6 tháng đến 6 tuổi, nhiều nhất lúc 1-2 tuổi, đa số hết hẳn trước khi đi học. Tuy trông rất đáng sợ, cơn khóc lặng điển hình không làm hại não hay tim của bé.
+
+**Làm ngay:**
+1. Giữ bình tĩnh. Nhìn đồng hồ để biết cơn kéo dài bao lâu.
+2. Đặt bé nằm nghiêng trên mặt phẳng an toàn (sàn nhà, giường), tránh xa cạnh bàn, đồ cứng, để bé không bị đập đầu nếu ngất.
+3. Lấy hết thức ăn, đồ vật ra khỏi tay bé. Chỉ lấy thứ trong miệng bé nếu nhìn thấy rõ và lấy ra dễ.
+4. Ở bên cạnh, quan sát bé. Thường sau 10-60 giây bé sẽ tự thở lại, khóc tiếp hoặc lơ mơ một lúc.
+5. Khi bé thở lại: ôm và dỗ bé bình thường, để bé nghỉ, bé có thể mệt và ngủ thiếp đi.
+6. Ghi lại: giờ xảy ra, chuyện gì làm bé khóc, cơn kéo dài bao lâu, bé tím hay tái, có ngất hoặc giật không. Nếu được, nhờ người khác quay video để cho bác sĩ xem.
+7. Nếu sau 1 phút bé vẫn chưa thở lại hoặc không tỉnh: gọi 115 và làm theo hướng dẫn hồi sinh tim phổi của nhân viên cấp cứu.
+
+**Phòng ngừa:**
+1. Tìm hiểu những gì hay làm bé nổi cơn (đói, mệt, buồn ngủ, bị giật đồ chơi) và tránh bớt khi có thể.
+2. Giữ giờ ăn, giờ ngủ đều đặn để bé ít cáu.
+3. Khi bé bắt đầu nổi cơn, đánh lạc hướng sớm bằng một món đồ, một bài hát, đưa bé ra chỗ khác.
+4. Sau cơn, đối xử với bé như bình thường. Không vì sợ bé khóc lặng mà chiều theo mọi đòi hỏi, vì bé có thể khóc dữ hơn để được chiều.
+5. Hỏi bác sĩ về xét nghiệm thiếu máu thiếu sắt. Bé thiếu sắt hay bị khóc lặng hơn, bổ sung sắt theo đơn có thể giúp giảm số cơn.
+
+**Không nên:** lắc bé, tát hoặc vỗ mạnh vào mặt, hắt nước lạnh vào mặt, thổi mạnh vào mặt, cạy miệng, nhét ngón tay hoặc đồ vật vào miệng bé, bế dốc ngược bé. Không mắng phạt bé sau cơn.
+
+**Đi khám khi:**
+- Lần đầu tiên bé bị khóc lặng (để bác sĩ loại trừ động kinh và bệnh tim)
+- Bé dưới 6 tháng tuổi
+- Cơn xảy ra khi bé không khóc, hoặc xảy ra lúc bé đang ngủ
+- Bé giật tay chân kéo dài, hoặc giật trên 1 phút
+- Bé mất trên 1 phút mới tỉnh hẳn, hoặc lừ đừ lâu sau cơn
+- Cơn xảy ra nhiều lần hơn, hoặc nặng hơn trước
+- Trong gia đình có người hay ngất, bị bệnh tim hoặc đột tử khi còn trẻ
+
+---
+
 ## PHẦN B: MẸ
 
 ### B1. Sản dịch 🟢
@@ -834,6 +867,7 @@ Mỗi tình huống gồm 4 phần:
 - Thóp phồng
 - Ngã đập đầu kèm nôn, li bì, ngất
 - Hóc dị vật
+- Khóc lặng mà sau 1 phút vẫn chưa thở lại hoặc không tỉnh
 
 ### Mẹ
 - Thấm đẫm 1 băng vệ sinh trong 1 giờ, ra cục máu lớn
@@ -896,4 +930,5 @@ Mỗi tình huống gồm 4 phần:
 - **Huyết khối:** Cục máu đông trong lòng mạch máu, sau sinh hay gặp ở chân. Nếu cục máu trôi lên phổi có thể gây khó thở, đau ngực đột ngột, rất nguy hiểm.
 - **Viêm vú:** Vú bị viêm, có thể do nhiễm khuẩn, gây đỏ, nóng, đau, kèm sốt, ớn lạnh, mệt như bị cúm.
 - **Áp xe:** Ổ mủ dưới da hoặc trong mô, sờ thấy khối sưng mềm, lùng nhùng, đau. Thường phải được bác sĩ chích hoặc hút mủ.
+- **Thiếu máu thiếu sắt:** Cơ thể thiếu sắt nên không tạo đủ hồng cầu, làm bé xanh xao, mệt, chậm lớn. Ở bé hay khóc lặng, thiếu sắt làm cơn xảy ra nhiều hơn. Phát hiện bằng xét nghiệm máu, bổ sung sắt theo đơn bác sĩ.
 - **Trĩ:** Các tĩnh mạch ở hậu môn bị sưng phồng, gây đau, ngứa, có thể chảy máu đỏ tươi khi đi ngoài.
