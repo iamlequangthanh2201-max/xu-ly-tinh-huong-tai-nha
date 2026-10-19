@@ -80,6 +80,7 @@ KEYWORDS = {
     "K5": "mất nước, tã ướt, thóp lõm",
     "K6": "hóc, dị vật, sơ cứu, nghẹt thở, vỗ lưng ấn ngực",
     "K7": "quấn, quấn chũn, quấn khăn",
+    "K8": "rốn, vệ sinh rốn, lau rốn, chăm sóc rốn, cuống rốn, rụng rốn",
 }
 
 # Tên ngắn cho các chip "xem kỹ năng"
@@ -91,6 +92,7 @@ SKILL_SHORT = {
     "K5": "Kiểm tra mất nước",
     "K6": "Sơ cứu hóc dị vật",
     "K7": "Cách quấn bé",
+    "K8": "Cách vệ sinh rốn",
 }
 
 # ---------------------------------------------------------------- đọc md

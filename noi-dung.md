@@ -79,6 +79,20 @@ Mỗi tình huống gồm 4 phần:
 6. Kiểm tra: luồn vừa 2-3 ngón tay giữa khăn và ngực bé.
 7. Ngừng quấn khi bé bắt đầu có dấu hiệu lẫy (thường khoảng 2-4 tháng).
 
+### K8. Vệ sinh rốn
+1. Rửa tay bằng xà phòng, lau khô.
+2. Chuẩn bị: gạc hoặc bông sạch, nước muối sinh lý 0,9% (hoặc nước đun sôi để nguội), tã sạch.
+3. Đặt bé nằm ngửa ở chỗ ấm, kín gió. Kéo áo lên, gập mép trên của tã xuống dưới rốn.
+4. Nhìn kỹ quanh chân rốn: da có đỏ lan ra không, có mủ, mùi hôi, chảy máu không.
+5. Rốn khô và sạch: không cần lau, để hở cho khô tự nhiên.
+6. Rốn dính nước tiểu, phân hoặc rỉ chút dịch: nhúng gạc vào nước muối, vắt bớt, nâng nhẹ cuống rốn lên rồi lau từ chân rốn (sát da) vòng ra ngoài. Mỗi vòng lau dùng một miếng gạc mới.
+7. Thấm khô bằng gạc khô sạch, để rốn hở ngoài không khí vài phút cho khô hẳn.
+8. Không băng kín, không đắp gì lên rốn. Mặc tã gập mép dưới rốn, áo rộng thoáng.
+9. Làm sau mỗi lần tắm và mỗi khi rốn bị bẩn, cho đến khi rốn rụng (thường 1-3 tuần) và chân rốn khô hẳn thêm vài ngày.
+
+> Không giật cuống rốn kể cả khi sắp rụng. Không đắp nghệ, lá, thuốc lào, không bôi cồn hay thuốc đỏ khi bác sĩ không dặn.
+> Đi khám ngay nếu da quanh rốn đỏ lan rộng, có mủ, mùi hôi, chảy máu không cầm, hoặc bé sốt (xem A15).
+
 ---
 
 ## PHẦN A: BÉ
@@ -412,7 +426,7 @@ Mỗi tình huống gồm 4 phần:
 1. Rửa tay sạch trước khi chạm vào rốn.
 2. Giữ rốn khô và sạch, để hở, không băng kín.
 3. Gập mép trên của tã xuống dưới rốn để rốn không bị nước tiểu làm ướt.
-4. Nếu rốn bị dính phân hoặc nước tiểu: rửa bằng nước sạch hoặc nước muối sinh lý, thấm khô.
+4. Nếu rốn bị dính phân hoặc nước tiểu: rửa bằng nước muối sinh lý, thấm khô (K8).
 5. Tắm lau người cho đến khi rốn rụng, hoặc nếu tắm chậu thì lau khô rốn ngay sau tắm.
 6. Để cuống rốn tự rụng (thường 1-3 tuần).
 

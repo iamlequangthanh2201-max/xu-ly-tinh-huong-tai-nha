@@ -78,7 +78,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - 06:45 | choi | Da kề da trên ngực bố hoặc mẹ 15-20 phút, nói chuyện với bé
 - 07:00 | ngu | Ngủ
 - 08:30 | bu | Thay tã, bú mẹ
-- 09:15 | vesinh | Lau mắt, mũi, rửa mặt, vệ sinh rốn (A15)
+- 09:15 | vesinh | Lau mắt, mũi, rửa mặt, vệ sinh rốn (K8)
 - 09:30 | tam | Tắm lau người 5-10 phút lúc trời ấm, phòng kín gió. Tắm lau đến khi rụng rốn
 - 10:00 | ngu | Ngủ
 - 11:30 | bu | Thay tã, bú mẹ. Nếu bé ngủ quá 3 giờ ban ngày thì đánh thức bé dậy bú
