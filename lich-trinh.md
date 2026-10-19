@@ -4,7 +4,8 @@ Lịch mẫu theo từng giai đoạn, từ lúc bé thức dậy đến khi ng�
 
 Kế hoạch nuôi con theo trong lịch này:
 - 2 tuần đầu: bé chỉ bú mẹ trực tiếp.
-- Từ tuần 3: kết hợp bú mẹ trực tiếp và bú bình sữa mẹ đã hút ra (chưa dùng sữa công thức). Bình sữa mẹ chủ yếu để bố cho bé bú một cữ đêm, giúp mẹ ngủ được một giấc dài.
+- Từ tuần 3: kết hợp bú mẹ trực tiếp và bú bình sữa mẹ đã hút ra (chưa dùng sữa công thức). Bình sữa mẹ chủ yếu để bố cho bé bú cữ khuya lúc 22:00-22:30, trước khi bố đi ngủ, giúp mẹ ngủ được một giấc dài.
+- Bố hỗ trợ ban đêm nhiều trong 2 tuần đầu. Từ tuần 3 bố đi làm lại nên chỉ lo cữ trước khi đi ngủ, rồi ngủ đủ 7-8 tiếng.
 
 Cách viết một giai đoạn: `## mã | nhãn | mô tả`. Ví dụ `## 3 | 3 tháng | 12-16 tuần`.
 
@@ -18,12 +19,13 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Bú mẹ: cho bú theo nhu cầu, số cữ trong lịch chỉ để tham khảo. Bú bình: lượng sữa ghi là mức trung bình, bé có thể bú ít hoặc nhiều hơn một chút.
 - Mỗi lần ngủ: đặt bé nằm ngửa, trên nệm phẳng, không gối, không chăn dày, không thú bông (xem A20).
 - Thay tã trước hoặc sau mỗi cữ bú, và ngay khi bé đi ị.
+- Bố mẹ cũng cần ngủ đủ: người đi làm nên có ít nhất 6-7 tiếng ngủ liền mỗi đêm để tránh mệt mỏi, chóng mặt, mất tập trung. Kế hoạch ban đêm trong lịch chia ca theo nguyên tắc này.
 
 ## Cữ đêm là gì
 
 - Cữ đêm là những lần cho bé bú trong khoảng từ lúc bé ngủ đêm đến sáng hôm sau.
 - Trẻ sơ sinh chưa thể nhịn qua đêm: dạ dày bé chỉ bằng quả trứng gà, nên cứ 2-4 giờ bé lại đói. Bú đêm cũng giúp giữ sữa mẹ, vì về đêm cơ thể mẹ tiết nhiều hormone tạo sữa hơn.
-- Không bỏ được cữ đêm trong những tuần đầu, nhưng có thể giảm số lần mẹ phải dậy bằng 3 cách: bố làm hết mọi việc trừ cho bú, bố cho bé bú bình sữa mẹ một cữ đêm để mẹ ngủ liền 5-6 tiếng, và cho bé bú no vào buổi tối.
+- Không bỏ được cữ đêm trong những tuần đầu, nhưng có thể giảm số lần mẹ phải dậy bằng 3 cách: mẹ đi ngủ sớm ngay sau cữ bú tối, bố cho bé bú bình sữa mẹ lúc 22:00-22:30 trước khi bố đi ngủ để mẹ ngủ liền 5-6 tiếng, và cho bé bú no vào buổi tối.
 - Bú mơ: khoảng 22:00-23:00, bế bé đang ngủ lên cho bú mà không đánh thức hẳn. Giúp bé ngủ lâu hơn sang nửa sau đêm.
 - Số cữ đêm giảm dần theo tháng tuổi. Nhiều bé từ 6 tháng không còn cần bú đêm, nhưng nên hỏi bác sĩ trước khi bỏ hẳn.
 - An toàn: nếu mẹ cho bú trên giường lúc mệt, rất dễ ngủ thiếp đi cùng bé. Cho bú xong, đặt bé về nôi hoặc cũi riêng. Bố ngồi cạnh để đỡ bé khi mẹ buồn ngủ.
@@ -69,7 +71,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Mỗi cữ: 10-40 phút, cho bú cả hai bên
 - Tã ướt: ngày thứ mấy thì ít nhất bấy nhiêu tã, từ ngày 6 trở đi ít nhất 6 tã/ngày
 - Tổng giờ ngủ: 16-18 giờ/ngày, chưa theo giờ
-- Ngủ đêm: thức bú 3-4 lần, chưa giảm được
+- Ngủ đêm: thức bú 3-4 lần, bố hỗ trợ đến 02:00
 
 **Lịch của bé:**
 - 06:00 | bu | Thức dậy, thay tã, bú mẹ cả hai bên
@@ -91,16 +93,18 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 
 **Ban đêm:**
 - 20:30 | ngu | Mẹ: đi ngủ ngay sau cữ bú tối / Bố: trông bé, rửa bình, chuẩn bị tã, nước uống cho mẹ
-- 22:30 | bu | Bố: thay tã, bế bé đến cho mẹ / Mẹ: cho bú, ngồi dựa gối hoặc nằm nghiêng có bố ngồi cạnh
-- 23:00 | ngu | Bố: vỗ ợ hơi, ru bé ngủ, đặt về nôi / Mẹ: ngủ lại ngay
-- 01:30 | bu | Bố: thay tã nếu bẩn, bế bé đến / Mẹ: cho bú, đèn mờ, ít nói chuyện
-- 02:00 | ngu | Bố: vỗ ợ hơi, đặt bé về nôi
-- 04:30 | bu | Mẹ: cho bú / Bố: thay tã, đặt bé ngủ lại
+- 22:30 | bu | Bố: thay tã, bế bé đến cho mẹ / Mẹ: cho bú, ngồi dựa gối, bố ngồi cạnh
+- 23:00 | ngu | Bố: vỗ ợ hơi, đặt bé về nôi rồi đi ngủ / Mẹ: ngủ lại ngay
+- 01:30 | bu | Bố: dậy thay tã, bế bé đến cho mẹ. Đây là ca cuối của bố / Mẹ: cho bú, đèn mờ, ít nói chuyện
+- 02:00 | ngu | Bố: vỗ ợ hơi, đặt bé về nôi, rồi ngủ liền đến sáng
+- 04:30 | bu | Mẹ: tự thay tã, cho bú, đặt bé về nôi. Để bố ngủ
 
 **Mẹo ban đêm:**
 - 2 tuần đầu không bỏ cữ đêm: không để bé ngủ quá 4 giờ ban đêm mà không bú, cho đến khi bé lấy lại cân nặng lúc sinh (thường ngày 10-14).
-- Bố làm mọi việc trừ cho bú, để mỗi lần mẹ chỉ thức 20-30 phút.
-- Mẹ bù giấc ngày: ngủ trưa ít nhất 1 giấc dài, nhờ ông bà hoặc bố trông bé.
+- Chia ca để cả hai cùng có giấc dài: bố lo ca đầu đêm đến khoảng 02:00, sau đó ngủ liền đến sáng. Mẹ lo cữ gần sáng.
+- Bố làm mọi việc trừ cho bú trong ca của bố, để mỗi lần mẹ chỉ thức 20-30 phút.
+- Cả hai ngủ bù ban ngày: mẹ ít nhất 1 giấc trưa dài, bố ngủ trưa trong những ngày nghỉ phép.
+- Nếu có ông bà hoặc người giúp ngủ cùng nhà, có thể nhờ lo cữ sau nửa đêm bằng bình sữa mẹ.
 - Để sẵn đèn ngủ, tã, khăn, nước uống cạnh giường từ tối.
 
 **Bú và hút sữa:**
@@ -120,10 +124,10 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 **Tóm tắt:**
 - Cách cho ăn: bú mẹ trực tiếp, thêm 1 bình sữa mẹ mỗi ngày
 - Số cữ bú: 8-12 cữ/ngày, cách 2-3 giờ
-- Bình sữa mẹ: 60-90 ml, do bố cho bú cữ khuya
+- Bình sữa mẹ: 60-90 ml, bố cho bú lúc 22:30 trước khi đi ngủ
 - Thức mỗi lần: 45-60 phút
 - Tổng giờ ngủ: 14-17 giờ/ngày
-- Ngủ đêm: mẹ dậy 2 lần, bố lo 1 cữ
+- Ngủ đêm: bố lo cữ 22:30, sau đó mẹ dậy 2 lần
 
 **Lịch của bé:**
 - 06:00 | bu | Thức dậy, thay tã, bú mẹ cữ sáng
@@ -143,15 +147,18 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - 20:30 | ngu | Ngủ đêm: phòng tối, quấn bé, tiếng ồn trắng
 
 **Ban đêm:**
-- 20:45 | ngu | Mẹ: đi ngủ luôn / Bố: thức trông bé, lấy sữa mẹ đã hút buổi sáng từ ngăn mát ra
-- 23:00 | binh | Bố: hâm và cho bé bú bình sữa mẹ 60-90 ml, bú theo nhịp, vỗ ợ hơi, thay tã, đặt bé ngủ / Mẹ: ngủ tiếp
-- 02:00 | bu | Mẹ: cho bú trực tiếp. Nếu vú căng tức, cho bé bú bên căng trước / Bố: thay tã, đặt bé ngủ lại
-- 05:00 | bu | Mẹ: cho bú / Bố: thay tã nếu bẩn
+- 20:30 | ngu | Mẹ: đi ngủ ngay sau cữ bú tối / Bố: trông bé, lấy sữa mẹ đã hút buổi sáng từ ngăn mát ra
+- 22:30 | binh | Bố: hâm và cho bé bú bình sữa mẹ 60-90 ml, vỗ ợ hơi, thay tã, đặt bé ngủ, rồi đi ngủ / Mẹ: ngủ tiếp
+- 01:30 | bu | Mẹ: cho bú trực tiếp, thay tã nếu bẩn, đèn mờ. Bố ngủ tiếp
+- 04:30 | bu | Mẹ: cho bú, đặt bé về nôi
 
 **Mẹo ban đêm:**
-- Mẹ ngủ liền khoảng 5 tiếng (20:45-02:00) nhờ bố cho bú bình cữ 23:00.
-- Bố cũng đi ngủ ngay sau cữ 23:00, mẹ lo các cữ còn lại.
-- Nếu mẹ thức dậy vì vú căng trước 02:00: hút nhẹ vài phút cho dễ chịu, cất sữa vào ngăn mát cho cữ bố hôm sau.
+- Từ tuần 3 bố đi làm lại: bố chỉ lo cữ bú bình lúc 22:30, ngay trước khi bố đi ngủ, rồi ngủ liền đến sáng (7-8 tiếng) để đủ sức đi làm, tránh mệt mỏi, chóng mặt.
+- Mẹ ngủ liền khoảng 5 tiếng (20:30-01:30) nhờ cữ bình của bố.
+- Ngày đi làm, bố có thể ngủ phòng khác hoặc đeo nút tai để không bị đánh thức.
+- Tối thứ Sáu, thứ Bảy (hôm sau bố được nghỉ): bố nhận thêm một cữ sau nửa đêm để mẹ ngủ bù.
+- Nếu có ông bà hoặc người giúp ngủ cùng nhà, có thể nhờ lo cữ sau nửa đêm bằng bình sữa mẹ.
+- Nếu mẹ thức dậy vì vú căng trước 01:30: hút nhẹ vài phút cho dễ chịu, cất sữa vào ngăn mát cho cữ bố hôm sau.
 - Bé chưa quen bình: thử lại vào lúc bé chưa quá đói, để bố cho bú, mẹ ra phòng khác.
 
 **Bú và hút sữa:**
@@ -196,12 +203,13 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 
 **Ban đêm:**
 - 21:00 | ngu | Mẹ: đi ngủ / Bố: trông bé, chuẩn bị bình sữa mẹ
-- 23:30 | binh | Bố: bú mơ bằng bình sữa mẹ 90-120 ml, vỗ ợ hơi, thay tã, đặt bé ngủ / Mẹ: ngủ tiếp
-- 03:00 | bu | Mẹ: cho bú trực tiếp / Bố: thay tã nếu bẩn, đặt bé ngủ lại
+- 22:30 | binh | Bố: bú mơ bằng bình sữa mẹ 90-120 ml, vỗ ợ hơi, đặt bé ngủ, rồi đi ngủ / Mẹ: ngủ tiếp
+- 02:30 | bu | Mẹ: cho bú trực tiếp, thay tã nếu bẩn. Bố ngủ tiếp
 
 **Mẹo ban đêm:**
-- Mẹ ngủ liền khoảng 6 tiếng (21:00-03:00).
-- Nhiều bé tháng này chỉ dậy 1 lần sau cữ bố. Nếu bé dậy thêm lúc 05:00-06:00, coi đó là cữ sáng sớm rồi bắt đầu ngày mới.
+- Mẹ ngủ liền khoảng 5,5 tiếng (21:00-02:30). Bố ngủ từ khoảng 22:45 đến sáng.
+- Nhiều bé tháng này chỉ dậy 1 lần sau cữ của bố. Nếu bé dậy thêm lúc 05:00-06:00, coi đó là cữ sáng sớm rồi bắt đầu ngày mới.
+- Tối thứ Sáu, thứ Bảy (hôm sau bố được nghỉ): bố nhận thêm một cữ sau nửa đêm để mẹ ngủ bù.
 - Ban đêm cho bú trong ánh sáng mờ, không chơi đùa, không bật điện sáng.
 
 **Bú và hút sữa:**
@@ -247,12 +255,14 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 
 **Ban đêm:**
 - 21:00 | ngu | Mẹ: đi ngủ / Bố: trông bé
-- 23:00 | binh | Bố: bú mơ bằng bình sữa mẹ 120-150 ml, vỗ ợ hơi, đặt bé ngủ / Mẹ: ngủ tiếp
-- 03:30 | bu | Mẹ: cho bú trực tiếp, nếu bé dậy / Bố: thay tã nếu bẩn
+- 22:30 | binh | Bố: bú mơ bằng bình sữa mẹ 120-150 ml, vỗ ợ hơi, đặt bé ngủ, rồi đi ngủ / Mẹ: ngủ tiếp
+- 03:00 | bu | Mẹ: cho bú trực tiếp, nếu bé dậy. Bố ngủ tiếp
 
 **Mẹo ban đêm:**
-- Mẹ ngủ liền khoảng 6 tiếng. Nhiều bé tháng này ngủ được 5-6 tiếng liền sau cữ bú mơ.
+- Mẹ ngủ liền khoảng 6 tiếng. Bố ngủ từ khoảng 22:45 đến sáng.
+- Nhiều bé tháng này ngủ được 5-6 tiếng liền sau cữ bú mơ.
 - Bé ọ ẹ, vặn mình lúc nửa đêm chưa chắc là đói: đợi 2-3 phút xem bé có tự ngủ lại không rồi mới bế.
+- Tối thứ Sáu, thứ Bảy (hôm sau bố được nghỉ): bố nhận thêm một cữ sau nửa đêm để mẹ ngủ bù.
 
 **Bú và hút sữa:**
 - 07:00 | hut | Hút 10-15 phút sau cữ bú sáng, cho cữ bố tối nay
@@ -294,12 +304,14 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 
 **Ban đêm:**
 - 21:30 | ngu | Mẹ: đi ngủ / Bố: chuẩn bị bình sữa mẹ
-- 22:30 | binh | Bố: bú mơ bằng bình sữa mẹ, không bật đèn sáng, không thay tã nếu tã chưa đầy / Mẹ: ngủ tiếp
-- 03:30 | bu | Mẹ: cho bú nếu bé dậy và đói / Bố: dỗ bé trước 2-3 phút, nếu bé vẫn đòi thì mới gọi mẹ
+- 22:00 | binh | Bố: bú mơ bằng bình sữa mẹ, không bật đèn sáng, không thay tã nếu tã chưa đầy, rồi đi ngủ / Mẹ: ngủ tiếp
+- 03:30 | bu | Mẹ: dỗ trước 2-3 phút, cho bú nếu bé vẫn đói. Bố ngủ tiếp
 
 **Mẹo ban đêm:**
-- Mẹ ngủ liền 6 tiếng hoặc hơn. Nhiều bé tháng này ngủ thẳng từ cữ bú mơ đến 4-5 giờ sáng.
+- Mẹ ngủ liền 6 tiếng hoặc hơn. Bố ngủ từ khoảng 22:15 đến sáng.
+- Nhiều bé tháng này ngủ thẳng từ cữ bú mơ đến 4-5 giờ sáng.
 - Đặt bé xuống lúc còn hơi thức giúp bé tự ngủ lại khi tỉnh giấc giữa đêm.
+- Tối thứ Sáu, thứ Bảy (hôm sau bố được nghỉ): bố nhận thêm một cữ sau nửa đêm để mẹ ngủ bù.
 
 **Bú và hút sữa:**
 - 07:00 | hut | Hút 10-15 phút sau cữ bú sáng, cho cữ bú mơ của bố
@@ -339,12 +351,13 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - 19:15 | ngu | Ngủ đêm
 
 **Ban đêm:**
-- 22:00 | binh | Bố: bú mơ bằng bình sữa mẹ, đặt bé ngủ lại ngay / Mẹ: đi ngủ
-- 03:00 | bu | Mẹ: cho bú nếu bé thật sự đói / Bố: dỗ trước bằng vỗ nhẹ, tiếng suỵt
+- 22:00 | binh | Bố: bú mơ bằng bình sữa mẹ, đặt bé ngủ lại ngay, rồi đi ngủ / Mẹ: đi ngủ
+- 03:00 | bu | Mẹ: dỗ trước bằng vỗ nhẹ, tiếng suỵt, chỉ cho bú nếu bé thật sự đói. Bố ngủ tiếp
 
 **Mẹo ban đêm:**
 - Khoảng tháng 4 nhiều bé ngủ kém đi, hay thức đêm hơn. Thường qua sau 2-6 tuần: giữ nếp ngủ, không thêm cữ bú mới vì thói quen.
 - Bé bú đủ ban ngày và tăng cân tốt thì có thể chỉ cần bú mơ, không cần thêm cữ đêm. Hỏi bác sĩ khi khám định kỳ.
+- Tối thứ Sáu, thứ Bảy (hôm sau bố được nghỉ): bố nhận thêm một cữ sau nửa đêm để mẹ ngủ bù.
 
 **Bú và hút sữa:**
 - 07:00 | hut | Hút 10-15 phút sau cữ bú sáng, cho cữ bú mơ
@@ -384,12 +397,13 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - 19:15 | ngu | Ngủ đêm
 
 **Ban đêm:**
-- 22:00 | binh | Bố: bú mơ bằng bình sữa mẹ / Mẹ: đi ngủ
-- 03:00 | bu | Mẹ: cho bú nếu bé còn dậy bú đêm / Bố: dỗ trước 2-3 phút
+- 22:00 | binh | Bố: bú mơ bằng bình sữa mẹ, rồi đi ngủ / Mẹ: đi ngủ
+- 03:00 | bu | Mẹ: dỗ trước 2-3 phút, cho bú nếu bé còn dậy bú đêm. Bố ngủ tiếp
 
 **Mẹo ban đêm:**
 - Nhiều bé tháng này ngủ thẳng từ cữ bú mơ đến sáng.
 - Giữ phòng tối, mát, tiếng ồn trắng đều đều suốt đêm.
+- Tối thứ Sáu, thứ Bảy (hôm sau bố được nghỉ): bố nhận thêm một cữ sau nửa đêm để mẹ ngủ bù.
 
 **Bú và hút sữa:**
 - 07:00 | hut | Hút sau cữ bú sáng, cho cữ bú mơ
@@ -431,12 +445,13 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - 19:15 | ngu | Ngủ đêm
 
 **Ban đêm:**
-- 22:00 | bu | Mẹ: bú mơ trực tiếp, hoặc bố cho bình nếu mẹ cần ngủ sớm
+- 22:00 | bu | Mẹ: bú mơ trực tiếp. Hoặc bố cho bình trước khi bố đi ngủ, nếu mẹ cần ngủ sớm
 - 03:00 | bu | Mẹ: cho bú nếu bé dậy. Bú đêm trực tiếp giúp giữ sữa khi ban ngày mẹ đi làm
 
 **Mẹo ban đêm:**
 - Từ 6 tháng nhiều bé không còn cần bú đêm. Nếu bé tăng cân tốt, hỏi bác sĩ về việc giảm dần cữ bú mơ.
-- Bé dậy giữa đêm: bố dỗ trước, chỉ cho bú nếu bé vẫn khóc đòi sau vài phút.
+- Mẹ cũng đi làm lại: bố mẹ thay phiên dỗ đêm theo ngày, ví dụ mẹ lo các đêm trong tuần, bố lo đêm thứ Sáu, thứ Bảy.
+- Bé dậy giữa đêm: đợi vài phút, dỗ trước, chỉ cho bú nếu bé vẫn khóc đòi.
 
 **Bú và hút sữa:**
 - 06:30 | bu | Cho bú trực tiếp trước khi đi làm
@@ -482,7 +497,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 
 **Ban đêm:**
 - 22:00 | bu | Mẹ: bú mơ, nếu bé còn cần. Giảm dần thời gian bú mỗi đêm nếu bác sĩ đồng ý bỏ
-- 02:00 | ngu | Bố: nếu bé dậy, dỗ bằng vỗ nhẹ, tiếng suỵt, không bế lên ngay
+- 02:00 | ngu | Mẹ: nếu bé dậy, dỗ bằng vỗ nhẹ, tiếng suỵt, không bế lên ngay / Bố: nhận dỗ đêm thứ Sáu, thứ Bảy
 
 **Mẹo ban đêm:**
 - Bỏ bú mơ dần: mỗi 2-3 đêm rút ngắn 2-3 phút (hoặc bớt 20-30 ml nếu bú bình), đến khi bỏ hẳn.
@@ -529,7 +544,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 
 **Ban đêm:**
 - 19:15 | ngu | Bé ngủ thẳng đến sáng là lý tưởng
-- 02:00 | ngu | Bố: nếu bé dậy, đợi vài phút, rồi vào dỗ nhẹ, giữ phòng tối
+- 02:00 | ngu | Mẹ: nếu bé dậy, đợi vài phút, rồi vào dỗ nhẹ trong cũi, giữ phòng tối / Bố: nhận dỗ đêm thứ Sáu, thứ Bảy
 
 **Mẹo ban đêm:**
 - Bé có thể sợ xa mẹ, khóc đêm nhiều hơn một thời gian. Giữ nếp đi ngủ quen thuộc mỗi tối.
@@ -575,8 +590,8 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - 19:15 | ngu | Ngủ đêm
 
 **Ban đêm:**
-- 19:15 | ngu | Bé ngủ thẳng đến sáng
-- 02:00 | ngu | Bố: nếu bé dậy, dỗ nhẹ trong cũi, không bế ra khỏi phòng
+- 19:15 | ngu | Bé ngủ thẳng đến sáng là lý tưởng
+- 02:00 | ngu | Mẹ: nếu bé dậy, đợi vài phút, rồi vào dỗ nhẹ trong cũi, giữ phòng tối / Bố: nhận dỗ đêm thứ Sáu, thứ Bảy
 
 **Mẹo ban đêm:**
 - Bé dậy đêm thường do mọc răng, ốm, hoặc vừa học kỹ năng mới (đứng, bò). Dỗ ngắn, giữ phòng tối.
@@ -619,8 +634,8 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - 19:15 | ngu | Ngủ đêm
 
 **Ban đêm:**
-- 19:15 | ngu | Bé ngủ thẳng đến sáng
-- 02:00 | ngu | Bố: nếu bé dậy, dỗ nhẹ trong cũi, nói câu quen thuộc như "đến giờ ngủ rồi"
+- 19:15 | ngu | Bé ngủ thẳng đến sáng là lý tưởng
+- 02:00 | ngu | Mẹ: nếu bé dậy, đợi vài phút, rồi vào dỗ nhẹ trong cũi, giữ phòng tối / Bố: nhận dỗ đêm thứ Sáu, thứ Bảy
 
 **Mẹo ban đêm:**
 - Giữ giờ đi ngủ đều đặn cả cuối tuần.
@@ -663,8 +678,8 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - 19:15 | ngu | Ngủ đêm
 
 **Ban đêm:**
-- 19:15 | ngu | Bé ngủ thẳng đến sáng
-- 02:00 | ngu | Bố: nếu bé dậy, dỗ nhẹ trong cũi
+- 19:15 | ngu | Bé ngủ thẳng đến sáng là lý tưởng
+- 02:00 | ngu | Mẹ: nếu bé dậy, đợi vài phút, rồi vào dỗ nhẹ trong cũi, giữ phòng tối / Bố: nhận dỗ đêm thứ Sáu, thứ Bảy
 
 **Mẹo ban đêm:**
 - Không cho bé ngậm bình sữa khi ngủ để tránh sâu răng.
@@ -706,8 +721,8 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - 19:30 | ngu | Ngủ đêm
 
 **Ban đêm:**
-- 19:30 | ngu | Bé ngủ thẳng đến sáng
-- 02:00 | ngu | Bố: nếu bé dậy, dỗ nhẹ trong cũi
+- 19:30 | ngu | Bé ngủ thẳng đến sáng là lý tưởng
+- 02:00 | ngu | Mẹ: nếu bé dậy, đợi vài phút, rồi vào dỗ nhẹ trong cũi, giữ phòng tối / Bố: nhận dỗ đêm thứ Sáu, thứ Bảy
 
 **Mẹo ban đêm:**
 - Giữ nếp đi ngủ cố định: tắm, đánh răng, đọc sách, ngủ.
