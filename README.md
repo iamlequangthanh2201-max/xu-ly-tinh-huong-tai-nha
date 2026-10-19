@@ -24,7 +24,7 @@ Cùng bộ với [Giấc ngủ cho con](https://iamlequangthanh2201-max.github.i
 |---|---|
 | `noi-dung.md` | Nội dung các tình huống, kỹ năng, từ ngữ |
 | `lich-trinh.md` | Lịch trình theo giai đoạn: ban ngày, ban đêm, bú và hút sữa, sữa công thức |
-| `build.py` | Đọc `noi-dung.md`, xếp nhóm, gắn từ khoá tìm kiếm, vẽ icon hoa hướng dương, dựng app vào `docs/` |
+| `build.py` | Đọc `noi-dung.md`, xếp nhóm, gắn từ khoá tìm kiếm, tách nền icon từ `assets/app-icon-source.png` và xuất đủ các cỡ, dựng app vào `docs/` |
 | `src/` | Khung trang, giao diện, mã app, service worker |
 | `docs/` | Bản đã dựng, GitHub Pages phục vụ thư mục này |
 

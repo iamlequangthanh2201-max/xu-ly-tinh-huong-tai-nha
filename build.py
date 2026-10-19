@@ -345,108 +345,112 @@ def build():
 
 
 # ---------------------------------------------------------------- icon
-def sunflower(size, frame=True, rounded=True, pad=0.0):
-    """Hoa hướng dương kiểu huy hiệu trung cổ: nền xanh lapis, viền vàng,
-    cánh hoa viền nét đậm, nhụy nâu đan ô trám như tranh khắc gỗ."""
-    import math
-    from PIL import Image, ImageDraw
-    k = 4
-    S = size * k
-    LAPIS, GOLD, GOLD_D, RED = "#1C2E6E", "#D4A72C", "#9C7416", "#A8322A"
-    PETAL, PETAL_IN, INK, DISC = "#F4C430", "#DE9A1E", "#2A1606", "#5B3214"
+# Ảnh gốc: icon hoa hướng dương nền xanh, đặt trên nền sáng. Build tự tìm khung icon,
+# tách nền theo đúng đường bo góc kiểu iOS, rồi xuất các cỡ cần cho PWA.
+ICON_SRC = HERE / "assets" / "app-icon-source.png"
+SQUIRCLE_N = 5.5   # độ cong góc, khớp với góc bo của ảnh gốc
 
-    img = Image.new("RGBA", (S, S), (0, 0, 0, 0))
-    g = ImageDraw.Draw(img)
-    if rounded:
-        g.rounded_rectangle([0, 0, S - 1, S - 1], radius=int(S * 0.22), fill=LAPIS)
-    else:
-        g.rectangle([0, 0, S, S], fill=LAPIS)
 
-    # chấm sao nhỏ trên nền, như nền trang sách cổ
-    if frame:
-        step = S / 9.0
-        lo, hi = S * 0.14, S * 0.86
-        for i in range(10):
-            for j in range(10):
-                x, y = (i + 0.5) * step, (j + 0.5) * step
-                if (i + j) % 2 or not (lo < x < hi and lo < y < hi):
-                    continue
-                r = S * 0.006
-                g.ellipse([x - r, y - r, x + r, y + r], fill=GOLD_D)
+def icon_layers():
+    """Trả về (icon bo góc nền trong suốt, icon vuông tràn viền) ở độ phân giải gốc."""
+    from PIL import Image
+    src = Image.open(ICON_SRC).convert("RGB")
+    W, H = src.size
+    px = src.load()
 
-    if frame:
-        ins = S * 0.055
-        g.rounded_rectangle([ins, ins, S - ins, S - ins], radius=int(S * 0.17),
-                            outline=GOLD, width=max(2, int(S * 0.02)))
-        ins2 = S * 0.088
-        g.rounded_rectangle([ins2, ins2, S - ins2, S - ins2], radius=int(S * 0.14),
-                            outline=RED, width=max(1, int(S * 0.007)))
+    def is_icon(c):
+        return max(c) - min(c) > 100
+    xs = [x for x in range(W) if any(is_icon(px[x, y]) for y in range(0, H, 4))]
+    ys = [y for y in range(H) if any(is_icon(px[x, y]) for x in range(0, W, 4))]
+    x0, x1, y0, y1 = min(xs), max(xs), min(ys), max(ys)
+    S = min(x1 - x0, y1 - y0) + 1
+    box = src.crop((x0, y0, x0 + S, y0 + S))
 
-    cx = cy = S / 2
-    R = S * (0.5 - pad) * (0.78 if frame else 0.86)
-    rd = R * 0.40
-    lw = max(2, int(S * 0.009))
+    # mặt nạ squircle, khử răng cưa bằng cách vẽ ở độ phân giải gấp 4.
+    # inset: thu mép vào vài px để bỏ viền sáng sót lại từ nền của ảnh gốc
+    def squircle(inset):
+        k = 4
+        a = S * k / 2.0 - k * inset
+        m = Image.new("L", (S * k, S * k), 0)
+        mp = m.load()
+        c = S * k / 2.0 - 0.5
+        for yy in range(S * k):
+            dy = abs(yy - c) / a
+            if dy >= 1:
+                continue
+            half = a * (1 - dy ** SQUIRCLE_N) ** (1 / SQUIRCLE_N)
+            for xx in range(max(0, int(c - half)), min(S * k, int(c + half) + 1)):
+                mp[xx, yy] = 255
+        return m.resize((S, S), Image.LANCZOS)
+    mask = squircle(2.2)
 
-    def petal(angle, r0, r1, w, fill):
-        pts_l, pts_r = [], []
-        n = 18
-        for i in range(n + 1):
-            tt = i / float(n)
-            rr = r0 + (r1 - r0) * tt
-            hw = w * (math.sin(math.pi * min(tt * 1.1, 1.0)) ** 0.75) * (1 - tt * 0.15)
-            pts_l.append((rr, -hw))
-            pts_r.append((rr, hw))
-        shape = pts_l + [(r1 + (r1 - r0) * 0.04, 0)] + pts_r[::-1]
-        ca, sa = math.cos(angle), math.sin(angle)
-        poly = [(cx + x * ca - y * sa, cy + x * sa + y * ca) for x, y in shape]
-        g.polygon(poly, fill=fill, outline=INK, width=lw)
-        v0, v1 = r0 + (r1 - r0) * 0.12, r0 + (r1 - r0) * 0.72
-        g.line([(cx + v0 * ca, cy + v0 * sa), (cx + v1 * ca, cy + v1 * sa)],
-               fill=INK, width=max(1, lw // 2))
+    rounded = box.convert("RGBA")
+    rounded.putalpha(mask)
 
-    N = 14
-    for i in range(N):
-        a = 2 * math.pi * i / N - math.pi / 2
-        petal(a, rd * 0.8, R, R * 0.15, PETAL)
-    for i in range(N):
-        a = 2 * math.pi * (i + 0.5) / N - math.pi / 2
-        petal(a, rd * 0.8, R * 0.80, R * 0.13, PETAL_IN)
+    # màu nền theo từng hàng: lấy ở cạnh thẳng bên trái (giữa) và cạnh thẳng trên, dưới (giữa)
+    bp = box.load()
+    samples = {}
+    for y in range(int(S * 0.3), int(S * 0.7)):
+        samples[y] = bp[int(S * 0.03), y]
+    for y in list(range(int(S * 0.02), int(S * 0.06))) + list(range(int(S * 0.94), int(S * 0.975))):
+        samples[y] = bp[S // 2, y]
+    keys = sorted(samples)
 
-    # nhụy: đĩa nâu, đan ô trám vàng, chấm vàng ở giữa mỗi ô
-    g.ellipse([cx - rd, cy - rd, cx + rd, cy + rd], fill=DISC, outline=INK, width=lw)
-    lat = Image.new("RGBA", (S, S), (0, 0, 0, 0))
-    lg = ImageDraw.Draw(lat)
-    sp = rd / 2.6
-    lwl = max(1, int(S * 0.005))
-    m = int(rd * 2 / sp) + 4
-    for i in range(-m, m + 1):
-        o = i * sp
-        lg.line([(cx + o - rd * 2, cy - rd * 2), (cx + o + rd * 2, cy + rd * 2)], fill=GOLD_D, width=lwl)
-        lg.line([(cx + o + rd * 2, cy - rd * 2), (cx + o - rd * 2, cy + rd * 2)], fill=GOLD_D, width=lwl)
-    for i in range(-m, m + 1):
-        for j in range(-m, m + 1):
-            x = cx + (i + j) * sp / 2.0
-            y = cy + (j - i) * sp / 2.0 + sp / 2.0
-            r = sp * 0.13
-            lg.ellipse([x - r, y - r, x + r, y + r], fill=GOLD)
-    mask = Image.new("L", (S, S), 0)
-    ImageDraw.Draw(mask).ellipse([cx - rd * 0.86, cy - rd * 0.86, cx + rd * 0.86, cy + rd * 0.86], fill=255)
-    img.paste(lat, (0, 0), Image.composite(lat, Image.new("RGBA", (S, S)), mask).split()[3])
-    g = ImageDraw.Draw(img)
-    g.ellipse([cx - rd * 0.86, cy - rd * 0.86, cx + rd * 0.86, cy + rd * 0.86], outline=INK, width=max(1, lw // 2))
+    def row_color(y):
+        if y <= keys[0]:
+            return samples[keys[0]]
+        if y >= keys[-1]:
+            return samples[keys[-1]]
+        lo = max(k_ for k_ in keys if k_ <= y)
+        hi = min(k_ for k_ in keys if k_ >= y)
+        if lo == hi:
+            return samples[lo]
+        f = (y - lo) / float(hi - lo)
+        return tuple(int(round(samples[lo][i] * (1 - f) + samples[hi][i] * f)) for i in range(3))
 
-    return img.resize((size, size), Image.LANCZOS)
+    bg = Image.new("RGB", (S, S))
+    gp = bg.load()
+    for y in range(S):
+        col = row_color(y)
+        for x in range(S):
+            gp[x, y] = col
+    full = bg.copy()
+    # nối icon vào nền bằng mép mềm, để không lộ đường bo góc ở bản vuông
+    from PIL import ImageFilter
+    full.paste(box, (0, 0), squircle(22).filter(ImageFilter.GaussianBlur(S / 45.0)))
+    return rounded, full, row_color, S
 
 
 def make_icons():
+    from PIL import Image
     d = OUT / "icons"
     d.mkdir(exist_ok=True)
-    sunflower(192).save(d / "icon-192.png")
-    sunflower(512).save(d / "icon-512.png")
-    sunflower(512, frame=False, rounded=False, pad=0.12).save(d / "icon-maskable-512.png")
-    sunflower(180, rounded=False).save(d / "apple-touch-icon.png")
-    sunflower(64, frame=False).save(d / "favicon.png")
-    sunflower(96, frame=False).save(d / "mark.png")
+    rounded, full, row_color, S = icon_layers()
+
+    def save(img, size, name):
+        img.resize((size, size), Image.LANCZOS).save(d / name)
+
+    # "any": bo góc sẵn, nền trong suốt
+    save(rounded, 512, "icon-512.png")
+    save(rounded, 192, "icon-192.png")
+    save(rounded, 96, "mark.png")
+    save(rounded, 64, "favicon.png")
+    # iPhone tự bo góc, nên dùng bản vuông tràn viền
+    save(full.convert("RGB"), 180, "apple-touch-icon.png")
+    # maskable cho Android: thu nhỏ vào vùng an toàn, phần viền nối tiếp màu nền
+    scale = 0.84
+    inner = int(S * scale)
+    off = (S - inner) // 2
+    canvas = Image.new("RGB", (S, S))
+    cp = canvas.load()
+    for y in range(S):
+        col = row_color(int((y - off) / scale))
+        for x in range(S):
+            cp[x, y] = col
+    canvas.paste(full.resize((inner, inner), Image.LANCZOS), (off, off))
+    save(canvas, 512, "icon-maskable-512.png")
+    # bản gốc đã tách nền, để dùng ở nơi khác
+    rounded.save(d / "app-icon.png")
 
 
 if __name__ == "__main__":
