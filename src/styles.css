@@ -75,7 +75,8 @@ strong{font-weight:600}
 :focus-visible{outline:3px solid color-mix(in srgb,var(--tint) 60%,transparent);outline-offset:2px;border-radius:10px}
 
 /* nền có vệt màu mềm để lớp kính có thứ để khúc xạ */
-.ambient{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.ambient{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,transparent 90px,#000 300px);mask-image:linear-gradient(to bottom,transparent 0,transparent 90px,#000 300px)}
 .ambient i{position:absolute;border-radius:50%;filter:blur(60px)}
 .ambient i:nth-child(1){width:70vmax;height:70vmax;left:-25vmax;top:-30vmax;background:var(--amb-1)}
 .ambient i:nth-child(2){width:60vmax;height:60vmax;right:-30vmax;top:10vh;background:var(--amb-2)}
@@ -415,8 +416,14 @@ details[open]>summary .tw{transform:rotate(90deg)}
   background:linear-gradient(160deg,color-mix(in srgb,var(--yellow) 45%,transparent),color-mix(in srgb,var(--orange) 25%,transparent))}
 .dob-main{flex:1;min-width:0;font-size:15px;color:var(--label-2);line-height:1.35}
 .dob-main strong{display:block;color:var(--label);font-size:17px}
-.dob input[type="date"]{grid-column:1/-1;display:block;width:100%;font:inherit;font-size:17px;color:var(--tint);
-  background:var(--fill);border:0;border-radius:12px;padding:0 14px;min-height:46px;-webkit-appearance:none;appearance:none;text-align:left}
+.dob input[type="date"]{grid-column:1/-1;display:block;width:100%;font:inherit;font-size:17px;color:var(--label);
+  background:var(--fill);border:0;border-radius:12px;padding:0 14px;min-height:48px;line-height:48px;text-align:left}
+.dob input[type="date"]::-webkit-date-and-time-value{text-align:left}
+.dob-hint{grid-column:1/-1;margin:-4px 2px 0;font-size:13px;color:var(--label-2)}
+.dob-actions{grid-column:1/-1;display:flex;gap:8px}
+.dob-actions .btn{flex:1}
+.dob-actions .dob-del{flex:none;color:var(--red)}
+.dob .dob-edit{grid-column:1/-1;width:100%}
 
 .months{display:flex;gap:8px;overflow-x:auto;margin:0 -16px 12px;padding:10px 16px 12px;scroll-padding:0 16px;scrollbar-width:none;scroll-snap-type:x proximity}
 .months::-webkit-scrollbar{display:none}

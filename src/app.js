@@ -553,27 +553,68 @@
     return "Tháng " + s.big;
   }
 
-  // tuổi của bé từ ngày sinh đã lưu
+  // tuổi của bé từ ngày sinh đã lưu (ngày trong tương lai là ngày dự sinh)
   function babyAge() {
     var dob = store.get("xltn-dob", "");
     if (!dob) return null;
     var b = new Date(dob + "T00:00:00"), n = new Date();
-    if (isNaN(b) || b > n) return null;
+    if (isNaN(b)) return null;
+    var today = new Date(n.getFullYear(), n.getMonth(), n.getDate());
+    if (b > today) return { future: true, daysLeft: Math.round((b - today) / 86400000), dob: dob };
     var months = (n.getFullYear() - b.getFullYear()) * 12 + (n.getMonth() - b.getMonth()) - (n.getDate() < b.getDate() ? 1 : 0);
-    var days = Math.floor((n - b) / 86400000);
+    var days = Math.round((today - b) / 86400000);
     return { months: months, days: days, dob: dob };
   }
   function ageText(a) {
+    if (a.future) return "Còn " + a.daysLeft + " ngày đến ngày dự sinh";
+    if (a.days === 0) return "Bé chào đời hôm nay";
     if (a.months < 1) return "Bé được " + Math.floor(a.days / 7) + " tuần " + (a.days % 7) + " ngày";
     if (a.months > 12) return "Bé đã hơn 1 tuổi (" + a.months + " tháng)";
     return "Bé được " + a.months + " tháng";
   }
   function ageStage(a) {
     if (!a) return null;
-    if (a.days < 14) return "0a";
+    if (a.future || a.days < 14) return "0a";
     if (a.months < 1) return "0b";
     return String(Math.min(12, a.months));
   }
+  function dmy(iso) { var p = iso.split("-"); return p[2] + "/" + p[1] + "/" + p[0]; }
+
+  // ô ngày sinh: xem (đã lưu) hoặc sửa (chọn ngày rồi bấm Lưu)
+  function renderDob(editing) {
+    var box = $("#dobBox");
+    if (!box) return;
+    var a = babyAge();
+    var title = a ? ageText(a) : "Ngày sinh của bé";
+    var sub = a ? (a.future ? "Ngày dự sinh: " : "Ngày sinh: ") + dmy(a.dob) : "Nhập để app tự chọn đúng giai đoạn";
+    var html = '<div class="dob"><span class="dob-ico" aria-hidden="true">' + (a && a.future ? "🤰" : "🎂") + "</span>" +
+      '<span class="dob-main"><strong>' + esc(title) + "</strong>" + esc(sub) + "</span>";
+    if (editing) {
+      html += '<input type="date" id="dobIn" value="' + esc(a ? a.dob : "") + '" aria-label="Ngày sinh hoặc ngày dự sinh của bé">' +
+        '<p class="dob-hint">Chọn ngày trong tương lai nếu bé chưa sinh, app sẽ hiểu là ngày dự sinh.</p>' +
+        '<div class="dob-actions"><button class="btn primary" data-dob="save">Lưu</button>' +
+        '<button class="btn" data-dob="cancel">Huỷ</button>' +
+        (a ? '<button class="btn ghost dob-del" data-dob="del">Xoá</button>' : "") + "</div>";
+    } else {
+      html += '<button class="btn dob-edit" data-dob="edit">' + (a ? "Sửa" : "Nhập ngày sinh") + "</button>";
+    }
+    box.innerHTML = html + "</div>";
+  }
+  function dobAction(act) {
+    if (act === "edit") { renderDob(true); var i = $("#dobIn"); if (i) i.focus(); return; }
+    if (act === "cancel") { renderDob(false); return; }
+    if (act === "del") { store.del("xltn-dob"); renderDob(false); drawPlan(store.get("xltn-plan-stage", "0a")); toast("Đã xoá ngày sinh"); return; }
+    if (act === "save") {
+      var v = ($("#dobIn") || {}).value || "";
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(v)) { toast("Hãy chọn một ngày trước khi lưu"); return; }
+      store.set("xltn-dob", v);
+      renderDob(false);
+      var na = babyAge();
+      drawPlan(ageStage(na) || "0a");
+      toast("Đã lưu · " + ageText(na));
+    }
+  }
+
   function pickStage(param) {
     if (param && STAGE[param]) return param;
     var k = ageStage(babyAge());
@@ -645,6 +686,7 @@
     view.innerHTML = '<h1 id="pageH1">Lịch trình</h1>' +
       '<p class="lede">Một ngày mẫu của bé theo từng giai đoạn: ban ngày, kế hoạch ban đêm cho bố mẹ, và lịch bú, hút sữa.</p>' +
       '<div id="dobBox"></div><div class="months" id="months" role="tablist" aria-label="Chọn giai đoạn"></div><div id="planBody"></div>';
+    renderDob(false);
     drawPlan(pickStage(param), true);
   }
 
@@ -654,19 +696,6 @@
     store.set("xltn-plan-stage", key);
     var a = babyAge();
     var ageKey = ageStage(a);
-
-    var maxDate = new Date().toISOString().slice(0, 10);
-    $("#dobBox").innerHTML = '<div class="dob"><span class="dob-ico" aria-hidden="true">🎂</span><span class="dob-main">' +
-      (a ? "<strong>" + esc(ageText(a)) + "</strong>Tự chọn đúng giai đoạn mỗi khi mở" :
-        "<strong>Ngày sinh của bé</strong>Nhập để tự chọn đúng giai đoạn") + "</span>" +
-      '<input type="date" id="dobIn" max="' + maxDate + '" value="' + esc(a ? a.dob : "") + '" aria-label="Ngày sinh của bé"></div>';
-    $("#dobIn").addEventListener("change", function () {
-      var v = this.value;
-      if (v) store.set("xltn-dob", v); else store.del("xltn-dob");
-      var na = babyAge();
-      drawPlan(ageStage(na) || key);
-      if (na) toast(ageText(na));
-    });
 
     var box = $("#months");
     box.innerHTML = STAGES.map(function (s) {
@@ -1118,6 +1147,8 @@
       if (el) { el.open = true; el.scrollIntoView({ behavior: "smooth", block: "start" }); }
       return;
     }
+    var db = t.closest("[data-dob]");
+    if (db) { e.preventDefault(); dobAction(db.getAttribute("data-dob")); return; }
     var mb = t.closest("[data-stage]");
     if (mb) { e.preventDefault(); if (!mb.disabled) drawPlan(mb.getAttribute("data-stage")); return; }
     var pv = t.closest("[data-pv]");

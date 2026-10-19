@@ -20,7 +20,12 @@
 <script>
   try {
     var t = localStorage.getItem("xltn-theme");
-    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    if (t === "light" || t === "dark") {
+      document.documentElement.setAttribute("data-theme", t);
+      // thanh trạng thái theo đúng giao diện đã chọn
+      var c = t === "dark" ? "#000000" : "#F2F2F7";
+      document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) { m.setAttribute("content", c); });
+    }
   } catch (e) {}
 </script>
 <style>
