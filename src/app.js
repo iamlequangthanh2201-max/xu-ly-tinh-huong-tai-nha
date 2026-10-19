@@ -699,7 +699,7 @@
 
     var body;
     if (planView === "dem") {
-      body = listCard("Cữ đêm là gì?", "🌙", "--indigo", SCHED.night, key === "0a" || key === "0b", true) +
+      body = listCard("Cữ đêm là gì?", "🌙", "--indigo", SCHED.night, false, true) +
         '<div class="eyebrow">Kế hoạch ban đêm · ai làm gì</div>' + timeline(st.night, { noNightSep: true, noNow: !isNightNow() }) + '<div class="plan-gap"></div>' +
         listCard("Mẹo để mẹ đỡ phải dậy", "💡", "--yellow", st.nightTips, true, false);
     } else if (planView === "sua") {

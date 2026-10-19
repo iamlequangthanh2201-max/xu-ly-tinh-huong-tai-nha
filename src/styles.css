@@ -409,14 +409,14 @@ details[open]>summary .tw{transform:rotate(90deg)}
 /* ============================================================
    Lịch trình trong ngày
    ============================================================ */
-.dob{display:flex;align-items:center;gap:12px;padding:12px 14px 12px 16px;border-radius:var(--r-l);background:var(--bg-2);
+.dob{display:grid;grid-template-columns:36px 1fr;align-items:center;gap:12px;padding:14px 16px;border-radius:var(--r-l);background:var(--bg-2);
   box-shadow:var(--shadow);margin:0 0 14px}
 .dob-ico{flex:none;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;font-size:20px;
   background:linear-gradient(160deg,color-mix(in srgb,var(--yellow) 45%,transparent),color-mix(in srgb,var(--orange) 25%,transparent))}
 .dob-main{flex:1;min-width:0;font-size:15px;color:var(--label-2);line-height:1.35}
 .dob-main strong{display:block;color:var(--label);font-size:17px}
-.dob input[type="date"]{font:inherit;font-size:15px;color:var(--tint);background:var(--fill);border:0;border-radius:10px;
-  padding:6px 10px;min-height:36px;max-width:150px}
+.dob input[type="date"]{grid-column:1/-1;display:block;width:100%;font:inherit;font-size:17px;color:var(--tint);
+  background:var(--fill);border:0;border-radius:12px;padding:0 14px;min-height:46px;-webkit-appearance:none;appearance:none;text-align:left}
 
 .months{display:flex;gap:8px;overflow-x:auto;margin:0 -16px 16px;padding:4px 16px 8px;scrollbar-width:none;scroll-snap-type:x proximity}
 .months::-webkit-scrollbar{display:none}
