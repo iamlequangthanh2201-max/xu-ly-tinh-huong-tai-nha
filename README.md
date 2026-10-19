@@ -8,11 +8,11 @@ Cùng bộ với [Giấc ngủ cho con](https://iamlequangthanh2201-max.github.i
 
 ## Có gì trong app
 
-- **Lịch trình trong ngày** cho từng tháng tuổi 0-12: thức dậy, bú, chơi, tắm, vệ sinh, ngủ, cữ đêm, và lịch hút sữa của mẹ (hút hoàn toàn hoặc vừa cho bú vừa trữ), kèm cách bảo quản sữa. Nhập ngày sinh để app tự chọn đúng tháng, có đánh dấu "Bây giờ" theo giờ thực
+- **Lịch trình** theo giai đoạn: 2 tuần đầu (chỉ bú mẹ), tuần 3-4 (bắt đầu bú bình sữa mẹ), rồi từng tháng 1-12. Mỗi giai đoạn có 3 phần: Ban ngày (thức, bú, chơi, tắm, ngủ), Ban đêm (kế hoạch chia ca Mẹ/Bố để mẹ ngủ liền 5-6 tiếng), Bú & hút sữa (giờ hút, cách hâm và cho bú bình sữa mẹ, bảo quản sữa, khi nào dùng sữa công thức). Nhập ngày sinh để app tự chọn đúng giai đoạn, có đánh dấu "Bây giờ" theo giờ thực
 - 37 tình huống (28 của bé, 9 của mẹ), chia 8 nhóm, mỗi tình huống có mức độ xanh, vàng, đỏ
 - Mỗi tình huống: **Đây là gì?** (giải thích ngắn hiện tượng, mặc định gập lại), **Làm ngay** (các bước đánh số, chạm để đánh dấu đã làm), **Phòng ngừa**, **Không nên**, **Đi khám khi**
 - 7 kỹ năng cơ bản (ợ hơi, hút mũi, đo nhiệt độ, đếm nhịp thở, kiểm tra mất nước, sơ cứu hóc dị vật, quấn bé), mở nhanh dạng bảng trượt ngay trong từng bước
-- 55 từ chuyên môn (thóp, li bì, rút lõm ngực...) được gạch chân, chạm vào để xem nghĩa, có trang Giải thích từ ngữ riêng
+- 60 từ chuyên môn (thóp, li bì, rút lõm ngực...) được gạch chân, chạm vào để xem nghĩa, có trang Giải thích từ ngữ riêng
 - Tìm kiếm có dấu hoặc không dấu ("tro sua", "tắc sữa")
 - Trang Cấp cứu: nút gọi 115, danh sách dấu hiệu nguy hiểm của bé và mẹ
 - Công cụ: đồng hồ đếm nhịp thở 60 giây, hẹn giờ đo lại nhiệt độ
@@ -23,7 +23,7 @@ Cùng bộ với [Giấc ngủ cho con](https://iamlequangthanh2201-max.github.i
 | File | Vai trò |
 |---|---|
 | `noi-dung.md` | Nội dung các tình huống, kỹ năng, từ ngữ |
-| `lich-trinh.md` | Lịch trình trong ngày theo tháng 0-12 và lịch hút sữa |
+| `lich-trinh.md` | Lịch trình theo giai đoạn: ban ngày, ban đêm, bú và hút sữa, sữa công thức |
 | `build.py` | Đọc `noi-dung.md`, xếp nhóm, gắn từ khoá tìm kiếm, vẽ icon hoa hướng dương, dựng app vào `docs/` |
 | `src/` | Khung trang, giao diện, mã app, service worker |
 | `docs/` | Bản đã dựng, GitHub Pages phục vụ thư mục này |

@@ -516,32 +516,44 @@
 
 
   /* ============================================================
-     Lịch trình trong ngày theo tháng tuổi
+     Lịch trình trong ngày theo giai đoạn (2 tuần đầu, tuần 3-4, tháng 1-12)
      ============================================================ */
-  var SCHED = DATA.schedule || { months: [], principles: [], storage: [] };
+  var SCHED = DATA.schedule || { stages: [] };
+  var STAGES = SCHED.stages, STAGE = {};
+  STAGES.forEach(function (s, i) { s.i = i; STAGE[s.key] = s; });
   var KIND = {
     thuc: { l: "Thức dậy", i: "☀️", c: "--orange" },
-    bu: { l: "Bú", i: "🍼", c: "--blue" },
+    bu: { l: "Bú mẹ", i: "🤱", c: "--pink" },
+    binh: { l: "Bú bình sữa mẹ", i: "🍼", c: "--blue" },
     dem: { l: "Cữ đêm", i: "🌙", c: "--indigo" },
     an: { l: "Ăn", i: "🥣", c: "--green" },
-    choi: { l: "Chơi", i: "🧸", c: "--pink" },
+    choi: { l: "Chơi", i: "🧸", c: "--orange" },
     ngoai: { l: "Ra ngoài", i: "🌳", c: "--mint" },
     ngu: { l: "Ngủ", i: "😴", c: "--purple" },
     tam: { l: "Tắm", i: "🛁", c: "--teal" },
     vesinh: { l: "Vệ sinh", i: "🧼", c: "--brown" },
-    hut: { l: "Hút sữa", i: "💧", c: "--pink" }
+    hut: { l: "Hút sữa", i: "💧", c: "--teal" }
   };
+  var WHO = { "Mẹ": "--pink", "Bố": "--blue", "Bà": "--purple", "Ông bà": "--purple", "Cả nhà": "--green" };
   function statIcon(label) {
     var l = label.toLowerCase();
+    if (l.indexOf("cách cho ăn") === 0) return "🤱";
     if (l.indexOf("thức") === 0) return "⏱️";
     if (l.indexOf("giấc") === 0) return "😴";
     if (l.indexOf("tổng") === 0) return "🛌";
     if (l.indexOf("ngủ đêm") === 0) return "🌙";
-    if (l.indexOf("bữa") === 0) return "🥣";
-    return "🍼";
+    if (l.indexOf("tã") === 0) return "🧷";
+    if (l.indexOf("mỗi cữ") === 0) return "⏳";
+    if (l.indexOf("bình") === 0) return "🍼";
+    return "🍽️";
+  }
+  function stageName(s) {
+    if (s.small === "tuần") return "Tuần " + s.big;
+    if (s.key === "12") return "1 tuổi";
+    return "Tháng " + s.big;
   }
 
-  // tuổi của bé tính theo tháng tròn, từ ngày sinh đã lưu
+  // tuổi của bé từ ngày sinh đã lưu
   function babyAge() {
     var dob = store.get("xltn-dob", "");
     if (!dob) return null;
@@ -556,11 +568,18 @@
     if (a.months > 12) return "Bé đã hơn 1 tuổi (" + a.months + " tháng)";
     return "Bé được " + a.months + " tháng";
   }
-  function planMonth(param) {
-    if (param != null && param !== "" && !isNaN(+param)) return Math.max(0, Math.min(12, +param));
-    var a = babyAge();
-    if (a) return Math.min(12, a.months);
-    return store.get("xltn-plan-m", 0);
+  function ageStage(a) {
+    if (!a) return null;
+    if (a.days < 14) return "0a";
+    if (a.months < 1) return "0b";
+    return String(Math.min(12, a.months));
+  }
+  function pickStage(param) {
+    if (param && STAGE[param]) return param;
+    var k = ageStage(babyAge());
+    if (k) return k;
+    var saved = store.get("xltn-plan-stage", "0a");
+    return STAGE[saved] ? saved : "0a";
   }
 
   // thứ tự trong ngày, mục qua nửa đêm tính sang ngày hôm sau
@@ -583,27 +602,36 @@
     return idx;
   }
 
+  // chỉ đánh dấu "Bây giờ" trong kế hoạch ban đêm khi đang là ban đêm thật
+  function isNightNow() { var h = new Date().getHours(); return h >= 20 || h < 6; }
+
+  function slotText(s) {
+    if (!s.parts || (s.parts.length === 1 && !s.parts[0].who)) return '<span class="slot-text">' + fmt(s.text) + "</span>";
+    return s.parts.map(function (p) {
+      return '<span class="slot-text">' + (p.who ? '<span class="who" style="--c:var(' + (WHO[p.who] || "--blue") + ')">' + esc(p.who) + "</span>" : "") +
+        fmt(p.text) + "</span>";
+    }).join("");
+  }
   function timeline(items, opts) {
-    var cur = nowIndex(items);
+    opts = opts || {};
+    var cur = opts.noNow ? -1 : nowIndex(items);
     var seq = seqMinutes(items);
-    var nightShown = false;
+    var nightShown = !!opts.noNightSep;
     return '<ol class="tl">' + items.map(function (s, i) {
       var k = KIND[s.k] || KIND.choi;
-      var night = s.k === "dem" || seq[i] >= 1440;
+      var night = seq[i] >= 1440 || (+s.t.slice(0, 2) >= 22) || s.k === "dem";
       var sep = "";
-      if (night && !nightShown) {
-        nightShown = true;
-        sep = '<li class="slot-sep">🌙 Ban đêm</li>';
-      }
+      if (night && !nightShown) { nightShown = true; sep = '<li class="slot-sep">🌙 Ban đêm</li>'; }
       return sep + '<li class="slot' + (night ? " night" : "") + (i === cur ? " now" : "") + '" style="--c:var(' + k.c + ')">' +
         '<span class="slot-time">' + s.t + "</span>" +
         '<span class="slot-ico" aria-hidden="true">' + k.i + "</span>" +
         '<span class="slot-body"><span class="slot-kind">' + k.l + (i === cur ? '<span class="now-tag">Bây giờ</span>' : "") + "</span>" +
-        '<span class="slot-text">' + fmt(s.text) + "</span></span></li>";
+        slotText(s) + "</span></li>";
     }).join("") + "</ol>";
   }
 
   function listCard(title, icon, color, items, open, collapsible) {
+    if (!items || !items.length) return "";
     var body = '<ul class="plan-list" style="--c:var(' + color + ')">' + items.map(function (x) { return "<li>" + fmt(x) + "</li>"; }).join("") + "</ul>";
     var ico = '<span class="k-ico" style="background:linear-gradient(160deg,var(' + color + '),color-mix(in srgb,var(' + color + ') 60%,#000))">' + icon + "</span>";
     if (!collapsible) return '<section class="plan-card"><h3>' + ico + esc(title) + "</h3>" + body + "</section>";
@@ -611,41 +639,40 @@
   }
 
   var planView = store.get("xltn-plan-view", "be");
+  if (["be", "dem", "sua"].indexOf(planView) < 0) planView = "be";
   function pagePlan(param) {
     setTitle("Lịch trình");
     view.innerHTML = '<h1 id="pageH1">Lịch trình</h1>' +
-      '<p class="lede">Một ngày mẫu của bé theo từng tháng tuổi: thức, bú, chơi, tắm, ngủ, và lịch hút sữa của mẹ.</p>' +
-      '<div id="dobBox"></div><div class="months" id="months" role="tablist" aria-label="Chọn tháng tuổi"></div><div id="planBody"></div>';
-    drawPlan(planMonth(param), true);
+      '<p class="lede">Một ngày mẫu của bé theo từng giai đoạn: ban ngày, kế hoạch ban đêm cho bố mẹ, và lịch bú, hút sữa.</p>' +
+      '<div id="dobBox"></div><div class="months" id="months" role="tablist" aria-label="Chọn giai đoạn"></div><div id="planBody"></div>';
+    drawPlan(pickStage(param), true);
   }
 
-  function drawPlan(m, first) {
-    var mon = SCHED.months[m];
-    if (!mon) return;
-    store.set("xltn-plan-m", m);
+  function drawPlan(key, first) {
+    var st = STAGE[key];
+    if (!st) return;
+    store.set("xltn-plan-stage", key);
     var a = babyAge();
-    var ageM = a ? Math.min(12, a.months) : -1;
+    var ageKey = ageStage(a);
 
     var maxDate = new Date().toISOString().slice(0, 10);
     $("#dobBox").innerHTML = '<div class="dob"><span class="dob-ico" aria-hidden="true">🎂</span><span class="dob-main">' +
-      (a ? "<strong>" + esc(ageText(a)) + "</strong>Tự chọn đúng tháng mỗi khi mở" :
-        "<strong>Ngày sinh của bé</strong>Nhập để tự chọn đúng tháng") + "</span>" +
+      (a ? "<strong>" + esc(ageText(a)) + "</strong>Tự chọn đúng giai đoạn mỗi khi mở" :
+        "<strong>Ngày sinh của bé</strong>Nhập để tự chọn đúng giai đoạn") + "</span>" +
       '<input type="date" id="dobIn" max="' + maxDate + '" value="' + esc(a ? a.dob : "") + '" aria-label="Ngày sinh của bé"></div>';
     $("#dobIn").addEventListener("change", function () {
       var v = this.value;
       if (v) store.set("xltn-dob", v); else store.del("xltn-dob");
       var na = babyAge();
-      drawPlan(na ? Math.min(12, na.months) : m);
+      drawPlan(ageStage(na) || key);
       if (na) toast(ageText(na));
     });
 
-    var chips = "";
-    for (var i = 0; i <= 12; i++) {
-      chips += '<button class="mchip' + (i === m ? " on" : "") + (i === ageM ? " age" : "") + '" role="tab" aria-selected="' + (i === m) +
-        '" data-month="' + i + '"><b>' + i + "</b><small>" + (i === 12 ? "1 tuổi" : "tháng") + "</small></button>";
-    }
     var box = $("#months");
-    box.innerHTML = chips;
+    box.innerHTML = STAGES.map(function (s) {
+      return '<button class="mchip' + (s.key === key ? " on" : "") + (s.key === ageKey ? " age" : "") + '" role="tab" aria-selected="' +
+        (s.key === key) + '" data-stage="' + s.key + '"><b>' + esc(s.big) + "</b><small>" + esc(s.small) + "</small></button>";
+    }).join("");
     var on = box.querySelector(".on");
     if (on) {
       var x = on.offsetLeft - box.clientWidth / 2 + on.offsetWidth / 2;
@@ -653,52 +680,63 @@
     }
 
     termSeen = {};
-    var stats = mon.summary.map(function (s) {
+    var prev = STAGES[st.i - 1], next = STAGES[st.i + 1];
+    var arrow = function (s, dir) {
+      return '<button class="glass-btn"' + (s ? ' data-stage="' + s.key + '"' : " disabled") + ' aria-label="' + (dir < 0 ? "Giai đoạn trước" : "Giai đoạn sau") + '">' +
+        '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="' + (dir < 0 ? "M14.5 5l-7 7 7 7" : "M9.5 5l7 7-7 7") +
+        '" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>';
+    };
+    var head = '<div class="plan-head"><div><h2>' + esc(stageName(st)) + "</h2><p>" + esc(st.sub) + "</p></div>" +
+      '<div class="plan-nav">' + arrow(prev, -1) + arrow(next, 1) + "</div></div>";
+    var stats = '<div class="stats">' + st.summary.map(function (s) {
       return '<div class="stat"><div class="stat-ico" aria-hidden="true">' + statIcon(s.label) + '</div><div class="stat-l">' +
         esc(s.label) + '</div><div class="stat-v">' + esc(s.value) + "</div></div>";
-    }).join("");
-    var head = '<div class="plan-head"><div><h2>' + (m === 12 ? "1 tuổi" : "Tháng " + m) + "</h2><p>" + esc(mon.sub) + "</p></div>" +
-      '<div class="plan-nav"><button class="glass-btn" data-month="' + Math.max(0, m - 1) + '" aria-label="Tháng trước"' + (m === 0 ? " disabled" : "") + ">" +
-      '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14.5 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>' +
-      '<button class="glass-btn" data-month="' + Math.min(12, m + 1) + '" aria-label="Tháng sau"' + (m === 12 ? " disabled" : "") + ">" +
-      '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9.5 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div></div>';
-    var seg = '<div class="seg" role="group" aria-label="Chọn lịch"><button data-pv="be" aria-pressed="' + (planView === "be") + '">🧒 Lịch của bé</button>' +
-      '<button data-pv="hut" aria-pressed="' + (planView === "hut") + '">💧 Lịch hút sữa</button></div>';
+    }).join("") + "</div>";
+    var seg = '<div class="seg" role="group" aria-label="Chọn lịch">' +
+      '<button data-pv="be" aria-pressed="' + (planView === "be") + '">☀️ Ban ngày</button>' +
+      '<button data-pv="dem" aria-pressed="' + (planView === "dem") + '">🌙 Ban đêm</button>' +
+      '<button data-pv="sua" aria-pressed="' + (planView === "sua") + '">🍼 Bú & hút</button></div>';
 
     var body;
-    if (planView === "hut") {
-      body = '<div class="eyebrow">Nếu mẹ chỉ hút cho bé bú bình · ' + mon.pump.length + " lần/ngày</div>" + timeline(mon.pump) +
-        '<div class="plan-gap"></div>' +
-        listCard("Nếu mẹ cho bú trực tiếp", "🤱", "--orange", mon.pumpMixed, true, false) +
-        listCard("Bảo quản sữa mẹ", "🧊", "--teal", SCHED.storage, false, true);
+    if (planView === "dem") {
+      body = listCard("Cữ đêm là gì?", "🌙", "--indigo", SCHED.night, key === "0a" || key === "0b", true) +
+        '<div class="eyebrow">Kế hoạch ban đêm · ai làm gì</div>' + timeline(st.night, { noNightSep: true, noNow: !isNightNow() }) + '<div class="plan-gap"></div>' +
+        listCard("Mẹo để mẹ đỡ phải dậy", "💡", "--yellow", st.nightTips, true, false);
+    } else if (planView === "sua") {
+      body = (st.milk.length ? '<div class="eyebrow">Giờ bú trực tiếp và hút sữa</div>' + timeline(st.milk, { noNightSep: true }) + '<div class="plan-gap"></div>' : "") +
+        listCard(st.milk.length ? "Ghi chú" : "Bú và hút sữa giai đoạn này", "🤱", "--pink", st.milkNotes, true, false) +
+        listCard("Cho bé bú bình sữa mẹ", "🍼", "--blue", SCHED.bottle, key === "0b", true) +
+        listCard("Bảo quản sữa mẹ", "🧊", "--teal", SCHED.storage, false, true) +
+        listCard("Khi nào dùng sữa công thức?", "🥛", "--orange", SCHED.formula, false, true);
     } else {
-      body = timeline(mon.baby) + '<div class="plan-gap"></div>' +
-        (mon.notes.length ? listCard("Lưu ý tháng này", "💡", "--yellow", mon.notes, true, false) : "") +
+      body = timeline(st.baby) + '<div class="plan-gap"></div>' +
+        listCard("Lưu ý giai đoạn này", "💡", "--yellow", st.notes, true, false) +
         listCard("Nguyên tắc chung", "🧭", "--indigo", SCHED.principles, false, true);
     }
-    $("#planBody").innerHTML = head + '<div class="stats">' + stats + "</div>" + seg + body +
+    $("#planBody").innerHTML = head + stats + seg + body +
       '<p class="disclaimer">Giờ trong lịch chỉ là ví dụ để tham khảo, không phải quy định. Mỗi bé một khác: hãy theo dấu hiệu đói, buồn ngủ của bé và lời khuyên của bác sĩ.</p>';
 
-    var h = "#/lich-trinh/" + m;
+    var h = "#/lich-trinh/" + key;
     if (location.hash !== h) { history.replaceState(null, "", h); curHash = h; }
   }
 
-  // ô "đang làm gì" ở trang chủ, khi đã có ngày sinh hoặc đã xem lịch
+  // ô "Bây giờ / Tiếp theo" ở trang chủ, khi đã có ngày sinh hoặc đã xem lịch
   function nowWidget() {
-    var a = babyAge();
-    var m = a ? Math.min(12, a.months) : store.get("xltn-plan-m", null);
-    if (m == null || !SCHED.months[m]) return "";
-    var items = SCHED.months[m].baby, i = nowIndex(items);
+    var key = ageStage(babyAge()) || store.get("xltn-plan-stage", null);
+    var st = key && STAGE[key];
+    if (!st) return "";
+    var items = st.baby, i = nowIndex(items);
     if (i < 0) i = items.length - 1;
     var cur = items[i], next = items[(i + 1) % items.length];
     var k1 = KIND[cur.k] || KIND.choi, k2 = KIND[next.k] || KIND.choi;
-    return '<a class="list" href="#/lich-trinh/' + m + '" style="margin:6px 0 4px;text-decoration:none">' +
+    var clean = function (s) { return esc(plain(s).replace(/\s*\((?:xem )?[AKB]\d+\)/g, "")); };
+    return '<a class="list" href="#/lich-trinh/' + key + '" style="margin:6px 0 4px;text-decoration:none">' +
       '<span class="row" style="--c:var(' + k1.c + ')"><span class="slot-ico" aria-hidden="true">' + k1.i + "</span>" +
-      '<span class="row-main"><span class="row-sub" style="-webkit-line-clamp:1">Bây giờ · ' + (m === 12 ? "1 tuổi" : "tháng " + m) + "</span>" +
-      '<span class="row-title">' + esc(plain(cur.text).replace(/\s*\([AKB]\d+\)/g, "")) + "</span></span></span>" +
+      '<span class="row-main"><span class="row-sub" style="-webkit-line-clamp:1">Bây giờ · ' + esc(stageName(st)) + "</span>" +
+      '<span class="row-title">' + clean(cur.text) + "</span></span></span>" +
       '<span class="row" style="--c:var(' + k2.c + ')"><span class="slot-ico" aria-hidden="true">' + k2.i + "</span>" +
       '<span class="row-main"><span class="row-sub" style="-webkit-line-clamp:1">Tiếp theo · ' + next.t + "</span>" +
-      '<span class="row-title">' + esc(plain(next.text).replace(/\s*\([AKB]\d+\)/g, "")) + "</span></span>" + ICON.chev + "</span></a>";
+      '<span class="row-title">' + clean(next.text) + "</span></span>" + ICON.chev + "</span></a>";
   }
 
   /* ============================================================
@@ -1078,12 +1116,12 @@
       if (el) { el.open = true; el.scrollIntoView({ behavior: "smooth", block: "start" }); }
       return;
     }
-    var mb = t.closest("[data-month]");
-    if (mb) { e.preventDefault(); if (!mb.disabled) drawPlan(+mb.getAttribute("data-month")); return; }
+    var mb = t.closest("[data-stage]");
+    if (mb) { e.preventDefault(); if (!mb.disabled) drawPlan(mb.getAttribute("data-stage")); return; }
     var pv = t.closest("[data-pv]");
     if (pv) {
       planView = pv.getAttribute("data-pv"); store.set("xltn-plan-view", planView);
-      drawPlan(store.get("xltn-plan-m", 0)); return;
+      drawPlan(store.get("xltn-plan-stage", "0a")); return;
     }
     if (t.closest("[data-clear]")) { lastQuery = ""; }
     if (t.closest("[data-install-hide]")) { store.set("xltn-install-hide", true); var c = $("#installSlot"); if (c) c.remove(); return; }

@@ -1002,4 +1002,9 @@ Mỗi tình huống gồm 4 phần:
 - **Động kinh:** Bệnh của não làm bé co giật tái đi tái lại mà không do sốt. Được chẩn đoán bằng khám và đo điện não, điều trị bằng thuốc uống đều đặn.
 - **Fluor:** Chất giúp men răng chắc, chống sâu răng. Bé dưới 3 tuổi chỉ dùng kem đánh răng có fluor lượng bằng một hạt gạo.
 - **Benzocain / lidocain:** Thuốc tê có trong một số gel bôi lợi mọc răng. Không dùng cho trẻ nhỏ vì có thể gây tác dụng phụ nguy hiểm, làm máu giảm khả năng chở oxy.
+- **Cữ đêm:** Những lần cho bé bú trong khoảng từ lúc bé ngủ đêm đến sáng hôm sau. Trẻ sơ sinh cần 2-4 cữ đêm, số cữ giảm dần theo tháng tuổi.
+- **Bú mơ:** Cho bé bú lúc bé đang ngủ say, khoảng 22:00-23:00, trước khi bố mẹ đi ngủ. Bế bé lên nhẹ nhàng, chạm núm vú vào môi để bé tự bú mà không thức hẳn. Giúp bé ngủ lâu hơn về nửa sau đêm.
+- **Bú bình theo nhịp:** Cách cho bú bình giống bú mẹ: bế bé ngồi hơi thẳng, giữ bình nằm ngang, cứ 20-30 giây hạ bình cho bé nghỉ. Bé không bị sữa chảy ồ ạt, ít bị no quá và đỡ chê vú mẹ.
+- **Sữa công thức:** Sữa bột hoặc sữa nước pha sẵn được chế biến riêng cho trẻ dưới 12 tháng, dùng thay hoặc bổ sung khi không đủ sữa mẹ. Không giống sữa bò tươi hay sữa hộp người lớn.
+- **Sữa non:** Sữa đặc, màu vàng mẹ tiết ra trong 2-5 ngày đầu sau sinh. Lượng ít nhưng rất giàu kháng thể, đủ cho dạ dày nhỏ xíu của bé trong những ngày đầu.
 - **Trĩ:** Các tĩnh mạch ở hậu môn bị sưng phồng, gây đau, ngứa, có thể chảy máu đỏ tươi khi đi ngoài.

@@ -470,8 +470,12 @@ details[open]>summary .tw{transform:rotate(90deg)}
 .plan-card>h3,.plan-card>summary{display:flex;align-items:center;gap:12px;margin:0;padding:14px 16px 6px;font-size:17px;font-weight:700}
 .plan-card>summary{list-style:none;cursor:pointer;padding-bottom:14px}
 .plan-card>summary::-webkit-details-marker{display:none}
-.plan-card>summary span{flex:1}
+.plan-card>summary>span:not(.k-ico){flex:1}
 .plan-card[open]>summary{padding-bottom:6px}
 .plan-card .k-ico{font-size:16px}
 .plan-gap{height:16px}
 .glass-btn:disabled{opacity:.35;pointer-events:none}
+.who{display:inline-block;margin-right:6px;padding:0 8px;border-radius:var(--r-pill);font-size:12px;font-weight:700;line-height:20px;
+  color:#fff;background:var(--c);vertical-align:1px}
+.slot-text+.slot-text{margin-top:4px}
+.seg button{font-size:13px}

@@ -1,5 +1,5 @@
 // Service worker: lưu sẵn app để mở được khi mất mạng.
-var VERSION = "xltn-b7ed473e0b";
+var VERSION = "xltn-3656c638ee";
 var CORE = ["./", "index.html", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png", "icons/favicon.png",
   "icons/mark.png"];

@@ -201,58 +201,79 @@ def parse(md):
 
 
 # ---------------------------------------------------------------- lịch trình
-RE_MONTH = re.compile(r"^## Tháng (\d+) \| (.+)$")
+RE_STAGE = re.compile(r"^## (\w+) \| (.+?) \| (.+)$")
 RE_SLOT = re.compile(r"^- (\d{2}:\d{2}) \| (\w+) \| (.+)$")
-SLOT_TYPES = {"thuc", "bu", "dem", "an", "choi", "ngoai", "ngu", "tam", "vesinh", "hut"}
+RE_WHO = re.compile(r"^(Mẹ|Bố|Bà|Ông bà|Cả nhà): (.+)$")
+SLOT_TYPES = {"thuc", "bu", "binh", "dem", "an", "choi", "ngoai", "ngu", "tam", "vesinh", "hut"}
+STAGE_KEYS = ["0a", "0b"] + [str(i) for i in range(1, 13)]
+GLOBAL_SECTIONS = {"Nguyên tắc chung": "principles", "Cữ đêm là gì": "night",
+                   "Cho bé bú bình sữa mẹ": "bottle", "Bảo quản sữa mẹ": "storage",
+                   "Khi nào dùng sữa công thức": "formula"}
+STAGE_SECTIONS = [("tóm tắt", "summary"), ("lịch của bé", "baby"), ("ban đêm", "night"),
+                  ("mẹo ban đêm", "nightTips"), ("bú và hút sữa", "milk"), ("lưu ý", "notes")]
+
+
+def parse_slot(line):
+    s = RE_SLOT.match(line)
+    if not s:
+        return None
+    assert s.group(2) in SLOT_TYPES, "Loại không có: " + line
+    parts = []
+    for part in s.group(3).split(" / "):
+        w = RE_WHO.match(part.strip())
+        parts.append(dict(who=w.group(1), text=w.group(2).strip()) if w else dict(who=None, text=part.strip()))
+    return dict(t=s.group(1), k=s.group(2), text=s.group(3).strip(), parts=parts)
 
 
 def parse_schedule(md):
-    out = dict(principles=[], storage=[], months=[])
+    out = dict(stages=[])
+    for v in GLOBAL_SECTIONS.values():
+        out[v] = []
     cur, key = None, None
     for raw in md.splitlines():
         line = raw.rstrip()
         if not line.strip() or line.strip() == "---":
             continue
-        if line == "## Nguyên tắc chung":
-            cur, key = out, "principles"
+        if line.startswith("## ") and line[3:] in GLOBAL_SECTIONS:
+            cur, key = out, GLOBAL_SECTIONS[line[3:]]
             continue
-        if line == "## Bảo quản sữa mẹ":
-            cur, key = out, "storage"
-            continue
-        m = RE_MONTH.match(line)
+        m = RE_STAGE.match(line)
         if m:
-            cur = dict(m=int(m.group(1)), sub=m.group(2).strip(), summary=[], baby=[],
-                       pump=[], pumpMixed=[], notes=[])
-            out["months"].append(cur)
+            big, _, small = m.group(2).partition(" ")
+            cur = dict(key=m.group(1), big=big, small=small, sub=m.group(3).strip(),
+                       summary=[], baby=[], night=[], nightTips=[], milk=[], milkNotes=[], notes=[])
+            out["stages"].append(cur)
             key = None
             continue
         if cur is None:
             continue
-        if line.startswith("**") and line.endswith(":**"):
+        if cur is not out and line.startswith("**") and line.endswith(":**"):
             label = line.strip("*").rstrip(":").lower()
-            key = ("summary" if label.startswith("tóm tắt") else
-                   "baby" if label.startswith("lịch của bé") else
-                   "pump" if "chỉ hút" in label else
-                   "pumpMixed" if "bú trực tiếp" in label else
-                   "notes" if label.startswith("lưu ý") else None)
+            key = next((k for pre, k in STAGE_SECTIONS if label.startswith(pre)), None)
             assert key, "Không hiểu nhãn: " + line
             continue
         if key is None or not line.startswith("- "):
             continue
-        if key in ("baby", "pump"):
-            s = RE_SLOT.match(line)
-            assert s, "Dòng lịch sai dạng: " + line
-            assert s.group(2) in SLOT_TYPES, "Loại không có: " + line
-            cur[key].append(dict(t=s.group(1), k=s.group(2), text=s.group(3).strip()))
+        if cur is out:
+            out[key].append(line[2:].strip())
+        elif key in ("baby", "night"):
+            slot = parse_slot(line)
+            assert slot, "Dòng lịch sai dạng: " + line
+            cur[key].append(slot)
+        elif key == "milk":
+            slot = parse_slot(line)
+            if slot:
+                cur["milk"].append(slot)
+            else:
+                cur["milkNotes"].append(line[2:].strip())
         elif key == "summary":
             lab, _, val = line[2:].partition(":")
             cur["summary"].append(dict(label=lab.strip(), value=val.strip()))
         else:
             cur[key].append(line[2:].strip())
-    months = [x["m"] for x in out["months"]]
-    assert months == list(range(13)), "Lịch phải đủ tháng 0-12: %s" % months
+    keys = [x["key"] for x in out["stages"]]
+    assert keys == STAGE_KEYS, "Lịch phải đủ các giai đoạn %s, đang có %s" % (STAGE_KEYS, keys)
     return out
-
 
 def build():
     md = (HERE / "noi-dung.md").read_text(encoding="utf-8")
@@ -317,8 +338,8 @@ def build():
 
     n_steps = sum(len(s["items"]) for it in situations for s in it["sections"]
                   if s["kind"] == "steps")
-    print("Đã dựng docs/  |  %d tình huống, %d kỹ năng, %d bước, %d từ ngữ, %d tháng lịch trình, phiên bản %s"
-          % (len(situations), len(skills), n_steps, len(glossary), len(schedule["months"]), version))
+    print("Đã dựng docs/  |  %d tình huống, %d kỹ năng, %d bước, %d từ ngữ, %d giai đoạn lịch trình, phiên bản %s"
+          % (len(situations), len(skills), n_steps, len(glossary), len(schedule["stages"]), version))
 
 
 # ---------------------------------------------------------------- icon
