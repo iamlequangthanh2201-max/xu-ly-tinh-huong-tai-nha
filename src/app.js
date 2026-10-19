@@ -675,7 +675,9 @@
     }).join("");
     var on = box.querySelector(".on");
     if (on) {
-      var x = on.offsetLeft - box.clientWidth / 2 + on.offsetWidth / 2;
+      // tính theo vị trí thật trong thanh cuộn, không theo offsetLeft (lệch khi nội dung căn giữa màn hình rộng)
+      var x = box.scrollLeft + on.getBoundingClientRect().left - box.getBoundingClientRect().left - box.clientWidth / 2 + on.offsetWidth / 2;
+      x = Math.max(0, x);
       if (first) box.scrollLeft = x; else box.scrollTo({ left: x, behavior: "smooth" });
     }
 
@@ -701,16 +703,16 @@
     if (planView === "dem") {
       body = listCard("Cữ đêm là gì?", "🌙", "--indigo", SCHED.night, false, true) +
         '<div class="eyebrow">Kế hoạch ban đêm · ai làm gì</div>' + timeline(st.night, { noNightSep: true, noNow: !isNightNow() }) + '<div class="plan-gap"></div>' +
-        listCard("Mẹo để mẹ đỡ phải dậy", "💡", "--yellow", st.nightTips, true, false);
+        listCard("Mẹo để mẹ đỡ phải dậy", "💡", "--yellow", st.nightTips, false, true);
     } else if (planView === "sua") {
       body = (st.milk.length ? '<div class="eyebrow">Giờ bú trực tiếp và hút sữa</div>' + timeline(st.milk, { noNightSep: true }) + '<div class="plan-gap"></div>' : "") +
-        listCard(st.milk.length ? "Ghi chú" : "Bú và hút sữa giai đoạn này", "🤱", "--pink", st.milkNotes, true, false) +
-        listCard("Cho bé bú bình sữa mẹ", "🍼", "--blue", SCHED.bottle, key === "0b", true) +
+        listCard(st.milk.length ? "Ghi chú" : "Bú và hút sữa giai đoạn này", "🤱", "--pink", st.milkNotes, false, true) +
+        listCard("Cho bé bú bình sữa mẹ", "🍼", "--blue", SCHED.bottle, false, true) +
         listCard("Bảo quản sữa mẹ", "🧊", "--teal", SCHED.storage, false, true) +
         listCard("Khi nào dùng sữa công thức?", "🥛", "--orange", SCHED.formula, false, true);
     } else {
       body = timeline(st.baby) + '<div class="plan-gap"></div>' +
-        listCard("Lưu ý giai đoạn này", "💡", "--yellow", st.notes, true, false) +
+        listCard("Lưu ý giai đoạn này", "💡", "--yellow", st.notes, false, true) +
         listCard("Nguyên tắc chung", "🧭", "--indigo", SCHED.principles, false, true);
     }
     $("#planBody").innerHTML = head + stats + seg + body +
