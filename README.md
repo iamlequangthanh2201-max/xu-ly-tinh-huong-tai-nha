@@ -8,6 +8,7 @@ Cùng bộ với [Giấc ngủ cho con](https://iamlequangthanh2201-max.github.i
 
 ## Có gì trong app
 
+- **Lịch trình trong ngày** cho từng tháng tuổi 0-12: thức dậy, bú, chơi, tắm, vệ sinh, ngủ, cữ đêm, và lịch hút sữa của mẹ (hút hoàn toàn hoặc vừa cho bú vừa trữ), kèm cách bảo quản sữa. Nhập ngày sinh để app tự chọn đúng tháng, có đánh dấu "Bây giờ" theo giờ thực
 - 37 tình huống (28 của bé, 9 của mẹ), chia 8 nhóm, mỗi tình huống có mức độ xanh, vàng, đỏ
 - Mỗi tình huống: **Đây là gì?** (giải thích ngắn hiện tượng, mặc định gập lại), **Làm ngay** (các bước đánh số, chạm để đánh dấu đã làm), **Phòng ngừa**, **Không nên**, **Đi khám khi**
 - 7 kỹ năng cơ bản (ợ hơi, hút mũi, đo nhiệt độ, đếm nhịp thở, kiểm tra mất nước, sơ cứu hóc dị vật, quấn bé), mở nhanh dạng bảng trượt ngay trong từng bước
@@ -21,10 +22,15 @@ Cùng bộ với [Giấc ngủ cho con](https://iamlequangthanh2201-max.github.i
 
 | File | Vai trò |
 |---|---|
-| `noi-dung.md` | Toàn bộ nội dung. Sửa ở đây |
+| `noi-dung.md` | Nội dung các tình huống, kỹ năng, từ ngữ |
+| `lich-trinh.md` | Lịch trình trong ngày theo tháng 0-12 và lịch hút sữa |
 | `build.py` | Đọc `noi-dung.md`, xếp nhóm, gắn từ khoá tìm kiếm, vẽ icon hoa hướng dương, dựng app vào `docs/` |
 | `src/` | Khung trang, giao diện, mã app, service worker |
 | `docs/` | Bản đã dựng, GitHub Pages phục vụ thư mục này |
+
+## Giao diện
+
+Theo ngôn ngữ thiết kế iOS 27 (Liquid Glass): thanh tab kính nổi có viên chọn trượt, nút tròn bằng kính, tiêu đề lớn thu nhỏ vào thanh trên khi cuộn, danh sách bo góc kiểu iOS, màu hệ thống của Apple, bảng trượt kính, hiệu ứng nhún khi chạm.
 
 ## Sửa nội dung và cập nhật
 

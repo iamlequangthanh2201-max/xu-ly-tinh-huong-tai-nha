@@ -200,6 +200,60 @@ def parse(md):
     return skills, situations, emergency, glossary
 
 
+# ---------------------------------------------------------------- lịch trình
+RE_MONTH = re.compile(r"^## Tháng (\d+) \| (.+)$")
+RE_SLOT = re.compile(r"^- (\d{2}:\d{2}) \| (\w+) \| (.+)$")
+SLOT_TYPES = {"thuc", "bu", "dem", "an", "choi", "ngoai", "ngu", "tam", "vesinh", "hut"}
+
+
+def parse_schedule(md):
+    out = dict(principles=[], storage=[], months=[])
+    cur, key = None, None
+    for raw in md.splitlines():
+        line = raw.rstrip()
+        if not line.strip() or line.strip() == "---":
+            continue
+        if line == "## Nguyên tắc chung":
+            cur, key = out, "principles"
+            continue
+        if line == "## Bảo quản sữa mẹ":
+            cur, key = out, "storage"
+            continue
+        m = RE_MONTH.match(line)
+        if m:
+            cur = dict(m=int(m.group(1)), sub=m.group(2).strip(), summary=[], baby=[],
+                       pump=[], pumpMixed=[], notes=[])
+            out["months"].append(cur)
+            key = None
+            continue
+        if cur is None:
+            continue
+        if line.startswith("**") and line.endswith(":**"):
+            label = line.strip("*").rstrip(":").lower()
+            key = ("summary" if label.startswith("tóm tắt") else
+                   "baby" if label.startswith("lịch của bé") else
+                   "pump" if "chỉ hút" in label else
+                   "pumpMixed" if "bú trực tiếp" in label else
+                   "notes" if label.startswith("lưu ý") else None)
+            assert key, "Không hiểu nhãn: " + line
+            continue
+        if key is None or not line.startswith("- "):
+            continue
+        if key in ("baby", "pump"):
+            s = RE_SLOT.match(line)
+            assert s, "Dòng lịch sai dạng: " + line
+            assert s.group(2) in SLOT_TYPES, "Loại không có: " + line
+            cur[key].append(dict(t=s.group(1), k=s.group(2), text=s.group(3).strip()))
+        elif key == "summary":
+            lab, _, val = line[2:].partition(":")
+            cur["summary"].append(dict(label=lab.strip(), value=val.strip()))
+        else:
+            cur[key].append(line[2:].strip())
+    months = [x["m"] for x in out["months"]]
+    assert months == list(range(13)), "Lịch phải đủ tháng 0-12: %s" % months
+    return out
+
+
 def build():
     md = (HERE / "noi-dung.md").read_text(encoding="utf-8")
     skills, situations, emergency, glossary = parse(md)
@@ -218,8 +272,9 @@ def build():
     for k in skills:
         k["short"] = SKILL_SHORT.get(k["id"], k["title"])
 
+    schedule = parse_schedule((HERE / "lich-trinh.md").read_text(encoding="utf-8"))
     data = dict(skills=skills, situations=situations, emergency=emergency,
-                glossary=glossary, categories=CATEGORIES)
+                glossary=glossary, categories=CATEGORIES, schedule=schedule)
     data_json = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
 
     css = (HERE / "src" / "styles.css").read_text(encoding="utf-8")
@@ -262,8 +317,8 @@ def build():
 
     n_steps = sum(len(s["items"]) for it in situations for s in it["sections"]
                   if s["kind"] == "steps")
-    print("Đã dựng docs/  |  %d tình huống, %d kỹ năng, %d bước, %d từ ngữ, phiên bản %s"
-          % (len(situations), len(skills), n_steps, len(glossary), version))
+    print("Đã dựng docs/  |  %d tình huống, %d kỹ năng, %d bước, %d từ ngữ, %d tháng lịch trình, phiên bản %s"
+          % (len(situations), len(skills), n_steps, len(glossary), len(schedule["months"]), version))
 
 
 # ---------------------------------------------------------------- icon
