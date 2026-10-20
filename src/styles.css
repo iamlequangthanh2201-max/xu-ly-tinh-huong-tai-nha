@@ -452,7 +452,7 @@ details[open]>summary .tw{transform:rotate(90deg)}
 .stat-l{font-size:12px;font-weight:600;color:var(--label-2);text-transform:uppercase;letter-spacing:.02em;margin:6px 0 2px}
 .stat-v{font-size:15px;font-weight:600;line-height:1.3}
 
-.tl{position:relative;list-style:none;margin:0;padding:8px 0;background:var(--bg-2);border-radius:var(--r-l);box-shadow:var(--shadow)}
+.tl{position:relative;overflow:hidden;list-style:none;margin:0;padding:8px 0;background:var(--bg-2);border-radius:var(--r-l);box-shadow:var(--shadow)}
 .tl::before{content:"";position:absolute;left:89px;top:26px;bottom:26px;width:2px;border-radius:1px;background:var(--fill-strong)}
 .slot{position:relative;display:flex;align-items:flex-start;gap:12px;padding:9px 16px 9px 12px}
 .slot-time{flex:none;width:50px;text-align:right;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--label-2);padding-top:5px}
@@ -463,7 +463,9 @@ details[open]>summary .tw{transform:rotate(90deg)}
 .slot-kind{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--c)}
 .slot-text{display:block;font-size:16px;line-height:1.4}
 .slot.night .slot-time{color:var(--indigo)}
-.slot.now{background:linear-gradient(90deg,var(--tint-wash),transparent)}
+.slot>*{position:relative;z-index:1}
+.slot.now::before{content:"";position:absolute;z-index:0;inset:0 6px;border-radius:16px;
+  background:linear-gradient(90deg,var(--tint-wash),color-mix(in srgb,var(--tint-wash) 25%,transparent))}
 .slot.now .slot-time{color:var(--tint)}
 .slot.now .slot-ico{box-shadow:0 0 0 3px var(--bg-2),0 0 0 6px color-mix(in srgb,var(--tint) 35%,transparent);animation:pulse 2s ease-in-out infinite}
 @keyframes pulse{50%{box-shadow:0 0 0 3px var(--bg-2),0 0 0 10px color-mix(in srgb,var(--tint) 10%,transparent)}}
