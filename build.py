@@ -210,7 +210,7 @@ SLOT_TYPES = {"thuc", "bu", "binh", "dem", "an", "choi", "ngoai", "ngu", "tam", 
 STAGE_KEYS = ["0a", "0b"] + [str(i) for i in range(1, 13)]
 GLOBAL_SECTIONS = {"Nguyên tắc chung": "principles", "Cữ đêm là gì": "night",
                    "Cho bé bú bình sữa mẹ": "bottle", "Bảo quản sữa mẹ": "storage",
-                   "Khi nào dùng sữa công thức": "formula"}
+                   "Khi nào dùng sữa công thức": "formula", "Lịch hút L2, L3, L4": "lrhythm"}
 STAGE_SECTIONS = [("tóm tắt", "summary"), ("lịch của bé", "baby"), ("ban đêm", "night"),
                   ("mẹo ban đêm", "nightTips"), ("bú và hút sữa", "milk"), ("lưu ý", "notes")]
 

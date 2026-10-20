@@ -13,6 +13,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 
 ## Nguyên tắc chung
 
+- Đây là lịch dự kiến. Khi bé thích ứng khác đi (ngủ dài hơn, đòi bú dày hơn, chưa chịu bú bình...), cứ điều chỉnh lịch theo bé.
 - Giờ trong lịch chỉ là ví dụ. Bé không cần theo đúng từng phút, hãy dựa vào dấu hiệu của bé và dịch cả lịch sớm hoặc muộn cho hợp với nhà mình.
 - Dấu hiệu bé buồn ngủ: ngáp, dụi mắt, mắt nhìn xa xăm, quay mặt đi, quấy nhẹ. Cho bé ngủ ngay lúc này, đừng đợi bé khóc to vì khi đó bé đã quá mệt, khó vào giấc hơn.
 - Dấu hiệu bé đói: mút tay, chép miệng, quay đầu tìm vú. Khóc là dấu hiệu đói muộn.
@@ -38,6 +39,17 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Bú bình theo nhịp: bế bé ngồi hơi thẳng, giữ bình nằm ngang, cho bé nghỉ mỗi 20-30 giây bằng cách hạ bình. Bé bú chậm như bú mẹ, đỡ bị quen bình mà chê vú.
 - Dùng núm vú chảy chậm (size nhỏ nhất) cho đến khi bé lớn hơn.
 - Người khác (bố, bà) nên là người cho bú bình. Bé thường không chịu bú bình khi ngửi thấy mùi mẹ ở gần.
+
+## Lịch hút L2, L3, L4
+
+- L là khoảng cách giữa hai lần làm trống vú, tức là bé bú trực tiếp hoặc mẹ hút. L2 là khoảng 2 tiếng một lần, L3 khoảng 3 tiếng, L4 khoảng 4 tiếng (khoảng 6 lần mỗi ngày), L5 khoảng 5 tiếng.
+- Mỗi lần bé bú trực tiếp cũng tính là một lần. Nhà mình cho bú mẹ là chính nên không cần hút đủ số lần, chỉ cần khoảng cách giữa hai lần bú hoặc hút không dài hơn mức L của giai đoạn đó.
+- Lộ trình thường gặp: L2-L3 trong những tuần đầu để gọi sữa về, giữ L3 đến khi sữa ổn định (thường 2-3 tháng), rồi giãn dần sang L4, L5 khi bé lớn và ăn dặm nhiều hơn.
+- Cách giãn: mỗi 3-4 ngày lùi thêm 15-30 phút. Không nhảy một lần từ 3 tiếng lên 4 tiếng. Khi sữa đã ổn định, khoảng ban đêm có thể dài hơn ban ngày.
+- Theo dõi: vài ngày một lần ghi tổng lượng sữa hút được trong 24 giờ, và cân nặng của bé mỗi lần đi khám.
+- Quay lại lịch dày hơn khi: tổng lượng sữa 24 giờ giảm rõ trong vài ngày liền, bé tăng cân chậm, ít tã ướt, hoặc vú hay căng tức, tắc tia (B3).
+- Mỗi mẹ một khác: có mẹ giãn sang L4 sớm vẫn đủ sữa, có mẹ cần giữ L3 lâu hơn. Không có con số đúng cho mọi người.
+- Đây là cách làm phổ biến trong cộng đồng các mẹ, không phải quy định y khoa. Khi sữa giảm, hỏi bác sĩ hoặc chuyên viên tư vấn sữa mẹ.
 
 ## Bảo quản sữa mẹ
 
@@ -72,6 +84,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Tã ướt: ngày thứ mấy thì ít nhất bấy nhiêu tã, từ ngày 6 trở đi ít nhất 6 tã/ngày
 - Tổng giờ ngủ: 16-18 giờ/ngày, chưa theo giờ
 - Ngủ đêm: thức bú 3-4 lần, bố hỗ trợ đến 02:00
+- Nhịp làm trống vú: L2-L3, bú trực tiếp 2-3 tiếng một lần
 
 **Lịch của bé:**
 - 06:00 | bu | Thức dậy, thay tã, bú mẹ cả hai bên
@@ -128,6 +141,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Thức mỗi lần: 45-60 phút
 - Tổng giờ ngủ: 14-17 giờ/ngày
 - Ngủ đêm: bố lo cữ 22:30, sau đó mẹ dậy 2 lần
+- Nhịp làm trống vú: L2-L3, bú hoặc hút 2-3 tiếng một lần
 
 **Lịch của bé:**
 - 06:00 | bu | Thức dậy, thay tã, bú mẹ cữ sáng
@@ -181,6 +195,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Thức mỗi lần: 60-90 phút
 - Tổng giờ ngủ: 14-17 giờ/ngày
 - Ngủ đêm: khoảng 21:00, mẹ dậy 1-2 lần
+- Nhịp làm trống vú: L3, khoảng 3 tiếng một lần
 
 **Lịch của bé:**
 - 06:30 | bu | Thức dậy, thay tã, bú mẹ cữ sáng
@@ -232,6 +247,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Thức mỗi lần: 1 giờ-1 giờ 30
 - Tổng giờ ngủ: 14-16 giờ/ngày
 - Ngủ đêm: khoảng 20:30, mẹ dậy 1 lần
+- Nhịp làm trống vú: L3, khoảng 3 tiếng một lần
 
 **Lịch của bé:**
 - 06:30 | bu | Thức dậy, thay tã, bú mẹ cữ sáng
@@ -283,6 +299,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Thức mỗi lần: 1 giờ 15-1 giờ 45
 - Tổng giờ ngủ: 14-16 giờ/ngày
 - Ngủ đêm: khoảng 19:45, mẹ dậy 0-1 lần
+- Nhịp làm trống vú: L3, bắt đầu giãn dần nếu sữa ổn định
 
 **Lịch của bé:**
 - 06:30 | bu | Thức dậy, thay tã, bú mẹ cữ sáng
@@ -332,6 +349,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Thức mỗi lần: 1 giờ 30-2 giờ
 - Tổng giờ ngủ: 12-16 giờ/ngày
 - Ngủ đêm: khoảng 19:15, mẹ dậy 0-1 lần
+- Nhịp làm trống vú: L3 đến L4, đang giãn dần
 
 **Lịch của bé:**
 - 06:30 | bu | Thức dậy, thay tã, bú mẹ cữ sáng
@@ -379,6 +397,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Thức mỗi lần: 2 giờ-2 giờ 30
 - Tổng giờ ngủ: 12-15 giờ/ngày
 - Ngủ đêm: khoảng 19:15, mẹ dậy 0-1 lần
+- Nhịp làm trống vú: L4, khoảng 4 tiếng một lần
 
 **Lịch của bé:**
 - 06:30 | bu | Thức dậy, thay tã, bú mẹ cữ sáng
@@ -425,6 +444,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Thức mỗi lần: 2 giờ 15-2 giờ 45
 - Tổng giờ ngủ: 12-15 giờ/ngày
 - Ngủ đêm: khoảng 19:15
+- Nhịp làm trống vú: L3 khi mới đi làm, sau 2-4 tuần chuyển L4
 
 **Lịch của bé:**
 - 06:30 | bu | Thức dậy, thay tã, bú mẹ trước khi mẹ đi làm
@@ -455,10 +475,14 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 
 **Bú và hút sữa:**
 - 06:30 | bu | Cho bú trực tiếp trước khi đi làm
-- 10:00 | hut | Hút ở cơ quan 15-20 phút, cất túi giữ lạnh
-- 13:00 | hut | Hút ở cơ quan
-- 16:00 | hut | Hút ở cơ quan
+- 10:00 | hut | L3: hút ở cơ quan 15-20 phút, cất túi giữ lạnh
+- 13:00 | hut | L3: hút ở cơ quan
+- 16:00 | hut | L3: hút ở cơ quan
 - 17:30 | bu | Về nhà cho bú trực tiếp ngay
+- 2-4 tuần đầu đi làm: giữ L3, hút 3 lần ở cơ quan như trên để sữa không giảm khi cơ thể còn đang quen lịch mới.
+- Sau đó, nếu tổng lượng sữa vẫn đủ cho các bình ban ngày của bé: chuyển sang L4, chỉ hút 2 lần ở cơ quan lúc 10:30 và 14:30, mỗi lần 15-20 phút.
+- Chuyển từ từ: lùi lần hút 10:00 thành 10:30, bỏ dần lần 16:00 trong khoảng 1 tuần.
+- Nếu sữa giảm sau khi chuyển L4: quay lại hút 3 lần.
 
 **Lưu ý:**
 - Bắt đầu ăn dặm khi bé tròn 6 tháng. Sữa vẫn là nguồn dinh dưỡng chính.
@@ -477,6 +501,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Thức mỗi lần: 2 giờ 30-3 giờ
 - Tổng giờ ngủ: 12-15 giờ/ngày
 - Ngủ đêm: khoảng 19:15
+- Nhịp làm trống vú: L4, hút 2 lần ở cơ quan
 
 **Lịch của bé:**
 - 06:30 | bu | Thức dậy, thay tã, bú mẹ cữ sáng, chải răng
@@ -524,6 +549,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Thức mỗi lần: 2 giờ 30-3 giờ 30
 - Tổng giờ ngủ: 12-15 giờ/ngày
 - Ngủ đêm: khoảng 19:15, thường không cần bú đêm
+- Nhịp làm trống vú: L4, hút 2 lần ở cơ quan
 
 **Lịch của bé:**
 - 06:30 | bu | Thức dậy, thay tã, bú mẹ cữ sáng, chải răng
@@ -571,6 +597,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Thức mỗi lần: 3 giờ-3 giờ 30
 - Tổng giờ ngủ: 12-15 giờ/ngày
 - Ngủ đêm: khoảng 19:15, không bú đêm
+- Nhịp làm trống vú: L4-L5, bé ăn dặm nhiều hơn
 
 **Lịch của bé:**
 - 06:30 | bu | Thức dậy, thay tã, bú mẹ cữ sáng, chải răng
@@ -615,6 +642,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Thức mỗi lần: 3 giờ-3 giờ 45
 - Tổng giờ ngủ: 12-14 giờ/ngày
 - Ngủ đêm: khoảng 19:15, không bú đêm
+- Nhịp làm trống vú: L5, bú sáng tối, hút 1 lần ban ngày
 
 **Lịch của bé:**
 - 06:30 | bu | Thức dậy, thay tã, bú mẹ cữ sáng, chải răng
@@ -659,6 +687,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Thức mỗi lần: 3 giờ-4 giờ
 - Tổng giờ ngủ: 12-14 giờ/ngày
 - Ngủ đêm: khoảng 19:15, không bú đêm
+- Nhịp làm trống vú: L5-L6, hút theo cảm giác căng vú
 
 **Lịch của bé:**
 - 06:30 | bu | Thức dậy, thay tã, bú mẹ cữ sáng, chải răng
@@ -703,6 +732,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Giấc ngày: 2 giấc (một số bé chuyển sang 1 giấc trưa)
 - Tổng giờ ngủ: 11-14 giờ/ngày
 - Ngủ đêm: khoảng 19:30, không bú đêm
+- Nhịp làm trống vú: Theo nhu cầu, giảm dần nếu muốn cai
 
 **Lịch của bé:**
 - 06:30 | bu | Thức dậy, thay tã, bú mẹ, chải răng

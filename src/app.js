@@ -538,6 +538,7 @@
   function statIcon(label) {
     var l = label.toLowerCase();
     if (l.indexOf("cách cho ăn") === 0) return "🤱";
+    if (l.indexOf("nhịp") === 0) return "🔁";
     if (l.indexOf("thức") === 0) return "⏱️";
     if (l.indexOf("giấc") === 0) return "😴";
     if (l.indexOf("tổng") === 0) return "🛌";
@@ -735,7 +736,8 @@
         listCard("Mẹo để mẹ đỡ phải dậy", "💡", "--yellow", st.nightTips, false, true);
     } else if (planView === "sua") {
       body = (st.milk.length ? '<div class="eyebrow">Giờ bú trực tiếp và hút sữa</div>' + timeline(st.milk, { noNightSep: true }) + '<div class="plan-gap"></div>' : "") +
-        listCard(st.milk.length ? "Ghi chú" : "Bú và hút sữa giai đoạn này", "🤱", "--pink", st.milkNotes, false, true) +
+        listCard(st.milk.length ? "Ghi chú và phương án khác" : "Bú và hút sữa giai đoạn này", "🤱", "--pink", st.milkNotes, false, true) +
+        listCard("Lịch hút L2, L3, L4 là gì?", "🔁", "--indigo", SCHED.lrhythm, false, true) +
         listCard("Cho bé bú bình sữa mẹ", "🍼", "--blue", SCHED.bottle, false, true) +
         listCard("Bảo quản sữa mẹ", "🧊", "--teal", SCHED.storage, false, true) +
         listCard("Khi nào dùng sữa công thức?", "🥛", "--orange", SCHED.formula, false, true);

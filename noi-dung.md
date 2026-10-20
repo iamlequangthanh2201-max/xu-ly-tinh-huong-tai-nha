@@ -1021,4 +1021,5 @@ Mỗi tình huống gồm 4 phần:
 - **Bú bình theo nhịp:** Cách cho bú bình giống bú mẹ: bế bé ngồi hơi thẳng, giữ bình nằm ngang, cứ 20-30 giây hạ bình cho bé nghỉ. Bé không bị sữa chảy ồ ạt, ít bị no quá và đỡ chê vú mẹ.
 - **Sữa công thức:** Sữa bột hoặc sữa nước pha sẵn được chế biến riêng cho trẻ dưới 12 tháng, dùng thay hoặc bổ sung khi không đủ sữa mẹ. Không giống sữa bò tươi hay sữa hộp người lớn.
 - **Sữa non:** Sữa đặc, màu vàng mẹ tiết ra trong 2-5 ngày đầu sau sinh. Lượng ít nhưng rất giàu kháng thể, đủ cho dạ dày nhỏ xíu của bé trong những ngày đầu.
+- **Lịch hút L / L2 / L3 / L4 / L5:** Cách gọi lịch hút sữa theo khoảng cách giữa hai lần làm trống vú (bé bú hoặc mẹ hút): L3 là khoảng 3 tiếng một lần, L4 là khoảng 4 tiếng một lần (khoảng 6 lần mỗi ngày). Chi tiết ở mục Lịch trình, phần Bú & hút.
 - **Trĩ:** Các tĩnh mạch ở hậu môn bị sưng phồng, gây đau, ngứa, có thể chảy máu đỏ tươi khi đi ngoài.
