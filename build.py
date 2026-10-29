@@ -81,6 +81,7 @@ KEYWORDS = {
     "K6": "hóc, dị vật, sơ cứu, nghẹt thở, vỗ lưng ấn ngực",
     "K7": "quấn, quấn chũn, quấn khăn",
     "K8": "rốn, vệ sinh rốn, lau rốn, chăm sóc rốn, cuống rốn, rụng rốn",
+    "K9": "ngủ, tự ngủ, rèn ngủ, ru ngủ, cho bé ngủ, đặt xuống, bế vác, tiếng ồn trắng, nhộng, khó ngủ",
 }
 
 # Tên ngắn cho các chip "xem kỹ năng"
@@ -93,6 +94,7 @@ SKILL_SHORT = {
     "K6": "Sơ cứu hóc dị vật",
     "K7": "Cách quấn bé",
     "K8": "Cách vệ sinh rốn",
+    "K9": "Tập cho bé tự ngủ",
 }
 
 # ---------------------------------------------------------------- đọc md

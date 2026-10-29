@@ -93,6 +93,21 @@ Mỗi tình huống gồm 4 phần:
 > Không giật cuống rốn kể cả khi sắp rụng. Không đắp nghệ, lá, thuốc lào, không bôi cồn hay thuốc đỏ khi bác sĩ không dặn.
 > Đi khám ngay nếu da quanh rốn đỏ lan rộng, có mủ, mùi hôi, chảy máu không cầm, hoặc bé sốt (xem A15).
 
+### K9. Tập cho bé tự ngủ
+1. Canh thời gian thức: bé sơ sinh thường chỉ thức được 45-60 phút mỗi lần, lớn dần theo tháng tuổi (xem mục Lịch trình, ô "Thức mỗi lần").
+2. Quan sát dấu hiệu buồn ngủ: ngáp, mắt lờ đờ hoặc díp lại, nhìn xa xăm, quay mặt đi, dụi mắt, quấy nhẹ. Bắt đầu cho ngủ ngay lúc này, đừng đợi bé khóc to vì khi đó bé đã quá mệt.
+3. Làm trình tự ngủ giống nhau mỗi lần: thay tã, mặc nhộng hoặc quấn bé (K7), tắt đèn hoặc kéo rèm, bật tiếng ồn trắng.
+4. Chỉnh phòng mát vừa phải, khoảng 26-28°C. Sờ gáy bé thấy ấm, không có mồ hôi là vừa.
+5. Bế vác cho bé dịu lại (wind down): bế đứng, bé áp vào vai, vỗ nhẹ lưng, đi chậm hoặc ngồi yên, nói nhỏ. Dừng khi bé đã dịu, mắt lờ đờ nhưng chưa ngủ say.
+6. Đặt bé nằm ngửa xuống giường khi bé còn thức: hạ lưng xuống trước, đầu xuống sau cùng. Giữ nhẹ tay trên ngực bé vài giây rồi mới rút tay ra.
+7. Ở cạnh và để bé tự vào giấc. Bé ọ ẹ, vặn mình, mở mắt nhìn quanh là bình thường, đợi vài phút trước khi can thiệp.
+8. Nếu bé khóc to, không tự dịu được: bế lên dỗ đến khi bé nín và dịu lại (không để bé ngủ hẳn trên tay), rồi đặt xuống lại. Lặp lại khi cần.
+9. Sau khoảng 20-30 phút mà bé vẫn không ngủ được: có thể bé đói hoặc chưa đủ buồn ngủ. Cho bú, thay tã, rồi thử lại ở giấc sau. Không để bé khóc lâu một mình.
+
+> Đây là tập thói quen nhẹ nhàng, không phải luyện ngủ để bé tự khóc đến khi ngủ. Kiểu luyện ngủ đó không phù hợp với trẻ dưới 4-6 tháng. Bé sơ sinh vẫn cần bú đêm: bé đói thì cho bú.
+> Cần kiên nhẫn: làm đều đặn vài ngày đến vài tuần. Có giấc bé tự ngủ được, có giấc vẫn cần ru hoặc bú mới ngủ, đều là bình thường.
+> An toàn: luôn cho bé nằm ngửa trên mặt phẳng chắc, không để gối, gối ôm, thú bông, chăn dày quanh bé (xem A20). Ngừng quấn hoặc mặc nhộng khi bé có dấu hiệu biết lẫy.
+
 ---
 
 ## PHẦN A: BÉ
@@ -533,6 +548,7 @@ Mỗi tình huống gồm 4 phần:
 2. Khi đặt bé xuống: hạ lưng bé xuống trước, đầu xuống sau cùng, thật chậm.
 3. Sau khi đặt xuống, giữ nhẹ tay lên ngực bé vài giây rồi mới rút tay ra.
 4. Dùng tiếng ồn trắng đều đều để át tiếng động bất chợt.
+5. Muốn tập cho bé tự vào giấc mà không cần ru đến khi ngủ hẳn: xem K9.
 
 **An toàn khi ngủ (luôn áp dụng):**
 1. Đặt bé nằm ngửa.
