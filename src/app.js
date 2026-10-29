@@ -435,7 +435,7 @@
     setTitle("Kỹ năng cơ bản");
     view.innerHTML = '<h1 id="pageH1">Kỹ năng cơ bản</h1><p class="lede">Những thao tác dùng lại ở nhiều tình huống. Nên đọc trước một lần khi bé còn khoẻ.</p>' +
       '<div class="list">' + DATA.skills.map(function (k) {
-        var n = k.sections.reduce(function (a, s) { return a + s.items.length; }, 0);
+        var n = k.sections.reduce(function (a, s) { return a + (s.kind === "steps" ? s.items.length : 0); }, 0);
         return rowFor(k, n + " bước");
       }).join("") + "</div>" + glossLink();
   }

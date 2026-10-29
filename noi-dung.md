@@ -13,116 +13,250 @@ Mỗi tình huống gồm 4 phần:
 ## PHẦN 0: KỸ NĂNG CƠ BẢN (các tình huống bên dưới sẽ dùng lại)
 
 ### K1. Cho bé ợ hơi
-1. Lót một khăn trên vai bố mẹ.
-2. Chọn một trong 3 tư thế:
-   - **Tựa vai:** bế bé thẳng đứng, cằm bé tựa lên vai bạn.
-   - **Ngồi trên đùi:** cho bé ngồi, một tay đỡ ngực và cằm bé (không bóp cổ), người bé hơi nghiêng về trước.
-   - **Nằm sấp trên đùi:** đặt bé nằm sấp ngang đùi, đầu cao hơn ngực một chút.
-3. Dùng lòng bàn tay khum lại, vỗ nhẹ hoặc xoa vòng tròn ở giữa lưng bé.
-4. Làm trong 1-3 phút. Nếu chưa ợ, đổi tư thế và thử lại thêm 1-2 phút.
-5. Thời điểm: bú mẹ thì cho ợ khi đổi bên; bú bình thì cho ợ sau mỗi 30-60 ml; và luôn cho ợ khi kết thúc cữ.
-6. Không ợ được cũng không sao, bế đứng thêm 10-15 phút.
+1. Lót khăn lên vai bố mẹ.
+2. Chọn 1 trong 3 tư thế:
+   - Tựa vai: bế đứng, cằm bé tựa vai
+   - Ngồi trên đùi: tay đỡ ngực và cằm, không bóp cổ
+   - Nằm sấp trên đùi: đầu cao hơn ngực
+3. Vỗ nhẹ hoặc xoa vòng giữa lưng.
+   - Khum lòng bàn tay
+   - Làm 1-3 phút, chưa ợ thì đổi tư thế
+4. Cho ợ đúng lúc:
+   - Bú mẹ: khi đổi bên
+   - Bú bình: sau mỗi 30-60 ml
+   - Luôn cho ợ khi hết cữ
+5. Không ợ được: bế đứng thêm 10-15 phút.
 
 ### K2. Nhỏ nước muối và hút mũi
 1. Rửa tay sạch.
-2. Cho bé nằm ngửa, nghiêng đầu sang một bên.
-3. Nhỏ 1-2 giọt nước muối sinh lý 0,9% vào lỗ mũi phía trên.
-4. Đợi khoảng 30 giây cho gỉ mũi mềm ra.
-5. Bóp xẹp quả bóp hút mũi trước, đưa đầu hút vào lỗ mũi nông (không đưa sâu), rồi thả tay từ từ.
-6. Lau sạch đầu hút, làm tương tự với bên còn lại.
-7. Chỉ hút tối đa 3-4 lần/ngày, nên làm trước cữ bú và trước khi ngủ.
-8. Rửa sạch dụng cụ bằng nước xà phòng sau mỗi lần dùng.
+2. Cho bé nằm ngửa, nghiêng đầu.
+3. Nhỏ 1-2 giọt nước muối sinh lý 0,9%.
+   - Nhỏ vào lỗ mũi phía trên
+   - Đợi 30 giây cho gỉ mũi mềm
+4. Hút mũi nhẹ nhàng:
+   - Bóp xẹp quả hút trước
+   - Đưa vào nông, thả tay từ từ
+5. Làm tương tự bên còn lại.
+6. Rửa dụng cụ bằng xà phòng.
+
+**Lưu ý:**
+- Hút tối đa 3-4 lần/ngày
+- Nên làm trước cữ bú và trước khi ngủ
 
 ### K3. Đo nhiệt độ
-1. Dùng nhiệt kế điện tử (không dùng nhiệt kế thủy ngân).
-2. Đo ở nách: lau khô nách, đặt đầu nhiệt kế vào giữa nách, khép tay bé áp sát người, giữ cho đến khi máy kêu.
-3. Đo hậu môn (chính xác nhất với bé dưới 3 tháng): bôi một chút vaselin vào đầu nhiệt kế, cho bé nằm ngửa co chân, đưa vào hậu môn khoảng 1-2 cm, giữ đến khi máy kêu.
-4. Không đo ngay sau khi tắm, bú hoặc khi bé vừa được ủ ấm, đợi 15-20 phút.
-5. Ghi lại: giờ đo, vị trí đo, kết quả.
-6. Mức tham khảo: bình thường 36,5-37,5°C. Từ 38°C trở lên là sốt.
+1. Dùng nhiệt kế điện tử.
+   - Không dùng nhiệt kế thủy ngân
+2. Đo ở nách:
+   - Lau khô nách
+   - Kẹp đầu nhiệt kế giữa nách, khép tay bé
+   - Giữ đến khi máy kêu
+3. Hoặc đo hậu môn (chính xác nhất cho bé dưới 3 tháng):
+   - Bôi chút vaselin lên đầu nhiệt kế
+   - Bé nằm ngửa, co chân
+   - Đưa vào 1-2 cm, giữ đến khi máy kêu
+4. Ghi lại giờ, vị trí đo, kết quả.
+
+**Lưu ý:**
+- Bình thường: 36,5-37,5°C
+- Từ 38°C trở lên là sốt
+- Đợi 15-20 phút sau khi tắm, bú, ủ ấm mới đo
 
 ### K4. Đếm nhịp thở
-1. Đếm khi bé đang nằm yên hoặc đang ngủ.
-2. Kéo áo lên để nhìn rõ bụng và ngực.
-3. Đếm số lần bụng phồng lên trong đúng 60 giây (không đếm 15 giây rồi nhân 4 vì trẻ sơ sinh thở không đều).
-4. Bình thường ở trẻ dưới 2 tháng: 30-60 lần/phút. Trên 60 lần/phút là thở nhanh.
-5. Quan sát thêm: lõm ngực dưới xương sườn khi hít vào, cánh mũi phập phồng, môi tím. Có những dấu hiệu này là 🔴.
+1. Đếm khi bé nằm yên hoặc đang ngủ.
+2. Kéo áo lên, nhìn bụng và ngực.
+3. Đếm số lần bụng phồng lên trong đủ 60 giây.
+   - Không đếm 15 giây rồi nhân 4
+   - Trẻ sơ sinh thở không đều
+4. So với mức bình thường:
+   - Dưới 2 tháng: dưới 60 lần/phút
+   - 2-12 tháng: dưới 50 lần/phút
+
+**Đi cấp cứu khi:**
+- Thở nhanh hơn mức trên
+- Lõm ngực khi hít vào
+- Cánh mũi phập phồng
+- Môi tím
 
 ### K5. Kiểm tra dấu hiệu mất nước
-1. Đếm số tã ướt trong 24 giờ. Từ ngày thứ 5 trở đi, bé cần có ít nhất 6 tã ướt mỗi ngày.
-2. Nhìn môi và lưỡi: khô, nứt là dấu hiệu mất nước.
-3. Sờ nhẹ thóp trước (chỗ mềm trên đỉnh đầu): thóp lõm xuống là dấu hiệu mất nước.
-4. Khi bé khóc có nước mắt không (bé trên 1 tháng).
-5. Bé có li bì, mệt hơn bình thường không.
-6. Có từ 2 dấu hiệu trở lên: đi khám ngay.
+1. Đếm tã ướt trong 24 giờ.
+   - Từ ngày thứ 5: ít nhất 6 tã/ngày
+2. Nhìn môi, lưỡi: có khô, nứt không.
+3. Sờ thóp trên đỉnh đầu: có lõm không.
+4. Bé khóc có nước mắt không (bé trên 1 tháng).
+5. Bé có li bì, mệt hơn mọi khi không.
+
+**Đi khám ngay khi:**
+- Có từ 2 dấu hiệu trên trở lên
 
 ### K6. Sơ cứu hóc dị vật (bé dưới 1 tuổi)
-1. Bé còn ho được, khóc được: để bé tự ho, không vỗ, không móc họng, chỉ theo dõi sát.
-2. Bé không ho, không khóc, không thở được, mặt tím: hô người khác gọi 115 ngay.
-3. Đặt bé nằm sấp dọc theo cẳng tay bạn, đầu thấp hơn thân, bàn tay đỡ hàm bé (không bóp cổ). Tựa cẳng tay lên đùi cho chắc.
-4. Dùng gốc bàn tay vỗ mạnh, dứt khoát 5 lần vào giữa hai xương bả vai.
-5. Lật ngửa bé trên cẳng tay còn lại, đầu vẫn thấp hơn thân.
-6. Đặt 2 ngón tay ở giữa ngực, ngay dưới đường nối hai núm vú. Ấn mạnh 5 lần, sâu khoảng 4 cm.
-7. Nhìn vào miệng bé: chỉ lấy dị vật ra nếu thấy rõ. Không móc mù bằng ngón tay.
-8. Lặp lại 5 lần vỗ lưng và 5 lần ấn ngực cho đến khi dị vật ra hoặc bé thở lại được.
-9. Nếu bé bất tỉnh: đặt bé nằm ngửa trên mặt phẳng cứng, bắt đầu hồi sinh tim phổi (30 lần ép ngực, 2 lần thổi), tiếp tục cho đến khi nhân viên cấp cứu tới.
-10. Sau khi sơ cứu thành công, vẫn đưa bé đi khám.
+1. Bé còn ho, còn khóc được:
+   - Để bé tự ho
+   - Không vỗ, không móc họng
+   - Theo dõi sát
+2. Bé không ho, không khóc, không thở, tím tái:
+   - Hô người khác gọi 115 ngay
+3. Vỗ lưng 5 lần:
+   - Đặt bé nằm sấp dọc cẳng tay, đầu thấp hơn thân
+   - Tay đỡ hàm, không bóp cổ
+   - Gốc bàn tay vỗ mạnh giữa hai bả vai
+4. Ấn ngực 5 lần:
+   - Lật ngửa bé, đầu vẫn thấp
+   - 2 ngón tay giữa ngực, dưới đường nối hai núm vú
+   - Ấn sâu khoảng 4 cm
+5. Nhìn miệng bé:
+   - Chỉ lấy dị vật khi thấy rõ
+   - Không móc mù
+6. Lặp lại 5 vỗ lưng, 5 ấn ngực đến khi dị vật ra.
+7. Bé bất tỉnh: hồi sinh tim phổi.
+   - Đặt nằm ngửa trên mặt cứng
+   - 30 lần ép ngực, 2 lần thổi
+   - Làm đến khi cấp cứu tới
+8. Sơ cứu xong vẫn đưa bé đi khám.
 
-> Khuyến nghị bố mẹ và người trông bé tham gia một lớp sơ cứu thực hành, vì đọc khác rất xa với làm thật.
+**Lưu ý:**
+- Bố mẹ nên học một lớp sơ cứu thực hành
+- Đọc khác rất xa làm thật
 
-### K7. Quấn bé (chỉ dùng cho bé chưa biết lẫy)
-1. Trải khăn hình vuông thành hình thoi, gấp góc trên xuống khoảng 15 cm.
+### K7. Quấn bé
+1. Trải khăn hình thoi, gấp góc trên xuống 15 cm.
 2. Đặt bé nằm ngửa, vai ngang mép gấp.
-3. Giữ tay phải bé thẳng dọc thân, kéo góc khăn bên phải qua người, nhét dưới lưng bên trái.
-4. Gấp góc dưới lên, để chân bé có chỗ co và dạng ra (hông phải cử động được, tránh loạn sản khớp háng).
-5. Giữ tay trái bé thẳng, kéo góc khăn bên trái qua người, nhét dưới lưng.
-6. Kiểm tra: luồn vừa 2-3 ngón tay giữa khăn và ngực bé.
-7. Ngừng quấn khi bé bắt đầu có dấu hiệu lẫy (thường khoảng 2-4 tháng).
+3. Quấn tay phải:
+   - Giữ tay thẳng dọc thân
+   - Kéo góc phải qua người, nhét dưới lưng
+4. Gấp góc dưới lên:
+   - Để chân bé co và dạng được
+   - Không ép thẳng chân, tránh loạn sản khớp háng
+5. Quấn tay trái tương tự.
+6. Kiểm tra: luồn vừa 2-3 ngón tay ở ngực.
+
+**Lưu ý:**
+- Chỉ quấn bé chưa biết lẫy
+- Ngừng quấn khi bé có dấu hiệu lẫy (khoảng 2-4 tháng)
 
 ### K8. Vệ sinh rốn
-1. Rửa tay bằng xà phòng, lau khô.
-2. Chuẩn bị: gạc hoặc bông sạch, nước muối sinh lý 0,9% (hoặc nước đun sôi để nguội), tã sạch.
-3. Đặt bé nằm ngửa ở chỗ ấm, kín gió. Kéo áo lên, gập mép trên của tã xuống dưới rốn.
-4. Nhìn kỹ quanh chân rốn: da có đỏ lan ra không, có mủ, mùi hôi, chảy máu không.
-5. Rốn khô và sạch: không cần lau, để hở cho khô tự nhiên.
-6. Rốn dính nước tiểu, phân hoặc rỉ chút dịch: nhúng gạc vào nước muối, vắt bớt, nâng nhẹ cuống rốn lên rồi lau từ chân rốn (sát da) vòng ra ngoài. Mỗi vòng lau dùng một miếng gạc mới.
-7. Thấm khô bằng gạc khô sạch, để rốn hở ngoài không khí vài phút cho khô hẳn.
-8. Không băng kín, không đắp gì lên rốn. Mặc tã gập mép dưới rốn, áo rộng thoáng.
-9. Làm sau mỗi lần tắm và mỗi khi rốn bị bẩn, cho đến khi rốn rụng (thường 1-3 tuần) và chân rốn khô hẳn thêm vài ngày.
+1. Rửa tay bằng xà phòng.
+2. Chuẩn bị:
+   - Gạc sạch
+   - Nước muối sinh lý 0,9%
+   - Tã sạch
+3. Đặt bé ở chỗ ấm, kín gió.
+   - Gập mép tã xuống dưới rốn
+4. Nhìn chân rốn: có đỏ, mủ, mùi hôi, chảy máu không.
+5. Rốn khô sạch: không cần lau.
+6. Rốn bẩn hoặc rỉ dịch: lau bằng gạc nước muối.
+   - Nâng nhẹ cuống rốn
+   - Lau từ chân rốn vòng ra ngoài
+   - Mỗi vòng một miếng gạc mới
+7. Thấm khô, để hở vài phút.
+8. Không băng kín, không đắp gì lên rốn.
 
-> Không giật cuống rốn kể cả khi sắp rụng. Không đắp nghệ, lá, thuốc lào, không bôi cồn hay thuốc đỏ khi bác sĩ không dặn.
-> Đi khám ngay nếu da quanh rốn đỏ lan rộng, có mủ, mùi hôi, chảy máu không cầm, hoặc bé sốt (xem A15).
+**Lưu ý:**
+- Làm sau mỗi lần tắm và khi rốn bẩn
+- Làm đến khi rốn rụng (1-3 tuần) và khô hẳn
+
+**Không nên:**
+- Giật cuống rốn, kể cả khi sắp rụng
+- Đắp nghệ, lá, thuốc lào
+- Bôi cồn, thuốc đỏ khi bác sĩ không dặn
+
+**Đi khám khi:**
+- Da quanh rốn đỏ lan rộng
+- Có mủ, mùi hôi
+- Chảy máu không cầm
+- Bé sốt (xem A15)
 
 ### K9. Tập cho bé tự ngủ
-1. Canh thời gian thức: bé sơ sinh thường chỉ thức được 45-60 phút mỗi lần, lớn dần theo tháng tuổi (xem mục Lịch trình, ô "Thức mỗi lần").
-2. Quan sát dấu hiệu buồn ngủ: ngáp, mắt lờ đờ hoặc díp lại, nhìn xa xăm, quay mặt đi, dụi mắt, quấy nhẹ. Bắt đầu cho ngủ ngay lúc này, đừng đợi bé khóc to vì khi đó bé đã quá mệt.
-3. Làm trình tự ngủ giống nhau mỗi lần: thay tã, mặc nhộng hoặc quấn bé (K7), tắt đèn hoặc kéo rèm, bật tiếng ồn trắng.
-4. Chỉnh phòng mát vừa phải, khoảng 26-28°C. Sờ gáy bé thấy ấm, không có mồ hôi là vừa.
-5. Bế vác cho bé dịu lại (wind down): bế đứng, bé áp vào vai, vỗ nhẹ lưng, đi chậm hoặc ngồi yên, nói nhỏ. Dừng khi bé đã dịu, mắt lờ đờ nhưng chưa ngủ say.
-6. Đặt bé nằm ngửa xuống giường khi bé còn thức: hạ lưng xuống trước, đầu xuống sau cùng. Giữ nhẹ tay trên ngực bé vài giây rồi mới rút tay ra.
-7. Ở cạnh và để bé tự vào giấc. Bé ọ ẹ, vặn mình, mở mắt nhìn quanh là bình thường, đợi vài phút trước khi can thiệp.
-8. Nếu bé khóc to, không tự dịu được: bế lên dỗ đến khi bé nín và dịu lại (không để bé ngủ hẳn trên tay), rồi đặt xuống lại. Lặp lại khi cần.
-9. Sau khoảng 20-30 phút mà bé vẫn không ngủ được: có thể bé đói hoặc chưa đủ buồn ngủ. Cho bú, thay tã, rồi thử lại ở giấc sau. Không để bé khóc lâu một mình.
+1. Canh thời gian thức theo tháng tuổi.
+   - Sơ sinh: 45-60 phút
+   - Xem ô "Thức mỗi lần" ở mục Lịch trình
+2. Nhận ra dấu hiệu buồn ngủ:
+   - Ngáp, dụi mắt
+   - Mắt lờ đờ, nhìn xa xăm
+   - Quay mặt đi, quấy nhẹ
+   - Cho ngủ ngay, đừng đợi bé khóc to
+3. Làm nếp ngủ giống nhau mỗi lần:
+   - Thay tã
+   - Mặc nhộng hoặc quấn (K7)
+   - Tắt đèn, bật tiếng ồn trắng
+4. Phòng mát vừa, khoảng 26-28°C.
+   - Gáy bé ấm, không mồ hôi là vừa
+5. Bế vác cho bé dịu lại.
+   - Bế đứng áp vai, vỗ nhẹ lưng
+   - Dừng khi bé lờ đờ, chưa ngủ say
+6. Đặt bé xuống khi còn thức.
+   - Nằm ngửa, lưng xuống trước, đầu sau
+   - Giữ tay trên ngực vài giây
+7. Để bé tự vào giấc.
+   - Ọ ẹ, vặn mình là bình thường
+   - Đợi vài phút rồi mới can thiệp
+8. Bé khóc to: bế dỗ rồi đặt lại.
+   - Dỗ đến khi nín, không để ngủ trên tay
+   - Lặp lại khi cần
+9. Sau 20-30 phút chưa ngủ: dừng lại.
+   - Có thể bé đói hoặc chưa đủ buồn ngủ
+   - Cho bú, thử lại ở giấc sau
 
-> Đây là tập thói quen nhẹ nhàng, không phải luyện ngủ để bé tự khóc đến khi ngủ. Kiểu luyện ngủ đó không phù hợp với trẻ dưới 4-6 tháng. Bé sơ sinh vẫn cần bú đêm: bé đói thì cho bú.
-> Cần kiên nhẫn: làm đều đặn vài ngày đến vài tuần. Có giấc bé tự ngủ được, có giấc vẫn cần ru hoặc bú mới ngủ, đều là bình thường.
-> An toàn: luôn cho bé nằm ngửa trên mặt phẳng chắc, không để gối, gối ôm, thú bông, chăn dày quanh bé (xem A20). Ngừng quấn hoặc mặc nhộng khi bé có dấu hiệu biết lẫy.
+**Lưu ý:**
+- Đây là tập thói quen nhẹ nhàng
+- Không để bé tự khóc đến ngủ (không hợp với bé dưới 4-6 tháng)
+- Bé đói thì cho bú, kể cả ban đêm
+- Có giấc tự ngủ, có giấc vẫn cần ru: đều bình thường
+- Kiên trì vài ngày đến vài tuần
+
+**Ngủ an toàn:**
+- Luôn nằm ngửa, trên mặt phẳng chắc
+- Không gối, gối ôm, thú bông, chăn dày quanh bé (xem A20)
+- Ngừng quấn, mặc nhộng khi bé biết lẫy
 
 ### K10. Giúp bé phân biệt ngày đêm
-1. Chốt một giờ dậy buổi sáng cố định, ví dụ 6:30-7:00, ngày nào cũng vậy kể cả cuối tuần.
-2. Buổi sáng mở rèm ngay, nói "chào buổi sáng" với bé. Cho bé ra chỗ có ánh sáng tự nhiên (ban công, gần cửa sổ) khoảng 15-30 phút trong ngày, tránh nắng gắt trực tiếp.
-3. Ban ngày để nhà sáng và sinh hoạt bình thường, kể cả khi bé đang ngủ ngày. Không cần nhón chân giữ im lặng.
-4. Sau mỗi cữ bú ban ngày, cho bé thức chơi: nói chuyện, hát, nằm sấp, xem tranh, trong khoảng thời gian thức của tháng tuổi.
-5. Không để một giấc ngủ ban ngày kéo dài quá 2-3 tiếng. Quá giờ thì nhẹ nhàng đánh thức bé dậy bú. Trong 2 tuần đầu, bé ngủ quá 3 tiếng là phải đánh thức.
-6. Buổi tối làm nếp đi ngủ giống nhau mỗi ngày: tắm hoặc lau người, massage, mặc đồ ngủ, bú, ru. Đây là tín hiệu cho bé biết "sắp đến đêm".
-7. Ban đêm giữ phòng tối và yên, chỉ có tiếng ồn trắng đều đều. Dùng đèn ngủ mờ, ánh vàng hoặc đỏ, đặt thấp khi cho bú, thay tã. Không bật đèn trần, không dùng điện thoại sáng gần bé.
-8. Cữ đêm làm thật "nhàm chán": bú, vỗ ợ hơi, đặt bé ngủ lại ngay. Ít nói, không nhìn mắt lâu, không chơi. Chỉ thay tã khi bẩn hoặc tã đầy.
-9. Kiên trì làm đều đặn 1-2 tuần. Thường đến khoảng 6-8 tuần tuổi, bé ngủ đêm dài hơn rõ rệt.
+1. Dậy cùng một giờ mỗi sáng.
+   - Ví dụ 6:30-7:00, cả cuối tuần
+2. Sáng: mở rèm, cho bé thấy ánh sáng.
+   - Ra ban công, gần cửa sổ 15-30 phút/ngày
+   - Tránh nắng gắt
+3. Ban ngày: nhà sáng, sinh hoạt bình thường.
+   - Kể cả lúc bé ngủ ngày
+   - Không cần giữ im lặng
+4. Sau cữ bú ngày: cho bé thức chơi.
+   - Nói chuyện, hát, nằm sấp, xem tranh
+5. Không để bé ngủ ngày quá 2-3 tiếng.
+   - Quá giờ thì đánh thức dậy bú
+   - 2 tuần đầu: quá 3 tiếng là đánh thức
+6. Tối: làm nếp đi ngủ giống nhau.
+   - Tắm, massage, mặc đồ ngủ, bú, ru
+7. Đêm: phòng tối, yên.
+   - Đèn ngủ mờ, đặt thấp
+   - Bật tiếng ồn trắng
+   - Không đèn trần, không điện thoại sáng
+8. Cữ đêm thật "nhàm chán".
+   - Bú, ợ hơi, đặt ngủ lại ngay
+   - Ít nói, không chơi
+   - Chỉ thay tã khi bẩn
+9. Kiên trì 1-2 tuần.
 
-> Ban ngày và ban đêm khác nhau ở 4 điểm: ánh sáng (ngày sáng tự nhiên, đêm tối với đèn ngủ mờ), âm thanh (ngày sinh hoạt bình thường, đêm yên tĩnh), lúc bú (ngày trò chuyện, đêm ít nói), sau khi bú (ngày thức chơi, đêm ngủ lại ngay).
-> Mong đợi theo tuổi: 0-2 tuần bé chưa phân biệt được, vẫn không bỏ cữ đêm. 3-6 tuần giấc đêm bắt đầu dài hơn giấc ngày. 6-12 tuần giấc dài nhất thường rơi vào ban đêm. Khoảng 3 tháng nhịp ngày đêm khá ổn định.
-> Lỗi hay gặp: bật đèn sáng suốt đêm để dễ trông bé, giữ nhà tối và im lặng cả ban ngày, chơi đùa với bé lúc nửa đêm, để bé ngủ ngày quá dài, đổi giờ dậy và giờ đi ngủ mỗi ngày một kiểu.
-> Hỏi bác sĩ nếu: sau 3-4 tháng bé vẫn đảo ngược ngày đêm dù đã làm đều đặn, bé ngủ quá nhiều và khó đánh thức để bú, hoặc bé quấy khóc kéo dài kèm bú kém, chậm tăng cân.
+**Ngày và đêm khác nhau:**
+- Ánh sáng: ngày sáng, đêm tối
+- Âm thanh: ngày bình thường, đêm yên tĩnh
+- Lúc bú: ngày trò chuyện, đêm ít nói
+- Sau bú: ngày thức chơi, đêm ngủ lại
+
+**Mong đợi theo tuổi:**
+- 0-2 tuần: chưa phân biệt được
+- 3-6 tuần: giấc đêm bắt đầu dài hơn
+- 6-12 tuần: giấc dài nhất vào ban đêm
+- Khoảng 3 tháng: khá ổn định
+
+**Không nên:**
+- Bật đèn sáng suốt đêm
+- Giữ nhà tối, im lặng cả ngày
+- Chơi với bé lúc nửa đêm
+- Để bé ngủ ngày quá dài
+- Đổi giờ dậy, giờ ngủ thất thường
+
+**Đi khám khi:**
+- Sau 3-4 tháng vẫn đảo ngày đêm
+- Bé ngủ li bì, khó đánh thức để bú
+- Quấy khóc kéo dài, bú kém, chậm tăng cân
 
 ---
 
