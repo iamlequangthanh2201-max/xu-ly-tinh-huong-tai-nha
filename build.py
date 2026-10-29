@@ -81,6 +81,7 @@ KEYWORDS = {
     "K6": "hóc, dị vật, sơ cứu, nghẹt thở, vỗ lưng ấn ngực",
     "K7": "quấn, quấn chũn, quấn khăn",
     "K8": "rốn, vệ sinh rốn, lau rốn, chăm sóc rốn, cuống rốn, rụng rốn",
+    "K10": "ngày đêm, lẫn ngày đêm, ngủ ngày thức đêm, đồng hồ sinh học, ánh sáng, thức đêm, đèn ngủ",
     "K9": "ngủ, tự ngủ, rèn ngủ, ru ngủ, cho bé ngủ, đặt xuống, bế vác, tiếng ồn trắng, nhộng, khó ngủ",
 }
 
@@ -95,6 +96,7 @@ SKILL_SHORT = {
     "K7": "Cách quấn bé",
     "K8": "Cách vệ sinh rốn",
     "K9": "Tập cho bé tự ngủ",
+    "K10": "Phân biệt ngày đêm",
 }
 
 # ---------------------------------------------------------------- đọc md

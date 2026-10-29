@@ -126,6 +126,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Chưa cho bú bình, chưa dùng núm giả, để bé quen ngậm vú mẹ trước.
 
 **Lưu ý:**
+- Giúp bé phân biệt ngày đêm từ những ngày đầu: ban ngày sáng và sinh hoạt bình thường, ban đêm tối và yên (K10).
 - Bé bú đủ khi: đủ tã ướt, phân chuyển từ đen sang vàng vào ngày 4-5, bé tăng cân lại sau tuần đầu.
 - Đi khám nếu bé bú kém, ngủ li bì khó đánh thức, vàng da tăng (A9), hoặc quá ít tã ướt.
 - Bé bú mẹ hoàn toàn thường cần nhỏ vitamin D mỗi ngày, hỏi bác sĩ về liều.
@@ -180,6 +181,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - 10:00 | hut | Nếu lần hút sáng chưa đủ 60 ml: hút thêm 10 phút sau cữ bú 08:30-10:00, gộp lại
 
 **Lưu ý:**
+- Giúp bé phân biệt ngày đêm từ những ngày đầu: ban ngày sáng và sinh hoạt bình thường, ban đêm tối và yên (K10).
 - Tuần 3-4 là lúc thích hợp để bé làm quen bình sữa mẹ, vì sữa mẹ và cách ngậm vú đã ổn định.
 - Bé có thể đòi bú dồn dập vài ngày quanh tuần 3 (đợt tăng trưởng), cứ cho bú theo nhu cầu.
 - Theo dõi bé vẫn đủ tã ướt và tăng cân đều.

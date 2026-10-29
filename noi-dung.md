@@ -108,6 +108,22 @@ Mỗi tình huống gồm 4 phần:
 > Cần kiên nhẫn: làm đều đặn vài ngày đến vài tuần. Có giấc bé tự ngủ được, có giấc vẫn cần ru hoặc bú mới ngủ, đều là bình thường.
 > An toàn: luôn cho bé nằm ngửa trên mặt phẳng chắc, không để gối, gối ôm, thú bông, chăn dày quanh bé (xem A20). Ngừng quấn hoặc mặc nhộng khi bé có dấu hiệu biết lẫy.
 
+### K10. Giúp bé phân biệt ngày đêm
+1. Chốt một giờ dậy buổi sáng cố định, ví dụ 6:30-7:00, ngày nào cũng vậy kể cả cuối tuần.
+2. Buổi sáng mở rèm ngay, nói "chào buổi sáng" với bé. Cho bé ra chỗ có ánh sáng tự nhiên (ban công, gần cửa sổ) khoảng 15-30 phút trong ngày, tránh nắng gắt trực tiếp.
+3. Ban ngày để nhà sáng và sinh hoạt bình thường, kể cả khi bé đang ngủ ngày. Không cần nhón chân giữ im lặng.
+4. Sau mỗi cữ bú ban ngày, cho bé thức chơi: nói chuyện, hát, nằm sấp, xem tranh, trong khoảng thời gian thức của tháng tuổi.
+5. Không để một giấc ngủ ban ngày kéo dài quá 2-3 tiếng. Quá giờ thì nhẹ nhàng đánh thức bé dậy bú. Trong 2 tuần đầu, bé ngủ quá 3 tiếng là phải đánh thức.
+6. Buổi tối làm nếp đi ngủ giống nhau mỗi ngày: tắm hoặc lau người, massage, mặc đồ ngủ, bú, ru. Đây là tín hiệu cho bé biết "sắp đến đêm".
+7. Ban đêm giữ phòng tối và yên, chỉ có tiếng ồn trắng đều đều. Dùng đèn ngủ mờ, ánh vàng hoặc đỏ, đặt thấp khi cho bú, thay tã. Không bật đèn trần, không dùng điện thoại sáng gần bé.
+8. Cữ đêm làm thật "nhàm chán": bú, vỗ ợ hơi, đặt bé ngủ lại ngay. Ít nói, không nhìn mắt lâu, không chơi. Chỉ thay tã khi bẩn hoặc tã đầy.
+9. Kiên trì làm đều đặn 1-2 tuần. Thường đến khoảng 6-8 tuần tuổi, bé ngủ đêm dài hơn rõ rệt.
+
+> Ban ngày và ban đêm khác nhau ở 4 điểm: ánh sáng (ngày sáng tự nhiên, đêm tối với đèn ngủ mờ), âm thanh (ngày sinh hoạt bình thường, đêm yên tĩnh), lúc bú (ngày trò chuyện, đêm ít nói), sau khi bú (ngày thức chơi, đêm ngủ lại ngay).
+> Mong đợi theo tuổi: 0-2 tuần bé chưa phân biệt được, vẫn không bỏ cữ đêm. 3-6 tuần giấc đêm bắt đầu dài hơn giấc ngày. 6-12 tuần giấc dài nhất thường rơi vào ban đêm. Khoảng 3 tháng nhịp ngày đêm khá ổn định.
+> Lỗi hay gặp: bật đèn sáng suốt đêm để dễ trông bé, giữ nhà tối và im lặng cả ban ngày, chơi đùa với bé lúc nửa đêm, để bé ngủ ngày quá dài, đổi giờ dậy và giờ đi ngủ mỗi ngày một kiểu.
+> Hỏi bác sĩ nếu: sau 3-4 tháng bé vẫn đảo ngược ngày đêm dù đã làm đều đặn, bé ngủ quá nhiều và khó đánh thức để bú, hoặc bé quấy khóc kéo dài kèm bú kém, chậm tăng cân.
+
 ---
 
 ## PHẦN A: BÉ
@@ -529,13 +545,12 @@ Mỗi tình huống gồm 4 phần:
 
 **Đây là gì:** Trong bụng mẹ bé chưa phân biệt ngày đêm, nên sau sinh nhiều bé ngủ say ban ngày và tỉnh táo ban đêm. Đồng hồ sinh học của bé hình thành dần trong 2-3 tháng đầu, nhờ ánh sáng ban ngày và sự yên tối ban đêm. Đây không phải bệnh.
 
-**Làm hằng ngày:**
-1. Ban ngày: kéo rèm cho nhà sáng, sinh hoạt bình thường, không cần giữ yên lặng tuyệt đối.
-2. Ban ngày: không để bé ngủ quá 3 giờ liền mà không bú.
-3. Ban đêm: phòng tối, chỉ dùng đèn ngủ nhỏ khi cho bú, thay tã.
-4. Ban đêm: cho bú, thay tã nhanh gọn, nhẹ nhàng, ít nói chuyện và chơi đùa.
-5. Tạo thói quen trước giờ ngủ đêm: tắm, massage, cho bú, ru, theo cùng một thứ tự mỗi ngày.
-6. Kiên nhẫn: thường cải thiện dần sau 6-8 tuần.
+**Cách làm:** Làm theo các bước trong kỹ năng (xem K10).
+
+**Đi khám khi:**
+- Sau 3-4 tháng bé vẫn đảo ngược ngày đêm dù đã làm đều đặn
+- Bé ngủ quá nhiều, khó đánh thức để bú
+- Bé quấy khóc kéo dài kèm bú kém hoặc chậm tăng cân
 
 ---
 
@@ -1038,4 +1053,5 @@ Mỗi tình huống gồm 4 phần:
 - **Sữa công thức:** Sữa bột hoặc sữa nước pha sẵn được chế biến riêng cho trẻ dưới 12 tháng, dùng thay hoặc bổ sung khi không đủ sữa mẹ. Không giống sữa bò tươi hay sữa hộp người lớn.
 - **Sữa non:** Sữa đặc, màu vàng mẹ tiết ra trong 2-5 ngày đầu sau sinh. Lượng ít nhưng rất giàu kháng thể, đủ cho dạ dày nhỏ xíu của bé trong những ngày đầu.
 - **Lịch hút L / L2 / L3 / L4 / L5:** Cách gọi lịch hút sữa theo khoảng cách giữa hai lần làm trống vú (bé bú hoặc mẹ hút): L3 là khoảng 3 tiếng một lần, L4 là khoảng 4 tiếng một lần (khoảng 6 lần mỗi ngày). Chi tiết ở mục Lịch trình, phần Bú & hút.
+- **Đồng hồ sinh học:** Nhịp ngủ thức khoảng 24 giờ của cơ thể, được ánh sáng và nếp sinh hoạt hằng ngày điều chỉnh. Ở trẻ sơ sinh nhịp này chưa có, hình thành dần trong 2-3 tháng đầu.
 - **Trĩ:** Các tĩnh mạch ở hậu môn bị sưng phồng, gây đau, ngứa, có thể chảy máu đỏ tươi khi đi ngoài.
