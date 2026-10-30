@@ -258,6 +258,183 @@ Mỗi tình huống gồm 4 phần:
 - Bé ngủ li bì, khó đánh thức để bú
 - Quấy khóc kéo dài, bú kém, chậm tăng cân
 
+### K11. Tắm cho bé
+1. Chuẩn bị đủ đồ trước khi bế bé:
+   - Phòng ấm, tắt quạt, đóng cửa
+   - Khăn tắm, tã, quần áo, bông, nước muối
+   - Sữa tắm em bé (tuần đầu chỉ cần nước)
+2. Pha nước ấm khoảng 37°C:
+   - Cho nước lạnh trước, nước nóng sau
+   - Thử bằng khuỷu tay thấy ấm vừa, hoặc dùng nhiệt kế nước
+3. Rửa mặt trước, không dùng xà phòng:
+   - Lau mắt từ góc trong ra ngoài, mỗi mắt một miếng bông
+   - Lau mặt, sau tai, nếp cổ
+4. Gội đầu:
+   - Bế ngửa, cẳng tay đỡ lưng, bàn tay đỡ đầu cổ
+   - Vốc nước lên tóc, lau khô ngay
+5. Tắm người:
+   - Chưa rụng rốn: tắm lau bằng khăn ướt, không ngâm nước
+   - Đã rụng rốn: thả bé vào chậu từ chân lên, nước ngang ngực
+   - Một tay luôn đỡ đầu và vai bé
+   - Rửa nếp cổ, nách, bẹn, rửa vùng kín sau cùng (K12)
+6. Lau khô ngay:
+   - Quấn khăn kín người và đầu
+   - Thấm khô các nếp gấp
+7. Mặc tã, quần áo nhanh:
+   - Vệ sinh rốn nếu chưa rụng (K8)
+   - Thoa kem dưỡng nếu da khô
+
+**Lưu ý:**
+- Tắm 5-10 phút là đủ
+- Trẻ sơ sinh tắm 2-3 lần/tuần là đủ, trời nóng có thể tắm hằng ngày
+- Chọn lúc bé không quá no, không quá đói
+- Sữa tắm dịu nhẹ, không mùi, dùng thật ít
+
+**Không nên:**
+- Rời tay khỏi bé dù chỉ vài giây, kể cả chậu nước rất nông
+- Tắm nước nóng, tắm lá khi chưa hỏi bác sĩ
+- Ngoáy tai, ngoáy mũi bằng tăm bông
+
+### K12. Thay tã và vệ sinh vùng kín
+1. Chuẩn bị trong tầm tay:
+   - Tã mới, khăn hoặc bông, nước ấm
+   - Kem chống hăm
+   - Không rời tay khỏi bé trên bàn thay tã
+2. Tháo tã cũ:
+   - Dùng phần sạch của tã gạt bớt phân trước
+   - Bé trai: che dương vật bằng khăn, vì bé hay tè lúc này
+3. Lau sạch bằng nước ấm:
+   - Bé gái: luôn lau từ trước ra sau
+   - Bé trai: lau dương vật, bìu, không kéo tuột da quy đầu
+   - Lau các nếp bẹn, mông
+4. Thấm khô, để thoáng 1-2 phút.
+5. Thoa kem có kẽm oxit nếu da hơi đỏ.
+6. Mặc tã mới:
+   - Bé trai: hướng dương vật xuống dưới
+   - Chưa rụng rốn: gập mép tã xuống dưới rốn
+   - Luồn vừa 2 ngón tay ở bụng là vừa
+   - Kéo diềm chống tràn ở đùi ra ngoài
+7. Rửa tay sau khi thay.
+
+**Lưu ý:**
+- Thay sau mỗi lần bé ị và khi tã ướt, thường 8-10 lần/ngày
+- Đếm tã ướt để biết bé bú đủ (K5)
+- Bé gái vài ngày đầu ra chút dịch trắng hoặc ít máu: bình thường
+- Tã có vệt hồng cam trong 3 ngày đầu: thường bình thường
+
+**Đi khám khi:**
+- Hăm đỏ, lở loét không đỡ sau 2-3 ngày (xem A10)
+- Rất ít tã ướt, nước tiểu sẫm màu
+- Phân có máu, hoặc phân bạc màu (xem A9)
+- Bé trai sưng đỏ đầu dương vật, khóc khi đi tiểu
+
+### K13. Rửa, tiệt trùng bình sữa và dụng cụ hút
+1. Tráng ngay sau mỗi lần dùng:
+   - Tháo rời bình, núm, vòng vặn, nắp
+   - Tráng nước sạch để sữa không bám lại
+2. Rửa bằng nước rửa bình em bé:
+   - Dùng chậu và cọ riêng, không rửa chung bát đĩa
+   - Cọ kỹ đáy bình, ren vặn, lỗ núm
+3. Xả lại thật sạch dưới vòi nước.
+4. Tiệt trùng:
+   - Luộc trong nồi nước sôi 5 phút, hoặc dùng máy tiệt trùng theo hướng dẫn
+   - Bé dưới 3 tháng: tiệt trùng ít nhất 1 lần/ngày
+5. Để khô tự nhiên:
+   - Úp lên giá sạch
+   - Không lau bằng khăn
+6. Khô hẳn mới cất vào hộp kín sạch.
+7. Máy hút sữa:
+   - Phễu, van, bình chứa: rửa và tiệt trùng như bình sữa sau mỗi lần hút
+   - Dây hút: chỉ rửa khi có sữa hoặc hơi nước bên trong, phơi thật khô
+   - Kiểm tra van silicon thường xuyên, rách thì thay
+
+**Lưu ý:**
+- Rửa tay trước khi hút sữa, pha sữa, cầm dụng cụ sạch
+- Thay núm khi bị nứt, dính, chảy quá nhanh, thường 2-3 tháng/lần
+- Hút sữa ở cơ quan: cất phễu đã tráng vào túi kín trong ngăn mát, về nhà rửa kỹ
+
+**Không nên:**
+- Để bình còn sữa thừa nhiều giờ mới rửa
+- Rửa chung với bát đĩa người lớn
+- Dùng khăn lau khô bình
+
+### K14. Dỗ bé khóc (cách 5S)
+1. Kiểm tra nhu cầu trước:
+   - Đói, tã bẩn, nóng hoặc lạnh
+   - Cần ợ hơi (K1)
+   - Sợi tóc quấn chặt ngón tay, ngón chân
+   - Sốt (K3)
+2. Quấn (Swaddle):
+   - Quấn bé (K7) hoặc mặc nhộng
+3. Bế nghiêng (Side):
+   - Bế bé nằm nghiêng hoặc nằm sấp dọc cẳng tay
+   - Chỉ khi bế. Đặt xuống ngủ luôn nằm ngửa
+4. Suỵt (Shush):
+   - Suỵt đều gần tai, to ngang tiếng khóc của bé
+   - Hoặc bật tiếng ồn trắng
+5. Đung đưa (Swing):
+   - Nhịp nhỏ, đều, đỡ chắc đầu cổ
+   - Không lắc mạnh
+6. Cho mút (Suck):
+   - Cho bú, hoặc ngậm ti giả
+   - Bé bú mẹ: đợi khoảng 3-4 tuần, khi bú mẹ đã quen mới dùng ti giả
+7. Giảm kích thích:
+   - Phòng tối, yên
+   - Ít người bế chuyền tay
+8. Vẫn chưa nín: đổi người dỗ hoặc đổi không gian.
+   - Bế ra ban công, đẩy xe đi dạo
+
+**Lưu ý:**
+- Thường phải kết hợp 2-3 chữ S cùng lúc
+- Khóc kéo dài chiều tối ở bé 2 tuần đến 4 tháng thường là khóc dạ đề (xem A6)
+- Bố mẹ quá căng thẳng: đặt bé nằm ngửa trong cũi, ra ngoài 5-10 phút, nhờ người thay
+
+**Không nên:**
+- **Lắc bé, dù chỉ nhẹ**
+- Cho bé dưới 6 tháng uống nước, thảo dược, thuốc tự mua
+
+**Đi khám khi:**
+- Khóc thét khác hẳn mọi khi
+- Khóc kèm sốt, nôn, bỏ bú, li bì
+- Khóc liên tục không dỗ được, bố mẹ thấy bất an
+
+### K15. Cho bé nằm sấp chơi và massage
+1. Chọn lúc bé thức, tỉnh táo:
+   - Đợi khoảng 30 phút sau bú
+2. Tuần đầu: cho bé nằm sấp trên ngực bố mẹ.
+   - Bố mẹ ngả lưng, tay đỡ lưng bé
+3. Sau đó chuyển xuống thảm phẳng:
+   - Trải khăn trên sàn, không nằm trên nệm mềm
+   - Đặt gương, tranh, đồ chơi trước mặt bé
+   - Nằm ngang tầm mắt bé, nói chuyện
+4. Tăng dần thời gian:
+   - Sơ sinh: 1-3 phút/lần, 2-3 lần/ngày
+   - Khoảng 2 tháng: tổng 15-30 phút/ngày
+   - Bé khóc thì cho nghỉ, thử lại sau
+5. Chuẩn bị massage:
+   - Phòng ấm, tay ấm, móng tay ngắn
+   - Vài giọt dầu massage em bé không mùi
+6. Massage chân, tay:
+   - Vuốt nhẹ từ đùi xuống bàn chân
+   - Dùng ngón cái xoa lòng bàn chân
+   - Làm tương tự với tay
+7. Massage bụng (khi rốn đã lành):
+   - Xoa vòng tròn quanh rốn theo chiều kim đồng hồ
+   - Gập gối áp bụng, đạp xe chân
+8. Massage lưng:
+   - Bé nằm sấp, vuốt dọc từ vai xuống mông
+9. Theo dõi bé: bé thích thì làm tiếp, bé quấy, quay đi thì dừng.
+
+**Lưu ý:**
+- Nằm sấp chơi giúp bé cứng cổ, phòng bẹp đầu
+- Massage 5-15 phút, hợp nhất sau khi tắm hoặc trước giờ ngủ tối
+- Massage bụng giúp đỡ đầy hơi (xem A5)
+
+**Không nên:**
+- Để bé nằm sấp ngủ, hoặc nằm sấp khi không có người trông
+- Massage khi bé vừa bú no, đang sốt, hoặc da đang chàm, trầy xước
+- Dùng dầu gió, tinh dầu, dầu có mùi mạnh
+
 ---
 
 ## PHẦN A: BÉ
@@ -360,7 +537,7 @@ Mỗi tình huống gồm 4 phần:
 1. Cho bé ợ hơi (K1).
 2. Đặt bé nằm ngửa, cầm hai cổ chân, đạp xe nhẹ nhàng 10-15 vòng.
 3. Gập hai đầu gối bé áp nhẹ lên bụng, giữ 5-10 giây rồi duỗi ra. Lặp lại 5 lần.
-4. Massage bụng (khi rốn đã lành hẳn): xoa ấm tay, dùng một ít dầu massage cho bé, xoa vòng tròn quanh rốn theo chiều kim đồng hồ khoảng 3-5 phút.
+4. Massage bụng (khi rốn đã lành hẳn): xoa ấm tay, dùng một ít dầu massage cho bé, xoa vòng tròn quanh rốn theo chiều kim đồng hồ khoảng 3-5 phút (K15).
 5. Khi bé thức và có người trông, cho bé nằm sấp chơi vài phút.
 
 **Phòng ngừa:**
@@ -389,7 +566,7 @@ Mỗi tình huống gồm 4 phần:
    - Quần áo chật, mác áo cọ vào da?
    - **Có sợi tóc quấn chặt ngón tay, ngón chân hoặc dương vật không?** (rất dễ bị bỏ sót)
 2. Đo nhiệt độ (K3) nếu bé khóc khác thường.
-3. Nếu mọi thứ ổn, áp dụng lần lượt cách "5S":
+3. Nếu mọi thứ ổn, áp dụng lần lượt cách "5S" (K14):
    1. **Quấn:** quấn bé (K7).
    2. **Bế nghiêng:** bế bé nằm nghiêng hoặc nằm sấp dọc cẳng tay (chỉ khi bế; đặt xuống ngủ phải nằm ngửa).
    3. **Tiếng "suỵt":** phát tiếng "suỵt" đều đều gần tai bé, hoặc bật tiếng ồn trắng (tiếng máy sấy, tiếng mưa) ở âm lượng vừa.
@@ -484,7 +661,7 @@ Mỗi tình huống gồm 4 phần:
 **Đây là gì:** Vùng da trong tã (mông, bẹn, bộ phận sinh dục) bị đỏ, rát, có khi nổi mụn nhỏ hoặc trợt da. Do da tiếp xúc lâu với nước tiểu, phân, hơi ẩm và cọ xát với tã. Thường khỏi sau vài ngày nếu giữ khô thoáng.
 
 **Làm ngay:**
-1. Thay tã ngay khi ướt hoặc bẩn, ít nhất 2-3 giờ một lần.
+1. Thay tã ngay khi ướt hoặc bẩn, ít nhất 2-3 giờ một lần (K12).
 2. Rửa mông bằng nước ấm và khăn mềm. Hạn chế khăn ướt có cồn, có hương liệu.
 3. Thấm khô (không chà xát), để mông bé thoáng khí 10-15 phút.
 4. Bôi một lớp kem có kẽm oxit thật dày, như phết bơ.

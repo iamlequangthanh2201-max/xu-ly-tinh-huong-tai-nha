@@ -38,6 +38,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Sữa đã hâm: dùng trong 1-2 giờ, không hâm lại lần thứ hai.
 - Bú bình theo nhịp: bế bé ngồi hơi thẳng, giữ bình nằm ngang, cho bé nghỉ mỗi 20-30 giây bằng cách hạ bình. Bé bú chậm như bú mẹ, đỡ bị quen bình mà chê vú.
 - Dùng núm vú chảy chậm (size nhỏ nhất) cho đến khi bé lớn hơn.
+- Rửa và tiệt trùng bình, núm, dụng cụ hút sau mỗi lần dùng (K13).
 - Người khác (bố, bà) nên là người cho bú bình. Bé thường không chịu bú bình khi ngửi thấy mùi mẹ ở gần.
 
 ## Lịch hút L2, L3, L4
@@ -92,12 +93,12 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - 07:00 | ngu | Ngủ
 - 08:30 | bu | Thay tã, bú mẹ
 - 09:15 | vesinh | Lau mắt, mũi, rửa mặt, vệ sinh rốn (K8)
-- 09:30 | tam | Tắm lau người 5-10 phút lúc trời ấm, phòng kín gió. Tắm lau đến khi rụng rốn
+- 09:30 | tam | Tắm lau người 5-10 phút lúc trời ấm, phòng kín gió. Tắm lau đến khi rụng rốn (K11)
 - 10:00 | ngu | Ngủ
 - 11:30 | bu | Thay tã, bú mẹ. Nếu bé ngủ quá 3 giờ ban ngày thì đánh thức bé dậy bú
 - 12:15 | ngu | Ngủ. Mẹ ngủ trưa cùng lúc, nhờ người trông
 - 14:30 | bu | Thay tã, bú mẹ
-- 15:15 | choi | Nằm sấp trên ngực bố mẹ 1-3 phút, cho xem tranh đen trắng
+- 15:15 | choi | Nằm sấp trên ngực bố mẹ 1-3 phút, cho xem tranh đen trắng (K15)
 - 15:30 | ngu | Ngủ
 - 17:30 | bu | Thay tã, bú mẹ. Chiều tối bé hay đòi bú liên tục nhiều cữ sát nhau, đây là bình thường
 - 18:15 | ngu | Giấc ngắn
@@ -149,7 +150,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - 06:45 | choi | Nói chuyện, nằm sấp trên ngực bố mẹ 2-3 phút
 - 07:00 | ngu | Ngủ
 - 08:30 | bu | Thay tã, bú mẹ
-- 09:30 | tam | Tắm 5-10 phút (nếu rốn đã rụng), lau khô, vệ sinh mắt mũi
+- 09:30 | tam | Tắm 5-10 phút (nếu rốn đã rụng), lau khô, vệ sinh mắt mũi (K11)
 - 10:00 | ngu | Ngủ
 - 11:30 | bu | Thay tã, bú mẹ
 - 12:15 | ngu | Ngủ. Mẹ ngủ trưa

@@ -81,6 +81,11 @@ KEYWORDS = {
     "K6": "hóc, dị vật, sơ cứu, nghẹt thở, vỗ lưng ấn ngực",
     "K7": "quấn, quấn chũn, quấn khăn",
     "K8": "rốn, vệ sinh rốn, lau rốn, chăm sóc rốn, cuống rốn, rụng rốn",
+    "K11": "tắm, tắm bé, tắm lau, gội đầu, nước tắm, sữa tắm",
+    "K12": "thay tã, tã, bỉm, vệ sinh vùng kín, lau mông, hăm",
+    "K13": "rửa bình, tiệt trùng, bình sữa, núm, máy hút sữa, luộc bình",
+    "K14": "dỗ bé, khóc, 5S, quấy, nín, ru, ti giả",
+    "K15": "nằm sấp, tummy time, massage, mát xa, cứng cổ, bẹp đầu",
     "K10": "ngày đêm, lẫn ngày đêm, ngủ ngày thức đêm, đồng hồ sinh học, ánh sáng, thức đêm, đèn ngủ",
     "K9": "ngủ, tự ngủ, rèn ngủ, ru ngủ, cho bé ngủ, đặt xuống, bế vác, tiếng ồn trắng, nhộng, khó ngủ",
 }
@@ -97,6 +102,11 @@ SKILL_SHORT = {
     "K8": "Cách vệ sinh rốn",
     "K9": "Tập cho bé tự ngủ",
     "K10": "Phân biệt ngày đêm",
+    "K11": "Cách tắm cho bé",
+    "K12": "Cách thay tã",
+    "K13": "Rửa, tiệt trùng bình",
+    "K14": "Dỗ bé khóc (5S)",
+    "K15": "Nằm sấp và massage",
 }
 
 # ---------------------------------------------------------------- đọc md
