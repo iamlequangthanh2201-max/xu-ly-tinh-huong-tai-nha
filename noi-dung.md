@@ -147,7 +147,11 @@ Mỗi tình huống gồm 4 phần:
    - Nâng nhẹ cuống rốn
    - Lau từ chân rốn vòng ra ngoài
    - Mỗi vòng một miếng gạc mới
-7. Thấm khô, để hở vài phút.
+7. Thấm khô bằng gạc vô trùng khô (hoặc bông sạch, khăn xô sạch đã giặt phơi khô):
+   - Chấm nhẹ, không chà xát
+   - Thấm cả chân rốn và vùng da quanh rốn
+   - Mỗi lần thấm dùng miếng gạc mới
+   - Để rốn hở ngoài không khí vài phút cho khô hẳn
 8. Không băng kín, không đắp gì lên rốn.
 
 **Lưu ý:**
