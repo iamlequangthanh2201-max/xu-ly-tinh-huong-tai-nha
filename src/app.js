@@ -325,6 +325,11 @@
   var top = $(".top");
   var lastQuery = "";
 
+  function skillIcon(k, big) {
+    return '<span class="sk-ico' + (big ? " big" : "") + '" style="--c:var(' + (k.color || "--blue") + ')" aria-hidden="true">' +
+      (k.icon || "📘") + "</span>";
+  }
+
   function rowFor(it, sub) {
     if (it.gloss != null) {
       return '<button class="row" data-term="' + it.gloss + '"><span class="k-badge">Aa</span>' +
@@ -333,7 +338,7 @@
     }
     var isSkill = it.id[0] === "K";
     var href = isSkill ? "#/ky-nang/" + it.id : "#/t/" + it.id;
-    var lead = isSkill ? '<span class="k-badge">' + it.id + "</span>" : dots(it.severity);
+    var lead = isSkill ? skillIcon(it) : dots(it.severity);
     return '<a class="row" href="' + href + '"' + (isSkill ? "" : ' aria-label="' + esc(it.title + ", " + sevA11y(it.severity)) + '"') + ">" +
       lead + '<span class="row-main"><span class="row-title">' + esc(it.title) + "</span>" +
       (sub ? '<span class="row-sub">' + sub + "</span>" : "") + "</span>" + ICON.chev + "</a>";
@@ -351,7 +356,7 @@
         '<span class="cat-count">' + c.items.length + " tình huống</span></a>";
     }).join("");
     var chips = DATA.skills.map(function (k) {
-      return '<a class="chip" href="#/ky-nang/' + k.id + '">' + esc(k.short) + "</a>";
+      return '<a class="chip" href="#/ky-nang/' + k.id + '"><span aria-hidden="true">' + k.icon + "</span>" + esc(k.short) + "</a>";
     }).join("");
     view.innerHTML =
       '<h1 id="pageH1">Bé hoặc mẹ đang gặp chuyện gì?</h1>' +
@@ -432,11 +437,9 @@
   }
 
   var skillQuery = "";
-  function skillRows() {
-    return DATA.skills.map(function (k) {
-      var n = k.sections.reduce(function (a, s) { return a + (s.kind === "steps" ? s.items.length : 0); }, 0);
-      return rowFor(k, n + " bước");
-    }).join("");
+  function skillRow(k) {
+    var n = k.sections.reduce(function (a, s) { return a + (s.kind === "steps" ? s.items.length : 0); }, 0);
+    return rowFor(k, n + " bước");
   }
   function pageSkills() {
     setTitle("Kỹ năng cơ bản");
@@ -456,7 +459,14 @@
     var box = $("#skillList"), clear = $("#kqClear");
     if (!box) return;
     clear.hidden = !skillQuery;
-    if (!skillQuery.trim()) { box.className = "list"; box.innerHTML = skillRows(); return; }
+    if (!skillQuery.trim()) {
+      box.className = "";
+      box.innerHTML = (DATA.skillGroups || []).map(function (g) {
+        return '<div class="eyebrow sk-group"><span aria-hidden="true">' + g.icon + "</span>" + esc(g.title) + "</div>" +
+          '<div class="list">' + g.items.map(function (id) { return skillRow(SKILL[id]); }).join("") + "</div>";
+      }).join("");
+      return;
+    }
     var res = search(skillQuery).filter(function (r) { return r.d.item.id[0] === "K"; });
     if (!res.length) {
       box.className = "";
@@ -507,7 +517,7 @@
     var used = DATA.situations.filter(function (s) {
       return JSON.stringify(s.sections).indexOf(id) > -1;
     });
-    view.innerHTML = '<div class="sit-head"><h1 id="pageH1">' + esc(k.title) + "</h1></div>" + renderItemBody(k) +
+    view.innerHTML = '<div class="sit-head sk-head">' + skillIcon(k, true) + '<h1 id="pageH1">' + esc(k.title) + "</h1></div>" + renderItemBody(k) +
       (used.length ? '<div class="eyebrow">Dùng trong các tình huống</div><div class="list">' +
         used.map(function (s) { return rowFor(s, ""); }).join("") + "</div>" : "");
   }

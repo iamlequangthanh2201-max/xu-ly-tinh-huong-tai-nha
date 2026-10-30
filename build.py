@@ -90,6 +90,23 @@ KEYWORDS = {
     "K9": "ngủ, tự ngủ, rèn ngủ, ru ngủ, cho bé ngủ, đặt xuống, bế vác, tiếng ồn trắng, nhộng, khó ngủ",
 }
 
+# Icon và màu của từng kỹ năng (màu là tên biến màu hệ thống trong styles.css)
+SKILL_ICON = {
+    "K1": ("🫧", "--blue"), "K2": ("👃", "--mint"), "K3": ("🌡️", "--orange"),
+    "K4": ("🫁", "--pink"), "K5": ("💧", "--teal"), "K6": ("🚑", "--red"),
+    "K7": ("🧣", "--purple"), "K8": ("🩹", "--brown"), "K9": ("😴", "--indigo"),
+    "K10": ("🌗", "--yellow"), "K11": ("🛁", "--teal"), "K12": ("🧷", "--green"),
+    "K13": ("🍼", "--mint"), "K14": ("🤗", "--pink"), "K15": ("🧸", "--orange"),
+}
+
+# Nhóm kỹ năng trên trang Kỹ năng, theo thứ tự hiển thị
+SKILL_GROUPS = [
+    dict(icon="🛁", title="Chăm sóc hằng ngày", items=["K11", "K12", "K8", "K2", "K15"]),
+    dict(icon="🍼", title="Bú và bình sữa", items=["K1", "K13"]),
+    dict(icon="😴", title="Ngủ và dỗ bé", items=["K14", "K7", "K9", "K10"]),
+    dict(icon="🩺", title="Sức khỏe và sơ cứu", items=["K3", "K4", "K5", "K6"]),
+]
+
 # Tên ngắn cho các chip "xem kỹ năng"
 SKILL_SHORT = {
     "K1": "Cách cho ợ hơi",
@@ -308,10 +325,15 @@ def build():
         item["audience"] = "me" if item["id"].startswith("B") else "be"
     for k in skills:
         k["short"] = SKILL_SHORT.get(k["id"], k["title"])
+        k["icon"], k["color"] = SKILL_ICON.get(k["id"], ("📘", "--blue"))
+    kids = {k["id"] for k in skills}
+    in_groups = [i for g in SKILL_GROUPS for i in g["items"]]
+    assert sorted(in_groups) == sorted(kids), "Kỹ năng chưa xếp nhóm hoặc xếp trùng: %s" % sorted(set(kids) ^ set(in_groups))
 
     schedule = parse_schedule((HERE / "lich-trinh.md").read_text(encoding="utf-8"))
     data = dict(skills=skills, situations=situations, emergency=emergency,
-                glossary=glossary, categories=CATEGORIES, schedule=schedule)
+                glossary=glossary, categories=CATEGORIES, schedule=schedule,
+                skillGroups=SKILL_GROUPS)
     data_json = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
 
     css = (HERE / "src" / "styles.css").read_text(encoding="utf-8")
