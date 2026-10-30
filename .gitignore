@@ -1,3 +1,6 @@
 .DS_Store
 __pycache__/
 *.pyc
+
+# tài liệu bàn giao có thông tin cá nhân, chỉ để trên máy
+SUNNY-TIME-HANDOFF.md

@@ -431,13 +431,41 @@
       ". Thông tin tham khảo, không thay thế bác sĩ.</p>";
   }
 
+  var skillQuery = "";
+  function skillRows() {
+    return DATA.skills.map(function (k) {
+      var n = k.sections.reduce(function (a, s) { return a + (s.kind === "steps" ? s.items.length : 0); }, 0);
+      return rowFor(k, n + " bước");
+    }).join("");
+  }
   function pageSkills() {
     setTitle("Kỹ năng cơ bản");
     view.innerHTML = '<h1 id="pageH1">Kỹ năng cơ bản</h1><p class="lede">Những thao tác dùng lại ở nhiều tình huống. Nên đọc trước một lần khi bé còn khoẻ.</p>' +
-      '<div class="list">' + DATA.skills.map(function (k) {
-        var n = k.sections.reduce(function (a, s) { return a + (s.kind === "steps" ? s.items.length : 0); }, 0);
-        return rowFor(k, n + " bước");
-      }).join("") + "</div>" + glossLink();
+      '<div class="search">' + ICON.search +
+      '<input id="kq" type="search" inputmode="search" autocomplete="off" enterkeyhint="search" ' +
+      'placeholder="Tìm kỹ năng: ợ hơi, rốn, ngủ…" aria-label="Tìm kỹ năng" value="' + esc(skillQuery) + '">' +
+      '<button class="s-clear" id="kqClear" aria-label="Xoá tìm kiếm"' + (skillQuery ? "" : " hidden") + ">" + ICON.x + "</button></div>" +
+      '<div class="list" id="skillList"></div>' + glossLink();
+    var q = $("#kq");
+    q.addEventListener("input", function () { skillQuery = q.value; drawSkills(); });
+    $("#kqClear").addEventListener("click", function () { skillQuery = ""; q.value = ""; drawSkills(); q.focus(); });
+    drawSkills();
+  }
+  // lọc kỹ năng theo ô tìm kiếm, dùng chung cách chấm điểm với trang Tra cứu
+  function drawSkills() {
+    var box = $("#skillList"), clear = $("#kqClear");
+    if (!box) return;
+    clear.hidden = !skillQuery;
+    if (!skillQuery.trim()) { box.className = "list"; box.innerHTML = skillRows(); return; }
+    var res = search(skillQuery).filter(function (r) { return r.d.item.id[0] === "K"; });
+    if (!res.length) {
+      box.className = "";
+      box.innerHTML = '<div class="search-empty">Chưa có kỹ năng khớp với <strong>“' + esc(skillQuery) +
+        '”</strong>.<br>Thử từ khác, hoặc tìm ở <a href="#/" style="color:var(--tint)">Tra cứu</a> để xem cả các tình huống.</div>';
+      return;
+    }
+    box.className = "list";
+    box.innerHTML = res.map(function (r) { return rowFor(r.d.item, snippet(r)); }).join("");
   }
 
   function glossLink() {
