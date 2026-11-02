@@ -88,7 +88,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Nhịp làm trống vú: L2-L3, bú trực tiếp 2-3 tiếng một lần
 
 **Lịch của bé:**
-- 06:00 | bu | Thức dậy, thay tã, bú mẹ cả hai bên
+- 06:00 | bu | Thức dậy, thay tã, bú mẹ cả hai bên (K16)
 - 06:45 | choi | Da kề da trên ngực bố hoặc mẹ 15-20 phút, nói chuyện với bé
 - 07:00 | ngu | Ngủ
 - 08:30 | bu | Thay tã, bú mẹ

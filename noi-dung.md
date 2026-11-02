@@ -439,6 +439,61 @@ Mỗi tình huống gồm 4 phần:
 - Massage khi bé vừa bú no, đang sốt, hoặc da đang chàm, trầy xước
 - Dùng dầu gió, tinh dầu, dầu có mùi mạnh
 
+### K16. Cho bú đúng khớp ngậm và tư thế
+1. Chuẩn bị:
+   - Rửa tay, ngồi hoặc nằm thoải mái
+   - Gối đỡ lưng, đỡ tay, kê cao bé ngang ngực
+   - Để sẵn nước uống bên cạnh
+   - Cho bú khi bé đói sớm: mút tay, chép miệng, quay đầu tìm vú
+2. Chọn 1 trong 4 tư thế:
+   - Bế chéo: tay đối diện đỡ gáy và vai bé. Dễ kiểm soát, hợp tuần đầu
+   - Bế nôi: đầu bé tựa khuỷu tay cùng bên với vú cho bú
+   - Ôm bóng (kẹp nách): bé nằm dọc sườn mẹ, chân hướng ra sau. Hợp mẹ sinh mổ, vú to
+   - Nằm nghiêng: mẹ và bé nằm nghiêng đối mặt. Hợp ban đêm, mẹ sinh mổ
+3. Đặt bé đúng tư thế:
+   - Tai, vai, hông bé thẳng một đường
+   - Bụng bé áp sát bụng mẹ
+   - Mũi bé đối diện núm vú
+   - Đỡ cả người bé, không chỉ đỡ đầu
+4. Đưa bé vào vú, không cúi người đưa vú vào bé:
+   - Chạm núm vú vào môi trên hoặc mũi bé
+   - Đợi bé há miệng thật rộng như ngáp
+   - Đưa nhanh bé vào vú, cằm chạm vú trước
+5. Kiểm tra khớp ngậm đúng:
+   - Miệng mở rộng, ngậm cả phần lớn quầng vú
+   - Phần quầng vú phía dưới được ngậm nhiều hơn phía trên
+   - Môi dưới loe ra ngoài, cằm chạm vú
+   - Má tròn, không hóp vào
+   - Nghe tiếng nuốt, không nghe tiếng "chụt chụt"
+   - Mẹ không đau sau vài giây đầu
+6. Ngậm sai thì làm lại:
+   - Đưa ngón út vào khóe miệng bé để bé nhả vú
+   - Làm lại từ bước 4
+7. Cho bú hết một bên rồi mới đổi bên:
+   - Đợi bé tự nhả, hoặc mút chậm hẳn, thiu thiu ngủ
+   - Cho ợ hơi (K1) rồi mời bú bên kia
+   - Cữ sau bắt đầu bằng bên bú sau cùng
+8. Bé bú xong: tự nhả vú, tay chân thả lỏng, trông no và thư giãn.
+
+**Bé bú đủ khi:**
+- Bú 8-12 lần mỗi ngày
+- Từ ngày thứ 5: ít nhất 6 tã ướt, phân vàng mỗi ngày (K5)
+- Lấy lại cân nặng lúc sinh khi khoảng 10-14 ngày
+- Vú mẹ mềm hơn sau cữ bú
+
+**Lưu ý:**
+- Tuần đầu có thể đau nhẹ vài giây khi bé mới ngậm. Đau suốt cữ là ngậm sai
+- Không cần rửa núm vú bằng xà phòng trước mỗi cữ
+- Nằm nghiêng cho bú ban đêm: bú xong đặt bé về nôi, tránh ngủ quên cùng bé
+- Mẹ uống nước khi khát, ăn đủ bữa
+
+**Đi khám khi:**
+- Đau, nứt đầu ti kéo dài (xem B4)
+- Bé không ngậm được, hoặc bú rất lâu mà vẫn đói
+- Ít tã ướt, vàng da tăng (xem A9)
+- Bé chưa lấy lại cân nặng lúc sinh sau 2 tuần
+- Nghi bé bị dính thắng lưỡi
+
 ---
 
 ## PHẦN A: BÉ
@@ -1152,7 +1207,7 @@ Mỗi tình huống gồm 4 phần:
 **Đây là gì:** Đầu ti bị rát, đỏ, nứt nẻ, có khi chảy máu, đau nhất lúc bé mới ngậm. Nguyên nhân chính là khớp ngậm chưa đúng: bé chỉ ngậm đầu ti mà không ngậm sâu vào quầng vú, nên lợi bé nghiến lên đầu ti. Đau nhẹ vài giây đầu trong tuần đầu là phổ biến, nhưng đau suốt cữ bú là không bình thường.
 
 **Làm ngay:**
-1. Kiểm tra khớp ngậm của bé:
+1. Kiểm tra khớp ngậm của bé (K16):
    - Miệng bé mở rộng.
    - Ngậm cả phần lớn quầng vú, không chỉ đầu ti.
    - Môi dưới loe ra ngoài, cằm chạm vào vú.

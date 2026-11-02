@@ -85,6 +85,7 @@ KEYWORDS = {
     "K12": "thay tã, tã, bỉm, vệ sinh vùng kín, lau mông, hăm",
     "K13": "rửa bình, tiệt trùng, bình sữa, núm, máy hút sữa, luộc bình",
     "K14": "dỗ bé, khóc, 5S, quấy, nín, ru, ti giả",
+    "K16": "cho bú, bú mẹ, khớp ngậm, ngậm vú, tư thế bú, bế chéo, ôm bóng, nằm nghiêng, bú đủ",
     "K15": "nằm sấp, tummy time, massage, mát xa, cứng cổ, bẹp đầu",
     "K10": "ngày đêm, lẫn ngày đêm, ngủ ngày thức đêm, đồng hồ sinh học, ánh sáng, thức đêm, đèn ngủ",
     "K9": "ngủ, tự ngủ, rèn ngủ, ru ngủ, cho bé ngủ, đặt xuống, bế vác, tiếng ồn trắng, nhộng, khó ngủ",
@@ -96,13 +97,13 @@ SKILL_ICON = {
     "K4": ("🫁", "--pink"), "K5": ("💧", "--teal"), "K6": ("🚑", "--red"),
     "K7": ("🧣", "--purple"), "K8": ("🩹", "--brown"), "K9": ("😴", "--indigo"),
     "K10": ("🌗", "--yellow"), "K11": ("🛁", "--teal"), "K12": ("🧷", "--green"),
-    "K13": ("🍼", "--mint"), "K14": ("🤗", "--pink"), "K15": ("🧸", "--orange"),
+    "K13": ("🍼", "--mint"), "K14": ("🤗", "--pink"), "K15": ("🧸", "--orange"), "K16": ("🤱", "--pink"),
 }
 
 # Nhóm kỹ năng trên trang Kỹ năng, theo thứ tự hiển thị
 SKILL_GROUPS = [
     dict(icon="🛁", title="Chăm sóc hằng ngày", items=["K11", "K12", "K8", "K2", "K15"]),
-    dict(icon="🍼", title="Bú và bình sữa", items=["K1", "K13"]),
+    dict(icon="🍼", title="Bú và bình sữa", items=["K16", "K1", "K13"]),
     dict(icon="😴", title="Ngủ và dỗ bé", items=["K14", "K7", "K9", "K10"]),
     dict(icon="🩺", title="Sức khỏe và sơ cứu", items=["K3", "K4", "K5", "K6"]),
 ]
@@ -124,6 +125,7 @@ SKILL_SHORT = {
     "K13": "Rửa, tiệt trùng bình",
     "K14": "Dỗ bé khóc (5S)",
     "K15": "Nằm sấp và massage",
+    "K16": "Cách cho bú đúng",
 }
 
 # ---------------------------------------------------------------- đọc md
