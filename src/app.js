@@ -718,6 +718,17 @@
     return '<details class="plan-card"' + (open ? " open" : "") + "><summary>" + ico + "<span>" + esc(title) + "</span>" + ICON.tw + "</summary>" + body + "</details>";
   }
 
+  // thẻ có nhiều nhóm con, mỗi nhóm một tiêu đề nhỏ và một danh sách
+  function groupCard(title, icon, color, groups, open) {
+    if (!groups || !groups.length) return "";
+    var ico = '<span class="k-ico" style="background:linear-gradient(160deg,var(' + color + '),color-mix(in srgb,var(' + color + ') 60%,#000))">' + icon + "</span>";
+    var body = groups.map(function (g) {
+      return '<h4 class="plan-sub">' + esc(g.title) + '</h4><ul class="plan-list" style="--c:var(' + color + ')">' +
+        g.items.map(function (x) { return "<li>" + fmt(x) + "</li>"; }).join("") + "</ul>";
+    }).join("");
+    return '<details class="plan-card"' + (open ? " open" : "") + "><summary>" + ico + "<span>" + esc(title) + "</span>" + ICON.tw + "</summary>" + body + "</details>";
+  }
+
   var planView = store.get("xltn-plan-view", "be");
   if (["be", "dem", "sua"].indexOf(planView) < 0) planView = "be";
   function pagePlan(param) {
@@ -780,9 +791,12 @@
         listCard("Bảo quản sữa mẹ", "🧊", "--teal", SCHED.storage, false, true) +
         listCard("Khi nào dùng sữa công thức?", "🥛", "--orange", SCHED.formula, false, true);
     } else {
-      body = timeline(st.baby) + '<div class="plan-gap"></div>' +
+      // từ 5 tháng, khối ăn dặm lên ngay dưới lịch; trước đó để cuối trang
+      var solids = groupCard("Ăn dặm: khi nào, mấy bữa, ăn bao nhiêu", "🥣", "--green", SCHED.solids, false);
+      var soon = st.i >= STAGE["5"].i;
+      body = timeline(st.baby) + '<div class="plan-gap"></div>' + (soon ? solids : "") +
         listCard("Lưu ý giai đoạn này", "💡", "--yellow", st.notes, false, true) +
-        listCard("Nguyên tắc chung", "🧭", "--indigo", SCHED.principles, false, true);
+        listCard("Nguyên tắc chung", "🧭", "--indigo", SCHED.principles, false, true) + (soon ? "" : solids);
     }
     $("#planBody").innerHTML = head + stats + seg + body +
       '<p class="disclaimer">Giờ trong lịch chỉ là ví dụ để tham khảo, không phải quy định. Mỗi bé một khác: hãy theo dấu hiệu đói, buồn ngủ của bé và lời khuyên của bác sĩ.</p>';

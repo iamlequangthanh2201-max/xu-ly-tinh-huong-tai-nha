@@ -62,6 +62,42 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Sữa bé bú dở: dùng trong 2 giờ, sau đó bỏ đi.
 - Ghi ngày giờ hút lên từng túi, dùng túi cũ trước. Mỗi túi chỉ trữ 60-120 ml để không phải bỏ phí.
 
+## Ăn dặm
+
+### Khi nào bắt đầu
+- Khi bé tròn 6 tháng (khoảng 180 ngày tuổi), theo khuyến nghị của WHO
+- Không bắt đầu trước 4 tháng. Bé sinh non: hỏi bác sĩ, tính theo tuổi điều chỉnh
+- Bé sẵn sàng khi: ngồi vững có người đỡ, giữ đầu cổ tốt, há miệng khi thấy thìa, không còn đẩy thức ăn ra bằng lưỡi, hay nhìn theo người lớn ăn
+
+### Số bữa và lượng ăn theo tháng
+- **6 tháng, tuần đầu:** 1 bữa/ngày, mỗi bữa 1-2 thìa cà phê. Bột hoặc cháo rây mịn, rau củ nghiền nhuyễn
+- **6 tháng, cuối tháng:** 1-2 bữa/ngày, mỗi bữa tăng dần đến 2-3 thìa canh (khoảng 30-45 ml). Sệt vừa, không lỏng chảy khỏi thìa
+- **7-8 tháng:** 2-3 bữa/ngày, mỗi bữa tăng dần đến nửa chén 250 ml (khoảng 125 ml). Nghiền, cháo đặc hơn, có thể còn lợn cợn
+- **9-11 tháng:** 3-4 bữa/ngày, mỗi bữa khoảng nửa chén 250 ml, thêm 1-2 bữa phụ. Băm nhỏ, cháo hạt, thức ăn mềm cắt que để bé tự bốc
+- **12 tháng:** 3 bữa chính và 1-2 bữa phụ, mỗi bữa 3/4 đến 1 chén 250 ml. Cắt nhỏ, ăn cùng món của gia đình, nêm thật nhạt
+- Lượng trên là mức trung bình. Bé ăn ít hơn vài hôm vẫn bình thường nếu bé vẫn tăng cân, chơi vui
+
+### Sữa vẫn là chính
+- Đến 12 tháng, sữa mẹ (hoặc sữa công thức) vẫn là nguồn dinh dưỡng chính
+- Ăn dặm là để bé tập ăn và bổ sung sắt, không thay sữa
+- Cho ăn dặm cách cữ bú khoảng 30-60 phút, để bé không quá đói cũng không quá no
+
+### Nguyên tắc
+- Mỗi lần chỉ thêm một món mới, ăn 2-3 ngày rồi mới thử món khác, để dễ nhận ra nếu bé dị ứng
+- Cho món giàu sắt sớm: thịt, cá, trứng, đậu, bột ngũ cốc có bổ sung sắt
+- Trứng, đậu phộng (dạng bơ pha loãng, không cho hạt nguyên) nên cho sớm, giúp giảm nguy cơ dị ứng. Bé bị chàm nặng thì hỏi bác sĩ trước
+- Không nêm muối, đường, nước mắm. Không cho mật ong trước 1 tuổi
+- Từ 6 tháng cho bé uống vài ngụm nước bằng cốc tập uống trong bữa ăn
+- Không dùng sữa bò tươi làm đồ uống chính trước 12 tháng
+- Cho bé ngồi ghế ăn, người lớn luôn ngồi cạnh. Không cho ăn hạt nguyên, nho nguyên quả, thạch, xúc xích cắt khoanh tròn (dễ hóc, xem K6)
+- Ăn theo tín hiệu của bé: bé ngậm miệng, quay đi, đẩy thìa là đã no. Không ép, không dỗ ăn bằng điện thoại
+
+### Đi khám khi
+- Nổi mẩn, nôn, tiêu chảy sau khi ăn một món mới: ngừng món đó, hỏi bác sĩ
+- Sưng môi, sưng mặt, khó thở sau khi ăn: đi cấp cứu ngay
+- Bé 9 tháng vẫn không chịu ăn thức ăn đặc hơn dạng nghiền
+- Bé chậm tăng cân, hoặc biếng ăn kéo dài
+
 ## Khi nào dùng sữa công thức
 
 - Sữa mẹ là đủ cho bé trong 6 tháng đầu. Nếu bé tăng cân tốt, đủ tã ướt, thì không cần thêm sữa công thức.

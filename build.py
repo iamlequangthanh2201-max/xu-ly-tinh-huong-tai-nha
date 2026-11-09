@@ -243,7 +243,7 @@ SLOT_TYPES = {"thuc", "bu", "binh", "dem", "an", "choi", "ngoai", "ngu", "tam", 
 STAGE_KEYS = ["0a", "0b"] + [str(i) for i in range(1, 13)]
 GLOBAL_SECTIONS = {"Nguyên tắc chung": "principles", "Cữ đêm là gì": "night",
                    "Cho bé bú bình sữa mẹ": "bottle", "Bảo quản sữa mẹ": "storage",
-                   "Khi nào dùng sữa công thức": "formula", "Lịch hút L2, L3, L4": "lrhythm"}
+                   "Khi nào dùng sữa công thức": "formula", "Lịch hút L2, L3, L4": "lrhythm", "Ăn dặm": "solids"}
 STAGE_SECTIONS = [("tóm tắt", "summary"), ("lịch của bé", "baby"), ("ban đêm", "night"),
                   ("mẹo ban đêm", "nightTips"), ("bú và hút sữa", "milk"), ("lưu ý", "notes")]
 
@@ -287,10 +287,17 @@ def parse_schedule(md):
             key = next((k for pre, k in STAGE_SECTIONS if label.startswith(pre)), None)
             assert key, "Không hiểu nhãn: " + line
             continue
+        # thẻ chung có tiêu đề con "### ...", ví dụ Ăn dặm
+        if cur is out and key and line.startswith("### "):
+            out[key].append(dict(title=line[4:].strip(), items=[]))
+            continue
         if key is None or not line.startswith("- "):
             continue
         if cur is out:
-            out[key].append(line[2:].strip())
+            if out[key] and isinstance(out[key][-1], dict):
+                out[key][-1]["items"].append(line[2:].strip())
+            else:
+                out[key].append(line[2:].strip())
         elif key in ("baby", "night"):
             slot = parse_slot(line)
             assert slot, "Dòng lịch sai dạng: " + line
