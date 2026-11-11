@@ -498,21 +498,20 @@ Mỗi tình huống gồm 4 phần:
 ![5 bước pha sữa Glico Icreo số 0](img/pha-sua-icreo.svg)
 1. Rửa tay bằng xà phòng.
    - Tiệt trùng bình, núm trước khi pha (K13)
-2. Đun sôi nước, để nguội còn trên 70°C.
-   - Khoảng 30 phút sau khi sôi, nếu để nguội trong ấm có nắp
-3. Cho sữa vào bình:
-   - Dùng muỗng có sẵn trong hộp
-   - Gạt phẳng mặt muỗng, không nén chặt
-   - 1 muỗng gạt ngang (khoảng 2,4-2,5 g) pha được 20 ml sữa
-4. Rót khoảng 2/3 lượng nước nóng trên 70°C.
-   - Đậy nắp, lắc nhẹ cho sữa tan hết
-5. Rót tiếp phần nước còn lại đến đúng vạch cần pha.
-   - Nước nóng trên 70°C hoặc nước đun sôi để nguội
-   - Lắc nhẹ thêm lần nữa
-6. Làm nguội xuống 37-38°C:
-   - Ngâm bình vào bát nước lạnh, không nhúng ngập nắp
-   - Nhỏ vài giọt lên cổ tay thấy âm ấm là được
-7. Cho bé bú theo nhịp, như bú bình sữa mẹ.
+2. Đun sôi nước, để nguội còn khoảng 70°C.
+3. Rót nước 70°C vào bình trước, đúng lượng cần pha.
+   - Ví dụ bác sĩ dặn pha 40 ml: rót 40 ml nước
+4. Cho sữa bột vào sau:
+   - Dùng muỗng có sẵn trong hộp, gạt phẳng, không nén
+   - Cứ 20 ml nước thì 1 muỗng. Ví dụ 40 ml nước: 2 muỗng
+5. Đậy nắp, lắc cho sữa tan hết.
+6. Làm nguội dưới vòi nước lạnh khoảng 5 phút.
+   - Để nước chảy quanh thân bình, không chảy vào núm
+   - Hạ xuống còn khoảng 40-45°C
+7. Thử nhiệt độ: nhỏ vài giọt ra cổ tay, thấy ấm, không nóng là được.
+8. Xả khí núm bình rồi cho bé bú.
+   - Vặn nhẹ vòng núm cho thoát hơi, rồi vặn lại vừa chặt
+   - Cho bú theo nhịp, như bú bình sữa mẹ
 
 **Lượng sữa theo tuổi (mỗi cữ):**
 - 1-2 tuần: 3-4 muỗng, 60-80 ml, 7-8 cữ/ngày
@@ -527,7 +526,7 @@ Mỗi tình huống gồm 4 phần:
 - Bảng trên là lượng cho bé uống sữa công thức hoàn toàn, theo hướng dẫn của nhà sản xuất
 - Nhà mình bú mẹ là chính: chỉ pha đúng phần cần bổ sung, theo hướng dẫn của bác sĩ
 - Mỗi bé ăn khác nhau: bé no thì dừng, không ép bú hết bình
-- Pha đúng số muỗng. Không pha đặc hơn hay loãng hơn
+- Pha đúng tỉ lệ 20 ml nước : 1 muỗng. Không pha đặc hơn hay loãng hơn
 - Sữa đã pha dùng trong 2 giờ. Sữa bé bú dở thì bỏ đi
 - Hộp đã mở dùng hết trong 4 tuần. Đậy kín, để nơi khô mát, không để tủ lạnh
 
