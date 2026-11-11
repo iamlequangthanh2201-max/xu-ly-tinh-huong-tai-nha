@@ -85,6 +85,7 @@ KEYWORDS = {
     "K12": "thay tã, tã, bỉm, vệ sinh vùng kín, lau mông, hăm",
     "K13": "rửa bình, tiệt trùng, bình sữa, núm, máy hút sữa, luộc bình",
     "K14": "dỗ bé, khóc, 5S, quấy, nín, ru, ti giả",
+    "K17": "pha sữa, sữa công thức, glico, icreo, sữa bột, bình sữa, muỗng, thìa, nước 70 độ",
     "K16": "cho bú, bú mẹ, khớp ngậm, ngậm vú, tư thế bú, bế chéo, ôm bóng, nằm nghiêng, bú đủ",
     "K15": "nằm sấp, tummy time, massage, mát xa, cứng cổ, bẹp đầu",
     "K10": "ngày đêm, lẫn ngày đêm, ngủ ngày thức đêm, đồng hồ sinh học, ánh sáng, thức đêm, đèn ngủ",
@@ -97,13 +98,13 @@ SKILL_ICON = {
     "K4": ("🫁", "--pink"), "K5": ("💧", "--teal"), "K6": ("🚑", "--red"),
     "K7": ("🧣", "--purple"), "K8": ("🩹", "--brown"), "K9": ("😴", "--indigo"),
     "K10": ("🌗", "--yellow"), "K11": ("🛁", "--teal"), "K12": ("🧷", "--green"),
-    "K13": ("🍼", "--mint"), "K14": ("🤗", "--pink"), "K15": ("🧸", "--orange"), "K16": ("🤱", "--pink"),
+    "K13": ("🍼", "--mint"), "K14": ("🤗", "--pink"), "K15": ("🧸", "--orange"), "K16": ("🤱", "--pink"), "K17": ("🥛", "--orange"),
 }
 
 # Nhóm kỹ năng trên trang Kỹ năng, theo thứ tự hiển thị
 SKILL_GROUPS = [
     dict(icon="🛁", title="Chăm sóc hằng ngày", items=["K11", "K12", "K8", "K2", "K15"]),
-    dict(icon="🍼", title="Bú và bình sữa", items=["K16", "K1", "K13"]),
+    dict(icon="🍼", title="Bú và bình sữa", items=["K16", "K1", "K17", "K13"]),
     dict(icon="😴", title="Ngủ và dỗ bé", items=["K14", "K7", "K9", "K10"]),
     dict(icon="🩺", title="Sức khỏe và sơ cứu", items=["K3", "K4", "K5", "K6"]),
 ]
@@ -126,6 +127,7 @@ SKILL_SHORT = {
     "K14": "Dỗ bé khóc (5S)",
     "K15": "Nằm sấp và massage",
     "K16": "Cách cho bú đúng",
+    "K17": "Pha sữa Icreo số 0",
 }
 
 # ---------------------------------------------------------------- đọc md
@@ -206,6 +208,10 @@ def parse(md):
             continue
         if line.startswith(">"):
             cur.setdefault("notes", []).append(line.lstrip("> ").strip())
+            continue
+        m = re.match(r"^!\[(.*?)\]\((.+?)\)$", line)
+        if m:
+            cur.setdefault("images", []).append(dict(alt=m.group(1), src=m.group(2)))
             continue
 
         m = RE_OL.match(line) or RE_UL.match(line)
@@ -360,13 +366,17 @@ def build():
     make_icons()
     # phiên bản tính cả icon, để đổi icon thì máy đã cài cũng nhận bản mới
     h = hashlib.sha1(page.encode("utf-8"))
-    for f in sorted((OUT / "icons").glob("*.png")):
+    for f in sorted((OUT / "icons").glob("*.png")) + sorted((HERE / "src" / "img").glob("*")):
         h.update(f.read_bytes())
     version = h.hexdigest()[:10]
     (OUT / "index.html").write_text(page.replace("__VERSION__", version), encoding="utf-8")
 
     sw = (HERE / "src" / "sw.js").read_text(encoding="utf-8").replace("__VERSION__", version)
     (OUT / "sw.js").write_text(sw, encoding="utf-8")
+
+    # ảnh minh họa dùng trong nội dung: src/img -> docs/img
+    import shutil
+    shutil.copytree(HERE / "src" / "img", OUT / "img", dirs_exist_ok=True)
 
     manifest = dict(
         name=TITLE, short_name=SHORT, lang="vi",

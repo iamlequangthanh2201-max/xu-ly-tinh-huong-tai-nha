@@ -494,6 +494,49 @@ Mỗi tình huống gồm 4 phần:
 - Bé chưa lấy lại cân nặng lúc sinh sau 2 tuần
 - Nghi bé bị dính thắng lưỡi
 
+### K17. Pha sữa Glico Icreo số 0
+![5 bước pha sữa Glico Icreo số 0](img/pha-sua-icreo.svg)
+1. Rửa tay bằng xà phòng.
+   - Tiệt trùng bình, núm trước khi pha (K13)
+2. Đun sôi nước, để nguội còn trên 70°C.
+   - Khoảng 30 phút sau khi sôi, nếu để nguội trong ấm có nắp
+3. Cho sữa vào bình:
+   - Dùng muỗng có sẵn trong hộp
+   - Gạt phẳng mặt muỗng, không nén chặt
+   - 1 muỗng gạt ngang (khoảng 2,4-2,5 g) pha được 20 ml sữa
+4. Rót khoảng 2/3 lượng nước nóng trên 70°C.
+   - Đậy nắp, lắc nhẹ cho sữa tan hết
+5. Rót tiếp phần nước còn lại đến đúng vạch cần pha.
+   - Nước nóng trên 70°C hoặc nước đun sôi để nguội
+   - Lắc nhẹ thêm lần nữa
+6. Làm nguội xuống 37-38°C:
+   - Ngâm bình vào bát nước lạnh, không nhúng ngập nắp
+   - Nhỏ vài giọt lên cổ tay thấy âm ấm là được
+7. Cho bé bú theo nhịp, như bú bình sữa mẹ.
+
+**Lượng sữa theo tuổi (mỗi cữ):**
+- 1-2 tuần: 3-4 muỗng, 60-80 ml, 7-8 cữ/ngày
+- 2 tuần-1 tháng: 4-5 muỗng, 80-100 ml, 7 cữ/ngày
+- 1-2 tháng: 7-8 muỗng, 140-160 ml, 6 cữ/ngày
+- 2-3 tháng: 8-9 muỗng, 160-180 ml, 6 cữ/ngày
+- 3-4 tháng: 10-11 muỗng, 200-220 ml, 5 cữ/ngày
+- 4-5 tháng: 11 muỗng, 220 ml, 5 cữ/ngày
+- 5-6 tháng: 11-12 muỗng, 220-240 ml, 4 cữ/ngày
+
+**Lưu ý:**
+- Bảng trên là lượng cho bé uống sữa công thức hoàn toàn, theo hướng dẫn của nhà sản xuất
+- Nhà mình bú mẹ là chính: chỉ pha đúng phần cần bổ sung, theo hướng dẫn của bác sĩ
+- Mỗi bé ăn khác nhau: bé no thì dừng, không ép bú hết bình
+- Pha đúng số muỗng. Không pha đặc hơn hay loãng hơn
+- Sữa đã pha dùng trong 2 giờ. Sữa bé bú dở thì bỏ đi
+- Hộp đã mở dùng hết trong 4 tuần. Đậy kín, để nơi khô mát, không để tủ lạnh
+
+**Không nên:**
+- Pha bằng nước dưới 70°C
+- Hâm sữa bằng lò vi sóng
+- Pha sẵn để dành cho cữ sau
+- Dùng muỗng của loại sữa khác
+
 ---
 
 ## PHẦN A: BÉ

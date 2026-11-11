@@ -197,6 +197,10 @@
         html += renderOther(sec, { call: hasRed || /cấp cứu/i.test(sec.label || ""), openAll: opts.openAll });
       }
     });
+    var figs = (item.images || []).map(function (im) {
+      return '<figure class="skill-fig"><img src="' + esc(im.src) + '" alt="' + esc(im.alt) + '" loading="lazy"></figure>';
+    }).join("");
+    html = figs + html;
     (item.notes || []).forEach(function (n) {
       html += '<div class="note">' + ICON.info.replace("<svg ", '<svg width="20" height="20" style="flex:none;margin-top:2px" ') +
         "<div>" + fmt(n) + "</div></div>";

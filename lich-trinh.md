@@ -108,6 +108,7 @@ Cách viết một dòng lịch: `- 06:30 | loại | nội dung`. Các loại: t
 - Cách bắt đầu: hỏi bác sĩ nhi để chọn loại sữa công thức cho trẻ 0-12 tháng. Thêm từ 1 bình mỗi ngày, theo dõi bé đi ngoài, da, bụng vài ngày rồi mới tăng dần.
 - Pha đúng tỉ lệ ghi trên hộp, không pha đặc hơn hay loãng hơn. Nước pha phải đun sôi rồi để nguội còn khoảng 70°C, pha xong làm nguội nhanh trước khi cho bú. Sữa đã pha dùng trong 2 giờ.
 - Không dùng sữa bò tươi, sữa hộp người lớn, sữa đặc cho bé dưới 12 tháng.
+- Nếu dùng Glico Icreo số 0: xem cách pha và lượng sữa theo tuổi (K17).
 - Dùng sữa công thức không phải thất bại của mẹ. Bé được ăn no và mẹ đủ sức khỏe mới là điều quan trọng.
 
 ---

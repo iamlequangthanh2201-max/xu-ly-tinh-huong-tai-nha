@@ -504,3 +504,5 @@ details[open]>summary .tw{transform:rotate(90deg)}
 .plan-sub{margin:4px 16px 0;padding-top:10px;border-top:.5px solid var(--sep);font-size:13px;font-weight:700;
   text-transform:uppercase;letter-spacing:.03em;color:var(--label-2)}
 .plan-card>summary+.plan-sub{border-top:0;padding-top:0}
+.skill-fig{margin:0 0 14px;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--shadow);background:#fff}
+.skill-fig img{display:block;width:100%;height:auto}
